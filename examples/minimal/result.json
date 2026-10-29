@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "run_id": "c514b131-3035-4996-997a-def533c0b843",
+  "status": "complete",
+  "started_at": "2026-10-29T04:56:29.323Z",
+  "finished_at": "2026-10-29T04:56:29.326Z",
+  "requested_fields": [
+    "display_name",
+    "follower_count",
+    "post_text",
+    "continuations"
+  ],
+  "source_url": "https://www.threads.com/@fixture_author/post/ROOT",
+  "canonical_url": "https://www.threads.com/@fixture_author/post/ROOT",
+  "redirect_chain": [
+    {
+      "url": "https://www.threads.com/@fixture_author/post/ROOT",
+      "kind": "initial"
+    }
+  ],
+  "final_url": "https://www.threads.com/@fixture_author/post/ROOT",
+  "captured_at": "2026-10-29T00:00:00Z",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null,
+    "mock_calls": 1
+  },
+  "issues": [],
+  "trace_file": "examples/minimal/trace.json",
+  "data": {
+    "display_name": {
+      "status": "ok",
+      "value": "合成測試作者"
+    },
+    "follower_count": {
+      "status": "ok",
+      "value": {
+        "display": "1234",
+        "exact": 1234,
+        "approximate": null
+      }
+    },
+    "post_text": {
+      "status": "ok",
+      "value": "合成原文第一行\n第二行"
+    },
+    "continuations": {
+      "status": "ok",
+      "value": [
+        {
+          "post_id": "A1",
+          "url": "https://www.threads.com/@fixture_author/post/A1",
+          "text": "合成續文一\n保持換行",
+          "order": 1,
+          "parent_post_id": "ROOT",
+          "text_complete": true,
+          "order_evidence": null
+        },
+        {
+          "post_id": "A2",
+          "url": "https://www.threads.com/@fixture_author/post/A2",
+          "text": "合成續文二",
+          "order": 2,
+          "parent_post_id": "A1",
+          "text_complete": true,
+          "order_evidence": null
+        }
+      ],
+      "note": "Observed author continuations; additional unloaded content is not verified."
+    }
+  },
+  "evidence_mode": "synthetic_fixture",
+  "model_mode": "mock"
+}

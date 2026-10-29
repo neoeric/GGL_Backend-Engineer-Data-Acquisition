@@ -1,0 +1,29 @@
+{
+  "evidence_mode": "synthetic_fixture",
+  "canonical_url": "https://www.threads.com/@fixture_author/post/ROOT",
+  "final_url": "https://www.threads.com/@fixture_author/post/ROOT",
+  "redirect_chain": [{"url": "https://www.threads.com/@fixture_author/post/ROOT", "kind": "initial"}],
+  "captured_at": "2026-10-29T00:00:00Z",
+  "target_id": "ROOT",
+  "author": "fixture_author",
+  "display_name": "合成測試作者",
+  "follower_count": 1234,
+  "posts": [
+    {"id":"ROOT","author":"fixture_author","parent":null,"order":0,"text":"合成原文第一行\n第二行","text_complete":true,"url":"https://www.threads.com/@fixture_author/post/ROOT"},
+    {"id":"A1","author":"fixture_author","parent":"ROOT","order":1,"text":"合成續文一\n保持換行","text_complete":true,"url":"https://www.threads.com/@fixture_author/post/A1"},
+    {"id":"A2","author":"fixture_author","parent":"A1","order":2,"text":"合成續文二","text_complete":true,"url":"https://www.threads.com/@fixture_author/post/A2"},
+    {"id":"R1","author":"reader","parent":"ROOT","order":3,"text":"讀者留言","text_complete":true,"url":"https://www.threads.com/@reader/post/R1"},
+    {"id":"AR","author":"fixture_author","parent":"R1","order":4,"text":"作者回覆讀者，不可納入","text_complete":true,"url":"https://www.threads.com/@fixture_author/post/AR"},
+    {"id":"ARS","author":"fixture_author","parent":"AR","order":5,"text":"再回覆自己，仍是讀者分支","text_complete":true,"url":"https://www.threads.com/@fixture_author/post/ARS"},
+    {"id":"REC","author":"fixture_author","parent":"ROOT","order":6,"text":"同作者推薦卡，不可納入","recommended":true,"text_complete":true,"url":"https://www.threads.com/@fixture_author/post/REC"}
+  ],
+  "boundary_evidence": {
+    "target_id":"ROOT",
+    "source_url":"https://www.threads.com/@fixture_author/post/ROOT",
+    "captured_at":"2026-10-29T00:00:00Z",
+    "terminal_evidence":{"kind":"synthetic_response_page_info","has_next_page":false,"page_id":"fixture-final-page"},
+    "all_branches_read":true,
+    "has_next_page":false,
+    "ambiguous":false
+  }
+}

@@ -1,0 +1,2301 @@
+{
+  "schema_version": "1.0",
+  "run_id": "8048089c-e415-4565-aa5e-b4e1293f9ade",
+  "events": [
+    {
+      "type": "run_start",
+      "at": "2026-10-29T08:22:25.694Z",
+      "input": {
+        "message": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7"
+      },
+      "mode": "none",
+      "evidence_mode": "live_anonymous",
+      "limits": {
+        "seconds": 120.0,
+        "tools": 3,
+        "llm": 1
+      }
+    },
+    {
+      "type": "navigation",
+      "at": "2026-10-29T08:22:37.165Z",
+      "input": {
+        "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7"
+      },
+      "output": {
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+            "kind": "initial"
+          }
+        ],
+        "final_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+        "http_statuses": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+            "status": 200
+          }
+        ],
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 4,
+            "policy_resource_budget_or_type": 3
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready"
+        }
+      },
+      "status": "observed",
+      "reason_code": null
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-29T08:22:37.207Z",
+      "call_id": "tool-1",
+      "name": "read_post",
+      "input": {
+        "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "Dd0_RGwH4K7",
+            "author": "whoscall_tw",
+            "text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Whoscall",
+            "text_source_difference": {
+              "caption_text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔▓▓▓▓▓",
+              "visible_text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+              "selected_source": "permalink_time_scoped_visible_body",
+              "inline_image_count": 5
+            },
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd0-fP0AcsC",
+            "author": "whoscall_tw",
+            "text": "還有 3 天 🎉\nWhoscall「簽到禮自由選」10 月 1 日 00:00 準時開跑\n\n簽到 10 次，5 款好禮免費挑 1 款 ✨\nLINE POINTS、摩斯冰紅茶、肯德基蛋撻、全家霜淇淋、麥當勞薯條\n直接換！！！（數量有限，換完為止，實際數量依 App 內顯示為主）\n重點是！我們又要抽 iPhone 啦～～（簽到 11 次抽 iPhone 18 Pro）\n ．\n 先把 Whoscall 更新到最新版，10/1 第一時間簽起來 📲\n 留言「簽到」，立即傳送給你活動規則\n ．\n #Whoscall #簽到禮自由選 #Whoscall簽到任務 #Whoscall任務牆",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0-fP0AcsC",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.linked_inline_media",
+            "self_thread_context": null,
+            "is_reply_observed": null,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": null,
+            "order_evidence": null
+          },
+          {
+            "id": "Dd7ngduk3ld",
+            "author": "petswuuuu",
+            "text": "為什麼顯示這樣？🥺",
+            "url": "https://www.threads.com/@petswuuuu/post/Dd7ngduk3ld",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "𝔀𝓪𝓷𝔂𝓸𝓸𝓷𝓰",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd8sq8MH9pJ",
+            "author": "whoscall_tw",
+            "text": "非常不好意思這個目前已經修復了🙇🙇",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd8sq8MH9pJ",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "petswuuuu",
+            "reader_branch": true,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd0_RHRH6h9",
+            "author": "whoscall_tw",
+            "text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RHRH6h9",
+            "parent": "Dd0_RGwH4K7",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "Dd0_RGwH4K7",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd0_RGwH4K7",
+                "Dd0_RHRH6h9"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node"
+            }
+          },
+          {
+            "id": "De4WOU4E6h5",
+            "author": "zh._.930",
+            "text": "最後一個留言的 我免費送iPhone18 pro",
+            "url": "https://www.threads.com/@zh._.930/post/De4WOU4E6h5",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "莊顥",
+            "order_evidence": null
+          },
+          {
+            "id": "DewRXx4E6pg",
+            "author": "shikanoko_61015",
+            "text": "抽一個送我iPhone 18promax",
+            "url": "https://www.threads.com/@shikanoko_61015/post/DewRXx4E6pg",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "☆彡",
+            "order_evidence": null
+          },
+          {
+            "id": "Devvda6EYXM",
+            "author": "chipclub.tg",
+            "text": "台中朋友看過來\n今天晚上iPhone18📱快來拿\n重點是早鳥報名費只要800元\n就有機會帶走全新的iPhone18pro😱",
+            "url": "https://www.threads.com/@chipclub.tg/post/Devvda6EYXM",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "ChipClub德州撲克協會",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd8aWnRD-Fz",
+            "author": "buybuyfy888",
+            "text": "📣 住台北、桃園、彰化、台南的先看過來！！\n\n有人想抽 iPhone 18 Pro 嗎？📱✨\n\n活動期間 10/1～10/31\n只要來找我們，就有機會把 iPhone 18 Pro 帶回家🔥\n\n而且！！\n不住這幾個地方也沒關係😂\n只要你願意來找我們，人人都有機會！\n\n#iPhone18Pro #抽獎 #iPhone #台北 #桃園 #彰化 #台南 #富奕家電",
+            "url": "https://www.threads.com/@buybuyfy888/post/Dd8aWnRD-Fz",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "FY福利讚",
+            "order_evidence": null
+          },
+          {
+            "id": "DfBEn1zAfgx",
+            "author": "fy2020888",
+            "text": "最後倒數2天\n\n現在滿額3000消費\n加碼抽獎活動\niPhone 18 P R O\n-\n你還不來嗎",
+            "url": "https://www.threads.com/@fy2020888/post/DfBEn1zAfgx",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Fuyi富奕冷氣家電館",
+            "order_evidence": null
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "Dd0_RGwH4K7",
+        "author": "whoscall_tw",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Whoscall",
+        "captured_at": "2026-10-29T08:22:37.165Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 4,
+            "policy_resource_budget_or_type": 3
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 303,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        }
+      },
+      "status": "ok",
+      "elapsed_ms": 11516
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-29T08:22:37.211Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "Dd0-fP0AcsC",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd7ngduk3ld",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd8sq8MH9pJ",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd0_RHRH6h9",
+            "classification": "continuation"
+          },
+          {
+            "id": "De4WOU4E6h5",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DewRXx4E6pg",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Devvda6EYXM",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd8aWnRD-Fz",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DfBEn1zAfgx",
+            "classification": "recommended_post"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "unavailable",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "evidence_merge",
+      "at": "2026-10-29T08:22:37.759Z",
+      "input": {
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7"
+      },
+      "output": {
+        "decision": "merged",
+        "added_post_ids": [],
+        "retained_post_ids": [
+          "Dd0_RGwH4K7",
+          "Dd0-fP0AcsC",
+          "Dd7ngduk3ld",
+          "Dd8sq8MH9pJ",
+          "Dd0_RHRH6h9",
+          "De4WOU4E6h5",
+          "DewRXx4E6pg",
+          "Devvda6EYXM",
+          "Dd8aWnRD-Fz",
+          "DfBEn1zAfgx"
+        ],
+        "conflicts": [],
+        "observation_at": "2026-10-29T08:22:37.717Z"
+      },
+      "status": "merged"
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-29T08:22:37.760Z",
+      "call_id": "tool-2",
+      "name": "expand_thread",
+      "input": {
+        "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "Dd0_RGwH4K7",
+            "author": "whoscall_tw",
+            "text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Whoscall",
+            "text_source_difference": {
+              "caption_text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔▓▓▓▓▓",
+              "visible_text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+              "selected_source": "permalink_time_scoped_visible_body",
+              "inline_image_count": 5
+            },
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0_RGwH4K7",
+                "author": "whoscall_tw",
+                "text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0_RGwH4K7",
+                "author": "whoscall_tw",
+                "text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "Dd0-fP0AcsC",
+            "author": "whoscall_tw",
+            "text": "還有 3 天 🎉\nWhoscall「簽到禮自由選」10 月 1 日 00:00 準時開跑\n\n簽到 10 次，5 款好禮免費挑 1 款 ✨\nLINE POINTS、摩斯冰紅茶、肯德基蛋撻、全家霜淇淋、麥當勞薯條\n直接換！！！（數量有限，換完為止，實際數量依 App 內顯示為主）\n重點是！我們又要抽 iPhone 啦～～（簽到 11 次抽 iPhone 18 Pro）\n ．\n 先把 Whoscall 更新到最新版，10/1 第一時間簽起來 📲\n 留言「簽到」，立即傳送給你活動規則\n ．\n #Whoscall #簽到禮自由選 #Whoscall簽到任務 #Whoscall任務牆",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0-fP0AcsC",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.linked_inline_media",
+            "self_thread_context": null,
+            "is_reply_observed": null,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": null,
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0-fP0AcsC",
+                "author": "whoscall_tw",
+                "text": "還有 3 天 🎉\nWhoscall「簽到禮自由選」10 月 1 日 00:00 準時開跑\n\n簽到 10 次，5 款好禮免費挑 1 款 ✨\nLINE POINTS、摩斯冰紅茶、肯德基蛋撻、全家霜淇淋、麥當勞薯條\n直接換！！！（數量有限，換完為止，實際數量依 App 內顯示為主）\n重點是！我們又要抽 iPhone 啦～～（簽到 11 次抽 iPhone 18 Pro）\n ．\n 先把 Whoscall 更新到最新版，10/1 第一時間簽起來 📲\n 留言「簽到」，立即傳送給你活動規則\n ．\n #Whoscall #簽到禮自由選 #Whoscall簽到任務 #Whoscall任務牆",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0-fP0AcsC",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": null
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0-fP0AcsC",
+                "author": "whoscall_tw",
+                "text": "還有 3 天 🎉\nWhoscall「簽到禮自由選」10 月 1 日 00:00 準時開跑\n\n簽到 10 次，5 款好禮免費挑 1 款 ✨\nLINE POINTS、摩斯冰紅茶、肯德基蛋撻、全家霜淇淋、麥當勞薯條\n直接換！！！（數量有限，換完為止，實際數量依 App 內顯示為主）\n重點是！我們又要抽 iPhone 啦～～（簽到 11 次抽 iPhone 18 Pro）\n ．\n 先把 Whoscall 更新到最新版，10/1 第一時間簽起來 📲\n 留言「簽到」，立即傳送給你活動規則\n ．\n #Whoscall #簽到禮自由選 #Whoscall簽到任務 #Whoscall任務牆",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0-fP0AcsC",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": null
+              }
+            ]
+          },
+          {
+            "id": "Dd7ngduk3ld",
+            "author": "petswuuuu",
+            "text": "為什麼顯示這樣？🥺",
+            "url": "https://www.threads.com/@petswuuuu/post/Dd7ngduk3ld",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "𝔀𝓪𝓷𝔂𝓸𝓸𝓷𝓰",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd7ngduk3ld",
+                "author": "petswuuuu",
+                "text": "為什麼顯示這樣？🥺",
+                "parent": null,
+                "url": "https://www.threads.com/@petswuuuu/post/Dd7ngduk3ld",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "𝔀𝓪𝓷𝔂𝓸𝓸𝓷𝓰"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd7ngduk3ld",
+                "author": "petswuuuu",
+                "text": "為什麼顯示這樣？🥺",
+                "parent": null,
+                "url": "https://www.threads.com/@petswuuuu/post/Dd7ngduk3ld",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "𝔀𝓪𝓷𝔂𝓸𝓸𝓷𝓰"
+              }
+            ]
+          },
+          {
+            "id": "Dd8sq8MH9pJ",
+            "author": "whoscall_tw",
+            "text": "非常不好意思這個目前已經修復了🙇🙇",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd8sq8MH9pJ",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "petswuuuu",
+            "reader_branch": true,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd8sq8MH9pJ",
+                "author": "whoscall_tw",
+                "text": "非常不好意思這個目前已經修復了🙇🙇",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd8sq8MH9pJ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd8sq8MH9pJ",
+                "author": "whoscall_tw",
+                "text": "非常不好意思這個目前已經修復了🙇🙇",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd8sq8MH9pJ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "Dd0_RHRH6h9",
+            "author": "whoscall_tw",
+            "text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RHRH6h9",
+            "parent": "Dd0_RGwH4K7",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "Dd0_RGwH4K7",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd0_RGwH4K7",
+                "Dd0_RHRH6h9"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node"
+            },
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0_RHRH6h9",
+                "author": "whoscall_tw",
+                "text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4",
+                "parent": "Dd0_RGwH4K7",
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RHRH6h9",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0_RHRH6h9",
+                "author": "whoscall_tw",
+                "text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4",
+                "parent": "Dd0_RGwH4K7",
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RHRH6h9",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "De4WOU4E6h5",
+            "author": "zh._.930",
+            "text": "最後一個留言的 我免費送iPhone18 pro",
+            "url": "https://www.threads.com/@zh._.930/post/De4WOU4E6h5",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "莊顥",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "De4WOU4E6h5",
+                "author": "zh._.930",
+                "text": "最後一個留言的 我免費送iPhone18 pro",
+                "parent": null,
+                "url": "https://www.threads.com/@zh._.930/post/De4WOU4E6h5",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "莊顥"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "De4WOU4E6h5",
+                "author": "zh._.930",
+                "text": "最後一個留言的 我免費送iPhone18 pro",
+                "parent": null,
+                "url": "https://www.threads.com/@zh._.930/post/De4WOU4E6h5",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "莊顥"
+              }
+            ]
+          },
+          {
+            "id": "DewRXx4E6pg",
+            "author": "shikanoko_61015",
+            "text": "抽一個送我iPhone 18promax",
+            "url": "https://www.threads.com/@shikanoko_61015/post/DewRXx4E6pg",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "☆彡",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "DewRXx4E6pg",
+                "author": "shikanoko_61015",
+                "text": "抽一個送我iPhone 18promax",
+                "parent": null,
+                "url": "https://www.threads.com/@shikanoko_61015/post/DewRXx4E6pg",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "☆彡"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "DewRXx4E6pg",
+                "author": "shikanoko_61015",
+                "text": "抽一個送我iPhone 18promax",
+                "parent": null,
+                "url": "https://www.threads.com/@shikanoko_61015/post/DewRXx4E6pg",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "☆彡"
+              }
+            ]
+          },
+          {
+            "id": "Devvda6EYXM",
+            "author": "chipclub.tg",
+            "text": "台中朋友看過來\n今天晚上iPhone18📱快來拿\n重點是早鳥報名費只要800元\n就有機會帶走全新的iPhone18pro😱",
+            "url": "https://www.threads.com/@chipclub.tg/post/Devvda6EYXM",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "ChipClub德州撲克協會",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Devvda6EYXM",
+                "author": "chipclub.tg",
+                "text": "台中朋友看過來\n今天晚上iPhone18📱快來拿\n重點是早鳥報名費只要800元\n就有機會帶走全新的iPhone18pro😱",
+                "parent": null,
+                "url": "https://www.threads.com/@chipclub.tg/post/Devvda6EYXM",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "ChipClub德州撲克協會"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Devvda6EYXM",
+                "author": "chipclub.tg",
+                "text": "台中朋友看過來\n今天晚上iPhone18📱快來拿\n重點是早鳥報名費只要800元\n就有機會帶走全新的iPhone18pro😱",
+                "parent": null,
+                "url": "https://www.threads.com/@chipclub.tg/post/Devvda6EYXM",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "ChipClub德州撲克協會"
+              }
+            ]
+          },
+          {
+            "id": "Dd8aWnRD-Fz",
+            "author": "buybuyfy888",
+            "text": "📣 住台北、桃園、彰化、台南的先看過來！！\n\n有人想抽 iPhone 18 Pro 嗎？📱✨\n\n活動期間 10/1～10/31\n只要來找我們，就有機會把 iPhone 18 Pro 帶回家🔥\n\n而且！！\n不住這幾個地方也沒關係😂\n只要你願意來找我們，人人都有機會！\n\n#iPhone18Pro #抽獎 #iPhone #台北 #桃園 #彰化 #台南 #富奕家電",
+            "url": "https://www.threads.com/@buybuyfy888/post/Dd8aWnRD-Fz",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "FY福利讚",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd8aWnRD-Fz",
+                "author": "buybuyfy888",
+                "text": "📣 住台北、桃園、彰化、台南的先看過來！！\n\n有人想抽 iPhone 18 Pro 嗎？📱✨\n\n活動期間 10/1～10/31\n只要來找我們，就有機會把 iPhone 18 Pro 帶回家🔥\n\n而且！！\n不住這幾個地方也沒關係😂\n只要你願意來找我們，人人都有機會！\n\n#iPhone18Pro #抽獎 #iPhone #台北 #桃園 #彰化 #台南 #富奕家電",
+                "parent": null,
+                "url": "https://www.threads.com/@buybuyfy888/post/Dd8aWnRD-Fz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "FY福利讚"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd8aWnRD-Fz",
+                "author": "buybuyfy888",
+                "text": "📣 住台北、桃園、彰化、台南的先看過來！！\n\n有人想抽 iPhone 18 Pro 嗎？📱✨\n\n活動期間 10/1～10/31\n只要來找我們，就有機會把 iPhone 18 Pro 帶回家🔥\n\n而且！！\n不住這幾個地方也沒關係😂\n只要你願意來找我們，人人都有機會！\n\n#iPhone18Pro #抽獎 #iPhone #台北 #桃園 #彰化 #台南 #富奕家電",
+                "parent": null,
+                "url": "https://www.threads.com/@buybuyfy888/post/Dd8aWnRD-Fz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "FY福利讚"
+              }
+            ]
+          },
+          {
+            "id": "DfBEn1zAfgx",
+            "author": "fy2020888",
+            "text": "最後倒數2天\n\n現在滿額3000消費\n加碼抽獎活動\niPhone 18 P R O\n-\n你還不來嗎",
+            "url": "https://www.threads.com/@fy2020888/post/DfBEn1zAfgx",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Fuyi富奕冷氣家電館",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "DfBEn1zAfgx",
+                "author": "fy2020888",
+                "text": "最後倒數2天\n\n現在滿額3000消費\n加碼抽獎活動\niPhone 18 P R O\n-\n你還不來嗎",
+                "parent": null,
+                "url": "https://www.threads.com/@fy2020888/post/DfBEn1zAfgx",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "Fuyi富奕冷氣家電館"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "DfBEn1zAfgx",
+                "author": "fy2020888",
+                "text": "最後倒數2天\n\n現在滿額3000消費\n加碼抽獎活動\niPhone 18 P R O\n-\n你還不來嗎",
+                "parent": null,
+                "url": "https://www.threads.com/@fy2020888/post/DfBEn1zAfgx",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "Fuyi富奕冷氣家電館"
+              }
+            ]
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "Dd0_RGwH4K7",
+        "author": "whoscall_tw",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Whoscall",
+        "captured_at": "2026-10-29T08:22:37.717Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 4,
+            "request_failed": 8,
+            "policy_resource_budget_or_type": 3,
+            "unsupported_url": 1,
+            "page_script_error": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 303,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        },
+        "merge_conflicts": []
+      },
+      "status": "ok",
+      "elapsed_ms": 546
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-29T08:22:37.763Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "Dd0-fP0AcsC",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd7ngduk3ld",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd8sq8MH9pJ",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd0_RHRH6h9",
+            "classification": "continuation"
+          },
+          {
+            "id": "De4WOU4E6h5",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DewRXx4E6pg",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Devvda6EYXM",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd8aWnRD-Fz",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DfBEn1zAfgx",
+            "classification": "recommended_post"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "unavailable",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "navigation",
+      "at": "2026-10-29T08:22:39.854Z",
+      "input": {
+        "url": "https://www.threads.com/@whoscall_tw"
+      },
+      "output": {
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw",
+            "kind": "initial"
+          }
+        ],
+        "final_url": "https://www.threads.com/@whoscall_tw",
+        "http_statuses": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+            "status": 200
+          },
+          {
+            "url": "https://www.threads.com/@whoscall_tw",
+            "status": 200
+          }
+        ],
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 9,
+            "request_failed": 35,
+            "policy_resource_budget_or_type": 25,
+            "unsupported_url": 1,
+            "page_script_error": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-2.fna.fbcdn.net",
+              "path": "/emg1/v/t13/4313973549548683677"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-2.fna.fbcdn.net",
+              "path": "/emg1/v/t13/13434424792718597550"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/798135427_17955598773232566_7681640698340092175_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/830324729_17959227282232566_562572055931584287_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-2.fna.fbcdn.net",
+              "path": "/emg1/v/t13/4313973549548683677"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/837888061_17887971762653510_588161231493624250_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-2.fna.fbcdn.net",
+              "path": "/emg1/v/t13/13434424792718597550"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/798135427_17955598773232566_7681640698340092175_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/853709289_17994817641100160_1272897803021026117_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/670252141_18090548197969278_2375012407059582326_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            }
+          ],
+          "details_omitted": 31,
+          "observation": "observable_page_ready"
+        }
+      },
+      "status": "observed",
+      "reason_code": null
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-29T08:22:39.869Z",
+      "call_id": "tool-3",
+      "name": "read_profile",
+      "input": {
+        "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "Dd0_RGwH4K7",
+            "author": "whoscall_tw",
+            "text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Whoscall",
+            "text_source_difference": {
+              "caption_text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔▓▓▓▓▓",
+              "visible_text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+              "selected_source": "permalink_time_scoped_visible_body",
+              "inline_image_count": 5
+            },
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0_RGwH4K7",
+                "author": "whoscall_tw",
+                "text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0_RGwH4K7",
+                "author": "whoscall_tw",
+                "text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "Dd0-fP0AcsC",
+            "author": "whoscall_tw",
+            "text": "還有 3 天 🎉\nWhoscall「簽到禮自由選」10 月 1 日 00:00 準時開跑\n\n簽到 10 次，5 款好禮免費挑 1 款 ✨\nLINE POINTS、摩斯冰紅茶、肯德基蛋撻、全家霜淇淋、麥當勞薯條\n直接換！！！（數量有限，換完為止，實際數量依 App 內顯示為主）\n重點是！我們又要抽 iPhone 啦～～（簽到 11 次抽 iPhone 18 Pro）\n ．\n 先把 Whoscall 更新到最新版，10/1 第一時間簽起來 📲\n 留言「簽到」，立即傳送給你活動規則\n ．\n #Whoscall #簽到禮自由選 #Whoscall簽到任務 #Whoscall任務牆",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0-fP0AcsC",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.linked_inline_media",
+            "self_thread_context": null,
+            "is_reply_observed": null,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": null,
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0-fP0AcsC",
+                "author": "whoscall_tw",
+                "text": "還有 3 天 🎉\nWhoscall「簽到禮自由選」10 月 1 日 00:00 準時開跑\n\n簽到 10 次，5 款好禮免費挑 1 款 ✨\nLINE POINTS、摩斯冰紅茶、肯德基蛋撻、全家霜淇淋、麥當勞薯條\n直接換！！！（數量有限，換完為止，實際數量依 App 內顯示為主）\n重點是！我們又要抽 iPhone 啦～～（簽到 11 次抽 iPhone 18 Pro）\n ．\n 先把 Whoscall 更新到最新版，10/1 第一時間簽起來 📲\n 留言「簽到」，立即傳送給你活動規則\n ．\n #Whoscall #簽到禮自由選 #Whoscall簽到任務 #Whoscall任務牆",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0-fP0AcsC",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": null
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0-fP0AcsC",
+                "author": "whoscall_tw",
+                "text": "還有 3 天 🎉\nWhoscall「簽到禮自由選」10 月 1 日 00:00 準時開跑\n\n簽到 10 次，5 款好禮免費挑 1 款 ✨\nLINE POINTS、摩斯冰紅茶、肯德基蛋撻、全家霜淇淋、麥當勞薯條\n直接換！！！（數量有限，換完為止，實際數量依 App 內顯示為主）\n重點是！我們又要抽 iPhone 啦～～（簽到 11 次抽 iPhone 18 Pro）\n ．\n 先把 Whoscall 更新到最新版，10/1 第一時間簽起來 📲\n 留言「簽到」，立即傳送給你活動規則\n ．\n #Whoscall #簽到禮自由選 #Whoscall簽到任務 #Whoscall任務牆",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0-fP0AcsC",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": null
+              }
+            ]
+          },
+          {
+            "id": "Dd7ngduk3ld",
+            "author": "petswuuuu",
+            "text": "為什麼顯示這樣？🥺",
+            "url": "https://www.threads.com/@petswuuuu/post/Dd7ngduk3ld",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "𝔀𝓪𝓷𝔂𝓸𝓸𝓷𝓰",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd7ngduk3ld",
+                "author": "petswuuuu",
+                "text": "為什麼顯示這樣？🥺",
+                "parent": null,
+                "url": "https://www.threads.com/@petswuuuu/post/Dd7ngduk3ld",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "𝔀𝓪𝓷𝔂𝓸𝓸𝓷𝓰"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd7ngduk3ld",
+                "author": "petswuuuu",
+                "text": "為什麼顯示這樣？🥺",
+                "parent": null,
+                "url": "https://www.threads.com/@petswuuuu/post/Dd7ngduk3ld",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "𝔀𝓪𝓷𝔂𝓸𝓸𝓷𝓰"
+              }
+            ]
+          },
+          {
+            "id": "Dd8sq8MH9pJ",
+            "author": "whoscall_tw",
+            "text": "非常不好意思這個目前已經修復了🙇🙇",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd8sq8MH9pJ",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "petswuuuu",
+            "reader_branch": true,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd8sq8MH9pJ",
+                "author": "whoscall_tw",
+                "text": "非常不好意思這個目前已經修復了🙇🙇",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd8sq8MH9pJ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd8sq8MH9pJ",
+                "author": "whoscall_tw",
+                "text": "非常不好意思這個目前已經修復了🙇🙇",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd8sq8MH9pJ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "Dd0_RHRH6h9",
+            "author": "whoscall_tw",
+            "text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RHRH6h9",
+            "parent": "Dd0_RGwH4K7",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "Dd0_RGwH4K7",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd0_RGwH4K7",
+                "Dd0_RHRH6h9"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node"
+            },
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0_RHRH6h9",
+                "author": "whoscall_tw",
+                "text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4",
+                "parent": "Dd0_RGwH4K7",
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RHRH6h9",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd0_RHRH6h9",
+                "author": "whoscall_tw",
+                "text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4",
+                "parent": "Dd0_RGwH4K7",
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RHRH6h9",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "De4WOU4E6h5",
+            "author": "zh._.930",
+            "text": "最後一個留言的 我免費送iPhone18 pro",
+            "url": "https://www.threads.com/@zh._.930/post/De4WOU4E6h5",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "莊顥",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "De4WOU4E6h5",
+                "author": "zh._.930",
+                "text": "最後一個留言的 我免費送iPhone18 pro",
+                "parent": null,
+                "url": "https://www.threads.com/@zh._.930/post/De4WOU4E6h5",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "莊顥"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "De4WOU4E6h5",
+                "author": "zh._.930",
+                "text": "最後一個留言的 我免費送iPhone18 pro",
+                "parent": null,
+                "url": "https://www.threads.com/@zh._.930/post/De4WOU4E6h5",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "莊顥"
+              }
+            ]
+          },
+          {
+            "id": "DewRXx4E6pg",
+            "author": "shikanoko_61015",
+            "text": "抽一個送我iPhone 18promax",
+            "url": "https://www.threads.com/@shikanoko_61015/post/DewRXx4E6pg",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "☆彡",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "DewRXx4E6pg",
+                "author": "shikanoko_61015",
+                "text": "抽一個送我iPhone 18promax",
+                "parent": null,
+                "url": "https://www.threads.com/@shikanoko_61015/post/DewRXx4E6pg",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "☆彡"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "DewRXx4E6pg",
+                "author": "shikanoko_61015",
+                "text": "抽一個送我iPhone 18promax",
+                "parent": null,
+                "url": "https://www.threads.com/@shikanoko_61015/post/DewRXx4E6pg",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "☆彡"
+              }
+            ]
+          },
+          {
+            "id": "Devvda6EYXM",
+            "author": "chipclub.tg",
+            "text": "台中朋友看過來\n今天晚上iPhone18📱快來拿\n重點是早鳥報名費只要800元\n就有機會帶走全新的iPhone18pro😱",
+            "url": "https://www.threads.com/@chipclub.tg/post/Devvda6EYXM",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "ChipClub德州撲克協會",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Devvda6EYXM",
+                "author": "chipclub.tg",
+                "text": "台中朋友看過來\n今天晚上iPhone18📱快來拿\n重點是早鳥報名費只要800元\n就有機會帶走全新的iPhone18pro😱",
+                "parent": null,
+                "url": "https://www.threads.com/@chipclub.tg/post/Devvda6EYXM",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "ChipClub德州撲克協會"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Devvda6EYXM",
+                "author": "chipclub.tg",
+                "text": "台中朋友看過來\n今天晚上iPhone18📱快來拿\n重點是早鳥報名費只要800元\n就有機會帶走全新的iPhone18pro😱",
+                "parent": null,
+                "url": "https://www.threads.com/@chipclub.tg/post/Devvda6EYXM",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "ChipClub德州撲克協會"
+              }
+            ]
+          },
+          {
+            "id": "Dd8aWnRD-Fz",
+            "author": "buybuyfy888",
+            "text": "📣 住台北、桃園、彰化、台南的先看過來！！\n\n有人想抽 iPhone 18 Pro 嗎？📱✨\n\n活動期間 10/1～10/31\n只要來找我們，就有機會把 iPhone 18 Pro 帶回家🔥\n\n而且！！\n不住這幾個地方也沒關係😂\n只要你願意來找我們，人人都有機會！\n\n#iPhone18Pro #抽獎 #iPhone #台北 #桃園 #彰化 #台南 #富奕家電",
+            "url": "https://www.threads.com/@buybuyfy888/post/Dd8aWnRD-Fz",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "FY福利讚",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd8aWnRD-Fz",
+                "author": "buybuyfy888",
+                "text": "📣 住台北、桃園、彰化、台南的先看過來！！\n\n有人想抽 iPhone 18 Pro 嗎？📱✨\n\n活動期間 10/1～10/31\n只要來找我們，就有機會把 iPhone 18 Pro 帶回家🔥\n\n而且！！\n不住這幾個地方也沒關係😂\n只要你願意來找我們，人人都有機會！\n\n#iPhone18Pro #抽獎 #iPhone #台北 #桃園 #彰化 #台南 #富奕家電",
+                "parent": null,
+                "url": "https://www.threads.com/@buybuyfy888/post/Dd8aWnRD-Fz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "FY福利讚"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "Dd8aWnRD-Fz",
+                "author": "buybuyfy888",
+                "text": "📣 住台北、桃園、彰化、台南的先看過來！！\n\n有人想抽 iPhone 18 Pro 嗎？📱✨\n\n活動期間 10/1～10/31\n只要來找我們，就有機會把 iPhone 18 Pro 帶回家🔥\n\n而且！！\n不住這幾個地方也沒關係😂\n只要你願意來找我們，人人都有機會！\n\n#iPhone18Pro #抽獎 #iPhone #台北 #桃園 #彰化 #台南 #富奕家電",
+                "parent": null,
+                "url": "https://www.threads.com/@buybuyfy888/post/Dd8aWnRD-Fz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "FY福利讚"
+              }
+            ]
+          },
+          {
+            "id": "DfBEn1zAfgx",
+            "author": "fy2020888",
+            "text": "最後倒數2天\n\n現在滿額3000消費\n加碼抽獎活動\niPhone 18 P R O\n-\n你還不來嗎",
+            "url": "https://www.threads.com/@fy2020888/post/DfBEn1zAfgx",
+            "parent": null,
+            "relationship_source": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Fuyi富奕冷氣家電館",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-29T08:22:37.165Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-29T08:22:37.165Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "DfBEn1zAfgx",
+                "author": "fy2020888",
+                "text": "最後倒數2天\n\n現在滿額3000消費\n加碼抽獎活動\niPhone 18 P R O\n-\n你還不來嗎",
+                "parent": null,
+                "url": "https://www.threads.com/@fy2020888/post/DfBEn1zAfgx",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "Fuyi富奕冷氣家電館"
+              },
+              {
+                "captured_at": "2026-10-29T08:22:37.717Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+                "id": "DfBEn1zAfgx",
+                "author": "fy2020888",
+                "text": "最後倒數2天\n\n現在滿額3000消費\n加碼抽獎活動\niPhone 18 P R O\n-\n你還不來嗎",
+                "parent": null,
+                "url": "https://www.threads.com/@fy2020888/post/DfBEn1zAfgx",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "display_name": "Fuyi富奕冷氣家電館"
+              }
+            ]
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "Dd0_RGwH4K7",
+        "author": "whoscall_tw",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Whoscall",
+        "captured_at": "2026-10-29T08:22:37.717Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 4,
+            "request_failed": 8,
+            "policy_resource_budget_or_type": 3,
+            "unsupported_url": 1,
+            "page_script_error": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "media0.giphy.com",
+              "path": "/media/v1.Y2lkPTcyZjQyZTEyeTA1Z2tybWxiZTZiZDJrYnRrN2o2ZHc2Yng0d3N4Nm1keHF4OWQ2dSZlcD12MV9naWZzX2dpZklkJmN0PXM/nFyixvuEJ4WLAPrC4b/200.gif"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/825279987_1095898326317888_5102928286476751541_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 303,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        },
+        "merge_conflicts": [],
+        "follower_count": 15105
+      },
+      "status": "ok",
+      "elapsed_ms": 2110
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-29T08:22:39.872Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "Dd0-fP0AcsC",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd7ngduk3ld",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd8sq8MH9pJ",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd0_RHRH6h9",
+            "classification": "continuation"
+          },
+          {
+            "id": "De4WOU4E6h5",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DewRXx4E6pg",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Devvda6EYXM",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd8aWnRD-Fz",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DfBEn1zAfgx",
+            "classification": "recommended_post"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "ok",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "browser_closed",
+      "at": "2026-10-29T08:22:40.042Z",
+      "status": "ok"
+    },
+    {
+      "type": "run_end",
+      "at": "2026-10-29T08:22:40.042Z",
+      "status": "partial",
+      "usage": {
+        "llm_calls": 0,
+        "calls_with_usage": 0,
+        "known_input_tokens": 0,
+        "known_output_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0,
+        "usage_complete": true,
+        "reason": null
+      },
+      "tool_calls": 3,
+      "issues": []
+    }
+  ],
+  "status": "partial",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  }
+}

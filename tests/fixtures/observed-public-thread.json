@@ -1,0 +1,121 @@
+{
+  "fixture_kind": "reconstructed_public_record_fixture",
+  "captured_at": "2026-10-29T07:37:24.835Z",
+  "canonical": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+  "public_data": {
+    "media": {
+      "code": "Dd0_RGwH4K7",
+      "pk": "3996097021795599035",
+      "id": "3996097021795599035_63442552737",
+      "user": {
+        "username": "whoscall_tw",
+        "full_name": "Whoscall"
+      },
+      "caption": {
+        "text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔▓▓▓▓▓"
+      },
+      "text_post_app_info": {
+        "reply_to_author": null,
+        "self_thread_count": 0,
+        "is_reply": false,
+        "self_thread": {
+          "posts": {
+            "edges": [
+              {
+                "node": {
+                  "code": "Dd0_RHRH6h9",
+                  "pk": "3996097022349256829",
+                  "id": "3996097022349256829_63442552737",
+                  "user": {
+                    "username": "whoscall_tw",
+                    "full_name": "Whoscall"
+                  },
+                  "caption": {
+                    "text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4"
+                  },
+                  "text_post_app_info": {
+                    "reply_to_author": {
+                      "id": "63442552737",
+                      "username": "whoscall_tw"
+                    },
+                    "self_thread_count": 0,
+                    "is_reply": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "direct_replies": {
+          "edges": [
+            {
+              "node": {
+                "posts": {
+                  "edges": [
+                    {
+                      "node": {
+                        "code": "Dd7ngduk3ld",
+                        "pk": "3997962848978565469",
+                        "id": "3997962848978565469_66980272565",
+                        "user": {
+                          "username": "petswuuuu",
+                          "full_name": "𝔀𝓪𝓷𝔂𝓸𝓸𝓷𝓰"
+                        },
+                        "caption": {
+                          "text": "為什麼顯示這樣？🥺"
+                        },
+                        "text_post_app_info": {
+                          "reply_to_author": {
+                            "id": "63442552737",
+                            "username": "whoscall_tw"
+                          },
+                          "self_thread_count": 0,
+                          "is_reply": true
+                        }
+                      }
+                    },
+                    {
+                      "node": {
+                        "code": "Dd8sq8MH9pJ",
+                        "pk": "3998267034090592841",
+                        "id": "3998267034090592841_63442552737",
+                        "user": {
+                          "username": "whoscall_tw",
+                          "full_name": "Whoscall"
+                        },
+                        "caption": {
+                          "text": "非常不好意思這個目前已經修復了🙇🙇"
+                        },
+                        "text_post_app_info": {
+                          "reply_to_author": {
+                            "id": "66980272565",
+                            "username": "petswuuuu"
+                          },
+                          "self_thread_count": 0,
+                          "is_reply": true
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "linked_inline_media": {
+          "code": "Dd0-fP0AcsC",
+          "pk": "3996093595550599938",
+          "id": "3996093595550599938_2283853777",
+          "user": {
+            "username": "whoscall_tw"
+          },
+          "caption": {
+            "text": "還有 3 天 🎉\nWhoscall「簽到禮自由選」10 月 1 日 00:00 準時開跑\n\n簽到 10 次，5 款好禮免費挑 1 款 ✨\nLINE POINTS、摩斯冰紅茶、肯德基蛋撻、全家霜淇淋、麥當勞薯條\n直接換！！！（數量有限，換完為止，實際數量依 App 內顯示為主）\n重點是！我們又要抽 iPhone 啦～～（簽到 11 次抽 iPhone 18 Pro）\n ．\n 先把 Whoscall 更新到最新版，10/1 第一時間簽起來 📲\n 留言「簽到」，立即傳送給你活動規則\n ．\n #Whoscall #簽到禮自由選 #Whoscall簽到任務 #Whoscall任務牆"
+          }
+        }
+      }
+    }
+  },
+  "visible_html": "<body >\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n    <link rel=\"preload\" hidden></link><link rel=\"preload\" hidden></link><link rel=\"preload\" hidden></link><div ><div ><div ><div hidden></div><div hidden><div role=\"navigation\" hidden><div hidden><div hidden><div hidden><div hidden><a role=\"link\" href=\"https://www.threads.com/\" hidden><div hidden><svg role=\"img\" aria-label=\"Threads\" hidden><path hidden></path><g hidden><path hidden></path><polygon hidden></polygon><path hidden></path><path hidden></path><path hidden></path><path hidden></path><path hidden></path></g></svg></div></a></div></div></div></div><div hidden><div hidden><div hidden><div hidden><a role=\"link\" href=\"https://www.threads.com/\" hidden><div hidden></div><div hidden><div hidden><svg role=\"img\" aria-label=\"Home\" hidden><title hidden>Home</title><path hidden></path></svg></div><div hidden><span dir=\"auto\" hidden><span hidden>Home</span></span></div></div></a></div></div><div hidden><div hidden><div role=\"button\" hidden><div hidden></div><div hidden><div hidden><svg role=\"img\" aria-label=\"Create\" hidden><title hidden>Create</title><path hidden></path></svg></div><div hidden><span dir=\"auto\" hidden><span hidden>New thread</span></span></div></div></div></div></div><div hidden><div hidden><a role=\"link\" href=\"https://www.threads.com/search\" hidden><div hidden></div><div hidden><div hidden><svg role=\"img\" aria-label=\"Search\" hidden><title hidden>Search</title><path hidden></path></svg></div><div hidden><span dir=\"auto\" hidden><span hidden>Search</span></span></div></div></a></div></div></div><div hidden><div hidden><div hidden><div role=\"button\" hidden><div hidden></div><div hidden><div hidden><svg role=\"img\" aria-label=\"Messages\" hidden><title hidden>Messages</title><path hidden></path></svg></div><div hidden><span dir=\"auto\" hidden><span hidden>Messages</span></span></div></div></div></div></div><div hidden><div hidden><div role=\"button\" hidden><div hidden></div><div hidden><div hidden><svg role=\"img\" aria-label=\"Notifications\" hidden><title hidden>Notifications</title><path hidden></path></svg></div><div hidden><span dir=\"auto\" hidden><span hidden>Activity</span></span></div></div></div></div></div><div hidden><div hidden><div role=\"button\" hidden><div hidden></div><div hidden><div hidden><svg role=\"img\" aria-label=\"Profile\" hidden><title hidden>Profile</title><path hidden></path><path hidden></path></svg></div><div hidden><span dir=\"auto\" hidden><span hidden>Profile</span></span></div></div></div></div></div><div hidden><div hidden><div role=\"button\" hidden><div hidden></div><div hidden><div hidden><svg role=\"img\" aria-label=\"Insights\" hidden><title hidden>Insights</title><path hidden></path><path hidden></path><path hidden></path><path hidden></path></svg></div><div hidden><span dir=\"auto\" hidden><span hidden>Insights</span></span></div></div></div></div></div></div><a role=\"link\" href=\"https://www.threads.com/login\" hidden><div hidden>Log in</div></a></div><div hidden><div hidden><div role=\"presentation\" hidden><div hidden><div role=\"button\" hidden><div hidden></div><div hidden><div hidden><svg role=\"img\" hidden><title hidden></title><path hidden></path><path hidden></path></svg></div><div hidden><span dir=\"auto\" hidden><span hidden>More</span></span></div></div></div></div></div></div></div><div hidden></div></div></div><div hidden><div ><div role=\"navigation\"><div ><a role=\"link\" href=\"https://www.threads.com/\"><div ><svg role=\"img\" aria-label=\"Threads\"><path ></path></svg></div></a></div><div ><div ><div ><div ><a role=\"link\" href=\"https://www.threads.com/\"><div ><div ></div><div ><svg role=\"img\" aria-label=\"Home\"><title hidden>Home</title><path ></path></svg></div></div></a></div></div><div ><div ><div role=\"button\"><div ><div ></div><div ><svg role=\"img\" aria-label=\"Create\"><title hidden>Create</title><path ></path></svg></div></div></div></div></div><div ><div ><a role=\"link\" href=\"https://www.threads.com/search\"><div ><div ></div><div ><svg role=\"img\" aria-label=\"Search\"><title hidden>Search</title><path ></path></svg></div></div></a></div></div></div><div ><div ><div ><div role=\"button\"><div ><div ></div><div ><svg role=\"img\" aria-label=\"Messages\"><title hidden>Messages</title><path ></path></svg></div></div></div></div></div><div ><div ><div role=\"button\"><div ><div ></div><div ><svg role=\"img\" aria-label=\"Notifications\"><title hidden>Notifications</title><path ></path></svg></div></div></div></div></div><div ><div ><div role=\"button\"><div ><div ></div><div ><svg role=\"img\" aria-label=\"Profile\"><title hidden>Profile</title><path ></path><path ></path></svg></div></div></div></div></div><div ><div ><div role=\"button\"><div ><div ></div><div ><svg role=\"img\" aria-label=\"Insights\"><title hidden>Insights</title><path ></path><path ></path><path ></path><path ></path></svg></div></div></div></div></div></div></div><div ><div ><div role=\"presentation\"><div ><div role=\"button\"><div ><div ></div><div ><svg role=\"img\" aria-label=\"More\"><title hidden>More</title><path ></path><path ></path></svg></div></div></div></div></div></div></div><div ></div></div></div></div><div ><div ><div ><div ><div ><div ><div ><div ></div><div ><div ><div ><div ></div></div><div ><div ></div></div><div ><div ></div></div><div ><div ><div role=\"button\"><div ><div ><span ><svg role=\"img\" aria-label=\"Back\"><title hidden>Back</title><line ></line><polyline ></polyline></svg></span></div></div></div></div></div><div ><div ><div ><div ><div ><a role=\"link\" aria-label=\"Column title\" href=\"https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7\"><h1 dir=\"auto\"><span >Thread</span></h1></a></div><div ><span dir=\"auto\"><span ><span >703 views</span></span></span></div></div></div></div><div ><div ></div></div></div></div><div ><div role=\"region\" aria-label=\"Column body\"><div ><template hidden></template><div ><div ><div ><div ><div ><div ><a role=\"link\" href=\"https://www.threads.com/@whoscall_tw\"><div ><img ></img></div></a></div></div><div ><div ><div ><span ><div ><span hidden><div ><a role=\"link\" href=\"https://www.threads.com/@whoscall_tw\"><span dir=\"auto\"><span >whoscall_tw</span></span></a></div></span></div></span><div ><div ><span ><span ><svg ><path ></path></svg></span></span><div ><a role=\"link\" href=\"https://www.threads.com/search\"><div ><span dir=\"auto\"><span >抽iphone18</span></span></div></a></div></div><div ><span dir=\"auto\"><a role=\"link\" href=\"https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7\"><time >09/28/26</time></a></span></div></div></div><div ><div ><div role=\"button\"><div ><svg role=\"img\"><title hidden>More</title><path ></path></svg></div></div></div></div></div></div><div ><div ><div ><div ><span dir=\"auto\"><span >雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔</span><img ></img><img ></img><img ></img><img ></img><img ></img></span></div></div><div ><div ><div ><a role=\"link\" href=\"https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7/media\"><div ><div ><div ><picture ><img ></img></picture><span ></span></div><div ></div><div ><svg role=\"img\" aria-label=\"Instagram logo\"><title hidden>Instagram logo</title><path ></path></svg><span dir=\"auto\"><span >whoscall_tw</span></span></div></div></div></a></div></div></div><div ><div ><div ><div role=\"button\"><div ><div ><svg role=\"img\"><title hidden>Like</title><path ></path></svg><span dir=\"auto\"><div ><span >16</span></div></span></div></div></div></div><div ><div role=\"button\"><div ><div ><svg role=\"img\"><title hidden>Comment</title><path ></path></svg><span dir=\"auto\"><div ><span >3</span></div></span></div></div></div></div><div ><div role=\"button\"><div ><div ><svg role=\"img\"><title hidden>Repost</title><path ></path></svg></div></div></div></div><div ><div role=\"button\"><div ><div ><svg role=\"img\"><title hidden>Share</title><path ></path></svg><span dir=\"auto\"><div ><span >2</span></div></span></div></div></div></div></div></div></div></div><div role=\"none\"></div></div></div></div><div ><div ><div ><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div></div></div></div><div ><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div></div></div></div><div ><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div></div></div></div><div ><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div></div></div></div><div ><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div><div ><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div><div ><div ><div role=\"status\" aria-label=\"Loading...\"></div></div></div></div></div></div></div></div></div></div><div ></div></div><div hidden></div><div hidden><div hidden></div></div></div></div></div><div ><div ><span dir=\"auto\">Log in or sign up for Threads</span><span dir=\"auto\">See what people are talking about and join the conversation.</span><template hidden></template><div role=\"button\"><div ><svg role=\"img\" aria-label=\"Instagram\"><title hidden>Instagram</title><path ></path></svg><div ><div role=\"status\" aria-label=\"Loading...\"></div><div role=\"status\" aria-label=\"Loading...\"></div></div></div><div role=\"none\"></div></div><span dir=\"auto\"><a role=\"link\" href=\"https://www.threads.com/login\">Log in with username instead</a></span></div><footer ><ul ><li ><span dir=\"auto\">© 2026</span></li><li ><span dir=\"auto\"><a role=\"link\"><span >Threads Terms</span></a></span></li><li ><span dir=\"auto\"><a role=\"link\"><span >Privacy Policy</span></a></span></li><li ><span dir=\"auto\"><a role=\"link\"><span >Cookies Policy</span></a></span></li><li ><div role=\"button\"><span dir=\"auto\">Report a problem</span></div></li></ul></footer><div ></div></div></div></div><div ></div></div><div ></div></div></div></div></div><template hidden></template><div ></div></div><template hidden></template></div></div>\n    \n    \n    \n    <div hidden></div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div hidden></div>\n\n</body>",
+  "note": "Public post records, source paths and semantic DOM come from one anonymous observation. The JSON media connection was reconstructed from record excerpts, not preserved as untouched scripts. Separate synthetic fragmented-script tests cover identity/context joining. No claim of fresh post-patch live success."
+}

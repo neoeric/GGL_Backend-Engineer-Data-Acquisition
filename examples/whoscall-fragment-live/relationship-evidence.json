@@ -1,0 +1,260 @@
+{
+  "run_id": "8048089c-e415-4565-aa5e-b4e1293f9ade",
+  "kind": "same_live_parser_inputs_allowlisted",
+  "note": "Exact parser input observations; diagnostic wrapper does not alter parsing, timing waits or navigation. No scripts, headers, cookies or session values saved.",
+  "observations": [
+    {
+      "phase": "read_post",
+      "captured_at": "2026-10-29T08:22:37.165Z",
+      "script_count": 51,
+      "canonical": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+      "root_id": "Dd0_RGwH4K7",
+      "named_post_record_count": 10,
+      "self_thread_container_count": 1,
+      "self_thread_containers": [
+        {
+          "path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread",
+          "container_identity": {
+            "id": "3996097021795599035_63442552737"
+          },
+          "self_thread_type": "dict",
+          "edge_count": 1,
+          "children": [
+            {
+              "path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "identity": {
+                "code": "Dd0_RHRH6h9",
+                "id": "3996097022349256829_63442552737",
+                "pk": "3996097022349256829",
+                "username": "whoscall_tw"
+              },
+              "reply_fields": {
+                "info_present": true,
+                "is_reply_present": true,
+                "is_reply": true,
+                "reply_to_author": {
+                  "id": "63442552737"
+                },
+                "reply_to_post": null
+              }
+            }
+          ]
+        }
+      ],
+      "named_records": [
+        {
+          "path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+          "identity": {
+            "code": "Dd0_RGwH4K7",
+            "id": "3996097021795599035_63442552737",
+            "pk": "3996097021795599035",
+            "username": "whoscall_tw"
+          },
+          "reply_fields": {
+            "info_present": true,
+            "is_reply_present": true,
+            "is_reply": false,
+            "reply_to_author": null,
+            "reply_to_post": null
+          },
+          "caption_text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔▓▓▓▓▓"
+        },
+        {
+          "path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+          "identity": {
+            "code": "Dd0_RHRH6h9",
+            "id": "3996097022349256829_63442552737",
+            "pk": "3996097022349256829",
+            "username": "whoscall_tw"
+          },
+          "reply_fields": {
+            "info_present": true,
+            "is_reply_present": true,
+            "is_reply": true,
+            "reply_to_author": {
+              "id": "63442552737"
+            },
+            "reply_to_post": null
+          },
+          "caption_text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4"
+        }
+      ],
+      "parsed_posts": [
+        {
+          "id": "Dd0_RGwH4K7",
+          "author": "whoscall_tw",
+          "parent": null,
+          "relationship_source": null,
+          "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+          "self_thread_context": null,
+          "is_reply_observed": false,
+          "reply_to_author_observed": null,
+          "reader_branch": false,
+          "recommended": false,
+          "evidence_conflict": false
+        },
+        {
+          "id": "Dd0_RHRH6h9",
+          "author": "whoscall_tw",
+          "parent": "Dd0_RGwH4K7",
+          "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+          "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+          "self_thread_context": {
+            "parent": "Dd0_RGwH4K7",
+            "author": "whoscall_tw",
+            "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node"
+          },
+          "is_reply_observed": true,
+          "reply_to_author_observed": "whoscall_tw",
+          "reader_branch": false,
+          "recommended": false,
+          "evidence_conflict": false
+        }
+      ],
+      "visible_thread_region_observed": false,
+      "has_more": false,
+      "excluded_reader_branch_candidates": [
+        {
+          "id": "Dd8sq8MH9pJ",
+          "author": "whoscall_tw",
+          "parent": null,
+          "relationship_source": null,
+          "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[1].node",
+          "self_thread_context": null,
+          "is_reply_observed": true,
+          "reply_to_author_observed": "petswuuuu",
+          "reader_branch": true,
+          "recommended": false,
+          "evidence_conflict": false
+        }
+      ]
+    },
+    {
+      "phase": "expand_thread",
+      "captured_at": "2026-10-29T08:22:37.717Z",
+      "script_count": 51,
+      "canonical": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+      "root_id": "Dd0_RGwH4K7",
+      "named_post_record_count": 10,
+      "self_thread_container_count": 1,
+      "self_thread_containers": [
+        {
+          "path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread",
+          "container_identity": {
+            "id": "3996097021795599035_63442552737"
+          },
+          "self_thread_type": "dict",
+          "edge_count": 1,
+          "children": [
+            {
+              "path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "identity": {
+                "code": "Dd0_RHRH6h9",
+                "id": "3996097022349256829_63442552737",
+                "pk": "3996097022349256829",
+                "username": "whoscall_tw"
+              },
+              "reply_fields": {
+                "info_present": true,
+                "is_reply_present": true,
+                "is_reply": true,
+                "reply_to_author": {
+                  "id": "63442552737"
+                },
+                "reply_to_post": null
+              }
+            }
+          ]
+        }
+      ],
+      "named_records": [
+        {
+          "path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+          "identity": {
+            "code": "Dd0_RGwH4K7",
+            "id": "3996097021795599035_63442552737",
+            "pk": "3996097021795599035",
+            "username": "whoscall_tw"
+          },
+          "reply_fields": {
+            "info_present": true,
+            "is_reply_present": true,
+            "is_reply": false,
+            "reply_to_author": null,
+            "reply_to_post": null
+          },
+          "caption_text": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔▓▓▓▓▓"
+        },
+        {
+          "path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+          "identity": {
+            "code": "Dd0_RHRH6h9",
+            "id": "3996097022349256829_63442552737",
+            "pk": "3996097022349256829",
+            "username": "whoscall_tw"
+          },
+          "reply_fields": {
+            "info_present": true,
+            "is_reply_present": true,
+            "is_reply": true,
+            "reply_to_author": {
+              "id": "63442552737"
+            },
+            "reply_to_post": null
+          },
+          "caption_text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4"
+        }
+      ],
+      "parsed_posts": [
+        {
+          "id": "Dd0_RGwH4K7",
+          "author": "whoscall_tw",
+          "parent": null,
+          "relationship_source": null,
+          "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+          "self_thread_context": null,
+          "is_reply_observed": false,
+          "reply_to_author_observed": null,
+          "reader_branch": false,
+          "recommended": false,
+          "evidence_conflict": false
+        },
+        {
+          "id": "Dd0_RHRH6h9",
+          "author": "whoscall_tw",
+          "parent": "Dd0_RGwH4K7",
+          "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+          "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+          "self_thread_context": {
+            "parent": "Dd0_RGwH4K7",
+            "author": "whoscall_tw",
+            "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node"
+          },
+          "is_reply_observed": true,
+          "reply_to_author_observed": "whoscall_tw",
+          "reader_branch": false,
+          "recommended": false,
+          "evidence_conflict": false
+        }
+      ],
+      "visible_thread_region_observed": false,
+      "has_more": false,
+      "excluded_reader_branch_candidates": [
+        {
+          "id": "Dd8sq8MH9pJ",
+          "author": "whoscall_tw",
+          "parent": null,
+          "relationship_source": null,
+          "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[1].node",
+          "self_thread_context": null,
+          "is_reply_observed": true,
+          "reply_to_author_observed": "petswuuuu",
+          "reader_branch": true,
+          "recommended": false,
+          "evidence_conflict": false
+        }
+      ]
+    }
+  ],
+  "publication_scope": "Only target/self-thread identities and excluded reader-branch flags retained; other post captions omitted."
+}

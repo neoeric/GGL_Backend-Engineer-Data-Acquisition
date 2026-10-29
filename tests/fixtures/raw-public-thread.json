@@ -1,0 +1,12 @@
+{
+  "fixture_kind":"synthetic_public_serialization_not_live_capture",
+  "canonical":"https://www.threads.com/@fixture_author/post/ROOT",
+  "public_data":{"thread_items":[
+    {"post":{"code":"A2","user":{"username":"fixture_author","full_name":"合成作者"},"caption":{"text":"第二段續文"},"is_caption_truncated":false,"text_post_app_info":{"reply_to_post":{"code":"A1"}}}},
+    {"post":{"code":"ARS","user":{"username":"fixture_author"},"caption":{"text":"作者對自己回覆讀者的再回覆"},"is_caption_truncated":false,"text_post_app_info":{"reply_to_post":{"code":"AR"}}}},
+    {"post":{"code":"ROOT","user":{"username":"fixture_author","full_name":"合成作者"},"caption":{"text":"原文\n保留換行"},"is_caption_truncated":false,"text_post_app_info":{}}},
+    {"post":{"code":"R1","user":{"username":"reader"},"caption":{"text":"讀者留言"},"is_caption_truncated":false,"text_post_app_info":{"reply_to_post":{"code":"ROOT"}}}},
+    {"post":{"code":"A1","user":{"username":"fixture_author"},"caption":{"text":"第一段續文\n順序來自父子鏈"},"is_caption_truncated":false,"text_post_app_info":{"reply_to_post":{"code":"ROOT"}}}},
+    {"post":{"code":"AR","user":{"username":"fixture_author"},"caption":{"text":"作者回覆讀者"},"is_caption_truncated":false,"text_post_app_info":{"reply_to_post":{"code":"R1"}}}}
+  ]}
+}

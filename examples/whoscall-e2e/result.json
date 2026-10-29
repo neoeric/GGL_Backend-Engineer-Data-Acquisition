@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "run_id": "98fb1241-4f60-4c22-8432-c917896529ea",
+  "status": "partial",
+  "started_at": "2026-10-29T07:24:03.239Z",
+  "finished_at": "2026-10-29T07:24:17.253Z",
+  "requested_fields": [
+    "display_name",
+    "follower_count",
+    "post_text",
+    "continuations"
+  ],
+  "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+  "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+  "redirect_chain": [
+    {
+      "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+      "kind": "initial"
+    }
+  ],
+  "final_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+  "captured_at": "2026-10-29T07:24:17.106Z",
+  "usage": {
+    "llm_calls": 1,
+    "calls_with_usage": 1,
+    "known_input_tokens": 145,
+    "known_output_tokens": 58,
+    "input_tokens": 145,
+    "output_tokens": 58,
+    "total_tokens": 203,
+    "usage_complete": true,
+    "reason": null
+  },
+  "issues": [],
+  "trace_file": "examples/whoscall-e2e/trace.json",
+  "data": {
+    "display_name": {
+      "status": "ok",
+      "value": "Whoscall"
+    },
+    "follower_count": {
+      "status": "ok",
+      "value": {
+        "display": "15105",
+        "exact": 15105,
+        "approximate": null
+      }
+    },
+    "post_text": {
+      "status": "partial",
+      "value": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔▓▓▓▓▓",
+      "reason_code": "text_completeness_unconfirmed",
+      "reason": "Source evidence is insufficient."
+    },
+    "continuations": {
+      "status": "unconfirmed",
+      "value": null,
+      "reason_code": "thread_context_unconfirmed",
+      "reason": "Source evidence is insufficient."
+    }
+  },
+  "evidence_mode": "live_anonymous",
+  "model_mode": "openai-compatible"
+}

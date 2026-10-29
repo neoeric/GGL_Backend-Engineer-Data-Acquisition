@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "run_id": "b56cb87b-64d4-4a41-8442-eb877c4a90af",
+  "status": "partial",
+  "started_at": "2026-10-29T07:20:01.902Z",
+  "finished_at": "2026-10-29T07:20:10.804Z",
+  "requested_fields": [
+    "display_name",
+    "follower_count",
+    "post_text",
+    "continuations"
+  ],
+  "source_url": "https://www.threads.com/share/GW3EPb5M8/",
+  "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+  "redirect_chain": [
+    {
+      "url": "https://www.threads.com/share/GW3EPb5M8/",
+      "kind": "initial"
+    },
+    {
+      "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+      "kind": "http_redirect"
+    },
+    {
+      "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+      "kind": "canonical_metadata_verified_by_post"
+    }
+  ],
+  "final_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+  "captured_at": "2026-10-29T07:20:10.638Z",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  },
+  "issues": [],
+  "trace_file": "examples/share/trace.json",
+  "data": {
+    "display_name": {
+      "status": "ok",
+      "value": "Whoscall"
+    },
+    "follower_count": {
+      "status": "ok",
+      "value": {
+        "display": "15105",
+        "exact": 15105,
+        "approximate": null
+      }
+    },
+    "post_text": {
+      "status": "partial",
+      "value": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔▓▓▓▓▓",
+      "reason_code": "text_completeness_unconfirmed",
+      "reason": "Source evidence is insufficient."
+    },
+    "continuations": {
+      "status": "unconfirmed",
+      "value": null,
+      "reason_code": "thread_context_unconfirmed",
+      "reason": "Source evidence is insufficient."
+    }
+  },
+  "evidence_mode": "live_anonymous",
+  "model_mode": "none"
+}
