@@ -70,8 +70,10 @@ def classify(s):
             included.append({"post_id":n["id"], "url":n["url"], "text":n["text"],
                              "order":n["order"],"parent_post_id":n["parent"],
                              "text_complete":n.get("text_complete") is True,
+                             "relationship_inferred":n.get("relationship_inferred"),
                              "order_evidence":n.get("order_evidence")})
-            if not n.get("text_complete"):
+            # A sequence-inferred link anywhere in the ancestry is retained evidence, not confirmation.
+            if not n.get("text_complete") or any(x.get("relationship_inferred") for x in chain):
                 ambiguous = True
     included.sort(key=lambda n:n["order"])
     if len({x["order"] for x in included}) != len(included):
@@ -105,7 +107,7 @@ def build_data(s, requested):
             empty_observed=s.get("thread_observed") is True
             complete=not ambiguous and not loading and (bool(items) or empty_observed)
             data[f] = field("ok",items) if complete else field("partial",items,"thread_incomplete",
-                "Confirmed author continuations retained; text completeness, other reply context or unloaded replies remain unconfirmed.") if items else field("unconfirmed",code="thread_context_unconfirmed",
+                "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed.") if items else field("unconfirmed",code="thread_context_unconfirmed",
                 reason="No author continuation with a verified parent relationship was observed in public data or the visible conversation area.")
             if complete:
                 data[f]["note"]="Observed author continuations; additional unloaded content is not verified."
@@ -129,7 +131,8 @@ def assign_chain_order(posts, root, author):
         path = path + [child["id"]]
         child["order"] = len(path)-1
         child["order_evidence"] = {"kind":"explicit_parent_chain", "post_ids":list(path),
-                                   "relationship_source":child.get("relationship_source")}
+                                   "relationship_source":child.get("relationship_source"),
+                                   "relationship_inferred":child.get("relationship_inferred")}
         current = child["id"]
 
 
@@ -143,7 +146,7 @@ def merge_public_snapshots(previous,observed):
     def evidence(post,snapshot):
         return {"captured_at":snapshot.get("captured_at"),"source_url":snapshot.get("canonical_url"),
                 **{k:copy.deepcopy(post.get(k)) for k in ["id","author","text","parent","url","text_complete",
-                                                          "text_completeness_evidence","relationship_source","display_name"]}}
+                                                          "text_completeness_evidence","relationship_source","relationship_inferred","display_name"]}}
     nodes={p["id"]:p for p in merged.get("posts",[])}
     for p in nodes.values():
         p.setdefault("first_observed_at",previous.get("captured_at"))
@@ -172,7 +175,7 @@ def merge_public_snapshots(previous,observed):
             conflicts.append(conflict)
         else:
             # Supplement missing evidence, retaining the first text, relationship and observation time.
-            for k in ["parent","relationship_source","display_name","text_completeness_evidence"]:
+            for k in ["parent","relationship_source","relationship_inferred","display_name","text_completeness_evidence"]:
                 if p.get(k) is None and incoming.get(k) is not None:p[k]=copy.deepcopy(incoming[k])
             if incoming.get("text_complete") is True:p["text_complete"]=True
     merged["posts"]=list(nodes.values())
@@ -235,13 +238,17 @@ def public_snapshot(doc, source, final, chain, captured_at):
                     parent = info.get("reply_to_post")
                     observed_parent=parent.get("code") if isinstance(parent,dict) else None
                     relationship=path+".text_post_app_info.reply_to_post.code" if isinstance(parent,dict) and isinstance(parent.get("code"),str) else None
+                    inferred=None
                     if relation and info.get("is_reply") is True and isinstance(info.get("reply_to_author"),dict) and info["reply_to_author"].get("username")==relation["author"]:
                         if observed_parent is not None and observed_parent!=relation["parent"]:
                             relation={**relation,"conflict":True}
-                        else:observed_parent,relationship=relation["parent"],relation["source"]
+                        else:
+                            # An explicit matching reply_to_post confirms the link; only a missing one is inferred.
+                            if observed_parent is None:inferred=relation.get("inferred")
+                            observed_parent,relationship=relation["parent"],relation["source"]
                     candidates.append({"id":value["code"],"author":handle,"text":text,
                                        "url":f"https://www.threads.com/@{handle}/post/{value['code']}",
-                                       "parent":observed_parent,"relationship_source":relationship,
+                                       "parent":observed_parent,"relationship_source":relationship,"relationship_inferred":inferred,
                                        "evidence_conflict":bool(relation and relation.get("conflict")),"recommended":excluded,
                                        "source_path":path,"self_thread_context":relation,
                                        "is_reply_observed":info.get("is_reply") if isinstance(info.get("is_reply"),bool) else None,
@@ -257,15 +264,22 @@ def public_snapshot(doc, source, final, chain, captured_at):
             # later edges still need their own parent evidence.
             children=(value.get("text_post_app_info") or {}).get("self_thread") if isinstance(value.get("text_post_app_info"),dict) else None
             edges=(children.get("posts") or {}).get("edges") if isinstance(children,dict) else None
-            if isinstance(edges,list) and edges and isinstance(edges[0],dict) and isinstance(edges[0].get("node"),dict):
-                first=edges[0]["node"]
+            if isinstance(edges,list) and edges:
                 # Public hydration can put identity and self_thread in separate scripts.
                 # Join only by an exact, unique code/pk/id observed in a named post record.
                 identity=container_identity(value)
                 if identity:
-                    self_rel={"parent":identity[1],"author":identity[0],
-                              "source":path+".text_post_app_info.self_thread.posts.edges[0].node"}
-                    self_relations[id(first)]=self_rel
+                    # edges[0] replies to the anchored container. Later edges carry no explicit
+                    # reply_to_post in public data; their parent is taken from the previous edge
+                    # and marked inferred, so the result stays partial rather than dropping them.
+                    previous_code=identity[1]
+                    for index,edge in enumerate(edges):
+                        node=edge.get("node") if isinstance(edge,dict) else None
+                        if not isinstance(node,dict) or previous_code is None:break
+                        self_relations[id(node)]={"parent":previous_code,"author":identity[0],
+                            "source":f"{path}.text_post_app_info.self_thread.posts.edges[{index}].node",
+                            "inferred":"self_thread_sequence" if index else None}
+                        previous_code=node.get("code") if isinstance(node.get("code"),str) else None
             for k,v in value.items():
                 walk(v,path+"."+k,None,excluded or k in {"linked_inline_media","relatedPosts"})
         elif isinstance(value,list):
