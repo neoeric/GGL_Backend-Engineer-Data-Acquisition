@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "run_id": "92b1cf8d-1e96-42ee-a045-305c1fe20163",
+  "status": "partial",
+  "started_at": "2026-10-30T02:33:40.386Z",
+  "finished_at": "2026-10-30T02:33:45.186Z",
+  "requested_fields": [
+    "display_name",
+    "follower_count",
+    "post_text",
+    "continuations"
+  ],
+  "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+  "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+  "redirect_chain": [
+    {
+      "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+      "kind": "initial"
+    }
+  ],
+  "final_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+  "captured_at": "2026-10-30T02:33:44.959Z",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  },
+  "issues": [],
+  "trace_file": "examples/timing-20261030/07-trace.json",
+  "data": {
+    "display_name": {
+      "status": "ok",
+      "value": "Whoscall"
+    },
+    "follower_count": {
+      "status": "ok",
+      "value": {
+        "display": "15100",
+        "exact": 15100,
+        "approximate": null
+      }
+    },
+    "post_text": {
+      "status": "ok",
+      "value": "雖然明天要上班了\n但給大家一個好消息\n我們又要抽 iPhone ㄌ\niPhone 18 Pro喔",
+      "note": "Text selected from the visible timestamp-permalink body; differing caption serialization is retained in trace evidence."
+    },
+    "continuations": {
+      "status": "partial",
+      "value": [
+        {
+          "post_id": "Dd0_RHRH6h9",
+          "url": "https://www.threads.com/@whoscall_tw/post/Dd0_RHRH6h9",
+          "text": "這邊了解活動詳情👉🏻 https://whoscalltw.pse.is/9p2dw4",
+          "order": 1,
+          "parent_post_id": "Dd0_RGwH4K7",
+          "text_complete": false,
+          "relationship_inferred": null,
+          "order_evidence": {
+            "kind": "explicit_parent_chain",
+            "post_ids": [
+              "Dd0_RGwH4K7",
+              "Dd0_RHRH6h9"
+            ],
+            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null
+          }
+        }
+      ],
+      "reason_code": "thread_incomplete",
+      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed."
+    }
+  },
+  "evidence_mode": "live_anonymous",
+  "model_mode": "none"
+}

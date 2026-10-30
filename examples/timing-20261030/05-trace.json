@@ -1,0 +1,3023 @@
+{
+  "schema_version": "1.0",
+  "run_id": "0b22b5ee-cc6f-41ea-b330-be723f9dd14f",
+  "events": [
+    {
+      "type": "run_start",
+      "at": "2026-10-30T02:33:21.405Z",
+      "input": {
+        "message": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
+      },
+      "mode": "none",
+      "evidence_mode": "live_anonymous",
+      "limits": {
+        "seconds": 120.0,
+        "tools": 3,
+        "llm": 1
+      }
+    },
+    {
+      "type": "navigation",
+      "at": "2026-10-30T02:33:24.352Z",
+      "input": {
+        "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
+      },
+      "output": {
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+            "kind": "initial"
+          }
+        ],
+        "final_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+        "http_statuses": [
+          {
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+            "status": 200
+          }
+        ],
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 2,
+            "policy_resource_budget_or_type": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready"
+        }
+      },
+      "status": "observed",
+      "reason_code": null
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:33:24.374Z",
+      "call_id": "tool-1",
+      "name": "read_post",
+      "input": {
+        "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "Dd1MqeVG3vT",
+            "author": "zuck",
+            "text": "To lead this effort, I'm excited that Chirantan \"CJ\" Desai will join Meta as Chief Enterprise Platform Officer, reporting directly to me. CJ is an experienced enterprise leader with a track record of building full-stack software and delivering results in AI, infrastructure, business applications, and security. He has an extensive industry network that we look forward to partnering with.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Mark Zuckerberg",
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1MqfcG0aH",
+            "author": "zuck",
+            "text": "We believe superintelligence will create significant new opportunities for all people and businesses. Meta already serves billions of people at scale and helps hundreds of millions of businesses reach customers. Today we are starting the next major pillar of our business, Meta Enterprise Platform, to help businesses use AI to grow and transform in new ways as well.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MqfcG0aH",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1Mqfum3QF",
+            "author": "zuck",
+            "text": "Meta Enterprise Platform will use our strengths that few other companies have: advanced models, leading agents, large-scale infrastructure, and years of working closely with many businesses. Initially, we will focus on bringing our full technology stack, including the Muse agent, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers to help them grow.",
+            "url": "https://www.threads.com/@zuck/post/Dd1Mqfum3QF",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1P1cgGtXz",
+            "author": "sundlyakshat",
+            "text": "Hari Krishna",
+            "url": "https://www.threads.com/@sundlyakshat/post/Dd1P1cgGtXz",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Akshat sundly",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1Vq6yD9KZ",
+            "author": "tatsu32983",
+            "text": "英語ばかりや横文字で意味が今ひとつわかりにくいです。😅🙏",
+            "url": "https://www.threads.com/@tatsu32983/post/Dd1Vq6yD9KZ",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "tatsu3",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1niiomqcH",
+            "author": "niclaydai",
+            "text": "Hi Zuck, I’ve been working on a concept called “Social Fulfillment,” structured around three core principles: Perceptive Resonance, Non-Pressure Interaction, and Value-Driven Growth. It explores new ways to reduce friction in social experiences within large-scale platforms like Meta. I’d be interested in discussing whether there might be an opportunity to explore incubation or collaboration.",
+            "url": "https://www.threads.com/@niclaydai/post/Dd1niiomqcH",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Nicolay Dai",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1qBxXoG2E",
+            "author": "aoibheal.rising",
+            "text": "The guy won't shut the flying fuck up and stop attacking me after he waits for me to finish talking",
+            "url": "https://www.threads.com/@aoibheal.rising/post/Dd1qBxXoG2E",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Hadi",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1rSu5lVu9",
+            "author": "katiesoldit",
+            "text": "Wait why not Willow",
+            "url": "https://www.threads.com/@katiesoldit/post/Dd1rSu5lVu9",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[4].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Katie",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1rc8zFZxp",
+            "author": "katiesoldit",
+            "text": "It's all going to come crashing down around you. Due to greed",
+            "url": "https://www.threads.com/@katiesoldit/post/Dd1rc8zFZxp",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[5].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Katie",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1MriSm3-u",
+            "author": "zuck",
+            "text": "CJ joins us from MongoDB, where he was CEO and President. Before that he led product and engineering at Cloudflare and spent nearly eight years at ServiceNow, including as President and COO.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MriSm3-u",
+            "parent": "Dd1MqeVG3vT",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "Dd1MqeVG3vT",
+              "author": "zuck",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd1MqeVG3vT",
+                "Dd1MriSm3-u"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null
+            }
+          },
+          {
+            "id": "Dd1MqeyG15H",
+            "author": "zuck",
+            "text": "I'm excited about beginning this new chapter for Meta and looking forward to working closely with CJ.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeyG15H",
+            "parent": "Dd1MriSm3-u",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_inferred": "self_thread_sequence",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "self_thread_context": {
+              "parent": "Dd1MriSm3-u",
+              "author": "zuck",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "inferred": "self_thread_sequence"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": 2,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd1MqeVG3vT",
+                "Dd1MriSm3-u",
+                "Dd1MqeyG15H"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "relationship_inferred": "self_thread_sequence"
+            }
+          },
+          {
+            "id": "Dd1h6VtkTZn",
+            "author": "catscratchism",
+            "text": "“Superintelligence.”",
+            "url": "https://www.threads.com/@catscratchism/post/Dd1h6VtkTZn",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "brian michaels",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd3QbQpkVyN",
+            "author": "abanadz",
+            "text": "✨",
+            "url": "https://www.threads.com/@abanadz/post/Dd3QbQpkVyN",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "zZzZherwinZzZz",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1XsmOEaK_",
+            "author": "acwardblueridge",
+            "text": "It’s tech. And it’s artificial intelligence. Not very super at all.",
+            "url": "https://www.threads.com/@acwardblueridge/post/Dd1XsmOEaK_",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "ACW",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1sQ6uFtdv",
+            "author": "djournearthur",
+            "text": "Yhhhh",
+            "url": "https://www.threads.com/@djournearthur/post/Dd1sQ6uFtdv",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "D’ J O U R N E  A R T H U R",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd1UQfGDuL1",
+            "author": "zizo6422",
+            "text": "🤔🧠❤️👣👣👣✅👀👂🏻🥂",
+            "url": "https://www.threads.com/@zizo6422/post/Dd1UQfGDuL1",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Zizo Zizo Shaban",
+            "order_evidence": null
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "Dd1MqeVG3vT",
+        "author": "zuck",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Mark Zuckerberg",
+        "captured_at": "2026-10-30T02:33:24.353Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 2,
+            "policy_resource_budget_or_type": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 621,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        }
+      },
+      "status": "ok",
+      "elapsed_ms": 2968
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-30T02:33:24.376Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "Dd1MqfcG0aH",
+            "classification": "ambiguous_ancestry"
+          },
+          {
+            "id": "Dd1Mqfum3QF",
+            "classification": "ambiguous_ancestry"
+          },
+          {
+            "id": "Dd1P1cgGtXz",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1Vq6yD9KZ",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1niiomqcH",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1qBxXoG2E",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1rSu5lVu9",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1rc8zFZxp",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1MriSm3-u",
+            "classification": "continuation"
+          },
+          {
+            "id": "Dd1MqeyG15H",
+            "classification": "continuation"
+          },
+          {
+            "id": "Dd1h6VtkTZn",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd3QbQpkVyN",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd1XsmOEaK_",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd1sQ6uFtdv",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd1UQfGDuL1",
+            "classification": "recommended_post"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "unavailable",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "evidence_merge",
+      "at": "2026-10-30T02:33:24.799Z",
+      "input": {
+        "canonical_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
+      },
+      "output": {
+        "decision": "merged",
+        "added_post_ids": [],
+        "retained_post_ids": [
+          "Dd1MqeVG3vT",
+          "Dd1MqfcG0aH",
+          "Dd1Mqfum3QF",
+          "Dd1P1cgGtXz",
+          "Dd1Vq6yD9KZ",
+          "Dd1niiomqcH",
+          "Dd1qBxXoG2E",
+          "Dd1rSu5lVu9",
+          "Dd1rc8zFZxp",
+          "Dd1MriSm3-u",
+          "Dd1MqeyG15H",
+          "Dd1h6VtkTZn",
+          "Dd3QbQpkVyN",
+          "Dd1XsmOEaK_",
+          "Dd1sQ6uFtdv",
+          "Dd1UQfGDuL1"
+        ],
+        "conflicts": [],
+        "observation_at": "2026-10-30T02:33:24.776Z"
+      },
+      "status": "merged"
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:33:24.800Z",
+      "call_id": "tool-2",
+      "name": "expand_thread",
+      "input": {
+        "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "Dd1MqeVG3vT",
+            "author": "zuck",
+            "text": "To lead this effort, I'm excited that Chirantan \"CJ\" Desai will join Meta as Chief Enterprise Platform Officer, reporting directly to me. CJ is an experienced enterprise leader with a track record of building full-stack software and delivering results in AI, infrastructure, business applications, and security. He has an extensive industry network that we look forward to partnering with.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Mark Zuckerberg",
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqeVG3vT",
+                "author": "zuck",
+                "text": "To lead this effort, I'm excited that Chirantan \"CJ\" Desai will join Meta as Chief Enterprise Platform Officer, reporting directly to me. CJ is an experienced enterprise leader with a track record of building full-stack software and delivering results in AI, infrastructure, business applications, and security. He has an extensive industry network that we look forward to partnering with.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqeVG3vT",
+                "author": "zuck",
+                "text": "To lead this effort, I'm excited that Chirantan \"CJ\" Desai will join Meta as Chief Enterprise Platform Officer, reporting directly to me. CJ is an experienced enterprise leader with a track record of building full-stack software and delivering results in AI, infrastructure, business applications, and security. He has an extensive industry network that we look forward to partnering with.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1MqfcG0aH",
+            "author": "zuck",
+            "text": "We believe superintelligence will create significant new opportunities for all people and businesses. Meta already serves billions of people at scale and helps hundreds of millions of businesses reach customers. Today we are starting the next major pillar of our business, Meta Enterprise Platform, to help businesses use AI to grow and transform in new ways as well.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MqfcG0aH",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqfcG0aH",
+                "author": "zuck",
+                "text": "We believe superintelligence will create significant new opportunities for all people and businesses. Meta already serves billions of people at scale and helps hundreds of millions of businesses reach customers. Today we are starting the next major pillar of our business, Meta Enterprise Platform, to help businesses use AI to grow and transform in new ways as well.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1MqfcG0aH",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqfcG0aH",
+                "author": "zuck",
+                "text": "We believe superintelligence will create significant new opportunities for all people and businesses. Meta already serves billions of people at scale and helps hundreds of millions of businesses reach customers. Today we are starting the next major pillar of our business, Meta Enterprise Platform, to help businesses use AI to grow and transform in new ways as well.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1MqfcG0aH",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1Mqfum3QF",
+            "author": "zuck",
+            "text": "Meta Enterprise Platform will use our strengths that few other companies have: advanced models, leading agents, large-scale infrastructure, and years of working closely with many businesses. Initially, we will focus on bringing our full technology stack, including the Muse agent, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers to help them grow.",
+            "url": "https://www.threads.com/@zuck/post/Dd1Mqfum3QF",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1Mqfum3QF",
+                "author": "zuck",
+                "text": "Meta Enterprise Platform will use our strengths that few other companies have: advanced models, leading agents, large-scale infrastructure, and years of working closely with many businesses. Initially, we will focus on bringing our full technology stack, including the Muse agent, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers to help them grow.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1Mqfum3QF",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1Mqfum3QF",
+                "author": "zuck",
+                "text": "Meta Enterprise Platform will use our strengths that few other companies have: advanced models, leading agents, large-scale infrastructure, and years of working closely with many businesses. Initially, we will focus on bringing our full technology stack, including the Muse agent, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers to help them grow.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1Mqfum3QF",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1P1cgGtXz",
+            "author": "sundlyakshat",
+            "text": "Hari Krishna",
+            "url": "https://www.threads.com/@sundlyakshat/post/Dd1P1cgGtXz",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Akshat sundly",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1P1cgGtXz",
+                "author": "sundlyakshat",
+                "text": "Hari Krishna",
+                "parent": null,
+                "url": "https://www.threads.com/@sundlyakshat/post/Dd1P1cgGtXz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Akshat sundly"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1P1cgGtXz",
+                "author": "sundlyakshat",
+                "text": "Hari Krishna",
+                "parent": null,
+                "url": "https://www.threads.com/@sundlyakshat/post/Dd1P1cgGtXz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Akshat sundly"
+              }
+            ]
+          },
+          {
+            "id": "Dd1Vq6yD9KZ",
+            "author": "tatsu32983",
+            "text": "英語ばかりや横文字で意味が今ひとつわかりにくいです。😅🙏",
+            "url": "https://www.threads.com/@tatsu32983/post/Dd1Vq6yD9KZ",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "tatsu3",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1Vq6yD9KZ",
+                "author": "tatsu32983",
+                "text": "英語ばかりや横文字で意味が今ひとつわかりにくいです。😅🙏",
+                "parent": null,
+                "url": "https://www.threads.com/@tatsu32983/post/Dd1Vq6yD9KZ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "tatsu3"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1Vq6yD9KZ",
+                "author": "tatsu32983",
+                "text": "英語ばかりや横文字で意味が今ひとつわかりにくいです。😅🙏",
+                "parent": null,
+                "url": "https://www.threads.com/@tatsu32983/post/Dd1Vq6yD9KZ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "tatsu3"
+              }
+            ]
+          },
+          {
+            "id": "Dd1niiomqcH",
+            "author": "niclaydai",
+            "text": "Hi Zuck, I’ve been working on a concept called “Social Fulfillment,” structured around three core principles: Perceptive Resonance, Non-Pressure Interaction, and Value-Driven Growth. It explores new ways to reduce friction in social experiences within large-scale platforms like Meta. I’d be interested in discussing whether there might be an opportunity to explore incubation or collaboration.",
+            "url": "https://www.threads.com/@niclaydai/post/Dd1niiomqcH",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Nicolay Dai",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1niiomqcH",
+                "author": "niclaydai",
+                "text": "Hi Zuck, I’ve been working on a concept called “Social Fulfillment,” structured around three core principles: Perceptive Resonance, Non-Pressure Interaction, and Value-Driven Growth. It explores new ways to reduce friction in social experiences within large-scale platforms like Meta. I’d be interested in discussing whether there might be an opportunity to explore incubation or collaboration.",
+                "parent": null,
+                "url": "https://www.threads.com/@niclaydai/post/Dd1niiomqcH",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Nicolay Dai"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1niiomqcH",
+                "author": "niclaydai",
+                "text": "Hi Zuck, I’ve been working on a concept called “Social Fulfillment,” structured around three core principles: Perceptive Resonance, Non-Pressure Interaction, and Value-Driven Growth. It explores new ways to reduce friction in social experiences within large-scale platforms like Meta. I’d be interested in discussing whether there might be an opportunity to explore incubation or collaboration.",
+                "parent": null,
+                "url": "https://www.threads.com/@niclaydai/post/Dd1niiomqcH",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Nicolay Dai"
+              }
+            ]
+          },
+          {
+            "id": "Dd1qBxXoG2E",
+            "author": "aoibheal.rising",
+            "text": "The guy won't shut the flying fuck up and stop attacking me after he waits for me to finish talking",
+            "url": "https://www.threads.com/@aoibheal.rising/post/Dd1qBxXoG2E",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Hadi",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1qBxXoG2E",
+                "author": "aoibheal.rising",
+                "text": "The guy won't shut the flying fuck up and stop attacking me after he waits for me to finish talking",
+                "parent": null,
+                "url": "https://www.threads.com/@aoibheal.rising/post/Dd1qBxXoG2E",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Hadi"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1qBxXoG2E",
+                "author": "aoibheal.rising",
+                "text": "The guy won't shut the flying fuck up and stop attacking me after he waits for me to finish talking",
+                "parent": null,
+                "url": "https://www.threads.com/@aoibheal.rising/post/Dd1qBxXoG2E",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Hadi"
+              }
+            ]
+          },
+          {
+            "id": "Dd1rSu5lVu9",
+            "author": "katiesoldit",
+            "text": "Wait why not Willow",
+            "url": "https://www.threads.com/@katiesoldit/post/Dd1rSu5lVu9",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[4].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Katie",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1rSu5lVu9",
+                "author": "katiesoldit",
+                "text": "Wait why not Willow",
+                "parent": null,
+                "url": "https://www.threads.com/@katiesoldit/post/Dd1rSu5lVu9",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Katie"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1rSu5lVu9",
+                "author": "katiesoldit",
+                "text": "Wait why not Willow",
+                "parent": null,
+                "url": "https://www.threads.com/@katiesoldit/post/Dd1rSu5lVu9",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Katie"
+              }
+            ]
+          },
+          {
+            "id": "Dd1rc8zFZxp",
+            "author": "katiesoldit",
+            "text": "It's all going to come crashing down around you. Due to greed",
+            "url": "https://www.threads.com/@katiesoldit/post/Dd1rc8zFZxp",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[5].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Katie",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1rc8zFZxp",
+                "author": "katiesoldit",
+                "text": "It's all going to come crashing down around you. Due to greed",
+                "parent": null,
+                "url": "https://www.threads.com/@katiesoldit/post/Dd1rc8zFZxp",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Katie"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1rc8zFZxp",
+                "author": "katiesoldit",
+                "text": "It's all going to come crashing down around you. Due to greed",
+                "parent": null,
+                "url": "https://www.threads.com/@katiesoldit/post/Dd1rc8zFZxp",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Katie"
+              }
+            ]
+          },
+          {
+            "id": "Dd1MriSm3-u",
+            "author": "zuck",
+            "text": "CJ joins us from MongoDB, where he was CEO and President. Before that he led product and engineering at Cloudflare and spent nearly eight years at ServiceNow, including as President and COO.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MriSm3-u",
+            "parent": "Dd1MqeVG3vT",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "Dd1MqeVG3vT",
+              "author": "zuck",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd1MqeVG3vT",
+                "Dd1MriSm3-u"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null
+            },
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MriSm3-u",
+                "author": "zuck",
+                "text": "CJ joins us from MongoDB, where he was CEO and President. Before that he led product and engineering at Cloudflare and spent nearly eight years at ServiceNow, including as President and COO.",
+                "parent": "Dd1MqeVG3vT",
+                "url": "https://www.threads.com/@zuck/post/Dd1MriSm3-u",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MriSm3-u",
+                "author": "zuck",
+                "text": "CJ joins us from MongoDB, where he was CEO and President. Before that he led product and engineering at Cloudflare and spent nearly eight years at ServiceNow, including as President and COO.",
+                "parent": "Dd1MqeVG3vT",
+                "url": "https://www.threads.com/@zuck/post/Dd1MriSm3-u",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1MqeyG15H",
+            "author": "zuck",
+            "text": "I'm excited about beginning this new chapter for Meta and looking forward to working closely with CJ.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeyG15H",
+            "parent": "Dd1MriSm3-u",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_inferred": "self_thread_sequence",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "self_thread_context": {
+              "parent": "Dd1MriSm3-u",
+              "author": "zuck",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "inferred": "self_thread_sequence"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": 2,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd1MqeVG3vT",
+                "Dd1MriSm3-u",
+                "Dd1MqeyG15H"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "relationship_inferred": "self_thread_sequence"
+            },
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqeyG15H",
+                "author": "zuck",
+                "text": "I'm excited about beginning this new chapter for Meta and looking forward to working closely with CJ.",
+                "parent": "Dd1MriSm3-u",
+                "url": "https://www.threads.com/@zuck/post/Dd1MqeyG15H",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqeyG15H",
+                "author": "zuck",
+                "text": "I'm excited about beginning this new chapter for Meta and looking forward to working closely with CJ.",
+                "parent": "Dd1MriSm3-u",
+                "url": "https://www.threads.com/@zuck/post/Dd1MqeyG15H",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1h6VtkTZn",
+            "author": "catscratchism",
+            "text": "“Superintelligence.”",
+            "url": "https://www.threads.com/@catscratchism/post/Dd1h6VtkTZn",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "brian michaels",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1h6VtkTZn",
+                "author": "catscratchism",
+                "text": "“Superintelligence.”",
+                "parent": null,
+                "url": "https://www.threads.com/@catscratchism/post/Dd1h6VtkTZn",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "brian michaels"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1h6VtkTZn",
+                "author": "catscratchism",
+                "text": "“Superintelligence.”",
+                "parent": null,
+                "url": "https://www.threads.com/@catscratchism/post/Dd1h6VtkTZn",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "brian michaels"
+              }
+            ]
+          },
+          {
+            "id": "Dd3QbQpkVyN",
+            "author": "abanadz",
+            "text": "✨",
+            "url": "https://www.threads.com/@abanadz/post/Dd3QbQpkVyN",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "zZzZherwinZzZz",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd3QbQpkVyN",
+                "author": "abanadz",
+                "text": "✨",
+                "parent": null,
+                "url": "https://www.threads.com/@abanadz/post/Dd3QbQpkVyN",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "zZzZherwinZzZz"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd3QbQpkVyN",
+                "author": "abanadz",
+                "text": "✨",
+                "parent": null,
+                "url": "https://www.threads.com/@abanadz/post/Dd3QbQpkVyN",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "zZzZherwinZzZz"
+              }
+            ]
+          },
+          {
+            "id": "Dd1XsmOEaK_",
+            "author": "acwardblueridge",
+            "text": "It’s tech. And it’s artificial intelligence. Not very super at all.",
+            "url": "https://www.threads.com/@acwardblueridge/post/Dd1XsmOEaK_",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "ACW",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1XsmOEaK_",
+                "author": "acwardblueridge",
+                "text": "It’s tech. And it’s artificial intelligence. Not very super at all.",
+                "parent": null,
+                "url": "https://www.threads.com/@acwardblueridge/post/Dd1XsmOEaK_",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "ACW"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1XsmOEaK_",
+                "author": "acwardblueridge",
+                "text": "It’s tech. And it’s artificial intelligence. Not very super at all.",
+                "parent": null,
+                "url": "https://www.threads.com/@acwardblueridge/post/Dd1XsmOEaK_",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "ACW"
+              }
+            ]
+          },
+          {
+            "id": "Dd1sQ6uFtdv",
+            "author": "djournearthur",
+            "text": "Yhhhh",
+            "url": "https://www.threads.com/@djournearthur/post/Dd1sQ6uFtdv",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "D’ J O U R N E  A R T H U R",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1sQ6uFtdv",
+                "author": "djournearthur",
+                "text": "Yhhhh",
+                "parent": null,
+                "url": "https://www.threads.com/@djournearthur/post/Dd1sQ6uFtdv",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "D’ J O U R N E  A R T H U R"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1sQ6uFtdv",
+                "author": "djournearthur",
+                "text": "Yhhhh",
+                "parent": null,
+                "url": "https://www.threads.com/@djournearthur/post/Dd1sQ6uFtdv",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "D’ J O U R N E  A R T H U R"
+              }
+            ]
+          },
+          {
+            "id": "Dd1UQfGDuL1",
+            "author": "zizo6422",
+            "text": "🤔🧠❤️👣👣👣✅👀👂🏻🥂",
+            "url": "https://www.threads.com/@zizo6422/post/Dd1UQfGDuL1",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Zizo Zizo Shaban",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1UQfGDuL1",
+                "author": "zizo6422",
+                "text": "🤔🧠❤️👣👣👣✅👀👂🏻🥂",
+                "parent": null,
+                "url": "https://www.threads.com/@zizo6422/post/Dd1UQfGDuL1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Zizo Zizo Shaban"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1UQfGDuL1",
+                "author": "zizo6422",
+                "text": "🤔🧠❤️👣👣👣✅👀👂🏻🥂",
+                "parent": null,
+                "url": "https://www.threads.com/@zizo6422/post/Dd1UQfGDuL1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Zizo Zizo Shaban"
+              }
+            ]
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "Dd1MqeVG3vT",
+        "author": "zuck",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Mark Zuckerberg",
+        "captured_at": "2026-10-30T02:33:24.776Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 2,
+            "request_failed": 3,
+            "policy_resource_budget_or_type": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 621,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        },
+        "merge_conflicts": []
+      },
+      "status": "ok",
+      "elapsed_ms": 423
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-30T02:33:24.803Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "Dd1MqfcG0aH",
+            "classification": "ambiguous_ancestry"
+          },
+          {
+            "id": "Dd1Mqfum3QF",
+            "classification": "ambiguous_ancestry"
+          },
+          {
+            "id": "Dd1P1cgGtXz",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1Vq6yD9KZ",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1niiomqcH",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1qBxXoG2E",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1rSu5lVu9",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1rc8zFZxp",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1MriSm3-u",
+            "classification": "continuation"
+          },
+          {
+            "id": "Dd1MqeyG15H",
+            "classification": "continuation"
+          },
+          {
+            "id": "Dd1h6VtkTZn",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd3QbQpkVyN",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd1XsmOEaK_",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd1sQ6uFtdv",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd1UQfGDuL1",
+            "classification": "recommended_post"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "unavailable",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "navigation",
+      "at": "2026-10-30T02:33:27.440Z",
+      "input": {
+        "url": "https://www.threads.com/@zuck"
+      },
+      "output": {
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck",
+            "kind": "initial"
+          }
+        ],
+        "final_url": "https://www.threads.com/@zuck",
+        "http_statuses": [
+          {
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+            "status": 200
+          },
+          {
+            "url": "https://www.threads.com/@zuck",
+            "status": 200
+          }
+        ],
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 7,
+            "request_failed": 53,
+            "policy_resource_budget_or_type": 45,
+            "unsupported_url": 1,
+            "page_script_error": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/525017228_17849122602528205_3588309531909441924_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/729570187_18126644866606450_6153357872233502881_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/658369952_18069416627308148_1644654452261977176_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/525017228_17849122602528205_3588309531909441924_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/729570187_18126644866606450_6153357872233502881_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/658369952_18069416627308148_1644654452261977176_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.2885-19/358160467_824852295511786_6752593773214867012_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/627054904_17846449140682001_2711033722002729226_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.2885-19/358160467_824852295511786_6752593773214867012_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/627054904_17846449140682001_2711033722002729226_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/782413376_17985318084106984_7486737651852716815_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/782413376_17985318084106984_7486737651852716815_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/358507614_1604850579995772_6036599754710428054_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/358507614_1604850579995772_6036599754710428054_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/729633386_17975647173111219_3143705345287756515_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/745235823_17979303189101707_1803391662481364455_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/729633386_17975647173111219_3143705345287756515_n.jpg"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/504531250_17850910635480719_4298575790209579874_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/745235823_17979303189101707_1803391662481364455_n.jpg"
+            },
+            {
+              "reason_code": "page_script_error"
+            }
+          ],
+          "details_omitted": 67,
+          "observation": "observable_page_ready"
+        }
+      },
+      "status": "observed",
+      "reason_code": null
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:33:27.452Z",
+      "call_id": "tool-3",
+      "name": "read_profile",
+      "input": {
+        "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "Dd1MqeVG3vT",
+            "author": "zuck",
+            "text": "To lead this effort, I'm excited that Chirantan \"CJ\" Desai will join Meta as Chief Enterprise Platform Officer, reporting directly to me. CJ is an experienced enterprise leader with a track record of building full-stack software and delivering results in AI, infrastructure, business applications, and security. He has an extensive industry network that we look forward to partnering with.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Mark Zuckerberg",
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqeVG3vT",
+                "author": "zuck",
+                "text": "To lead this effort, I'm excited that Chirantan \"CJ\" Desai will join Meta as Chief Enterprise Platform Officer, reporting directly to me. CJ is an experienced enterprise leader with a track record of building full-stack software and delivering results in AI, infrastructure, business applications, and security. He has an extensive industry network that we look forward to partnering with.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqeVG3vT",
+                "author": "zuck",
+                "text": "To lead this effort, I'm excited that Chirantan \"CJ\" Desai will join Meta as Chief Enterprise Platform Officer, reporting directly to me. CJ is an experienced enterprise leader with a track record of building full-stack software and delivering results in AI, infrastructure, business applications, and security. He has an extensive industry network that we look forward to partnering with.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1MqfcG0aH",
+            "author": "zuck",
+            "text": "We believe superintelligence will create significant new opportunities for all people and businesses. Meta already serves billions of people at scale and helps hundreds of millions of businesses reach customers. Today we are starting the next major pillar of our business, Meta Enterprise Platform, to help businesses use AI to grow and transform in new ways as well.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MqfcG0aH",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqfcG0aH",
+                "author": "zuck",
+                "text": "We believe superintelligence will create significant new opportunities for all people and businesses. Meta already serves billions of people at scale and helps hundreds of millions of businesses reach customers. Today we are starting the next major pillar of our business, Meta Enterprise Platform, to help businesses use AI to grow and transform in new ways as well.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1MqfcG0aH",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqfcG0aH",
+                "author": "zuck",
+                "text": "We believe superintelligence will create significant new opportunities for all people and businesses. Meta already serves billions of people at scale and helps hundreds of millions of businesses reach customers. Today we are starting the next major pillar of our business, Meta Enterprise Platform, to help businesses use AI to grow and transform in new ways as well.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1MqfcG0aH",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1Mqfum3QF",
+            "author": "zuck",
+            "text": "Meta Enterprise Platform will use our strengths that few other companies have: advanced models, leading agents, large-scale infrastructure, and years of working closely with many businesses. Initially, we will focus on bringing our full technology stack, including the Muse agent, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers to help them grow.",
+            "url": "https://www.threads.com/@zuck/post/Dd1Mqfum3QF",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1Mqfum3QF",
+                "author": "zuck",
+                "text": "Meta Enterprise Platform will use our strengths that few other companies have: advanced models, leading agents, large-scale infrastructure, and years of working closely with many businesses. Initially, we will focus on bringing our full technology stack, including the Muse agent, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers to help them grow.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1Mqfum3QF",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1Mqfum3QF",
+                "author": "zuck",
+                "text": "Meta Enterprise Platform will use our strengths that few other companies have: advanced models, leading agents, large-scale infrastructure, and years of working closely with many businesses. Initially, we will focus on bringing our full technology stack, including the Muse agent, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers to help them grow.",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/Dd1Mqfum3QF",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1P1cgGtXz",
+            "author": "sundlyakshat",
+            "text": "Hari Krishna",
+            "url": "https://www.threads.com/@sundlyakshat/post/Dd1P1cgGtXz",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Akshat sundly",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1P1cgGtXz",
+                "author": "sundlyakshat",
+                "text": "Hari Krishna",
+                "parent": null,
+                "url": "https://www.threads.com/@sundlyakshat/post/Dd1P1cgGtXz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Akshat sundly"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1P1cgGtXz",
+                "author": "sundlyakshat",
+                "text": "Hari Krishna",
+                "parent": null,
+                "url": "https://www.threads.com/@sundlyakshat/post/Dd1P1cgGtXz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Akshat sundly"
+              }
+            ]
+          },
+          {
+            "id": "Dd1Vq6yD9KZ",
+            "author": "tatsu32983",
+            "text": "英語ばかりや横文字で意味が今ひとつわかりにくいです。😅🙏",
+            "url": "https://www.threads.com/@tatsu32983/post/Dd1Vq6yD9KZ",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "tatsu3",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1Vq6yD9KZ",
+                "author": "tatsu32983",
+                "text": "英語ばかりや横文字で意味が今ひとつわかりにくいです。😅🙏",
+                "parent": null,
+                "url": "https://www.threads.com/@tatsu32983/post/Dd1Vq6yD9KZ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "tatsu3"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1Vq6yD9KZ",
+                "author": "tatsu32983",
+                "text": "英語ばかりや横文字で意味が今ひとつわかりにくいです。😅🙏",
+                "parent": null,
+                "url": "https://www.threads.com/@tatsu32983/post/Dd1Vq6yD9KZ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "tatsu3"
+              }
+            ]
+          },
+          {
+            "id": "Dd1niiomqcH",
+            "author": "niclaydai",
+            "text": "Hi Zuck, I’ve been working on a concept called “Social Fulfillment,” structured around three core principles: Perceptive Resonance, Non-Pressure Interaction, and Value-Driven Growth. It explores new ways to reduce friction in social experiences within large-scale platforms like Meta. I’d be interested in discussing whether there might be an opportunity to explore incubation or collaboration.",
+            "url": "https://www.threads.com/@niclaydai/post/Dd1niiomqcH",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Nicolay Dai",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1niiomqcH",
+                "author": "niclaydai",
+                "text": "Hi Zuck, I’ve been working on a concept called “Social Fulfillment,” structured around three core principles: Perceptive Resonance, Non-Pressure Interaction, and Value-Driven Growth. It explores new ways to reduce friction in social experiences within large-scale platforms like Meta. I’d be interested in discussing whether there might be an opportunity to explore incubation or collaboration.",
+                "parent": null,
+                "url": "https://www.threads.com/@niclaydai/post/Dd1niiomqcH",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Nicolay Dai"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1niiomqcH",
+                "author": "niclaydai",
+                "text": "Hi Zuck, I’ve been working on a concept called “Social Fulfillment,” structured around three core principles: Perceptive Resonance, Non-Pressure Interaction, and Value-Driven Growth. It explores new ways to reduce friction in social experiences within large-scale platforms like Meta. I’d be interested in discussing whether there might be an opportunity to explore incubation or collaboration.",
+                "parent": null,
+                "url": "https://www.threads.com/@niclaydai/post/Dd1niiomqcH",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Nicolay Dai"
+              }
+            ]
+          },
+          {
+            "id": "Dd1qBxXoG2E",
+            "author": "aoibheal.rising",
+            "text": "The guy won't shut the flying fuck up and stop attacking me after he waits for me to finish talking",
+            "url": "https://www.threads.com/@aoibheal.rising/post/Dd1qBxXoG2E",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Hadi",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1qBxXoG2E",
+                "author": "aoibheal.rising",
+                "text": "The guy won't shut the flying fuck up and stop attacking me after he waits for me to finish talking",
+                "parent": null,
+                "url": "https://www.threads.com/@aoibheal.rising/post/Dd1qBxXoG2E",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Hadi"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1qBxXoG2E",
+                "author": "aoibheal.rising",
+                "text": "The guy won't shut the flying fuck up and stop attacking me after he waits for me to finish talking",
+                "parent": null,
+                "url": "https://www.threads.com/@aoibheal.rising/post/Dd1qBxXoG2E",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Hadi"
+              }
+            ]
+          },
+          {
+            "id": "Dd1rSu5lVu9",
+            "author": "katiesoldit",
+            "text": "Wait why not Willow",
+            "url": "https://www.threads.com/@katiesoldit/post/Dd1rSu5lVu9",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[4].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Katie",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1rSu5lVu9",
+                "author": "katiesoldit",
+                "text": "Wait why not Willow",
+                "parent": null,
+                "url": "https://www.threads.com/@katiesoldit/post/Dd1rSu5lVu9",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Katie"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1rSu5lVu9",
+                "author": "katiesoldit",
+                "text": "Wait why not Willow",
+                "parent": null,
+                "url": "https://www.threads.com/@katiesoldit/post/Dd1rSu5lVu9",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Katie"
+              }
+            ]
+          },
+          {
+            "id": "Dd1rc8zFZxp",
+            "author": "katiesoldit",
+            "text": "It's all going to come crashing down around you. Due to greed",
+            "url": "https://www.threads.com/@katiesoldit/post/Dd1rc8zFZxp",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[5].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Katie",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1rc8zFZxp",
+                "author": "katiesoldit",
+                "text": "It's all going to come crashing down around you. Due to greed",
+                "parent": null,
+                "url": "https://www.threads.com/@katiesoldit/post/Dd1rc8zFZxp",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Katie"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1rc8zFZxp",
+                "author": "katiesoldit",
+                "text": "It's all going to come crashing down around you. Due to greed",
+                "parent": null,
+                "url": "https://www.threads.com/@katiesoldit/post/Dd1rc8zFZxp",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Katie"
+              }
+            ]
+          },
+          {
+            "id": "Dd1MriSm3-u",
+            "author": "zuck",
+            "text": "CJ joins us from MongoDB, where he was CEO and President. Before that he led product and engineering at Cloudflare and spent nearly eight years at ServiceNow, including as President and COO.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MriSm3-u",
+            "parent": "Dd1MqeVG3vT",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "Dd1MqeVG3vT",
+              "author": "zuck",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd1MqeVG3vT",
+                "Dd1MriSm3-u"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null
+            },
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MriSm3-u",
+                "author": "zuck",
+                "text": "CJ joins us from MongoDB, where he was CEO and President. Before that he led product and engineering at Cloudflare and spent nearly eight years at ServiceNow, including as President and COO.",
+                "parent": "Dd1MqeVG3vT",
+                "url": "https://www.threads.com/@zuck/post/Dd1MriSm3-u",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MriSm3-u",
+                "author": "zuck",
+                "text": "CJ joins us from MongoDB, where he was CEO and President. Before that he led product and engineering at Cloudflare and spent nearly eight years at ServiceNow, including as President and COO.",
+                "parent": "Dd1MqeVG3vT",
+                "url": "https://www.threads.com/@zuck/post/Dd1MriSm3-u",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1MqeyG15H",
+            "author": "zuck",
+            "text": "I'm excited about beginning this new chapter for Meta and looking forward to working closely with CJ.",
+            "url": "https://www.threads.com/@zuck/post/Dd1MqeyG15H",
+            "parent": "Dd1MriSm3-u",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_inferred": "self_thread_sequence",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "self_thread_context": {
+              "parent": "Dd1MriSm3-u",
+              "author": "zuck",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "inferred": "self_thread_sequence"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": 2,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuckerberg",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd1MqeVG3vT",
+                "Dd1MriSm3-u",
+                "Dd1MqeyG15H"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "relationship_inferred": "self_thread_sequence"
+            },
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqeyG15H",
+                "author": "zuck",
+                "text": "I'm excited about beginning this new chapter for Meta and looking forward to working closely with CJ.",
+                "parent": "Dd1MriSm3-u",
+                "url": "https://www.threads.com/@zuck/post/Dd1MqeyG15H",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1MqeyG15H",
+                "author": "zuck",
+                "text": "I'm excited about beginning this new chapter for Meta and looking forward to working closely with CJ.",
+                "parent": "Dd1MriSm3-u",
+                "url": "https://www.threads.com/@zuck/post/Dd1MqeyG15H",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "Dd1h6VtkTZn",
+            "author": "catscratchism",
+            "text": "“Superintelligence.”",
+            "url": "https://www.threads.com/@catscratchism/post/Dd1h6VtkTZn",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "brian michaels",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1h6VtkTZn",
+                "author": "catscratchism",
+                "text": "“Superintelligence.”",
+                "parent": null,
+                "url": "https://www.threads.com/@catscratchism/post/Dd1h6VtkTZn",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "brian michaels"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1h6VtkTZn",
+                "author": "catscratchism",
+                "text": "“Superintelligence.”",
+                "parent": null,
+                "url": "https://www.threads.com/@catscratchism/post/Dd1h6VtkTZn",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "brian michaels"
+              }
+            ]
+          },
+          {
+            "id": "Dd3QbQpkVyN",
+            "author": "abanadz",
+            "text": "✨",
+            "url": "https://www.threads.com/@abanadz/post/Dd3QbQpkVyN",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "zZzZherwinZzZz",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd3QbQpkVyN",
+                "author": "abanadz",
+                "text": "✨",
+                "parent": null,
+                "url": "https://www.threads.com/@abanadz/post/Dd3QbQpkVyN",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "zZzZherwinZzZz"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd3QbQpkVyN",
+                "author": "abanadz",
+                "text": "✨",
+                "parent": null,
+                "url": "https://www.threads.com/@abanadz/post/Dd3QbQpkVyN",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "zZzZherwinZzZz"
+              }
+            ]
+          },
+          {
+            "id": "Dd1XsmOEaK_",
+            "author": "acwardblueridge",
+            "text": "It’s tech. And it’s artificial intelligence. Not very super at all.",
+            "url": "https://www.threads.com/@acwardblueridge/post/Dd1XsmOEaK_",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "ACW",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1XsmOEaK_",
+                "author": "acwardblueridge",
+                "text": "It’s tech. And it’s artificial intelligence. Not very super at all.",
+                "parent": null,
+                "url": "https://www.threads.com/@acwardblueridge/post/Dd1XsmOEaK_",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "ACW"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1XsmOEaK_",
+                "author": "acwardblueridge",
+                "text": "It’s tech. And it’s artificial intelligence. Not very super at all.",
+                "parent": null,
+                "url": "https://www.threads.com/@acwardblueridge/post/Dd1XsmOEaK_",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "ACW"
+              }
+            ]
+          },
+          {
+            "id": "Dd1sQ6uFtdv",
+            "author": "djournearthur",
+            "text": "Yhhhh",
+            "url": "https://www.threads.com/@djournearthur/post/Dd1sQ6uFtdv",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "D’ J O U R N E  A R T H U R",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1sQ6uFtdv",
+                "author": "djournearthur",
+                "text": "Yhhhh",
+                "parent": null,
+                "url": "https://www.threads.com/@djournearthur/post/Dd1sQ6uFtdv",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "D’ J O U R N E  A R T H U R"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1sQ6uFtdv",
+                "author": "djournearthur",
+                "text": "Yhhhh",
+                "parent": null,
+                "url": "https://www.threads.com/@djournearthur/post/Dd1sQ6uFtdv",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "D’ J O U R N E  A R T H U R"
+              }
+            ]
+          },
+          {
+            "id": "Dd1UQfGDuL1",
+            "author": "zizo6422",
+            "text": "🤔🧠❤️👣👣👣✅👀👂🏻🥂",
+            "url": "https://www.threads.com/@zizo6422/post/Dd1UQfGDuL1",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Zizo Zizo Shaban",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:24.353Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1UQfGDuL1",
+                "author": "zizo6422",
+                "text": "🤔🧠❤️👣👣👣✅👀👂🏻🥂",
+                "parent": null,
+                "url": "https://www.threads.com/@zizo6422/post/Dd1UQfGDuL1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Zizo Zizo Shaban"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:24.776Z",
+                "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+                "id": "Dd1UQfGDuL1",
+                "author": "zizo6422",
+                "text": "🤔🧠❤️👣👣👣✅👀👂🏻🥂",
+                "parent": null,
+                "url": "https://www.threads.com/@zizo6422/post/Dd1UQfGDuL1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Zizo Zizo Shaban"
+              }
+            ]
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "Dd1MqeVG3vT",
+        "author": "zuck",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Mark Zuckerberg",
+        "captured_at": "2026-10-30T02:33:24.776Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 2,
+            "request_failed": 3,
+            "policy_resource_budget_or_type": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 621,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        },
+        "merge_conflicts": [],
+        "follower_count": 5750956
+      },
+      "status": "ok",
+      "elapsed_ms": 2648
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-30T02:33:27.456Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "Dd1MqfcG0aH",
+            "classification": "ambiguous_ancestry"
+          },
+          {
+            "id": "Dd1Mqfum3QF",
+            "classification": "ambiguous_ancestry"
+          },
+          {
+            "id": "Dd1P1cgGtXz",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1Vq6yD9KZ",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1niiomqcH",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1qBxXoG2E",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1rSu5lVu9",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1rc8zFZxp",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Dd1MriSm3-u",
+            "classification": "continuation"
+          },
+          {
+            "id": "Dd1MqeyG15H",
+            "classification": "continuation"
+          },
+          {
+            "id": "Dd1h6VtkTZn",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd3QbQpkVyN",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd1XsmOEaK_",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd1sQ6uFtdv",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd1UQfGDuL1",
+            "classification": "recommended_post"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "ok",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "browser_closed",
+      "at": "2026-10-30T02:33:27.674Z",
+      "status": "ok"
+    },
+    {
+      "type": "run_end",
+      "at": "2026-10-30T02:33:27.675Z",
+      "status": "partial",
+      "usage": {
+        "llm_calls": 0,
+        "calls_with_usage": 0,
+        "known_input_tokens": 0,
+        "known_output_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0,
+        "usage_complete": true,
+        "reason": null
+      },
+      "tool_calls": 3,
+      "issues": []
+    }
+  ],
+  "status": "partial",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  }
+}

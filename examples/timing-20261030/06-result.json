@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "run_id": "93dd3922-20f6-48c5-a639-ce567199efac",
+  "status": "partial",
+  "started_at": "2026-10-30T02:33:31.137Z",
+  "finished_at": "2026-10-30T02:33:36.956Z",
+  "requested_fields": [
+    "display_name",
+    "follower_count",
+    "post_text",
+    "continuations"
+  ],
+  "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+  "canonical_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+  "redirect_chain": [
+    {
+      "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+      "kind": "initial"
+    }
+  ],
+  "final_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+  "captured_at": "2026-10-30T02:33:36.744Z",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  },
+  "issues": [],
+  "trace_file": "examples/timing-20261030/06-trace.json",
+  "data": {
+    "display_name": {
+      "status": "ok",
+      "value": "Mark Zuckerberg"
+    },
+    "follower_count": {
+      "status": "ok",
+      "value": {
+        "display": "5750956",
+        "exact": 5750956,
+        "approximate": null
+      }
+    },
+    "post_text": {
+      "status": "ok",
+      "value": "Muse ordered me 🍉 how thoughtful!"
+    },
+    "continuations": {
+      "status": "unconfirmed",
+      "value": null,
+      "reason_code": "thread_context_unconfirmed",
+      "reason": "No author continuation with a verified parent relationship was observed in public data or the visible conversation area."
+    }
+  },
+  "evidence_mode": "live_anonymous",
+  "model_mode": "none"
+}

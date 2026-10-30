@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "run_id": "f6b8e5b3-bf8e-4517-8f77-890a3c49d4b7",
+  "status": "partial",
+  "started_at": "2026-10-30T02:33:01.888Z",
+  "finished_at": "2026-10-30T02:33:07.232Z",
+  "requested_fields": [
+    "display_name",
+    "follower_count",
+    "post_text",
+    "continuations"
+  ],
+  "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+  "canonical_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+  "redirect_chain": [
+    {
+      "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+      "kind": "initial"
+    }
+  ],
+  "final_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+  "captured_at": "2026-10-30T02:33:07.037Z",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  },
+  "issues": [],
+  "trace_file": "examples/timing-20261030/03-trace.json",
+  "data": {
+    "display_name": {
+      "status": "ok",
+      "value": "Whoscall"
+    },
+    "follower_count": {
+      "status": "ok",
+      "value": {
+        "display": "15100",
+        "exact": 15100,
+        "approximate": null
+      }
+    },
+    "post_text": {
+      "status": "ok",
+      "value": "詐騙集團換劇本了！\n前陣子超煩的「+422」準備退場\n現在請立刻把防詐雷達轉向「+1」開頭的變體電話"
+    },
+    "continuations": {
+      "status": "partial",
+      "value": [
+        {
+          "post_id": "DeYW3XXHzsY",
+          "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XXHzsY",
+          "text": "根據 Whoscall 數據，詐騙號碼大約 2-3 週就會換一批。近期「+1911」累積已破 7 萬通，「+1749」也在短短兩週狂打近 2 萬通！再加上 9 月剛冒出的新面孔「+1800」、「+1953」，一個月內「+1」大軍攻擊逼近 20 萬次，完全沒減緩跡象。",
+          "order": 1,
+          "parent_post_id": "DeYW3X0Hydc",
+          "text_complete": false,
+          "relationship_inferred": null,
+          "order_evidence": {
+            "kind": "explicit_parent_chain",
+            "post_ids": [
+              "DeYW3X0Hydc",
+              "DeYW3XXHzsY"
+            ],
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null
+          }
+        },
+        {
+          "post_id": "DeYW3XNn7JP",
+          "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XNn7JP",
+          "text": "📞 他們會怎麼騙？ \n接起來多半是帶有境外口音的假客服，自稱「NCC專員」、「電信業者」，甚至直接假冒「165專線」，恐嚇你門號異常或涉及洗錢。 請牢記鐵則：國內政府機關跟 165，絕對不會用「+」開頭的號碼打給你！",
+          "order": 2,
+          "parent_post_id": "DeYW3XXHzsY",
+          "text_complete": false,
+          "relationship_inferred": "self_thread_sequence",
+          "order_evidence": {
+            "kind": "explicit_parent_chain",
+            "post_ids": [
+              "DeYW3X0Hydc",
+              "DeYW3XXHzsY",
+              "DeYW3XNn7JP"
+            ],
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_inferred": "self_thread_sequence"
+          }
+        },
+        {
+          "post_id": "DeYW3XPn7I1",
+          "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XPn7I1",
+          "text": "現在只要來電顯示有「+」，接通前都會先聽到「這通是國際電話，請小心詐騙」的警示語音，聽到這句心裡就要有底了 👀 看到這邊，象編推薦你趕快去更新本週最新的 Whoscall 號碼資料庫 >> https://lihi2.me/ynI92",
+          "order": 3,
+          "parent_post_id": "DeYW3XNn7JP",
+          "text_complete": false,
+          "relationship_inferred": "self_thread_sequence",
+          "order_evidence": {
+            "kind": "explicit_parent_chain",
+            "post_ids": [
+              "DeYW3X0Hydc",
+              "DeYW3XXHzsY",
+              "DeYW3XNn7JP",
+              "DeYW3XPn7I1"
+            ],
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+            "relationship_inferred": "self_thread_sequence"
+          }
+        }
+      ],
+      "reason_code": "thread_incomplete",
+      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed."
+    }
+  },
+  "evidence_mode": "live_anonymous",
+  "model_mode": "none"
+}

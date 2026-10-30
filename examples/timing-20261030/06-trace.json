@@ -1,0 +1,2282 @@
+{
+  "schema_version": "1.0",
+  "run_id": "93dd3922-20f6-48c5-a639-ce567199efac",
+  "events": [
+    {
+      "type": "run_start",
+      "at": "2026-10-30T02:33:31.137Z",
+      "input": {
+        "message": "https://www.threads.com/@zuck/post/DeZgeQhm6RW"
+      },
+      "mode": "none",
+      "evidence_mode": "live_anonymous",
+      "limits": {
+        "seconds": 120.0,
+        "tools": 3,
+        "llm": 1
+      }
+    },
+    {
+      "type": "navigation",
+      "at": "2026-10-30T02:33:34.169Z",
+      "input": {
+        "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW"
+      },
+      "output": {
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+            "kind": "initial"
+          }
+        ],
+        "final_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+        "http_statuses": [
+          {
+            "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+            "status": 200
+          }
+        ],
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 3,
+            "policy_resource_budget_or_type": 2
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready"
+        }
+      },
+      "status": "observed",
+      "reason_code": null
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:33:34.192Z",
+      "call_id": "tool-1",
+      "name": "read_post",
+      "input": {
+        "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "DeZgeQhm6RW",
+            "author": "zuck",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Mark Zuckerberg",
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null
+          },
+          {
+            "id": "DevK_j2CM4W",
+            "author": "mark872752",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@mark872752/post/DevK_j2CM4W",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Zuckerberg fans page",
+            "order_evidence": null
+          },
+          {
+            "id": "DelE1cACMns",
+            "author": "duck.59531883",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@duck.59531883/post/DelE1cACMns",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "",
+            "order_evidence": null
+          },
+          {
+            "id": "DestF-zjGtC",
+            "author": "zuckreach_profile",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@zuckreach_profile/post/DestF-zjGtC",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuck",
+            "order_evidence": null
+          },
+          {
+            "id": "DfCyp5gkRwz",
+            "author": "mannyfre5h88",
+            "text": "Can’t wait to tear this up 🤤",
+            "url": "https://www.threads.com/@mannyfre5h88/post/DfCyp5gkRwz",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Emmanuel Pimentel",
+            "order_evidence": null
+          },
+          {
+            "id": "DeZgqgdCM_7",
+            "author": "designbyateeb",
+            "text": "My favorite Fruit 😀",
+            "url": "https://www.threads.com/@designbyateeb/post/DeZgqgdCM_7",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Syed Ateeb Hussain",
+            "order_evidence": null
+          },
+          {
+            "id": "DeZguF-DWK6",
+            "author": "batulaynn",
+            "text": "Adana karpuzu büyrüüĞnn",
+            "url": "https://www.threads.com/@batulaynn/post/DeZguF-DWK6",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Batuhan Şahin",
+            "order_evidence": null
+          },
+          {
+            "id": "DeZkFqzjgQV",
+            "author": "theabhimanyuaryan",
+            "text": "Beautiful. In India 🇮🇳, we eat this a lot; bananas, watermelon, and coconuts are cheap. Best fruits ever.",
+            "url": "https://www.threads.com/@theabhimanyuaryan/post/DeZkFqzjgQV",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "batulaynn",
+            "reader_branch": true,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Aryan",
+            "order_evidence": null
+          },
+          {
+            "id": "DeZgxJDmuNZ",
+            "author": "atthebedofthestream",
+            "text": "🍉",
+            "url": "https://www.threads.com/@atthebedofthestream/post/DeZgxJDmuNZ",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Leilani Stanwood (pseudonym)",
+            "order_evidence": null
+          },
+          {
+            "id": "DeZgxV7CBAc",
+            "author": "designbyateeb",
+            "text": "How much did you get it for?😀",
+            "url": "https://www.threads.com/@designbyateeb/post/DeZgxV7CBAc",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[4].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Syed Ateeb Hussain",
+            "order_evidence": null
+          },
+          {
+            "id": "DeZgxrYDlY6",
+            "author": "joannemariedavis",
+            "text": "Can it order a spine or 2 or 3...you get to keep one, of course!",
+            "url": "https://www.threads.com/@joannemariedavis/post/DeZgxrYDlY6",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[5].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "JoAnne Davis",
+            "order_evidence": null
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "DeZgeQhm6RW",
+        "author": "zuck",
+        "thread_observed": false,
+        "has_more": false,
+        "display_name": "Mark Zuckerberg",
+        "captured_at": "2026-10-30T02:33:34.170Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 3,
+            "policy_resource_budget_or_type": 2
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 270,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        }
+      },
+      "status": "ok",
+      "elapsed_ms": 3054
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-30T02:33:34.193Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "DevK_j2CM4W",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DelE1cACMns",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DestF-zjGtC",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DfCyp5gkRwz",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DeZgqgdCM_7",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZguF-DWK6",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZkFqzjgQV",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZgxJDmuNZ",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZgxV7CBAc",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZgxrYDlY6",
+            "classification": "reader_reply"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "unavailable",
+          "post_text": "ok",
+          "continuations": "unconfirmed"
+        }
+      }
+    },
+    {
+      "type": "evidence_merge",
+      "at": "2026-10-30T02:33:34.313Z",
+      "input": {
+        "canonical_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW"
+      },
+      "output": {
+        "decision": "merged",
+        "added_post_ids": [],
+        "retained_post_ids": [
+          "DeZgeQhm6RW",
+          "DevK_j2CM4W",
+          "DelE1cACMns",
+          "DestF-zjGtC",
+          "DfCyp5gkRwz",
+          "DeZgqgdCM_7",
+          "DeZguF-DWK6",
+          "DeZkFqzjgQV",
+          "DeZgxJDmuNZ",
+          "DeZgxV7CBAc",
+          "DeZgxrYDlY6"
+        ],
+        "conflicts": [],
+        "observation_at": "2026-10-30T02:33:34.295Z"
+      },
+      "status": "merged"
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:33:34.313Z",
+      "call_id": "tool-2",
+      "name": "expand_thread",
+      "input": {
+        "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "DeZgeQhm6RW",
+            "author": "zuck",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Mark Zuckerberg",
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgeQhm6RW",
+                "author": "zuck",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgeQhm6RW",
+                "author": "zuck",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "DevK_j2CM4W",
+            "author": "mark872752",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@mark872752/post/DevK_j2CM4W",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Zuckerberg fans page",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DevK_j2CM4W",
+                "author": "mark872752",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@mark872752/post/DevK_j2CM4W",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Zuckerberg fans page"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DevK_j2CM4W",
+                "author": "mark872752",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@mark872752/post/DevK_j2CM4W",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Zuckerberg fans page"
+              }
+            ]
+          },
+          {
+            "id": "DelE1cACMns",
+            "author": "duck.59531883",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@duck.59531883/post/DelE1cACMns",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DelE1cACMns",
+                "author": "duck.59531883",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@duck.59531883/post/DelE1cACMns",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": ""
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DelE1cACMns",
+                "author": "duck.59531883",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@duck.59531883/post/DelE1cACMns",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": ""
+              }
+            ]
+          },
+          {
+            "id": "DestF-zjGtC",
+            "author": "zuckreach_profile",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@zuckreach_profile/post/DestF-zjGtC",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuck",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DestF-zjGtC",
+                "author": "zuckreach_profile",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@zuckreach_profile/post/DestF-zjGtC",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuck"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DestF-zjGtC",
+                "author": "zuckreach_profile",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@zuckreach_profile/post/DestF-zjGtC",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuck"
+              }
+            ]
+          },
+          {
+            "id": "DfCyp5gkRwz",
+            "author": "mannyfre5h88",
+            "text": "Can’t wait to tear this up 🤤",
+            "url": "https://www.threads.com/@mannyfre5h88/post/DfCyp5gkRwz",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Emmanuel Pimentel",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DfCyp5gkRwz",
+                "author": "mannyfre5h88",
+                "text": "Can’t wait to tear this up 🤤",
+                "parent": null,
+                "url": "https://www.threads.com/@mannyfre5h88/post/DfCyp5gkRwz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Emmanuel Pimentel"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DfCyp5gkRwz",
+                "author": "mannyfre5h88",
+                "text": "Can’t wait to tear this up 🤤",
+                "parent": null,
+                "url": "https://www.threads.com/@mannyfre5h88/post/DfCyp5gkRwz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Emmanuel Pimentel"
+              }
+            ]
+          },
+          {
+            "id": "DeZgqgdCM_7",
+            "author": "designbyateeb",
+            "text": "My favorite Fruit 😀",
+            "url": "https://www.threads.com/@designbyateeb/post/DeZgqgdCM_7",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Syed Ateeb Hussain",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgqgdCM_7",
+                "author": "designbyateeb",
+                "text": "My favorite Fruit 😀",
+                "parent": null,
+                "url": "https://www.threads.com/@designbyateeb/post/DeZgqgdCM_7",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Syed Ateeb Hussain"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgqgdCM_7",
+                "author": "designbyateeb",
+                "text": "My favorite Fruit 😀",
+                "parent": null,
+                "url": "https://www.threads.com/@designbyateeb/post/DeZgqgdCM_7",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Syed Ateeb Hussain"
+              }
+            ]
+          },
+          {
+            "id": "DeZguF-DWK6",
+            "author": "batulaynn",
+            "text": "Adana karpuzu büyrüüĞnn",
+            "url": "https://www.threads.com/@batulaynn/post/DeZguF-DWK6",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Batuhan Şahin",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZguF-DWK6",
+                "author": "batulaynn",
+                "text": "Adana karpuzu büyrüüĞnn",
+                "parent": null,
+                "url": "https://www.threads.com/@batulaynn/post/DeZguF-DWK6",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Batuhan Şahin"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZguF-DWK6",
+                "author": "batulaynn",
+                "text": "Adana karpuzu büyrüüĞnn",
+                "parent": null,
+                "url": "https://www.threads.com/@batulaynn/post/DeZguF-DWK6",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Batuhan Şahin"
+              }
+            ]
+          },
+          {
+            "id": "DeZkFqzjgQV",
+            "author": "theabhimanyuaryan",
+            "text": "Beautiful. In India 🇮🇳, we eat this a lot; bananas, watermelon, and coconuts are cheap. Best fruits ever.",
+            "url": "https://www.threads.com/@theabhimanyuaryan/post/DeZkFqzjgQV",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "batulaynn",
+            "reader_branch": true,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Aryan",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZkFqzjgQV",
+                "author": "theabhimanyuaryan",
+                "text": "Beautiful. In India 🇮🇳, we eat this a lot; bananas, watermelon, and coconuts are cheap. Best fruits ever.",
+                "parent": null,
+                "url": "https://www.threads.com/@theabhimanyuaryan/post/DeZkFqzjgQV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Aryan"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZkFqzjgQV",
+                "author": "theabhimanyuaryan",
+                "text": "Beautiful. In India 🇮🇳, we eat this a lot; bananas, watermelon, and coconuts are cheap. Best fruits ever.",
+                "parent": null,
+                "url": "https://www.threads.com/@theabhimanyuaryan/post/DeZkFqzjgQV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Aryan"
+              }
+            ]
+          },
+          {
+            "id": "DeZgxJDmuNZ",
+            "author": "atthebedofthestream",
+            "text": "🍉",
+            "url": "https://www.threads.com/@atthebedofthestream/post/DeZgxJDmuNZ",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Leilani Stanwood (pseudonym)",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxJDmuNZ",
+                "author": "atthebedofthestream",
+                "text": "🍉",
+                "parent": null,
+                "url": "https://www.threads.com/@atthebedofthestream/post/DeZgxJDmuNZ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Leilani Stanwood (pseudonym)"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxJDmuNZ",
+                "author": "atthebedofthestream",
+                "text": "🍉",
+                "parent": null,
+                "url": "https://www.threads.com/@atthebedofthestream/post/DeZgxJDmuNZ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Leilani Stanwood (pseudonym)"
+              }
+            ]
+          },
+          {
+            "id": "DeZgxV7CBAc",
+            "author": "designbyateeb",
+            "text": "How much did you get it for?😀",
+            "url": "https://www.threads.com/@designbyateeb/post/DeZgxV7CBAc",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[4].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Syed Ateeb Hussain",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxV7CBAc",
+                "author": "designbyateeb",
+                "text": "How much did you get it for?😀",
+                "parent": null,
+                "url": "https://www.threads.com/@designbyateeb/post/DeZgxV7CBAc",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Syed Ateeb Hussain"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxV7CBAc",
+                "author": "designbyateeb",
+                "text": "How much did you get it for?😀",
+                "parent": null,
+                "url": "https://www.threads.com/@designbyateeb/post/DeZgxV7CBAc",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Syed Ateeb Hussain"
+              }
+            ]
+          },
+          {
+            "id": "DeZgxrYDlY6",
+            "author": "joannemariedavis",
+            "text": "Can it order a spine or 2 or 3...you get to keep one, of course!",
+            "url": "https://www.threads.com/@joannemariedavis/post/DeZgxrYDlY6",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[5].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "JoAnne Davis",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxrYDlY6",
+                "author": "joannemariedavis",
+                "text": "Can it order a spine or 2 or 3...you get to keep one, of course!",
+                "parent": null,
+                "url": "https://www.threads.com/@joannemariedavis/post/DeZgxrYDlY6",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "JoAnne Davis"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxrYDlY6",
+                "author": "joannemariedavis",
+                "text": "Can it order a spine or 2 or 3...you get to keep one, of course!",
+                "parent": null,
+                "url": "https://www.threads.com/@joannemariedavis/post/DeZgxrYDlY6",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "JoAnne Davis"
+              }
+            ]
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "DeZgeQhm6RW",
+        "author": "zuck",
+        "thread_observed": false,
+        "has_more": false,
+        "display_name": "Mark Zuckerberg",
+        "captured_at": "2026-10-30T02:33:34.295Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 3,
+            "policy_resource_budget_or_type": 2
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 270,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        },
+        "merge_conflicts": []
+      },
+      "status": "ok",
+      "elapsed_ms": 120
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-30T02:33:34.315Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "DevK_j2CM4W",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DelE1cACMns",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DestF-zjGtC",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DfCyp5gkRwz",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DeZgqgdCM_7",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZguF-DWK6",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZkFqzjgQV",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZgxJDmuNZ",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZgxV7CBAc",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZgxrYDlY6",
+            "classification": "reader_reply"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "unavailable",
+          "post_text": "ok",
+          "continuations": "unconfirmed"
+        }
+      }
+    },
+    {
+      "type": "navigation",
+      "at": "2026-10-30T02:33:36.733Z",
+      "input": {
+        "url": "https://www.threads.com/@zuck"
+      },
+      "output": {
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck",
+            "kind": "initial"
+          }
+        ],
+        "final_url": "https://www.threads.com/@zuck",
+        "http_statuses": [
+          {
+            "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+            "status": 200
+          },
+          {
+            "url": "https://www.threads.com/@zuck",
+            "status": 200
+          }
+        ],
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 2,
+            "request_failed": 22,
+            "policy_resource_budget_or_type": 16
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4i_3O4/y0/l/en_US-j/MPp4EzC5xuR.js"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4iKqD4/yE/l/en_US-j/W10CzmBkUaN.js"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4imga4/yF/l/en_US-j/DrrdVCobZMAAuYPqwujPuMlBK6n6_KCaAVmmdQWWdoo1R4ZpVTuqpgg8Mpazhpt70hiogcroFFjwJTq6zEDXWbdM_DQMaZb8pinl8avXV5A3mUoCgAfznH4e9.js"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4iCWI4/yU/l/en_US-j/x9GSHUyoqq9DPGJSL3TB2iznbfFQkd22wkxw7Va-g9f3oKpukyPo4Ehg6tOV0kDtw-S59ZZX1ecb1KJeCrwBzYgrqiQ_dB73XW3CMUTg2BZ_QUtRtJZaRPv-eeezCV_KWgzsk1FJQoc8itQMk-zvG8D5ZGPjzEop3J996eLEhOaO_rIFBPI1gK7PKaUsfWtwly-yCx_rEOAKE3-Ox3Dgcz2JVeG3.js"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.71878-15/843458448_2045298256099953_8644614754157170636_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.71878-15/824759444_1080081581553677_7914132026218261593_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t51.71878-15/821267767_2421957878213550_837854343537213600_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/844965867_17991705567103224_8296143909108287920_n.webp"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/823965183_17989304049103224_2823186847710225415_n.webp"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/821972247_17989304061103224_4453555141637471915_n.webp"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/824759758_17989304064103224_4776561777000666078_n.webp"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/825016683_17989304076103224_6127175043996382170_n.webp"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/825016677_17989304028103224_5917484667433795396_n.webp"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/822286014_17989304037103224_5095661334066140787_n.webp"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/823000524_17989304025103224_6511660523214713912_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.71878-15/843458448_2045298256099953_8644614754157170636_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.71878-15/824759444_1080081581553677_7914132026218261593_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t51.71878-15/821267767_2421957878213550_837854343537213600_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/844965867_17991705567103224_8296143909108287920_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/823965183_17989304049103224_2823186847710225415_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/821972247_17989304061103224_4453555141637471915_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/824759758_17989304064103224_4776561777000666078_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/825016683_17989304076103224_6127175043996382170_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/825016677_17989304028103224_5917484667433795396_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/822286014_17989304037103224_5095661334066140787_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/823000524_17989304025103224_6511660523214713912_n.webp"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready"
+        }
+      },
+      "status": "observed",
+      "reason_code": null
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:33:36.744Z",
+      "call_id": "tool-3",
+      "name": "read_profile",
+      "input": {
+        "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "DeZgeQhm6RW",
+            "author": "zuck",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Mark Zuckerberg",
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgeQhm6RW",
+                "author": "zuck",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgeQhm6RW",
+                "author": "zuck",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuckerberg"
+              }
+            ]
+          },
+          {
+            "id": "DevK_j2CM4W",
+            "author": "mark872752",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@mark872752/post/DevK_j2CM4W",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Zuckerberg fans page",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DevK_j2CM4W",
+                "author": "mark872752",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@mark872752/post/DevK_j2CM4W",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Zuckerberg fans page"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DevK_j2CM4W",
+                "author": "mark872752",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@mark872752/post/DevK_j2CM4W",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Zuckerberg fans page"
+              }
+            ]
+          },
+          {
+            "id": "DelE1cACMns",
+            "author": "duck.59531883",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@duck.59531883/post/DelE1cACMns",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DelE1cACMns",
+                "author": "duck.59531883",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@duck.59531883/post/DelE1cACMns",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": ""
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DelE1cACMns",
+                "author": "duck.59531883",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@duck.59531883/post/DelE1cACMns",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": ""
+              }
+            ]
+          },
+          {
+            "id": "DestF-zjGtC",
+            "author": "zuckreach_profile",
+            "text": "Muse ordered me 🍉 how thoughtful!",
+            "url": "https://www.threads.com/@zuckreach_profile/post/DestF-zjGtC",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Mark Zuck",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DestF-zjGtC",
+                "author": "zuckreach_profile",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@zuckreach_profile/post/DestF-zjGtC",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuck"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DestF-zjGtC",
+                "author": "zuckreach_profile",
+                "text": "Muse ordered me 🍉 how thoughtful!",
+                "parent": null,
+                "url": "https://www.threads.com/@zuckreach_profile/post/DestF-zjGtC",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Mark Zuck"
+              }
+            ]
+          },
+          {
+            "id": "DfCyp5gkRwz",
+            "author": "mannyfre5h88",
+            "text": "Can’t wait to tear this up 🤤",
+            "url": "https://www.threads.com/@mannyfre5h88/post/DfCyp5gkRwz",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Emmanuel Pimentel",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DfCyp5gkRwz",
+                "author": "mannyfre5h88",
+                "text": "Can’t wait to tear this up 🤤",
+                "parent": null,
+                "url": "https://www.threads.com/@mannyfre5h88/post/DfCyp5gkRwz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Emmanuel Pimentel"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DfCyp5gkRwz",
+                "author": "mannyfre5h88",
+                "text": "Can’t wait to tear this up 🤤",
+                "parent": null,
+                "url": "https://www.threads.com/@mannyfre5h88/post/DfCyp5gkRwz",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Emmanuel Pimentel"
+              }
+            ]
+          },
+          {
+            "id": "DeZgqgdCM_7",
+            "author": "designbyateeb",
+            "text": "My favorite Fruit 😀",
+            "url": "https://www.threads.com/@designbyateeb/post/DeZgqgdCM_7",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Syed Ateeb Hussain",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgqgdCM_7",
+                "author": "designbyateeb",
+                "text": "My favorite Fruit 😀",
+                "parent": null,
+                "url": "https://www.threads.com/@designbyateeb/post/DeZgqgdCM_7",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Syed Ateeb Hussain"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgqgdCM_7",
+                "author": "designbyateeb",
+                "text": "My favorite Fruit 😀",
+                "parent": null,
+                "url": "https://www.threads.com/@designbyateeb/post/DeZgqgdCM_7",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Syed Ateeb Hussain"
+              }
+            ]
+          },
+          {
+            "id": "DeZguF-DWK6",
+            "author": "batulaynn",
+            "text": "Adana karpuzu büyrüüĞnn",
+            "url": "https://www.threads.com/@batulaynn/post/DeZguF-DWK6",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Batuhan Şahin",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZguF-DWK6",
+                "author": "batulaynn",
+                "text": "Adana karpuzu büyrüüĞnn",
+                "parent": null,
+                "url": "https://www.threads.com/@batulaynn/post/DeZguF-DWK6",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Batuhan Şahin"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZguF-DWK6",
+                "author": "batulaynn",
+                "text": "Adana karpuzu büyrüüĞnn",
+                "parent": null,
+                "url": "https://www.threads.com/@batulaynn/post/DeZguF-DWK6",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Batuhan Şahin"
+              }
+            ]
+          },
+          {
+            "id": "DeZkFqzjgQV",
+            "author": "theabhimanyuaryan",
+            "text": "Beautiful. In India 🇮🇳, we eat this a lot; bananas, watermelon, and coconuts are cheap. Best fruits ever.",
+            "url": "https://www.threads.com/@theabhimanyuaryan/post/DeZkFqzjgQV",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "batulaynn",
+            "reader_branch": true,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Aryan",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZkFqzjgQV",
+                "author": "theabhimanyuaryan",
+                "text": "Beautiful. In India 🇮🇳, we eat this a lot; bananas, watermelon, and coconuts are cheap. Best fruits ever.",
+                "parent": null,
+                "url": "https://www.threads.com/@theabhimanyuaryan/post/DeZkFqzjgQV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Aryan"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZkFqzjgQV",
+                "author": "theabhimanyuaryan",
+                "text": "Beautiful. In India 🇮🇳, we eat this a lot; bananas, watermelon, and coconuts are cheap. Best fruits ever.",
+                "parent": null,
+                "url": "https://www.threads.com/@theabhimanyuaryan/post/DeZkFqzjgQV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Aryan"
+              }
+            ]
+          },
+          {
+            "id": "DeZgxJDmuNZ",
+            "author": "atthebedofthestream",
+            "text": "🍉",
+            "url": "https://www.threads.com/@atthebedofthestream/post/DeZgxJDmuNZ",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Leilani Stanwood (pseudonym)",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxJDmuNZ",
+                "author": "atthebedofthestream",
+                "text": "🍉",
+                "parent": null,
+                "url": "https://www.threads.com/@atthebedofthestream/post/DeZgxJDmuNZ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Leilani Stanwood (pseudonym)"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxJDmuNZ",
+                "author": "atthebedofthestream",
+                "text": "🍉",
+                "parent": null,
+                "url": "https://www.threads.com/@atthebedofthestream/post/DeZgxJDmuNZ",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Leilani Stanwood (pseudonym)"
+              }
+            ]
+          },
+          {
+            "id": "DeZgxV7CBAc",
+            "author": "designbyateeb",
+            "text": "How much did you get it for?😀",
+            "url": "https://www.threads.com/@designbyateeb/post/DeZgxV7CBAc",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[4].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Syed Ateeb Hussain",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxV7CBAc",
+                "author": "designbyateeb",
+                "text": "How much did you get it for?😀",
+                "parent": null,
+                "url": "https://www.threads.com/@designbyateeb/post/DeZgxV7CBAc",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Syed Ateeb Hussain"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxV7CBAc",
+                "author": "designbyateeb",
+                "text": "How much did you get it for?😀",
+                "parent": null,
+                "url": "https://www.threads.com/@designbyateeb/post/DeZgxV7CBAc",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Syed Ateeb Hussain"
+              }
+            ]
+          },
+          {
+            "id": "DeZgxrYDlY6",
+            "author": "joannemariedavis",
+            "text": "Can it order a spine or 2 or 3...you get to keep one, of course!",
+            "url": "https://www.threads.com/@joannemariedavis/post/DeZgxrYDlY6",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[5].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "zuck",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "JoAnne Davis",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:34.170Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:34.170Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxrYDlY6",
+                "author": "joannemariedavis",
+                "text": "Can it order a spine or 2 or 3...you get to keep one, of course!",
+                "parent": null,
+                "url": "https://www.threads.com/@joannemariedavis/post/DeZgxrYDlY6",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "JoAnne Davis"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:34.295Z",
+                "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+                "id": "DeZgxrYDlY6",
+                "author": "joannemariedavis",
+                "text": "Can it order a spine or 2 or 3...you get to keep one, of course!",
+                "parent": null,
+                "url": "https://www.threads.com/@joannemariedavis/post/DeZgxrYDlY6",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "JoAnne Davis"
+              }
+            ]
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "DeZgeQhm6RW",
+        "author": "zuck",
+        "thread_observed": false,
+        "has_more": false,
+        "display_name": "Mark Zuckerberg",
+        "captured_at": "2026-10-30T02:33:34.295Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 3,
+            "policy_resource_budget_or_type": 2
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-15/843592055_17991691623103224_8086321653765802754_n.webp"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 270,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        },
+        "merge_conflicts": [],
+        "follower_count": 5750956
+      },
+      "status": "ok",
+      "elapsed_ms": 2430
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-30T02:33:36.746Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "DevK_j2CM4W",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DelE1cACMns",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DestF-zjGtC",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DfCyp5gkRwz",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DeZgqgdCM_7",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZguF-DWK6",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZkFqzjgQV",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZgxJDmuNZ",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZgxV7CBAc",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeZgxrYDlY6",
+            "classification": "reader_reply"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "ok",
+          "post_text": "ok",
+          "continuations": "unconfirmed"
+        }
+      }
+    },
+    {
+      "type": "browser_closed",
+      "at": "2026-10-30T02:33:36.956Z",
+      "status": "ok"
+    },
+    {
+      "type": "run_end",
+      "at": "2026-10-30T02:33:36.957Z",
+      "status": "partial",
+      "usage": {
+        "llm_calls": 0,
+        "calls_with_usage": 0,
+        "known_input_tokens": 0,
+        "known_output_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0,
+        "usage_complete": true,
+        "reason": null
+      },
+      "tool_calls": 3,
+      "issues": []
+    }
+  ],
+  "status": "partial",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  }
+}

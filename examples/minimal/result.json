@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "run_id": "c514b131-3035-4996-997a-def533c0b843",
+  "run_id": "f8021425-b52e-40fe-89dd-c61511e5497b",
   "status": "complete",
-  "started_at": "2026-10-29T04:56:29.323Z",
-  "finished_at": "2026-10-29T04:56:29.326Z",
+  "started_at": "2026-10-30T02:36:01.254Z",
+  "finished_at": "2026-10-30T02:36:01.256Z",
   "requested_fields": [
     "display_name",
     "follower_count",
@@ -61,6 +61,7 @@
           "order": 1,
           "parent_post_id": "ROOT",
           "text_complete": true,
+          "relationship_inferred": null,
           "order_evidence": null
         },
         {
@@ -70,6 +71,7 @@
           "order": 2,
           "parent_post_id": "A1",
           "text_complete": true,
+          "relationship_inferred": null,
           "order_evidence": null
         }
       ],

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "run_id": "42029fbb-4462-4bf6-81e0-cb40c41ee322",
+  "status": "partial",
+  "started_at": "2026-10-30T02:32:48.661Z",
+  "finished_at": "2026-10-30T02:32:58.472Z",
+  "requested_fields": [
+    "display_name",
+    "follower_count",
+    "post_text",
+    "continuations"
+  ],
+  "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+  "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+  "redirect_chain": [
+    {
+      "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+      "kind": "initial"
+    }
+  ],
+  "final_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+  "captured_at": "2026-10-30T02:32:58.256Z",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  },
+  "issues": [],
+  "trace_file": "examples/timing-20261030/02-trace.json",
+  "data": {
+    "display_name": {
+      "status": "ok",
+      "value": "Whoscall"
+    },
+    "follower_count": {
+      "status": "ok",
+      "value": {
+        "display": "15100",
+        "exact": 15100,
+        "approximate": null
+      }
+    },
+    "post_text": {
+      "status": "ok",
+      "value": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 天，就能免費領取好禮五選一 🎁\n再多簽 1 天、累積滿 11 天，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n.\n🎁 簽滿 10 天：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n📱 簽滿 11 天：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！"
+    },
+    "continuations": {
+      "status": "partial",
+      "value": [
+        {
+          "post_id": "Dd78uRIn9Iu",
+          "url": "https://www.threads.com/@whoscall_tw/post/Dd78uRIn9Iu",
+          "text": "・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n點此立即參與簽到：https://whoscalltw.pse.is/9nbeeu\n點擊看活動規則：https://whoscalltw.pse.is/9p2dw4\n活動獎項公告頁面：https://whoscall.feversocial.com/p/80",
+          "order": 1,
+          "parent_post_id": "Dd78uPeHwkx",
+          "text_complete": false,
+          "relationship_inferred": null,
+          "order_evidence": {
+            "kind": "explicit_parent_chain",
+            "post_ids": [
+              "Dd78uPeHwkx",
+              "Dd78uRIn9Iu"
+            ],
+            "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null
+          }
+        }
+      ],
+      "reason_code": "thread_incomplete",
+      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed."
+    }
+  },
+  "evidence_mode": "live_anonymous",
+  "model_mode": "none"
+}

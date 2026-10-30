@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "run_id": "c514b131-3035-4996-997a-def533c0b843",
+  "run_id": "f8021425-b52e-40fe-89dd-c61511e5497b",
   "events": [
     {
       "type": "run_start",
-      "at": "2026-10-29T04:56:29.323Z",
+      "at": "2026-10-30T02:36:01.254Z",
       "input": {
         "message": "全部 https://www.threads.com/@fixture_author/post/ROOT"
       },
@@ -18,7 +18,7 @@
     },
     {
       "type": "llm_call",
-      "at": "2026-10-29T04:56:29.324Z",
+      "at": "2026-10-30T02:36:01.255Z",
       "call_id": "llm-1",
       "phase": "parse",
       "provider": "mock",
@@ -58,7 +58,7 @@
     },
     {
       "type": "tool_call",
-      "at": "2026-10-29T04:56:29.325Z",
+      "at": "2026-10-30T02:36:01.256Z",
       "call_id": "tool-1",
       "name": "read_post",
       "input": {
@@ -164,7 +164,7 @@
     },
     {
       "type": "validation",
-      "at": "2026-10-29T04:56:29.326Z",
+      "at": "2026-10-30T02:36:01.256Z",
       "output": {
         "classifications": [
           {
@@ -202,7 +202,7 @@
     },
     {
       "type": "tool_call",
-      "at": "2026-10-29T04:56:29.326Z",
+      "at": "2026-10-30T02:36:01.256Z",
       "call_id": "tool-2",
       "name": "expand_thread",
       "input": {
@@ -308,7 +308,7 @@
     },
     {
       "type": "validation",
-      "at": "2026-10-29T04:56:29.326Z",
+      "at": "2026-10-30T02:36:01.256Z",
       "output": {
         "classifications": [
           {
@@ -346,12 +346,12 @@
     },
     {
       "type": "browser_closed",
-      "at": "2026-10-29T04:56:29.326Z",
+      "at": "2026-10-30T02:36:01.256Z",
       "status": "ok"
     },
     {
       "type": "run_end",
-      "at": "2026-10-29T04:56:29.326Z",
+      "at": "2026-10-30T02:36:01.257Z",
       "status": "complete",
       "usage": {
         "llm_calls": 0,

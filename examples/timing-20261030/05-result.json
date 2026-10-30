@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "run_id": "0b22b5ee-cc6f-41ea-b330-be723f9dd14f",
+  "status": "partial",
+  "started_at": "2026-10-30T02:33:21.405Z",
+  "finished_at": "2026-10-30T02:33:27.675Z",
+  "requested_fields": [
+    "display_name",
+    "follower_count",
+    "post_text",
+    "continuations"
+  ],
+  "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+  "canonical_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+  "redirect_chain": [
+    {
+      "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+      "kind": "initial"
+    }
+  ],
+  "final_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+  "captured_at": "2026-10-30T02:33:27.452Z",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  },
+  "issues": [],
+  "trace_file": "examples/timing-20261030/05-trace.json",
+  "data": {
+    "display_name": {
+      "status": "ok",
+      "value": "Mark Zuckerberg"
+    },
+    "follower_count": {
+      "status": "ok",
+      "value": {
+        "display": "5750956",
+        "exact": 5750956,
+        "approximate": null
+      }
+    },
+    "post_text": {
+      "status": "ok",
+      "value": "To lead this effort, I'm excited that Chirantan \"CJ\" Desai will join Meta as Chief Enterprise Platform Officer, reporting directly to me. CJ is an experienced enterprise leader with a track record of building full-stack software and delivering results in AI, infrastructure, business applications, and security. He has an extensive industry network that we look forward to partnering with."
+    },
+    "continuations": {
+      "status": "partial",
+      "value": [
+        {
+          "post_id": "Dd1MriSm3-u",
+          "url": "https://www.threads.com/@zuck/post/Dd1MriSm3-u",
+          "text": "CJ joins us from MongoDB, where he was CEO and President. Before that he led product and engineering at Cloudflare and spent nearly eight years at ServiceNow, including as President and COO.",
+          "order": 1,
+          "parent_post_id": "Dd1MqeVG3vT",
+          "text_complete": false,
+          "relationship_inferred": null,
+          "order_evidence": {
+            "kind": "explicit_parent_chain",
+            "post_ids": [
+              "Dd1MqeVG3vT",
+              "Dd1MriSm3-u"
+            ],
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null
+          }
+        },
+        {
+          "post_id": "Dd1MqeyG15H",
+          "url": "https://www.threads.com/@zuck/post/Dd1MqeyG15H",
+          "text": "I'm excited about beginning this new chapter for Meta and looking forward to working closely with CJ.",
+          "order": 2,
+          "parent_post_id": "Dd1MriSm3-u",
+          "text_complete": false,
+          "relationship_inferred": "self_thread_sequence",
+          "order_evidence": {
+            "kind": "explicit_parent_chain",
+            "post_ids": [
+              "Dd1MqeVG3vT",
+              "Dd1MriSm3-u",
+              "Dd1MqeyG15H"
+            ],
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_inferred": "self_thread_sequence"
+          }
+        }
+      ],
+      "reason_code": "thread_incomplete",
+      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed."
+    }
+  },
+  "evidence_mode": "live_anonymous",
+  "model_mode": "none"
+}

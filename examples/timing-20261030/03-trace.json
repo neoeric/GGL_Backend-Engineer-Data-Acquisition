@@ -1,0 +1,3164 @@
+{
+  "schema_version": "1.0",
+  "run_id": "f6b8e5b3-bf8e-4517-8f77-890a3c49d4b7",
+  "events": [
+    {
+      "type": "run_start",
+      "at": "2026-10-30T02:33:01.888Z",
+      "input": {
+        "message": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
+      },
+      "mode": "none",
+      "evidence_mode": "live_anonymous",
+      "limits": {
+        "seconds": 120.0,
+        "tools": 3,
+        "llm": 1
+      }
+    },
+    {
+      "type": "navigation",
+      "at": "2026-10-30T02:33:04.768Z",
+      "input": {
+        "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
+      },
+      "output": {
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+            "kind": "initial"
+          }
+        ],
+        "final_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+        "http_statuses": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+            "status": 200
+          }
+        ],
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 5,
+            "policy_resource_budget_or_type": 4
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready"
+        }
+      },
+      "status": "observed",
+      "reason_code": null
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:33:04.788Z",
+      "call_id": "tool-1",
+      "name": "read_post",
+      "input": {
+        "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "DeYW3X0Hydc",
+            "author": "whoscall_tw",
+            "text": "詐騙集團換劇本了！\n前陣子超煩的「+422」準備退場\n現在請立刻把防詐雷達轉向「+1」開頭的變體電話",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Whoscall",
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null
+          },
+          {
+            "id": "DeYU1mkjjC8",
+            "author": "whoscall_tw",
+            "text": "🚨 詐騙集團又換招！\n+422 退場，小心「+1」變體大軍來襲 🚨\n但千萬別鬆懈！根據 Whoscall 最新數據與刑事警察局的共同觀測\n詐騙集團已經悄悄換了新劇本 📖\n/\n請立刻把手機的防詐雷達轉向 👉 「+1911」與「+1749」\n詐騙號碼變換的速度比翻書還快！短短一個月內，以「+1」開頭（北美國家代碼）的變體境外電話暴增近 20 萬通。除了累積破 7 萬通的 +1911、狂打近 2 萬通的 +1749 之外，9 月甚至還冒出了 +1800 與 +1953 這兩個新面孔！\n/\n📞 這些號碼會怎麼騙？\n 接起來通常帶有境外口音，對方會自稱是「NCC 專員」、「電信業者」，甚至假冒「165反詐騙專線」，恐嚇你的門號異常、個資外洩或涉及洗錢案。\n/\n💡 防詐鐵則快筆記： \n1️⃣ 國內政府機關與 165 專線，絕對不會用「+」開頭的號碼打給你！ \n2️⃣ 只要來電顯示有「+」，接通前都會聽到「這通是國際電話，請小心詐騙」的語音警示，聽到這句話，心裡就要有底了。\n/\n留言「更新」，馬上傳送給你更新本週號碼資料庫連結！\n/\n#境外來電 #來電辨識 #Whoscall #防詐騙",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYU1mkjjC8",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.linked_inline_media",
+            "self_thread_context": null,
+            "is_reply_observed": null,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": null,
+            "order_evidence": null
+          },
+          {
+            "id": "DeYXz4jATAV",
+            "author": "betty_lin0301",
+            "text": "￼最新是+800",
+            "url": "https://www.threads.com/@betty_lin0301/post/DeYXz4jATAV",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Betty Lin",
+            "order_evidence": null
+          },
+          {
+            "id": "DeYZdyYEgOU",
+            "author": "jen_dai",
+            "text": "留友看📣防詐騙📣",
+            "url": "https://www.threads.com/@jen_dai/post/DeYZdyYEgOU",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "真_呆",
+            "order_evidence": null
+          },
+          {
+            "id": "DeYuEW8E8MS",
+            "author": "yawen.7334",
+            "text": "+1的 8-9月就開始了，封鎖會用換另一個號碼打，一樣都是+1開頭。",
+            "url": "https://www.threads.com/@yawen.7334/post/DeYuEW8E8MS",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "yawen",
+            "order_evidence": null
+          },
+          {
+            "id": "DeY8kEwGO4w",
+            "author": "sijie6330",
+            "text": "我是今天接到兩通+1741開頭的，這邊是顯示美國來電",
+            "url": "https://www.threads.com/@sijie6330/post/DeY8kEwGO4w",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "si jie",
+            "order_evidence": null
+          },
+          {
+            "id": "Deaofv1kkAB",
+            "author": "laura.su.98",
+            "text": "我媽也是3-5天就來一通",
+            "url": "https://www.threads.com/@laura.su.98/post/Deaofv1kkAB",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "sijie6330",
+            "reader_branch": true,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "踢Cher  Lala",
+            "order_evidence": null
+          },
+          {
+            "id": "DeYW3XXHzsY",
+            "author": "whoscall_tw",
+            "text": "根據 Whoscall 數據，詐騙號碼大約 2-3 週就會換一批。近期「+1911」累積已破 7 萬通，「+1749」也在短短兩週狂打近 2 萬通！再加上 9 月剛冒出的新面孔「+1800」、「+1953」，一個月內「+1」大軍攻擊逼近 20 萬次，完全沒減緩跡象。",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XXHzsY",
+            "parent": "DeYW3X0Hydc",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "DeYW3X0Hydc",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "DeYW3X0Hydc",
+                "DeYW3XXHzsY"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null
+            }
+          },
+          {
+            "id": "DeYW3XNn7JP",
+            "author": "whoscall_tw",
+            "text": "📞 他們會怎麼騙？ \n接起來多半是帶有境外口音的假客服，自稱「NCC專員」、「電信業者」，甚至直接假冒「165專線」，恐嚇你門號異常或涉及洗錢。 請牢記鐵則：國內政府機關跟 165，絕對不會用「+」開頭的號碼打給你！",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XNn7JP",
+            "parent": "DeYW3XXHzsY",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_inferred": "self_thread_sequence",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "self_thread_context": {
+              "parent": "DeYW3XXHzsY",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "inferred": "self_thread_sequence"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 2,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "DeYW3X0Hydc",
+                "DeYW3XXHzsY",
+                "DeYW3XNn7JP"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "relationship_inferred": "self_thread_sequence"
+            }
+          },
+          {
+            "id": "DeYW3XPn7I1",
+            "author": "whoscall_tw",
+            "text": "現在只要來電顯示有「+」，接通前都會先聽到「這通是國際電話，請小心詐騙」的警示語音，聽到這句心裡就要有底了 👀 看到這邊，象編推薦你趕快去更新本週最新的 Whoscall 號碼資料庫 >> https://lihi2.me/ynI92",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XPn7I1",
+            "parent": "DeYW3XNn7JP",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+            "relationship_inferred": "self_thread_sequence",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+            "self_thread_context": {
+              "parent": "DeYW3XNn7JP",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+              "inferred": "self_thread_sequence"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 3,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "DeYW3X0Hydc",
+                "DeYW3XXHzsY",
+                "DeYW3XNn7JP",
+                "DeYW3XPn7I1"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+              "relationship_inferred": "self_thread_sequence"
+            }
+          },
+          {
+            "id": "De_Mf7QmCDV",
+            "author": "liwr1",
+            "text": "+80898......開頭的電話被判定為詐騙電話",
+            "url": "https://www.threads.com/@liwr1/post/De_Mf7QmCDV",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "李茗弘",
+            "order_evidence": null
+          },
+          {
+            "id": "De_MdNtnzTN",
+            "author": "liwrtw",
+            "text": "+80898......開頭的電話被判定為詐騙電話",
+            "url": "https://www.threads.com/@liwrtw/post/De_MdNtnzTN",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "李茗弘",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd-8W1tjx2j",
+            "author": "imclare_singer",
+            "text": "為什麼最近一直有\n+1（889）的電話\n又有新型詐騙要出現了嗎？",
+            "url": "https://www.threads.com/@imclare_singer/post/Dd-8W1tjx2j",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "imClare｜創作歌手",
+            "order_evidence": null
+          },
+          {
+            "id": "Dd54R_-oMUw",
+            "author": "lung_ching_tung",
+            "text": "最近一直有+1(899)開頭的詐騙電話打電話來 煩死 有沒有什麼方式可以阻擋阿😪😪😪",
+            "url": "https://www.threads.com/@lung_ching_tung/post/Dd54R_-oMUw",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Chingt Lung",
+            "order_evidence": null
+          },
+          {
+            "id": "DeBtRisiSnb",
+            "author": "13135hate0",
+            "text": "欸幹我如果遇到電話驗證碼詐騙\n我是不是可以給他110這支電話",
+            "url": "https://www.threads.com/@13135hate0/post/DeBtRisiSnb",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "打輸就受著",
+            "order_evidence": null
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "DeYW3X0Hydc",
+        "author": "whoscall_tw",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Whoscall",
+        "captured_at": "2026-10-30T02:33:04.769Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 1,
+            "request_failed": 5,
+            "policy_resource_budget_or_type": 4
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 307,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        }
+      },
+      "status": "ok",
+      "elapsed_ms": 2899
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-30T02:33:04.789Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "DeYU1mkjjC8",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DeYXz4jATAV",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeYZdyYEgOU",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeYuEW8E8MS",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeY8kEwGO4w",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Deaofv1kkAB",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeYW3XXHzsY",
+            "classification": "continuation"
+          },
+          {
+            "id": "DeYW3XNn7JP",
+            "classification": "continuation"
+          },
+          {
+            "id": "DeYW3XPn7I1",
+            "classification": "continuation"
+          },
+          {
+            "id": "De_Mf7QmCDV",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "De_MdNtnzTN",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd-8W1tjx2j",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd54R_-oMUw",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DeBtRisiSnb",
+            "classification": "recommended_post"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "unavailable",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "evidence_merge",
+      "at": "2026-10-30T02:33:05.167Z",
+      "input": {
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
+      },
+      "output": {
+        "decision": "merged",
+        "added_post_ids": [],
+        "retained_post_ids": [
+          "DeYW3X0Hydc",
+          "DeYU1mkjjC8",
+          "DeYXz4jATAV",
+          "DeYZdyYEgOU",
+          "DeYuEW8E8MS",
+          "DeY8kEwGO4w",
+          "Deaofv1kkAB",
+          "DeYW3XXHzsY",
+          "DeYW3XNn7JP",
+          "DeYW3XPn7I1",
+          "De_Mf7QmCDV",
+          "De_MdNtnzTN",
+          "Dd-8W1tjx2j",
+          "Dd54R_-oMUw",
+          "DeBtRisiSnb"
+        ],
+        "conflicts": [],
+        "observation_at": "2026-10-30T02:33:05.140Z"
+      },
+      "status": "merged"
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:33:05.167Z",
+      "call_id": "tool-2",
+      "name": "expand_thread",
+      "input": {
+        "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "DeYW3X0Hydc",
+            "author": "whoscall_tw",
+            "text": "詐騙集團換劇本了！\n前陣子超煩的「+422」準備退場\n現在請立刻把防詐雷達轉向「+1」開頭的變體電話",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Whoscall",
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3X0Hydc",
+                "author": "whoscall_tw",
+                "text": "詐騙集團換劇本了！\n前陣子超煩的「+422」準備退場\n現在請立刻把防詐雷達轉向「+1」開頭的變體電話",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3X0Hydc",
+                "author": "whoscall_tw",
+                "text": "詐騙集團換劇本了！\n前陣子超煩的「+422」準備退場\n現在請立刻把防詐雷達轉向「+1」開頭的變體電話",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "DeYU1mkjjC8",
+            "author": "whoscall_tw",
+            "text": "🚨 詐騙集團又換招！\n+422 退場，小心「+1」變體大軍來襲 🚨\n但千萬別鬆懈！根據 Whoscall 最新數據與刑事警察局的共同觀測\n詐騙集團已經悄悄換了新劇本 📖\n/\n請立刻把手機的防詐雷達轉向 👉 「+1911」與「+1749」\n詐騙號碼變換的速度比翻書還快！短短一個月內，以「+1」開頭（北美國家代碼）的變體境外電話暴增近 20 萬通。除了累積破 7 萬通的 +1911、狂打近 2 萬通的 +1749 之外，9 月甚至還冒出了 +1800 與 +1953 這兩個新面孔！\n/\n📞 這些號碼會怎麼騙？\n 接起來通常帶有境外口音，對方會自稱是「NCC 專員」、「電信業者」，甚至假冒「165反詐騙專線」，恐嚇你的門號異常、個資外洩或涉及洗錢案。\n/\n💡 防詐鐵則快筆記： \n1️⃣ 國內政府機關與 165 專線，絕對不會用「+」開頭的號碼打給你！ \n2️⃣ 只要來電顯示有「+」，接通前都會聽到「這通是國際電話，請小心詐騙」的語音警示，聽到這句話，心裡就要有底了。\n/\n留言「更新」，馬上傳送給你更新本週號碼資料庫連結！\n/\n#境外來電 #來電辨識 #Whoscall #防詐騙",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYU1mkjjC8",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.linked_inline_media",
+            "self_thread_context": null,
+            "is_reply_observed": null,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": null,
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYU1mkjjC8",
+                "author": "whoscall_tw",
+                "text": "🚨 詐騙集團又換招！\n+422 退場，小心「+1」變體大軍來襲 🚨\n但千萬別鬆懈！根據 Whoscall 最新數據與刑事警察局的共同觀測\n詐騙集團已經悄悄換了新劇本 📖\n/\n請立刻把手機的防詐雷達轉向 👉 「+1911」與「+1749」\n詐騙號碼變換的速度比翻書還快！短短一個月內，以「+1」開頭（北美國家代碼）的變體境外電話暴增近 20 萬通。除了累積破 7 萬通的 +1911、狂打近 2 萬通的 +1749 之外，9 月甚至還冒出了 +1800 與 +1953 這兩個新面孔！\n/\n📞 這些號碼會怎麼騙？\n 接起來通常帶有境外口音，對方會自稱是「NCC 專員」、「電信業者」，甚至假冒「165反詐騙專線」，恐嚇你的門號異常、個資外洩或涉及洗錢案。\n/\n💡 防詐鐵則快筆記： \n1️⃣ 國內政府機關與 165 專線，絕對不會用「+」開頭的號碼打給你！ \n2️⃣ 只要來電顯示有「+」，接通前都會聽到「這通是國際電話，請小心詐騙」的語音警示，聽到這句話，心裡就要有底了。\n/\n留言「更新」，馬上傳送給你更新本週號碼資料庫連結！\n/\n#境外來電 #來電辨識 #Whoscall #防詐騙",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYU1mkjjC8",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": null
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYU1mkjjC8",
+                "author": "whoscall_tw",
+                "text": "🚨 詐騙集團又換招！\n+422 退場，小心「+1」變體大軍來襲 🚨\n但千萬別鬆懈！根據 Whoscall 最新數據與刑事警察局的共同觀測\n詐騙集團已經悄悄換了新劇本 📖\n/\n請立刻把手機的防詐雷達轉向 👉 「+1911」與「+1749」\n詐騙號碼變換的速度比翻書還快！短短一個月內，以「+1」開頭（北美國家代碼）的變體境外電話暴增近 20 萬通。除了累積破 7 萬通的 +1911、狂打近 2 萬通的 +1749 之外，9 月甚至還冒出了 +1800 與 +1953 這兩個新面孔！\n/\n📞 這些號碼會怎麼騙？\n 接起來通常帶有境外口音，對方會自稱是「NCC 專員」、「電信業者」，甚至假冒「165反詐騙專線」，恐嚇你的門號異常、個資外洩或涉及洗錢案。\n/\n💡 防詐鐵則快筆記： \n1️⃣ 國內政府機關與 165 專線，絕對不會用「+」開頭的號碼打給你！ \n2️⃣ 只要來電顯示有「+」，接通前都會聽到「這通是國際電話，請小心詐騙」的語音警示，聽到這句話，心裡就要有底了。\n/\n留言「更新」，馬上傳送給你更新本週號碼資料庫連結！\n/\n#境外來電 #來電辨識 #Whoscall #防詐騙",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYU1mkjjC8",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": null
+              }
+            ]
+          },
+          {
+            "id": "DeYXz4jATAV",
+            "author": "betty_lin0301",
+            "text": "￼最新是+800",
+            "url": "https://www.threads.com/@betty_lin0301/post/DeYXz4jATAV",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Betty Lin",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYXz4jATAV",
+                "author": "betty_lin0301",
+                "text": "￼最新是+800",
+                "parent": null,
+                "url": "https://www.threads.com/@betty_lin0301/post/DeYXz4jATAV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Betty Lin"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYXz4jATAV",
+                "author": "betty_lin0301",
+                "text": "￼最新是+800",
+                "parent": null,
+                "url": "https://www.threads.com/@betty_lin0301/post/DeYXz4jATAV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Betty Lin"
+              }
+            ]
+          },
+          {
+            "id": "DeYZdyYEgOU",
+            "author": "jen_dai",
+            "text": "留友看📣防詐騙📣",
+            "url": "https://www.threads.com/@jen_dai/post/DeYZdyYEgOU",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "真_呆",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYZdyYEgOU",
+                "author": "jen_dai",
+                "text": "留友看📣防詐騙📣",
+                "parent": null,
+                "url": "https://www.threads.com/@jen_dai/post/DeYZdyYEgOU",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "真_呆"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYZdyYEgOU",
+                "author": "jen_dai",
+                "text": "留友看📣防詐騙📣",
+                "parent": null,
+                "url": "https://www.threads.com/@jen_dai/post/DeYZdyYEgOU",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "真_呆"
+              }
+            ]
+          },
+          {
+            "id": "DeYuEW8E8MS",
+            "author": "yawen.7334",
+            "text": "+1的 8-9月就開始了，封鎖會用換另一個號碼打，一樣都是+1開頭。",
+            "url": "https://www.threads.com/@yawen.7334/post/DeYuEW8E8MS",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "yawen",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYuEW8E8MS",
+                "author": "yawen.7334",
+                "text": "+1的 8-9月就開始了，封鎖會用換另一個號碼打，一樣都是+1開頭。",
+                "parent": null,
+                "url": "https://www.threads.com/@yawen.7334/post/DeYuEW8E8MS",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "yawen"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYuEW8E8MS",
+                "author": "yawen.7334",
+                "text": "+1的 8-9月就開始了，封鎖會用換另一個號碼打，一樣都是+1開頭。",
+                "parent": null,
+                "url": "https://www.threads.com/@yawen.7334/post/DeYuEW8E8MS",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "yawen"
+              }
+            ]
+          },
+          {
+            "id": "DeY8kEwGO4w",
+            "author": "sijie6330",
+            "text": "我是今天接到兩通+1741開頭的，這邊是顯示美國來電",
+            "url": "https://www.threads.com/@sijie6330/post/DeY8kEwGO4w",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "si jie",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeY8kEwGO4w",
+                "author": "sijie6330",
+                "text": "我是今天接到兩通+1741開頭的，這邊是顯示美國來電",
+                "parent": null,
+                "url": "https://www.threads.com/@sijie6330/post/DeY8kEwGO4w",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "si jie"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeY8kEwGO4w",
+                "author": "sijie6330",
+                "text": "我是今天接到兩通+1741開頭的，這邊是顯示美國來電",
+                "parent": null,
+                "url": "https://www.threads.com/@sijie6330/post/DeY8kEwGO4w",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "si jie"
+              }
+            ]
+          },
+          {
+            "id": "Deaofv1kkAB",
+            "author": "laura.su.98",
+            "text": "我媽也是3-5天就來一通",
+            "url": "https://www.threads.com/@laura.su.98/post/Deaofv1kkAB",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "sijie6330",
+            "reader_branch": true,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "踢Cher  Lala",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Deaofv1kkAB",
+                "author": "laura.su.98",
+                "text": "我媽也是3-5天就來一通",
+                "parent": null,
+                "url": "https://www.threads.com/@laura.su.98/post/Deaofv1kkAB",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "踢Cher  Lala"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Deaofv1kkAB",
+                "author": "laura.su.98",
+                "text": "我媽也是3-5天就來一通",
+                "parent": null,
+                "url": "https://www.threads.com/@laura.su.98/post/Deaofv1kkAB",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "踢Cher  Lala"
+              }
+            ]
+          },
+          {
+            "id": "DeYW3XXHzsY",
+            "author": "whoscall_tw",
+            "text": "根據 Whoscall 數據，詐騙號碼大約 2-3 週就會換一批。近期「+1911」累積已破 7 萬通，「+1749」也在短短兩週狂打近 2 萬通！再加上 9 月剛冒出的新面孔「+1800」、「+1953」，一個月內「+1」大軍攻擊逼近 20 萬次，完全沒減緩跡象。",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XXHzsY",
+            "parent": "DeYW3X0Hydc",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "DeYW3X0Hydc",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "DeYW3X0Hydc",
+                "DeYW3XXHzsY"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null
+            },
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XXHzsY",
+                "author": "whoscall_tw",
+                "text": "根據 Whoscall 數據，詐騙號碼大約 2-3 週就會換一批。近期「+1911」累積已破 7 萬通，「+1749」也在短短兩週狂打近 2 萬通！再加上 9 月剛冒出的新面孔「+1800」、「+1953」，一個月內「+1」大軍攻擊逼近 20 萬次，完全沒減緩跡象。",
+                "parent": "DeYW3X0Hydc",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XXHzsY",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XXHzsY",
+                "author": "whoscall_tw",
+                "text": "根據 Whoscall 數據，詐騙號碼大約 2-3 週就會換一批。近期「+1911」累積已破 7 萬通，「+1749」也在短短兩週狂打近 2 萬通！再加上 9 月剛冒出的新面孔「+1800」、「+1953」，一個月內「+1」大軍攻擊逼近 20 萬次，完全沒減緩跡象。",
+                "parent": "DeYW3X0Hydc",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XXHzsY",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "DeYW3XNn7JP",
+            "author": "whoscall_tw",
+            "text": "📞 他們會怎麼騙？ \n接起來多半是帶有境外口音的假客服，自稱「NCC專員」、「電信業者」，甚至直接假冒「165專線」，恐嚇你門號異常或涉及洗錢。 請牢記鐵則：國內政府機關跟 165，絕對不會用「+」開頭的號碼打給你！",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XNn7JP",
+            "parent": "DeYW3XXHzsY",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_inferred": "self_thread_sequence",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "self_thread_context": {
+              "parent": "DeYW3XXHzsY",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "inferred": "self_thread_sequence"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 2,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "DeYW3X0Hydc",
+                "DeYW3XXHzsY",
+                "DeYW3XNn7JP"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "relationship_inferred": "self_thread_sequence"
+            },
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XNn7JP",
+                "author": "whoscall_tw",
+                "text": "📞 他們會怎麼騙？ \n接起來多半是帶有境外口音的假客服，自稱「NCC專員」、「電信業者」，甚至直接假冒「165專線」，恐嚇你門號異常或涉及洗錢。 請牢記鐵則：國內政府機關跟 165，絕對不會用「+」開頭的號碼打給你！",
+                "parent": "DeYW3XXHzsY",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XNn7JP",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XNn7JP",
+                "author": "whoscall_tw",
+                "text": "📞 他們會怎麼騙？ \n接起來多半是帶有境外口音的假客服，自稱「NCC專員」、「電信業者」，甚至直接假冒「165專線」，恐嚇你門號異常或涉及洗錢。 請牢記鐵則：國內政府機關跟 165，絕對不會用「+」開頭的號碼打給你！",
+                "parent": "DeYW3XXHzsY",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XNn7JP",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "DeYW3XPn7I1",
+            "author": "whoscall_tw",
+            "text": "現在只要來電顯示有「+」，接通前都會先聽到「這通是國際電話，請小心詐騙」的警示語音，聽到這句心裡就要有底了 👀 看到這邊，象編推薦你趕快去更新本週最新的 Whoscall 號碼資料庫 >> https://lihi2.me/ynI92",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XPn7I1",
+            "parent": "DeYW3XNn7JP",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+            "relationship_inferred": "self_thread_sequence",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+            "self_thread_context": {
+              "parent": "DeYW3XNn7JP",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+              "inferred": "self_thread_sequence"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 3,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "DeYW3X0Hydc",
+                "DeYW3XXHzsY",
+                "DeYW3XNn7JP",
+                "DeYW3XPn7I1"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+              "relationship_inferred": "self_thread_sequence"
+            },
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XPn7I1",
+                "author": "whoscall_tw",
+                "text": "現在只要來電顯示有「+」，接通前都會先聽到「這通是國際電話，請小心詐騙」的警示語音，聽到這句心裡就要有底了 👀 看到這邊，象編推薦你趕快去更新本週最新的 Whoscall 號碼資料庫 >> https://lihi2.me/ynI92",
+                "parent": "DeYW3XNn7JP",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XPn7I1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XPn7I1",
+                "author": "whoscall_tw",
+                "text": "現在只要來電顯示有「+」，接通前都會先聽到「這通是國際電話，請小心詐騙」的警示語音，聽到這句心裡就要有底了 👀 看到這邊，象編推薦你趕快去更新本週最新的 Whoscall 號碼資料庫 >> https://lihi2.me/ynI92",
+                "parent": "DeYW3XNn7JP",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XPn7I1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "De_Mf7QmCDV",
+            "author": "liwr1",
+            "text": "+80898......開頭的電話被判定為詐騙電話",
+            "url": "https://www.threads.com/@liwr1/post/De_Mf7QmCDV",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "李茗弘",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "De_Mf7QmCDV",
+                "author": "liwr1",
+                "text": "+80898......開頭的電話被判定為詐騙電話",
+                "parent": null,
+                "url": "https://www.threads.com/@liwr1/post/De_Mf7QmCDV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "李茗弘"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "De_Mf7QmCDV",
+                "author": "liwr1",
+                "text": "+80898......開頭的電話被判定為詐騙電話",
+                "parent": null,
+                "url": "https://www.threads.com/@liwr1/post/De_Mf7QmCDV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "李茗弘"
+              }
+            ]
+          },
+          {
+            "id": "De_MdNtnzTN",
+            "author": "liwrtw",
+            "text": "+80898......開頭的電話被判定為詐騙電話",
+            "url": "https://www.threads.com/@liwrtw/post/De_MdNtnzTN",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "李茗弘",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "De_MdNtnzTN",
+                "author": "liwrtw",
+                "text": "+80898......開頭的電話被判定為詐騙電話",
+                "parent": null,
+                "url": "https://www.threads.com/@liwrtw/post/De_MdNtnzTN",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "李茗弘"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "De_MdNtnzTN",
+                "author": "liwrtw",
+                "text": "+80898......開頭的電話被判定為詐騙電話",
+                "parent": null,
+                "url": "https://www.threads.com/@liwrtw/post/De_MdNtnzTN",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "李茗弘"
+              }
+            ]
+          },
+          {
+            "id": "Dd-8W1tjx2j",
+            "author": "imclare_singer",
+            "text": "為什麼最近一直有\n+1（889）的電話\n又有新型詐騙要出現了嗎？",
+            "url": "https://www.threads.com/@imclare_singer/post/Dd-8W1tjx2j",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "imClare｜創作歌手",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Dd-8W1tjx2j",
+                "author": "imclare_singer",
+                "text": "為什麼最近一直有\n+1（889）的電話\n又有新型詐騙要出現了嗎？",
+                "parent": null,
+                "url": "https://www.threads.com/@imclare_singer/post/Dd-8W1tjx2j",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "imClare｜創作歌手"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Dd-8W1tjx2j",
+                "author": "imclare_singer",
+                "text": "為什麼最近一直有\n+1（889）的電話\n又有新型詐騙要出現了嗎？",
+                "parent": null,
+                "url": "https://www.threads.com/@imclare_singer/post/Dd-8W1tjx2j",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "imClare｜創作歌手"
+              }
+            ]
+          },
+          {
+            "id": "Dd54R_-oMUw",
+            "author": "lung_ching_tung",
+            "text": "最近一直有+1(899)開頭的詐騙電話打電話來 煩死 有沒有什麼方式可以阻擋阿😪😪😪",
+            "url": "https://www.threads.com/@lung_ching_tung/post/Dd54R_-oMUw",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Chingt Lung",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Dd54R_-oMUw",
+                "author": "lung_ching_tung",
+                "text": "最近一直有+1(899)開頭的詐騙電話打電話來 煩死 有沒有什麼方式可以阻擋阿😪😪😪",
+                "parent": null,
+                "url": "https://www.threads.com/@lung_ching_tung/post/Dd54R_-oMUw",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Chingt Lung"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Dd54R_-oMUw",
+                "author": "lung_ching_tung",
+                "text": "最近一直有+1(899)開頭的詐騙電話打電話來 煩死 有沒有什麼方式可以阻擋阿😪😪😪",
+                "parent": null,
+                "url": "https://www.threads.com/@lung_ching_tung/post/Dd54R_-oMUw",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Chingt Lung"
+              }
+            ]
+          },
+          {
+            "id": "DeBtRisiSnb",
+            "author": "13135hate0",
+            "text": "欸幹我如果遇到電話驗證碼詐騙\n我是不是可以給他110這支電話",
+            "url": "https://www.threads.com/@13135hate0/post/DeBtRisiSnb",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "打輸就受著",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeBtRisiSnb",
+                "author": "13135hate0",
+                "text": "欸幹我如果遇到電話驗證碼詐騙\n我是不是可以給他110這支電話",
+                "parent": null,
+                "url": "https://www.threads.com/@13135hate0/post/DeBtRisiSnb",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "打輸就受著"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeBtRisiSnb",
+                "author": "13135hate0",
+                "text": "欸幹我如果遇到電話驗證碼詐騙\n我是不是可以給他110這支電話",
+                "parent": null,
+                "url": "https://www.threads.com/@13135hate0/post/DeBtRisiSnb",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "打輸就受著"
+              }
+            ]
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "DeYW3X0Hydc",
+        "author": "whoscall_tw",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Whoscall",
+        "captured_at": "2026-10-30T02:33:05.140Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 3,
+            "request_failed": 8,
+            "policy_resource_budget_or_type": 4,
+            "unsupported_url": 1,
+            "page_script_error": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "page_script_error"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 307,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        },
+        "merge_conflicts": []
+      },
+      "status": "ok",
+      "elapsed_ms": 377
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-30T02:33:05.170Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "DeYU1mkjjC8",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DeYXz4jATAV",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeYZdyYEgOU",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeYuEW8E8MS",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeY8kEwGO4w",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Deaofv1kkAB",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeYW3XXHzsY",
+            "classification": "continuation"
+          },
+          {
+            "id": "DeYW3XNn7JP",
+            "classification": "continuation"
+          },
+          {
+            "id": "DeYW3XPn7I1",
+            "classification": "continuation"
+          },
+          {
+            "id": "De_Mf7QmCDV",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "De_MdNtnzTN",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd-8W1tjx2j",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd54R_-oMUw",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DeBtRisiSnb",
+            "classification": "recommended_post"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "unavailable",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "navigation",
+      "at": "2026-10-30T02:33:07.029Z",
+      "input": {
+        "url": "https://www.threads.com/@whoscall_tw"
+      },
+      "output": {
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw",
+            "kind": "initial"
+          }
+        ],
+        "final_url": "https://www.threads.com/@whoscall_tw",
+        "http_statuses": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+            "status": 200
+          },
+          {
+            "url": "https://www.threads.com/@whoscall_tw",
+            "status": 200
+          }
+        ],
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 9,
+            "request_failed": 78,
+            "policy_resource_budget_or_type": 59,
+            "unsupported_url": 1,
+            "page_script_error": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-2.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-2.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/537768158_17904271308235291_8620495010470108992_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-2.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-2.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/537768158_17904271308235291_8620495010470108992_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/814971402_17956205277219432_2554582098911600283_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/730358774_18160270852422886_1767541543954707388_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/814971402_17956205277219432_2554582098911600283_n.jpg"
+            }
+          ],
+          "details_omitted": 108,
+          "observation": "observable_page_ready"
+        }
+      },
+      "status": "observed",
+      "reason_code": null
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:33:07.037Z",
+      "call_id": "tool-3",
+      "name": "read_profile",
+      "input": {
+        "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "DeYW3X0Hydc",
+            "author": "whoscall_tw",
+            "text": "詐騙集團換劇本了！\n前陣子超煩的「+422」準備退場\n現在請立刻把防詐雷達轉向「+1」開頭的變體電話",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Whoscall",
+            "text_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3X0Hydc",
+                "author": "whoscall_tw",
+                "text": "詐騙集團換劇本了！\n前陣子超煩的「+422」準備退場\n現在請立刻把防詐雷達轉向「+1」開頭的變體電話",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3X0Hydc",
+                "author": "whoscall_tw",
+                "text": "詐騙集團換劇本了！\n前陣子超煩的「+422」準備退場\n現在請立刻把防詐雷達轉向「+1」開頭的變體電話",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "DeYU1mkjjC8",
+            "author": "whoscall_tw",
+            "text": "🚨 詐騙集團又換招！\n+422 退場，小心「+1」變體大軍來襲 🚨\n但千萬別鬆懈！根據 Whoscall 最新數據與刑事警察局的共同觀測\n詐騙集團已經悄悄換了新劇本 📖\n/\n請立刻把手機的防詐雷達轉向 👉 「+1911」與「+1749」\n詐騙號碼變換的速度比翻書還快！短短一個月內，以「+1」開頭（北美國家代碼）的變體境外電話暴增近 20 萬通。除了累積破 7 萬通的 +1911、狂打近 2 萬通的 +1749 之外，9 月甚至還冒出了 +1800 與 +1953 這兩個新面孔！\n/\n📞 這些號碼會怎麼騙？\n 接起來通常帶有境外口音，對方會自稱是「NCC 專員」、「電信業者」，甚至假冒「165反詐騙專線」，恐嚇你的門號異常、個資外洩或涉及洗錢案。\n/\n💡 防詐鐵則快筆記： \n1️⃣ 國內政府機關與 165 專線，絕對不會用「+」開頭的號碼打給你！ \n2️⃣ 只要來電顯示有「+」，接通前都會聽到「這通是國際電話，請小心詐騙」的語音警示，聽到這句話，心裡就要有底了。\n/\n留言「更新」，馬上傳送給你更新本週號碼資料庫連結！\n/\n#境外來電 #來電辨識 #Whoscall #防詐騙",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYU1mkjjC8",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.linked_inline_media",
+            "self_thread_context": null,
+            "is_reply_observed": null,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": null,
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYU1mkjjC8",
+                "author": "whoscall_tw",
+                "text": "🚨 詐騙集團又換招！\n+422 退場，小心「+1」變體大軍來襲 🚨\n但千萬別鬆懈！根據 Whoscall 最新數據與刑事警察局的共同觀測\n詐騙集團已經悄悄換了新劇本 📖\n/\n請立刻把手機的防詐雷達轉向 👉 「+1911」與「+1749」\n詐騙號碼變換的速度比翻書還快！短短一個月內，以「+1」開頭（北美國家代碼）的變體境外電話暴增近 20 萬通。除了累積破 7 萬通的 +1911、狂打近 2 萬通的 +1749 之外，9 月甚至還冒出了 +1800 與 +1953 這兩個新面孔！\n/\n📞 這些號碼會怎麼騙？\n 接起來通常帶有境外口音，對方會自稱是「NCC 專員」、「電信業者」，甚至假冒「165反詐騙專線」，恐嚇你的門號異常、個資外洩或涉及洗錢案。\n/\n💡 防詐鐵則快筆記： \n1️⃣ 國內政府機關與 165 專線，絕對不會用「+」開頭的號碼打給你！ \n2️⃣ 只要來電顯示有「+」，接通前都會聽到「這通是國際電話，請小心詐騙」的語音警示，聽到這句話，心裡就要有底了。\n/\n留言「更新」，馬上傳送給你更新本週號碼資料庫連結！\n/\n#境外來電 #來電辨識 #Whoscall #防詐騙",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYU1mkjjC8",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": null
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYU1mkjjC8",
+                "author": "whoscall_tw",
+                "text": "🚨 詐騙集團又換招！\n+422 退場，小心「+1」變體大軍來襲 🚨\n但千萬別鬆懈！根據 Whoscall 最新數據與刑事警察局的共同觀測\n詐騙集團已經悄悄換了新劇本 📖\n/\n請立刻把手機的防詐雷達轉向 👉 「+1911」與「+1749」\n詐騙號碼變換的速度比翻書還快！短短一個月內，以「+1」開頭（北美國家代碼）的變體境外電話暴增近 20 萬通。除了累積破 7 萬通的 +1911、狂打近 2 萬通的 +1749 之外，9 月甚至還冒出了 +1800 與 +1953 這兩個新面孔！\n/\n📞 這些號碼會怎麼騙？\n 接起來通常帶有境外口音，對方會自稱是「NCC 專員」、「電信業者」，甚至假冒「165反詐騙專線」，恐嚇你的門號異常、個資外洩或涉及洗錢案。\n/\n💡 防詐鐵則快筆記： \n1️⃣ 國內政府機關與 165 專線，絕對不會用「+」開頭的號碼打給你！ \n2️⃣ 只要來電顯示有「+」，接通前都會聽到「這通是國際電話，請小心詐騙」的語音警示，聽到這句話，心裡就要有底了。\n/\n留言「更新」，馬上傳送給你更新本週號碼資料庫連結！\n/\n#境外來電 #來電辨識 #Whoscall #防詐騙",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYU1mkjjC8",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": null
+              }
+            ]
+          },
+          {
+            "id": "DeYXz4jATAV",
+            "author": "betty_lin0301",
+            "text": "￼最新是+800",
+            "url": "https://www.threads.com/@betty_lin0301/post/DeYXz4jATAV",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Betty Lin",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYXz4jATAV",
+                "author": "betty_lin0301",
+                "text": "￼最新是+800",
+                "parent": null,
+                "url": "https://www.threads.com/@betty_lin0301/post/DeYXz4jATAV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Betty Lin"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYXz4jATAV",
+                "author": "betty_lin0301",
+                "text": "￼最新是+800",
+                "parent": null,
+                "url": "https://www.threads.com/@betty_lin0301/post/DeYXz4jATAV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Betty Lin"
+              }
+            ]
+          },
+          {
+            "id": "DeYZdyYEgOU",
+            "author": "jen_dai",
+            "text": "留友看📣防詐騙📣",
+            "url": "https://www.threads.com/@jen_dai/post/DeYZdyYEgOU",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "真_呆",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYZdyYEgOU",
+                "author": "jen_dai",
+                "text": "留友看📣防詐騙📣",
+                "parent": null,
+                "url": "https://www.threads.com/@jen_dai/post/DeYZdyYEgOU",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "真_呆"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYZdyYEgOU",
+                "author": "jen_dai",
+                "text": "留友看📣防詐騙📣",
+                "parent": null,
+                "url": "https://www.threads.com/@jen_dai/post/DeYZdyYEgOU",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "真_呆"
+              }
+            ]
+          },
+          {
+            "id": "DeYuEW8E8MS",
+            "author": "yawen.7334",
+            "text": "+1的 8-9月就開始了，封鎖會用換另一個號碼打，一樣都是+1開頭。",
+            "url": "https://www.threads.com/@yawen.7334/post/DeYuEW8E8MS",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "yawen",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYuEW8E8MS",
+                "author": "yawen.7334",
+                "text": "+1的 8-9月就開始了，封鎖會用換另一個號碼打，一樣都是+1開頭。",
+                "parent": null,
+                "url": "https://www.threads.com/@yawen.7334/post/DeYuEW8E8MS",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "yawen"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYuEW8E8MS",
+                "author": "yawen.7334",
+                "text": "+1的 8-9月就開始了，封鎖會用換另一個號碼打，一樣都是+1開頭。",
+                "parent": null,
+                "url": "https://www.threads.com/@yawen.7334/post/DeYuEW8E8MS",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "yawen"
+              }
+            ]
+          },
+          {
+            "id": "DeY8kEwGO4w",
+            "author": "sijie6330",
+            "text": "我是今天接到兩通+1741開頭的，這邊是顯示美國來電",
+            "url": "https://www.threads.com/@sijie6330/post/DeY8kEwGO4w",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "si jie",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeY8kEwGO4w",
+                "author": "sijie6330",
+                "text": "我是今天接到兩通+1741開頭的，這邊是顯示美國來電",
+                "parent": null,
+                "url": "https://www.threads.com/@sijie6330/post/DeY8kEwGO4w",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "si jie"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeY8kEwGO4w",
+                "author": "sijie6330",
+                "text": "我是今天接到兩通+1741開頭的，這邊是顯示美國來電",
+                "parent": null,
+                "url": "https://www.threads.com/@sijie6330/post/DeY8kEwGO4w",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "si jie"
+              }
+            ]
+          },
+          {
+            "id": "Deaofv1kkAB",
+            "author": "laura.su.98",
+            "text": "我媽也是3-5天就來一通",
+            "url": "https://www.threads.com/@laura.su.98/post/Deaofv1kkAB",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[1].node",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "sijie6330",
+            "reader_branch": true,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "踢Cher  Lala",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Deaofv1kkAB",
+                "author": "laura.su.98",
+                "text": "我媽也是3-5天就來一通",
+                "parent": null,
+                "url": "https://www.threads.com/@laura.su.98/post/Deaofv1kkAB",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "踢Cher  Lala"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Deaofv1kkAB",
+                "author": "laura.su.98",
+                "text": "我媽也是3-5天就來一通",
+                "parent": null,
+                "url": "https://www.threads.com/@laura.su.98/post/Deaofv1kkAB",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "踢Cher  Lala"
+              }
+            ]
+          },
+          {
+            "id": "DeYW3XXHzsY",
+            "author": "whoscall_tw",
+            "text": "根據 Whoscall 數據，詐騙號碼大約 2-3 週就會換一批。近期「+1911」累積已破 7 萬通，「+1749」也在短短兩週狂打近 2 萬通！再加上 9 月剛冒出的新面孔「+1800」、「+1953」，一個月內「+1」大軍攻擊逼近 20 萬次，完全沒減緩跡象。",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XXHzsY",
+            "parent": "DeYW3X0Hydc",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "DeYW3X0Hydc",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "DeYW3X0Hydc",
+                "DeYW3XXHzsY"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null
+            },
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XXHzsY",
+                "author": "whoscall_tw",
+                "text": "根據 Whoscall 數據，詐騙號碼大約 2-3 週就會換一批。近期「+1911」累積已破 7 萬通，「+1749」也在短短兩週狂打近 2 萬通！再加上 9 月剛冒出的新面孔「+1800」、「+1953」，一個月內「+1」大軍攻擊逼近 20 萬次，完全沒減緩跡象。",
+                "parent": "DeYW3X0Hydc",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XXHzsY",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XXHzsY",
+                "author": "whoscall_tw",
+                "text": "根據 Whoscall 數據，詐騙號碼大約 2-3 週就會換一批。近期「+1911」累積已破 7 萬通，「+1749」也在短短兩週狂打近 2 萬通！再加上 9 月剛冒出的新面孔「+1800」、「+1953」，一個月內「+1」大軍攻擊逼近 20 萬次，完全沒減緩跡象。",
+                "parent": "DeYW3X0Hydc",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XXHzsY",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "DeYW3XNn7JP",
+            "author": "whoscall_tw",
+            "text": "📞 他們會怎麼騙？ \n接起來多半是帶有境外口音的假客服，自稱「NCC專員」、「電信業者」，甚至直接假冒「165專線」，恐嚇你門號異常或涉及洗錢。 請牢記鐵則：國內政府機關跟 165，絕對不會用「+」開頭的號碼打給你！",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XNn7JP",
+            "parent": "DeYW3XXHzsY",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_inferred": "self_thread_sequence",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "self_thread_context": {
+              "parent": "DeYW3XXHzsY",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "inferred": "self_thread_sequence"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 2,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "DeYW3X0Hydc",
+                "DeYW3XXHzsY",
+                "DeYW3XNn7JP"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "relationship_inferred": "self_thread_sequence"
+            },
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XNn7JP",
+                "author": "whoscall_tw",
+                "text": "📞 他們會怎麼騙？ \n接起來多半是帶有境外口音的假客服，自稱「NCC專員」、「電信業者」，甚至直接假冒「165專線」，恐嚇你門號異常或涉及洗錢。 請牢記鐵則：國內政府機關跟 165，絕對不會用「+」開頭的號碼打給你！",
+                "parent": "DeYW3XXHzsY",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XNn7JP",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XNn7JP",
+                "author": "whoscall_tw",
+                "text": "📞 他們會怎麼騙？ \n接起來多半是帶有境外口音的假客服，自稱「NCC專員」、「電信業者」，甚至直接假冒「165專線」，恐嚇你門號異常或涉及洗錢。 請牢記鐵則：國內政府機關跟 165，絕對不會用「+」開頭的號碼打給你！",
+                "parent": "DeYW3XXHzsY",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XNn7JP",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "DeYW3XPn7I1",
+            "author": "whoscall_tw",
+            "text": "現在只要來電顯示有「+」，接通前都會先聽到「這通是國際電話，請小心詐騙」的警示語音，聽到這句心裡就要有底了 👀 看到這邊，象編推薦你趕快去更新本週最新的 Whoscall 號碼資料庫 >> https://lihi2.me/ynI92",
+            "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XPn7I1",
+            "parent": "DeYW3XNn7JP",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+            "relationship_inferred": "self_thread_sequence",
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+            "self_thread_context": {
+              "parent": "DeYW3XNn7JP",
+              "author": "whoscall_tw",
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+              "inferred": "self_thread_sequence"
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 3,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "DeYW3X0Hydc",
+                "DeYW3XXHzsY",
+                "DeYW3XNn7JP",
+                "DeYW3XPn7I1"
+              ],
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+              "relationship_inferred": "self_thread_sequence"
+            },
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XPn7I1",
+                "author": "whoscall_tw",
+                "text": "現在只要來電顯示有「+」，接通前都會先聽到「這通是國際電話，請小心詐騙」的警示語音，聽到這句心裡就要有底了 👀 看到這邊，象編推薦你趕快去更新本週最新的 Whoscall 號碼資料庫 >> https://lihi2.me/ynI92",
+                "parent": "DeYW3XNn7JP",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XPn7I1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeYW3XPn7I1",
+                "author": "whoscall_tw",
+                "text": "現在只要來電顯示有「+」，接通前都會先聽到「這通是國際電話，請小心詐騙」的警示語音，聽到這句心裡就要有底了 👀 看到這邊，象編推薦你趕快去更新本週最新的 Whoscall 號碼資料庫 >> https://lihi2.me/ynI92",
+                "parent": "DeYW3XNn7JP",
+                "url": "https://www.threads.com/@whoscall_tw/post/DeYW3XPn7I1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
+                "relationship_inferred": "self_thread_sequence",
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "De_Mf7QmCDV",
+            "author": "liwr1",
+            "text": "+80898......開頭的電話被判定為詐騙電話",
+            "url": "https://www.threads.com/@liwr1/post/De_Mf7QmCDV",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "李茗弘",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "De_Mf7QmCDV",
+                "author": "liwr1",
+                "text": "+80898......開頭的電話被判定為詐騙電話",
+                "parent": null,
+                "url": "https://www.threads.com/@liwr1/post/De_Mf7QmCDV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "李茗弘"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "De_Mf7QmCDV",
+                "author": "liwr1",
+                "text": "+80898......開頭的電話被判定為詐騙電話",
+                "parent": null,
+                "url": "https://www.threads.com/@liwr1/post/De_Mf7QmCDV",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "李茗弘"
+              }
+            ]
+          },
+          {
+            "id": "De_MdNtnzTN",
+            "author": "liwrtw",
+            "text": "+80898......開頭的電話被判定為詐騙電話",
+            "url": "https://www.threads.com/@liwrtw/post/De_MdNtnzTN",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "李茗弘",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "De_MdNtnzTN",
+                "author": "liwrtw",
+                "text": "+80898......開頭的電話被判定為詐騙電話",
+                "parent": null,
+                "url": "https://www.threads.com/@liwrtw/post/De_MdNtnzTN",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "李茗弘"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "De_MdNtnzTN",
+                "author": "liwrtw",
+                "text": "+80898......開頭的電話被判定為詐騙電話",
+                "parent": null,
+                "url": "https://www.threads.com/@liwrtw/post/De_MdNtnzTN",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "李茗弘"
+              }
+            ]
+          },
+          {
+            "id": "Dd-8W1tjx2j",
+            "author": "imclare_singer",
+            "text": "為什麼最近一直有\n+1（889）的電話\n又有新型詐騙要出現了嗎？",
+            "url": "https://www.threads.com/@imclare_singer/post/Dd-8W1tjx2j",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "imClare｜創作歌手",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Dd-8W1tjx2j",
+                "author": "imclare_singer",
+                "text": "為什麼最近一直有\n+1（889）的電話\n又有新型詐騙要出現了嗎？",
+                "parent": null,
+                "url": "https://www.threads.com/@imclare_singer/post/Dd-8W1tjx2j",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "imClare｜創作歌手"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Dd-8W1tjx2j",
+                "author": "imclare_singer",
+                "text": "為什麼最近一直有\n+1（889）的電話\n又有新型詐騙要出現了嗎？",
+                "parent": null,
+                "url": "https://www.threads.com/@imclare_singer/post/Dd-8W1tjx2j",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "imClare｜創作歌手"
+              }
+            ]
+          },
+          {
+            "id": "Dd54R_-oMUw",
+            "author": "lung_ching_tung",
+            "text": "最近一直有+1(899)開頭的詐騙電話打電話來 煩死 有沒有什麼方式可以阻擋阿😪😪😪",
+            "url": "https://www.threads.com/@lung_ching_tung/post/Dd54R_-oMUw",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Chingt Lung",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Dd54R_-oMUw",
+                "author": "lung_ching_tung",
+                "text": "最近一直有+1(899)開頭的詐騙電話打電話來 煩死 有沒有什麼方式可以阻擋阿😪😪😪",
+                "parent": null,
+                "url": "https://www.threads.com/@lung_ching_tung/post/Dd54R_-oMUw",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Chingt Lung"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "Dd54R_-oMUw",
+                "author": "lung_ching_tung",
+                "text": "最近一直有+1(899)開頭的詐騙電話打電話來 煩死 有沒有什麼方式可以阻擋阿😪😪😪",
+                "parent": null,
+                "url": "https://www.threads.com/@lung_ching_tung/post/Dd54R_-oMUw",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "Chingt Lung"
+              }
+            ]
+          },
+          {
+            "id": "DeBtRisiSnb",
+            "author": "13135hate0",
+            "text": "欸幹我如果遇到電話驗證碼詐騙\n我是不是可以給他110這支電話",
+            "url": "https://www.threads.com/@13135hate0/post/DeBtRisiSnb",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "打輸就受著",
+            "order_evidence": null,
+            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:33:04.769Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeBtRisiSnb",
+                "author": "13135hate0",
+                "text": "欸幹我如果遇到電話驗證碼詐騙\n我是不是可以給他110這支電話",
+                "parent": null,
+                "url": "https://www.threads.com/@13135hate0/post/DeBtRisiSnb",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "打輸就受著"
+              },
+              {
+                "captured_at": "2026-10-30T02:33:05.140Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+                "id": "DeBtRisiSnb",
+                "author": "13135hate0",
+                "text": "欸幹我如果遇到電話驗證碼詐騙\n我是不是可以給他110這支電話",
+                "parent": null,
+                "url": "https://www.threads.com/@13135hate0/post/DeBtRisiSnb",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "display_name": "打輸就受著"
+              }
+            ]
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "DeYW3X0Hydc",
+        "author": "whoscall_tw",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Whoscall",
+        "captured_at": "2026-10-30T02:33:05.140Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 3,
+            "request_failed": 8,
+            "policy_resource_budget_or_type": 4,
+            "unsupported_url": 1,
+            "page_script_error": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "page_script_error"
+            }
+          ],
+          "details_omitted": 0,
+          "observation": "observable_page_ready",
+          "visible_text_length": 307,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        },
+        "merge_conflicts": [],
+        "follower_count": 15100
+      },
+      "status": "ok",
+      "elapsed_ms": 1867
+    },
+    {
+      "type": "validation",
+      "at": "2026-10-30T02:33:07.040Z",
+      "output": {
+        "classifications": [
+          {
+            "id": "DeYU1mkjjC8",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DeYXz4jATAV",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeYZdyYEgOU",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeYuEW8E8MS",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeY8kEwGO4w",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "Deaofv1kkAB",
+            "classification": "reader_reply"
+          },
+          {
+            "id": "DeYW3XXHzsY",
+            "classification": "continuation"
+          },
+          {
+            "id": "DeYW3XNn7JP",
+            "classification": "continuation"
+          },
+          {
+            "id": "DeYW3XPn7I1",
+            "classification": "continuation"
+          },
+          {
+            "id": "De_Mf7QmCDV",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "De_MdNtnzTN",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd-8W1tjx2j",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "Dd54R_-oMUw",
+            "classification": "recommended_post"
+          },
+          {
+            "id": "DeBtRisiSnb",
+            "classification": "recommended_post"
+          }
+        ],
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "ok",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "browser_closed",
+      "at": "2026-10-30T02:33:07.232Z",
+      "status": "ok"
+    },
+    {
+      "type": "run_end",
+      "at": "2026-10-30T02:33:07.232Z",
+      "status": "partial",
+      "usage": {
+        "llm_calls": 0,
+        "calls_with_usage": 0,
+        "known_input_tokens": 0,
+        "known_output_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0,
+        "usage_complete": true,
+        "reason": null
+      },
+      "tool_calls": 3,
+      "issues": []
+    }
+  ],
+  "status": "partial",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  }
+}

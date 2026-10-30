@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "run_id": "0aed85c5-2681-41e2-bf7b-2f0b6ab07459",
+  "status": "partial",
+  "started_at": "2026-10-30T02:33:10.641Z",
+  "finished_at": "2026-10-30T02:33:17.998Z",
+  "requested_fields": [
+    "display_name",
+    "follower_count",
+    "post_text",
+    "continuations"
+  ],
+  "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+  "canonical_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+  "redirect_chain": [
+    {
+      "url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+      "kind": "initial"
+    }
+  ],
+  "final_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+  "captured_at": "2026-10-30T02:33:17.831Z",
+  "usage": {
+    "llm_calls": 0,
+    "calls_with_usage": 0,
+    "known_input_tokens": 0,
+    "known_output_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "usage_complete": true,
+    "reason": null
+  },
+  "issues": [],
+  "trace_file": "examples/timing-20261030/04-trace.json",
+  "data": {
+    "display_name": {
+      "status": "ok",
+      "value": "Whoscall"
+    },
+    "follower_count": {
+      "status": "ok",
+      "value": {
+        "display": "15100",
+        "exact": 15100,
+        "approximate": null
+      }
+    },
+    "post_text": {
+      "status": "partial",
+      "value": "信用卡沒有止付功能\n信用卡沒有止付功能\n信用卡沒有止付功能\n\n很重要，所以講三遍",
+      "reason_code": "text_completeness_unconfirmed",
+      "reason": "Text was obtained, but no complete visible body or explicit source completeness indicator was observed."
+    },
+    "continuations": {
+      "status": "partial",
+      "value": [
+        {
+          "post_id": "DfAO8A9j40p",
+          "url": "https://www.threads.com/@whoscall_tw/post/DfAO8A9j40p",
+          "text": "明明沒刷卡，卻收到 Email 說你剛刷了一筆高額海外消費？\n\n先別點信裡的連結，自己打開銀行官方 App 查交易紀錄。也可以把可疑 Email 截圖，交給 Whoscall 完全免費的功能「一鍵查」，查詢有沒有詐騙風險（不論是 Email、簡訊、廣告傳單、社群貼文或對話紀錄，只要是有文字的圖片，都可以拍照或截圖上傳，3 秒鐘之內幫你判定是否有詐騙風險）\n\n使用傳送門 👉🏻 https://lihi1.me/M6mRd\n\n因為你可能根本沒被盜刷，對方就是想讓你嚇到，點進假的「取消交易」頁面，自己填上卡號、有效期限、CVV，甚至簡訊驗證碼。",
+          "order": 1,
+          "parent_post_id": "DfAO62PD9np",
+          "text_complete": false,
+          "relationship_inferred": null,
+          "order_evidence": {
+            "kind": "explicit_parent_chain",
+            "post_ids": [
+              "DfAO62PD9np",
+              "DfAO8A9j40p"
+            ],
+            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null
+          }
+        },
+        {
+          "post_id": "DfAO9Aij2QV",
+          "url": "https://www.threads.com/@whoscall_tw/post/DfAO9Aij2QV",
+          "text": "App 裡真的有那筆不明交易，怎麼辦？\n\n① 立即透過銀行官方 App 或卡片背面的客服電話，聯絡銀行掛失停卡，防止繼續被冒用。\n\n② 向銀行通報非本人交易，申請爭議款處理，保留交易通知、可疑 Email 等資料，配合調查。\n\n停卡不會自動取消已完成的交易，爭議款能否免付或退回，也要依調查結果判定。\n\n寶們，收到刷卡通知先查證，別急著照信裡的指示「取消交易」。",
+          "order": 2,
+          "parent_post_id": "DfAO8A9j40p",
+          "text_complete": false,
+          "relationship_inferred": "self_thread_sequence",
+          "order_evidence": {
+            "kind": "explicit_parent_chain",
+            "post_ids": [
+              "DfAO62PD9np",
+              "DfAO8A9j40p",
+              "DfAO9Aij2QV"
+            ],
+            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_inferred": "self_thread_sequence"
+          }
+        }
+      ],
+      "reason_code": "thread_incomplete",
+      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed."
+    }
+  },
+  "evidence_mode": "live_anonymous",
+  "model_mode": "none"
+}

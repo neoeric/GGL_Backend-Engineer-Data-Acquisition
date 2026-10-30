@@ -1,0 +1,169 @@
+{
+  "measured_at_utc_date": "2026-10-30",
+  "mode": "--model none, four fields, one CLI process per URL, sequential with 3 s gaps",
+  "machine": "Windows 11 developer workstation, residential network; wall_seconds is the whole CLI process as measured by the parent",
+  "code_version": "after commit a28fd3d (self_thread sequence continuations)",
+  "runs": [
+    {
+      "run": 1,
+      "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+      "status": "partial",
+      "exit_code": 3,
+      "wall_seconds": 9.9,
+      "internal_seconds": 9.42,
+      "tool_elapsed_ms": {
+        "read_post": 5786,
+        "expand_thread": 460,
+        "read_profile": 2954
+      },
+      "field_status": {
+        "display_name": "ok",
+        "follower_count": "ok",
+        "post_text": "ok",
+        "continuations": "partial"
+      },
+      "continuations_returned": 1,
+      "issues": [],
+      "result_file": "01-result.json",
+      "trace_file": "01-trace.json"
+    },
+    {
+      "run": 2,
+      "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+      "status": "partial",
+      "exit_code": 3,
+      "wall_seconds": 10.25,
+      "internal_seconds": 9.81,
+      "tool_elapsed_ms": {
+        "read_post": 3915,
+        "expand_thread": 118,
+        "read_profile": 5559
+      },
+      "field_status": {
+        "display_name": "ok",
+        "follower_count": "ok",
+        "post_text": "ok",
+        "continuations": "partial"
+      },
+      "continuations_returned": 1,
+      "issues": [],
+      "result_file": "02-result.json",
+      "trace_file": "02-trace.json"
+    },
+    {
+      "run": 3,
+      "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
+      "status": "partial",
+      "exit_code": 3,
+      "wall_seconds": 5.76,
+      "internal_seconds": 5.34,
+      "tool_elapsed_ms": {
+        "read_post": 2899,
+        "expand_thread": 377,
+        "read_profile": 1867
+      },
+      "field_status": {
+        "display_name": "ok",
+        "follower_count": "ok",
+        "post_text": "ok",
+        "continuations": "partial"
+      },
+      "continuations_returned": 3,
+      "issues": [],
+      "result_file": "03-result.json",
+      "trace_file": "03-trace.json"
+    },
+    {
+      "run": 4,
+      "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+      "status": "partial",
+      "exit_code": 3,
+      "wall_seconds": 7.76,
+      "internal_seconds": 7.36,
+      "tool_elapsed_ms": {
+        "read_post": 2734,
+        "expand_thread": 112,
+        "read_profile": 4341
+      },
+      "field_status": {
+        "display_name": "ok",
+        "follower_count": "ok",
+        "post_text": "partial",
+        "continuations": "partial"
+      },
+      "continuations_returned": 2,
+      "issues": [],
+      "result_file": "04-result.json",
+      "trace_file": "04-trace.json"
+    },
+    {
+      "run": 5,
+      "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
+      "status": "partial",
+      "exit_code": 3,
+      "wall_seconds": 6.71,
+      "internal_seconds": 6.27,
+      "tool_elapsed_ms": {
+        "read_post": 2968,
+        "expand_thread": 423,
+        "read_profile": 2648
+      },
+      "field_status": {
+        "display_name": "ok",
+        "follower_count": "ok",
+        "post_text": "ok",
+        "continuations": "partial"
+      },
+      "continuations_returned": 2,
+      "issues": [],
+      "result_file": "05-result.json",
+      "trace_file": "05-trace.json"
+    },
+    {
+      "run": 6,
+      "source_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
+      "status": "partial",
+      "exit_code": 3,
+      "wall_seconds": 6.25,
+      "internal_seconds": 5.82,
+      "tool_elapsed_ms": {
+        "read_post": 3054,
+        "expand_thread": 120,
+        "read_profile": 2430
+      },
+      "field_status": {
+        "display_name": "ok",
+        "follower_count": "ok",
+        "post_text": "ok",
+        "continuations": "unconfirmed"
+      },
+      "continuations_returned": 0,
+      "issues": [],
+      "result_file": "06-result.json",
+      "trace_file": "06-trace.json"
+    },
+    {
+      "run": 7,
+      "source_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
+      "status": "partial",
+      "exit_code": 3,
+      "wall_seconds": 5.22,
+      "internal_seconds": 4.8,
+      "tool_elapsed_ms": {
+        "read_post": 2878,
+        "expand_thread": 107,
+        "read_profile": 1584
+      },
+      "field_status": {
+        "display_name": "ok",
+        "follower_count": "ok",
+        "post_text": "ok",
+        "continuations": "partial"
+      },
+      "continuations_returned": 1,
+      "issues": [],
+      "result_file": "07-result.json",
+      "trace_file": "07-trace.json"
+    }
+  ]
+}
