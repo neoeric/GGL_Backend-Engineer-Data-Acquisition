@@ -9,13 +9,13 @@ from playwright.async_api import Error as PlaywrightError
 from playwright.async_api import Request, Route, async_playwright
 
 from .core import Failure, Run, utc
-from .extraction import merge_public_snapshots, public_snapshot
+from .extraction import caption_index, merge_public_snapshots, public_snapshot
 from .security import PROFILE, NavigationGuard, check_url, public_dns
 
 THREAD_REGION_SELECTOR = 'section[aria-label="Replies"],[role="region"][aria-label="Replies"],section[aria-label="回覆"],[role="region"][aria-label="回覆"]'
 
 
-VISIBLE_POSTS_JS = """() => {
+VISIBLE_POSTS_JS = """(known) => {
   const selector='article,[data-pressable-container],div[data-interactive-id]';
   const cards=[...document.querySelectorAll(selector)].filter(e=>e.getClientRects().length);
   const result=cards.slice(0,80).map(card=>{
@@ -34,6 +34,7 @@ VISIBLE_POSTS_JS = """() => {
   // Some public pages have no article/pressable wrapper. Anchor the body to its
   // own visible timestamp permalink, then use the smallest unambiguous container.
   const identity=url=>{try{const u=new URL(url);return /^(www\\.)?threads\\.(com|net)$/.test(u.hostname)?u.pathname.match(/^\\/@[^/]+\\/post\\/[^/]+\\/?$/)?.[0].replace(/\\/$/,''):null;}catch{return null;}};
+  const norm=t=>(t||'').replace(/\\s+/g,' ').trim();
   for(const anchor of [...document.querySelectorAll('a[href*="/post/"]')].filter(a=>a.querySelector('time')&&a.getClientRects().length).slice(0,80)){
     const id=identity(anchor.href);if(!id)continue;
     for(let card=anchor.parentElement,depth=0;card&&depth<12;card=card.parentElement,depth++){
@@ -43,8 +44,15 @@ VISIBLE_POSTS_JS = """() => {
       const blocks=[...card.querySelectorAll('[dir="auto"]')].filter(e=>e.getClientRects().length&&
         !e.closest('a,button,[role="button"],time,header,nav,footer')&&!e.querySelector('time,button,[role="button"]'));
       const outer=blocks.filter(e=>!blocks.some(other=>other!==e&&other.contains(e)));
-      if(outer.length!==1||!outer[0].innerText.trim())continue;
-      const body=outer[0];
+      let body=null,evidence=null;
+      if(outer.length===1&&outer[0].innerText.trim()){body=outer[0];evidence='permalink_time_scoped_visible_body';}
+      else if(outer.length>1&&known&&typeof known[id]==='string'){
+        // Reply cards carry name/badge rows beside the body. Accept only the single block whose
+        // text equals the public caption for this permalink; anything else is not a body claim.
+        const match=outer.filter(e=>norm(e.innerText)===norm(known[id]));
+        if(match.length===1){body=match[0];evidence='permalink_time_scoped_caption_match';}
+      }
+      if(!body)continue;
       const more=[...card.querySelectorAll('button,[role="button"]')].some(e=>/^(see more|read more|顯示更多|更多)$/i.test((e.innerText||'').trim()));
       let clipped=false;
       for(let e=body;e;e=e.parentElement){
@@ -54,12 +62,16 @@ VISIBLE_POSTS_JS = """() => {
       }
       const truncated=more||clipped;
       result.push({url:anchor.href,text:body.innerText,truncated,parent_url:null,display_name:null,
-        body_evidence:'permalink_time_scoped_visible_body',inline_image_count:body.querySelectorAll('img').length});
+        body_evidence:evidence,inline_image_count:body.querySelectorAll('img').length});
       break;
     }
   }
   return result;
 }"""
+
+MORE_REPLIES_PATTERN = (
+    r"^(load more replies|show more replies|view more replies|載入更多回覆|顯示更多回覆|查看更多回覆)$"
+)
 
 
 class Browser:
@@ -160,8 +172,9 @@ class Browser:
                 raise Failure("redirect_target_blocked")
             self.run.remaining()
             self.guard.remaining()
-            url = event["request"]["url"]
-            check_url(url, self.guard.profile)
+            # Chromium requests the raw Location; the guard holds the normalized form
+            # (lower-cased host, tracking parameters removed), so compare normalized.
+            url = check_url(event["request"]["url"], self.guard.profile)
             if url != self.guard.current:
                 raise Failure("redirect_target_blocked")
             if self.navigation_ticket == url:
@@ -210,7 +223,11 @@ class Browser:
                 return await self.block(route, "policy_frame_blocked")
             if main:
                 self.guard.remaining()
-                if self.navigation_ticket == req.url:
+                try:
+                    normalized = check_url(req.url, self.guard.profile)
+                except Failure:
+                    normalized = None
+                if normalized is not None and self.navigation_ticket == normalized:
                     self.navigation_ticket = None
                 else:
                     self.guard.follow(req.url, "browser_navigation")
@@ -233,7 +250,7 @@ class Browser:
                 response = await route.fetch(max_redirects=0, max_retries=0, timeout=max(1, timeout))
                 status, headers, body = response.status, response.headers, await response.body()
             if main:
-                self.statuses.append({"url": req.url, "status": status})
+                self.statuses.append({"url": self.guard.current, "status": status})
                 if status in {401, 403, 429}:
                     raise Failure(
                         "login_required" if status == 401 else "access_denied" if status == 403 else "rate_limited"
@@ -318,7 +335,7 @@ class Browser:
               ready_state: document.readyState,
               title: document.title
             })""")
-            doc["visible_posts"] = await self.page.evaluate(VISIBLE_POSTS_JS)
+            doc["visible_posts"] = await self.page.evaluate(VISIBLE_POSTS_JS, caption_index(doc["scripts"]))
             doc["thread_observed"] = await self.page.locator(THREAD_REGION_SELECTOR).evaluate_all(
                 "els=>els.some(e=>e.getClientRects().length>0)"
             )
@@ -398,14 +415,21 @@ class Browser:
     async def expand_thread(self) -> dict:
         if not self.snapshot.get("canonical_url"):
             raise Failure("unresolved_target")
-        # Re-read currently observable public data after bounded hydration, without speculative clicks.
+        # Bounded, recorded expansion of the loaded conversation, then re-read the observable public data.
         await self.observe()
+        expansion = await self._expand_visible_thread()
+        self.run.event(
+            "thread_expansion",
+            input={"canonical_url": self.snapshot.get("canonical_url")},
+            output=expansion,
+            status="observed",
+        )
         doc = await self.page.evaluate(
             """() => ({canonical:document.querySelector('link[rel="canonical"]')?.href ?? null,
           scripts:[...document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')]
             .filter(e=>e.textContent.length<=2000000).slice(0,100).map(e=>e.textContent)})"""
         )
-        doc["visible_posts"] = await self.page.evaluate(VISIBLE_POSTS_JS)
+        doc["visible_posts"] = await self.page.evaluate(VISIBLE_POSTS_JS, caption_index(doc["scripts"]))
         doc["thread_observed"] = await self.page.locator(THREAD_REGION_SELECTOR).evaluate_all(
             "els=>els.some(e=>e.getClientRects().length>0)"
         )
@@ -436,6 +460,47 @@ class Browser:
         if self.snapshot.get("has_more"):
             self.run.issue("thread_incomplete", "The page offers additional replies that were not loaded.")
         return self.snapshot
+
+    async def _expand_visible_thread(self) -> dict:
+        """Up to three rounds: press a visible 'more replies' button, otherwise scroll to the bottom,
+        and stop when the page stops growing. Every round is recorded in the trace; what appears is
+        evidence only after the same public-data checks, and nothing here proves the thread ended."""
+        actions = {"rounds": 0, "clicks": 0, "scrolls": 0, "stopped": None}
+        settle = self.settle_ms if self.transport else 800
+        for _ in range(3):
+            if self.failure:
+                actions["stopped"] = "run_stopped"
+                break
+            try:
+                if min(self.run.remaining(), self.guard.remaining()) < 3:
+                    actions["stopped"] = "budget"
+                    break
+            except Failure:
+                actions["stopped"] = "budget"
+                break
+            actions["rounds"] += 1
+            try:
+                before = await self.page.evaluate("() => document.documentElement.scrollHeight")
+                clicked = await self.page.evaluate(
+                    """(pattern) => {const re=new RegExp(pattern,'i');
+                      const button=[...document.querySelectorAll('button,[role="button"]')].find(e=>e.getClientRects().length && re.test((e.innerText||'').trim()));
+                      if(!button) return false; button.click(); return true;}""",
+                    MORE_REPLIES_PATTERN,
+                )
+                if clicked:
+                    actions["clicks"] += 1
+                else:
+                    await self.page.evaluate("() => window.scrollTo(0, document.documentElement.scrollHeight)")
+                    actions["scrolls"] += 1
+                await self.page.wait_for_timeout(settle)
+                after = await self.page.evaluate("() => document.documentElement.scrollHeight")
+            except PlaywrightError:
+                actions["stopped"] = "page_error"
+                break
+            if not clicked and after <= before:
+                actions["stopped"] = "no_growth"
+                break
+        return actions
 
     async def read_profile(self) -> dict:
         if not self.snapshot.get("canonical_url") or not self.snapshot.get("author"):
@@ -475,7 +540,8 @@ class Browser:
                 pass
         if found and len(set(found)) == 1:
             self.snapshot["follower_count"] = found[0]
-            self.run.captured_at = utc()
+        # The profile page has its own capture time; captured_at stays the post observation.
+        self.snapshot["profile_captured_at"] = utc()
         if names and len(set(names)) == 1:
             self.snapshot["display_name"] = names[0]
         return self.snapshot

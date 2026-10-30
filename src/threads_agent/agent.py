@@ -82,7 +82,10 @@ def validate_parse(parsed: object, message: str) -> tuple[str, list[str]]:
         raise Failure("model_schema_error", technical=True)
     if not fields:
         raise Failure("unsupported_or_missing_fields", invalid=True)
-    if parsed.get("url") != urls[0]:
+    # Compare the model's URL through the same extractor, so trailing prose or punctuation
+    # the model kept or dropped is not mistaken for a different target.
+    model_urls = extract_urls(parsed["url"]) if isinstance(parsed.get("url"), str) else []
+    if model_urls != [urls[0]]:
         raise Failure("model_url_mismatch", technical=True)
     return url, [f for f in FIELDS if f in fields]
 

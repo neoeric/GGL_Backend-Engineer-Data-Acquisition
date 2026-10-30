@@ -217,6 +217,7 @@ class Run:
             "redirect_chain": self.snapshot.get("redirect_chain", []),
             "final_url": self.snapshot.get("final_url"),
             "captured_at": self.captured_at,
+            "profile_captured_at": self.snapshot.get("profile_captured_at"),
             "data": data,
             "usage": usage,
             "issues": self.issues,

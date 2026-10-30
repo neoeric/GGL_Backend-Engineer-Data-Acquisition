@@ -13,6 +13,21 @@ HOSTS = {"threads.com", "www.threads.com", "threads.net", "www.threads.net"}
 POST = re.compile(r"^/@([A-Za-z0-9._]+)/post/([A-Za-z0-9_-]+)/?$")
 SHARE = re.compile(r"^/share/([A-Za-z0-9_-]+)/?$")
 PROFILE = re.compile(r"^/@([A-Za-z0-9._]+)/?$")
+# Query parameters that only track how a link was shared. They never select content.
+TRACKING_PARAMETERS = {"xmt", "igsh", "igshid", "fbclid", "gclid", "mc_cid", "mc_eid"}
+
+
+def clean_query(query: str) -> str:
+    """Drop known tracking parameters, keep every other pair exactly as written."""
+    kept = []
+    for pair in query.split("&"):
+        if not pair:
+            continue
+        name = pair.split("=", 1)[0].lower()
+        if name in TRACKING_PARAMETERS or name.startswith("utm_"):
+            continue
+        kept.append(pair)
+    return "&".join(kept)
 
 
 def check_url(url: str, profile: str | None = None, resource: bool = False) -> str:
@@ -32,7 +47,7 @@ def check_url(url: str, profile: str | None = None, resource: bool = False) -> s
             raise ValueError()
         elif not profile and not (POST.fullmatch(u.path) or SHARE.fullmatch(u.path)):
             raise ValueError()
-        return urlunsplit((u.scheme, u.netloc.lower(), u.path, u.query, ""))
+        return urlunsplit((u.scheme, u.netloc.lower(), u.path, u.query if resource else clean_query(u.query), ""))
     except (ValueError, TypeError):
         raise Failure("unsupported_url", "Only HTTPS official Threads post/share URLs are accepted.", invalid=True)
 

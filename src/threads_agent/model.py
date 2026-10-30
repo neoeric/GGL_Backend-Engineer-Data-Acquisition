@@ -39,8 +39,15 @@ INSTRUCTIONS = {
 }
 
 
+# A URL ends at whitespace, angle brackets or any CJK/full-width character: natural-language
+# messages often glue Chinese text straight onto the link (…/post/ABC的內容).
+URL_PATTERN = re.compile(
+    r"https?://[^\s<>\u3000-\u303f\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uac00-\ud7af\uf900-\ufaff\uff00-\uffef]+"
+)
+
+
 def extract_urls(message: str) -> list[str]:
-    return [m.rstrip('.,，。;；!！?？)）]】>"') for m in re.findall(r"https?://[^\s<>]+", message)]
+    return [m.rstrip(".,;!?)]>\"'") for m in URL_PATTERN.findall(message)]
 
 
 class Model:

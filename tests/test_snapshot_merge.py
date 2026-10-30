@@ -34,7 +34,7 @@ async def actual_expand(initial, later, canonical=URL):
     class Page:
         url = URL
 
-        async def evaluate(self, script):
+        async def evaluate(self, script, arg=None):
             return [] if "const selector=" in script else {"canonical": canonical, "scripts": [json.dumps(later)]}
 
         def locator(self, selector):
@@ -49,6 +49,11 @@ async def actual_expand(initial, later, canonical=URL):
         pass
 
     b.observe = observe
+
+    async def no_expansion():
+        return {"rounds": 0, "clicks": 0, "scrolls": 0, "stopped": "test_stub"}
+
+    b._expand_visible_thread = no_expansion
     output = await b.expand_thread()  # actual production method, not FixtureBrowser
     return r, output
 

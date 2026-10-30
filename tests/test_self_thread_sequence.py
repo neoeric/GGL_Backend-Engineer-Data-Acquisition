@@ -93,13 +93,16 @@ def test_later_edge_replying_to_reader_breaks_the_sequence():
     assert cont["status"] == "partial"
 
 
-def test_explicit_conflicting_parent_on_later_edge_stays_ambiguous():
+def test_explicit_parent_on_later_edge_outranks_the_sequence_guess():
     snap = snapshot(media([node("N1", "one"), node("N2", "two", explicit_parent="DIFFERENT"), node("N3", "three")]))
-    assert post(snap, "N2")["evidence_conflict"] and post(snap, "N2")["order"] is None
+    n2 = post(snap, "N2")
+    assert n2["parent"] == "DIFFERENT" and not n2.get("evidence_conflict") and n2["relationship_inferred"] is None
+    assert n2["self_thread_context"]["superseded_by_explicit_parent"] is True
     data, decisions = build_data(snap, ["continuations"])
     assert [x["post_id"] for x in data["continuations"]["value"]] == ["N1"]
     classes = {d["id"]: d["classification"] for d in decisions}
-    assert classes["N2"] == "ambiguous_evidence_conflict" and classes["N3"] == "ambiguous_evidence_conflict"
+    # DIFFERENT was never observed, so N2 and everything chained behind it stay unattached.
+    assert classes["N2"] == "ambiguous_ancestry" and classes["N3"] == "ambiguous_ancestry"
 
 
 def test_edge_without_code_stops_chaining_without_guessing():

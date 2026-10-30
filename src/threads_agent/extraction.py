@@ -8,6 +8,35 @@ from .core import field
 from .security import Failure, check_url, post_identity
 
 
+def caption_index(scripts: list[str]) -> dict[str, str]:
+    """Map visible permalink paths (/@author/post/code) to the public caption text, when unique."""
+    found: dict[str, set[str]] = {}
+
+    def walk(value):
+        if isinstance(value, dict):
+            user, caption = value.get("user"), value.get("caption")
+            if (
+                isinstance(value.get("code"), str)
+                and isinstance(user, dict)
+                and isinstance(user.get("username"), str)
+                and isinstance(caption, dict)
+                and isinstance(caption.get("text"), str)
+            ):
+                found.setdefault(f"/@{user['username']}/post/{value['code']}", set()).add(caption["text"])
+            for child in value.values():
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    for raw in scripts:
+        try:
+            walk(json.loads(raw))
+        except (ValueError, RecursionError):
+            continue
+    return {key: next(iter(texts)) for key, texts in found.items() if len(texts) == 1}
+
+
 def follower_value(display: object) -> dict:
     if isinstance(display, int) and not isinstance(display, bool) and display >= 0:
         return field("ok", {"display": str(display), "exact": display, "approximate": None})
@@ -84,11 +113,17 @@ def classify(s: dict) -> tuple[list[dict], list[dict], bool]:
                     "parent_post_id": n["parent"],
                     "text_complete": n.get("text_complete") is True,
                     "relationship_inferred": n.get("relationship_inferred"),
+                    "order_inferred": n.get("order_inferred"),
                     "order_evidence": n.get("order_evidence"),
                 }
             )
-            # A sequence-inferred link anywhere in the ancestry is retained evidence, not confirmation.
-            if not n.get("text_complete") or any(x.get("relationship_inferred") for x in chain):
+            # A sequence-inferred link or timestamp-ordered fork anywhere in the ancestry is
+            # retained evidence, not confirmation.
+            if (
+                not n.get("text_complete")
+                or any(x.get("relationship_inferred") for x in chain)
+                or any(x.get("order_inferred") for x in chain)
+            ):
                 ambiguous = True
     included.sort(key=lambda n: n["order"])
     if len({x["order"] for x in included}) != len(included):
@@ -150,7 +185,7 @@ def build_data(s: dict, requested: list[str]) -> tuple[dict, list[dict]]:
                         "partial",
                         items,
                         "thread_incomplete",
-                        "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed.",
+                        "Author continuations retained; text completeness, sequence-inferred parent links, timestamp-ordered forks, other reply context or unloaded replies remain unconfirmed.",
                     )
                     if items
                     else field(
@@ -165,29 +200,56 @@ def build_data(s: dict, requested: list[str]) -> tuple[dict, list[dict]]:
     return data, decisions
 
 
+def order_siblings(siblings: list[dict]) -> tuple[list[dict] | None, str | None]:
+    """An author replying to the same post more than once: order the siblings only by observed
+    evidence, distinct taken_at timestamps first, then distinct self_thread edge positions."""
+    stamps = [c.get("taken_at") for c in siblings]
+    if all(isinstance(t, int) and not isinstance(t, bool) for t in stamps) and len(set(stamps)) == len(stamps):
+        return sorted(siblings, key=lambda c: c["taken_at"]), "taken_at"
+    positions = [c.get("self_thread_index") for c in siblings]
+    if all(isinstance(i, int) and not isinstance(i, bool) for i in positions) and len(set(positions)) == len(positions):
+        return sorted(siblings, key=lambda c: c["self_thread_index"]), "self_thread_index"
+    return None, None
+
+
 def assign_chain_order(posts: list[dict], root: str, author: str) -> None:
-    """Order only the unique explicit parent chain, never DOM or serialization order."""
+    """Order the author's reply tree under the root, depth first. A unique child needs no extra
+    evidence; a fork is ordered by order_siblings and marked order_inferred, never by DOM or
+    serialization position. A fork without ordering evidence stays unordered."""
     children = {}
     for p in posts:
-        p["order"], p["order_evidence"] = None, None
+        p["order"], p["order_evidence"], p["order_inferred"] = None, None, None
         if p["id"] != root and p.get("author") == author and not p.get("recommended") and not p.get("reader_branch"):
             children.setdefault(p.get("parent"), []).append(p)
     if any(p["id"] == root and p.get("evidence_conflict") for p in posts):
         return
-    current, path = root, [root]
-    while len(children.get(current, [])) == 1:
-        child = children[current][0]
-        if child["id"] in path or child.get("evidence_conflict"):
-            break
-        path = path + [child["id"]]
-        child["order"] = len(path) - 1
-        child["order_evidence"] = {
-            "kind": "explicit_parent_chain",
-            "post_ids": list(path),
-            "relationship_source": child.get("relationship_source"),
-            "relationship_inferred": child.get("relationship_inferred"),
-        }
-        current = child["id"]
+    counter = 0
+
+    def visit(current, path):
+        nonlocal counter
+        siblings = [c for c in children.get(current, []) if c["id"] not in path and not c.get("evidence_conflict")]
+        if not siblings:
+            return
+        if len(siblings) == 1:
+            ordered, basis = siblings, None
+        else:
+            ordered, basis = order_siblings(siblings)
+            if ordered is None:
+                return
+        for child in ordered:
+            counter += 1
+            child["order"] = counter
+            child["order_inferred"] = basis
+            child["order_evidence"] = {
+                "kind": "explicit_parent_chain" if basis is None else f"parent_chain_siblings_by_{basis}",
+                "post_ids": path + [child["id"]],
+                "relationship_source": child.get("relationship_source"),
+                "relationship_inferred": child.get("relationship_inferred"),
+                "sibling_order_basis": basis,
+            }
+            visit(child["id"], path + [child["id"]])
+
+    visit(root, [root])
 
 
 def merge_public_snapshots(previous: dict, observed: dict) -> tuple[dict, dict]:
@@ -222,6 +284,7 @@ def merge_public_snapshots(previous: dict, observed: dict) -> tuple[dict, dict]:
                     "text_completeness_evidence",
                     "relationship_source",
                     "relationship_inferred",
+                    "taken_at",
                     "display_name",
                 ]
             },
@@ -267,6 +330,8 @@ def merge_public_snapshots(previous: dict, observed: dict) -> tuple[dict, dict]:
                 "parent",
                 "relationship_source",
                 "relationship_inferred",
+                "taken_at",
+                "self_thread_index",
                 "display_name",
                 "text_completeness_evidence",
             ]:
@@ -276,7 +341,9 @@ def merge_public_snapshots(previous: dict, observed: dict) -> tuple[dict, dict]:
                 p["text_complete"] = True
     merged["posts"] = list(nodes.values())
     merged["captured_at"] = observed.get("captured_at") or previous.get("captured_at")
-    merged["has_more"] = previous.get("has_more") is True or observed.get("has_more") is True
+    # The later observation of the same verified page decides whether more replies are still
+    # offered: after a bounded expansion a vanished button is the current state, not deletion.
+    merged["has_more"] = observed.get("has_more") is True
     merged["thread_observed"] = previous.get("thread_observed") is True or observed.get("thread_observed") is True
     merged.setdefault("merge_conflicts", []).extend(conflicts)
     # A shorter observation is never evidence that the previously seen conversation ended.
@@ -375,7 +442,11 @@ def public_snapshot(doc: dict, source: str, final: str | None, chain: list[dict]
                         and info["reply_to_author"].get("username") == relation["author"]
                     ):
                         if observed_parent is not None and observed_parent != relation["parent"]:
-                            relation = {**relation, "conflict": True}
+                            if relation.get("inferred"):
+                                # Explicit reply_to_post outranks the sequence guess; no conflict.
+                                relation = {**relation, "superseded_by_explicit_parent": True}
+                            else:
+                                relation = {**relation, "conflict": True}
                         else:
                             # An explicit matching reply_to_post confirms the link; only a missing one is inferred.
                             if observed_parent is None:
@@ -390,6 +461,13 @@ def public_snapshot(doc: dict, source: str, final: str | None, chain: list[dict]
                             "parent": observed_parent,
                             "relationship_source": relationship,
                             "relationship_inferred": inferred,
+                            "self_thread_index": relation.get("index") if relation else None,
+                            "taken_at": (
+                                value.get("taken_at")
+                                if isinstance(value.get("taken_at"), int)
+                                and not isinstance(value.get("taken_at"), bool)
+                                else None
+                            ),
                             "evidence_conflict": bool(relation and relation.get("conflict")),
                             "recommended": excluded,
                             "source_path": path,
@@ -446,6 +524,7 @@ def public_snapshot(doc: dict, source: str, final: str | None, chain: list[dict]
                             "author": identity[0],
                             "source": f"{path}.text_post_app_info.self_thread.posts.edges[{index}].node",
                             "inferred": "self_thread_sequence" if index else None,
+                            "index": index,
                         }
                         previous_code = node.get("code") if isinstance(node.get("code"), str) else None
             for k, v in value.items():
@@ -497,10 +576,18 @@ def public_snapshot(doc: dict, source: str, final: str | None, chain: list[dict]
                     existing.update(text_complete=False, text_completeness_evidence=True, dom_truncated=True)
                 elif (
                     card.get("truncated") is False
-                    and card["text"] == existing["text"]
+                    and (
+                        card["text"] == existing["text"]
+                        or card.get("body_evidence") == "permalink_time_scoped_caption_match"
+                    )
                     and existing.get("text_completeness_evidence") is None
                 ):
-                    existing.update(text_complete=True, text_completeness_evidence=False)
+                    # The unclipped visible block for this permalink shows the whole public caption.
+                    existing.update(
+                        text_complete=True,
+                        text_completeness_evidence=False,
+                        text_completeness_source=card.get("body_evidence") or "visible_card_text_match",
+                    )
             continue
         candidates.append(
             {
