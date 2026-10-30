@@ -1,14 +1,15 @@
 """Later self_thread edges: retained as sequence-inferred continuations, never silently dropped."""
+
 import asyncio
 import copy
 import json
 
 import pytest
+from test_browser import html, no_dns
 
 from threads_agent.agent import execute
 from threads_agent.browser import Browser
 from threads_agent.extraction import build_data, public_snapshot
-from test_browser import html, no_dns
 
 AUTHOR = "fixture_author"
 URL = f"https://www.threads.com/@{AUTHOR}/post/ROOT"
@@ -18,19 +19,31 @@ def node(code, text, reply_to=AUTHOR, is_reply=True, explicit_parent=None, trunc
     info = {"is_reply": is_reply, "reply_to_author": {"username": reply_to}, "self_thread_count": 0}
     if explicit_parent:
         info["reply_to_post"] = {"code": explicit_parent}
-    return {"code": code, "id": f"{code}-ID", "pk": f"{code}-PK", "user": {"username": AUTHOR, "full_name": "Fixture"},
-            "caption": {"text": text}, "is_caption_truncated": truncated, "text_post_app_info": info}
+    return {
+        "code": code,
+        "id": f"{code}-ID",
+        "pk": f"{code}-PK",
+        "user": {"username": AUTHOR, "full_name": "Fixture"},
+        "caption": {"text": text},
+        "is_caption_truncated": truncated,
+        "text_post_app_info": info,
+    }
 
 
 def media(edges):
     root = node("ROOT", "Main post", is_reply=False)
-    root["text_post_app_info"] = {"is_reply": False, "self_thread_count": len(edges),
-                                  "self_thread": {"posts": {"edges": [{"node": n} for n in edges]}}}
+    root["text_post_app_info"] = {
+        "is_reply": False,
+        "self_thread_count": len(edges),
+        "self_thread": {"posts": {"edges": [{"node": n} for n in edges]}},
+    }
     return {"media": root}
 
 
 def snapshot(public_data, scripts=None):
-    return public_snapshot({"canonical": URL, "scripts": scripts or [json.dumps(public_data)]}, URL, URL, [], "fixture-time")
+    return public_snapshot(
+        {"canonical": URL, "scripts": scripts or [json.dumps(public_data)]}, URL, URL, [], "fixture-time"
+    )
 
 
 def post(snap, code):
@@ -48,7 +61,11 @@ def test_three_edge_self_thread_is_chained_and_partial():
     assert [x["relationship_inferred"] for x in cont["value"]] == [None, "self_thread_sequence", "self_thread_sequence"]
     assert cont["value"][2]["order_evidence"]["post_ids"] == ["ROOT", "N1", "N2", "N3"]
     assert "self_thread.posts.edges[2].node" in cont["value"][2]["order_evidence"]["relationship_source"]
-    assert {d["id"]: d["classification"] for d in decisions} == {"N1": "continuation", "N2": "continuation", "N3": "continuation"}
+    assert {d["id"]: d["classification"] for d in decisions} == {
+        "N1": "continuation",
+        "N2": "continuation",
+        "N3": "continuation",
+    }
 
 
 def test_first_edge_alone_can_still_be_complete():
@@ -113,11 +130,22 @@ def test_agent_result_keeps_inferred_sequence_partial():
 
     async def transport(url):
         assert url == URL
-        return html('<link rel="canonical" href="' + URL + '"><script type="application/json">'
-                    + json.dumps(public) + '</script><body>fixture</body>')
+        return html(
+            '<link rel="canonical" href="'
+            + URL
+            + '"><script type="application/json">'
+            + json.dumps(public)
+            + "</script><body>fixture</body>"
+        )
 
-    result, trace = asyncio.run(execute(URL, mode="none", fields=["post_text", "continuations"],
-                                        browser_factory=lambda run: Browser(run, transport=transport, dns=no_dns, settle_ms=100)))
+    result, trace = asyncio.run(
+        execute(
+            URL,
+            mode="none",
+            fields=["post_text", "continuations"],
+            browser_factory=lambda run: Browser(run, transport=transport, dns=no_dns, settle_ms=100),
+        )
+    )
     assert result["status"] == "partial"
     assert result["data"]["post_text"]["status"] == "ok"
     assert [x["post_id"] for x in result["data"]["continuations"]["value"]] == ["N1", "N2", "N3"]

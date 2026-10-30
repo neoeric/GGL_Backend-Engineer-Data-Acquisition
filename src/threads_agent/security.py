@@ -1,4 +1,5 @@
 """Exact URL scope and one budget shared by HTTP, meta and JS navigation."""
+
 import asyncio
 import ipaddress
 import re
@@ -14,7 +15,7 @@ SHARE = re.compile(r"^/share/([A-Za-z0-9_-]+)/?$")
 PROFILE = re.compile(r"^/@([A-Za-z0-9._]+)/?$")
 
 
-def check_url(url, profile=None, resource=False):
+def check_url(url: str, profile: str | None = None, resource: bool = False) -> str:
     try:
         u = urlsplit(url)
         if u.scheme != "https" or u.username or u.password or u.port not in (None, 443):
@@ -36,18 +37,19 @@ def check_url(url, profile=None, resource=False):
         raise Failure("unsupported_url", "Only HTTPS official Threads post/share URLs are accepted.", invalid=True)
 
 
-async def public_dns(url):
+async def public_dns(url: str) -> None:
     host = urlsplit(url).hostname
     try:
-        addresses = await asyncio.wait_for(asyncio.get_running_loop().getaddrinfo(
-            host, 443, type=socket.SOCK_STREAM), 4)
+        addresses = await asyncio.wait_for(
+            asyncio.get_running_loop().getaddrinfo(host, 443, type=socket.SOCK_STREAM), 4
+        )
     except (OSError, TimeoutError):
         raise Failure("dns_error", technical=True)
     if not addresses or any(not ipaddress.ip_address(a[4][0]).is_global for a in addresses):
         raise Failure("redirect_target_blocked", "DNS resolves to a non-public address.")
 
 
-def post_identity(url):
+def post_identity(url: str | None) -> tuple[str, str] | None:
     if not url:
         return None
     m = POST.fullmatch(urlsplit(url).path)
@@ -55,7 +57,7 @@ def post_identity(url):
 
 
 class NavigationGuard:
-    def __init__(self, source, profile=None, seconds=30):
+    def __init__(self, source: str, profile: str | None = None, seconds: float = 30) -> None:
         self.profile = profile
         self.current = check_url(source, profile)
         self.seen = {self.current}
@@ -63,13 +65,13 @@ class NavigationGuard:
         self.deadline = time.monotonic() + min(seconds, 30)
         self.hops = 0
 
-    def remaining(self):
+    def remaining(self) -> float:
         left = self.deadline - time.monotonic()
         if left <= 0:
             raise Failure("resolution_timeout")
         return left
 
-    def follow(self, location, kind):
+    def follow(self, location: str, kind: str) -> str:
         self.remaining()
         target = urljoin(self.current, location)
         try:
