@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "run_id": "f6b8e5b3-bf8e-4517-8f77-890a3c49d4b7",
+  "run_id": "5ef49430-2189-4684-b737-0ae2c4ffc4f9",
   "status": "partial",
-  "started_at": "2026-10-30T02:33:01.888Z",
-  "finished_at": "2026-10-30T02:33:07.232Z",
+  "started_at": "2026-10-30T02:55:19.231Z",
+  "finished_at": "2026-10-30T02:55:24.608Z",
   "requested_fields": [
     "display_name",
     "follower_count",
@@ -19,7 +19,8 @@
     }
   ],
   "final_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
-  "captured_at": "2026-10-30T02:33:07.037Z",
+  "captured_at": "2026-10-30T02:55:22.601Z",
+  "profile_captured_at": "2026-10-30T02:55:24.385Z",
   "usage": {
     "llm_calls": 0,
     "calls_with_usage": 0,
@@ -61,6 +62,7 @@
           "parent_post_id": "DeYW3X0Hydc",
           "text_complete": false,
           "relationship_inferred": null,
+          "order_inferred": null,
           "order_evidence": {
             "kind": "explicit_parent_chain",
             "post_ids": [
@@ -68,7 +70,8 @@
               "DeYW3XXHzsY"
             ],
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-            "relationship_inferred": null
+            "relationship_inferred": null,
+            "sibling_order_basis": null
           }
         },
         {
@@ -79,6 +82,7 @@
           "parent_post_id": "DeYW3XXHzsY",
           "text_complete": false,
           "relationship_inferred": "self_thread_sequence",
+          "order_inferred": null,
           "order_evidence": {
             "kind": "explicit_parent_chain",
             "post_ids": [
@@ -87,7 +91,8 @@
               "DeYW3XNn7JP"
             ],
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-            "relationship_inferred": "self_thread_sequence"
+            "relationship_inferred": "self_thread_sequence",
+            "sibling_order_basis": null
           }
         },
         {
@@ -98,6 +103,7 @@
           "parent_post_id": "DeYW3XNn7JP",
           "text_complete": false,
           "relationship_inferred": "self_thread_sequence",
+          "order_inferred": null,
           "order_evidence": {
             "kind": "explicit_parent_chain",
             "post_ids": [
@@ -107,12 +113,13 @@
               "DeYW3XPn7I1"
             ],
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
-            "relationship_inferred": "self_thread_sequence"
+            "relationship_inferred": "self_thread_sequence",
+            "sibling_order_basis": null
           }
         }
       ],
       "reason_code": "thread_incomplete",
-      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed."
+      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, timestamp-ordered forks, other reply context or unloaded replies remain unconfirmed."
     }
   },
   "evidence_mode": "live_anonymous",

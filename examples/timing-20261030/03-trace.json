@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "run_id": "f6b8e5b3-bf8e-4517-8f77-890a3c49d4b7",
+  "run_id": "5ef49430-2189-4684-b737-0ae2c4ffc4f9",
   "events": [
     {
       "type": "run_start",
-      "at": "2026-10-30T02:33:01.888Z",
+      "at": "2026-10-30T02:55:19.231Z",
       "input": {
         "message": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
       },
@@ -18,7 +18,7 @@
     },
     {
       "type": "navigation",
-      "at": "2026-10-30T02:33:04.768Z",
+      "at": "2026-10-30T02:55:21.646Z",
       "input": {
         "url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
       },
@@ -68,21 +68,21 @@
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
             },
             {
@@ -96,21 +96,21 @@
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
             }
           ],
@@ -123,7 +123,7 @@
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:33:04.788Z",
+      "at": "2026-10-30T02:55:21.664Z",
       "call_id": "tool-1",
       "name": "read_post",
       "input": {
@@ -146,6 +146,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -158,7 +160,9 @@
             "text_completeness_evidence": false,
             "display_name": "Whoscall",
             "text_source": "permalink_time_scoped_visible_body",
-            "order_evidence": null
+            "text_completeness_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DeYU1mkjjC8",
@@ -168,6 +172,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": null,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.linked_inline_media",
@@ -179,7 +185,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": null,
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DeYXz4jATAV",
@@ -189,6 +196,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791779181,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
@@ -200,7 +209,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Betty Lin",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DeYZdyYEgOU",
@@ -210,6 +220,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791780049,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
@@ -221,7 +233,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "真_呆",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DeYuEW8E8MS",
@@ -231,6 +244,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791790850,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
@@ -242,7 +257,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "yawen",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DeY8kEwGO4w",
@@ -252,6 +268,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791798450,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
@@ -263,7 +281,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "si jie",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Deaofv1kkAB",
@@ -273,6 +292,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791855038,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[1].node",
@@ -284,7 +305,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "踢Cher  Lala",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DeYW3XXHzsY",
@@ -294,6 +316,8 @@
             "parent": "DeYW3X0Hydc",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
@@ -301,7 +325,8 @@
               "parent": "DeYW3X0Hydc",
               "author": "whoscall_tw",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -317,8 +342,10 @@
                 "DeYW3XXHzsY"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
-            }
+              "relationship_inferred": null,
+              "sibling_order_basis": null
+            },
+            "order_inferred": null
           },
           {
             "id": "DeYW3XNn7JP",
@@ -328,6 +355,8 @@
             "parent": "DeYW3XXHzsY",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 1,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
@@ -335,7 +364,8 @@
               "parent": "DeYW3XXHzsY",
               "author": "whoscall_tw",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "inferred": "self_thread_sequence"
+              "inferred": "self_thread_sequence",
+              "index": 1
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -352,8 +382,10 @@
                 "DeYW3XNn7JP"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "relationship_inferred": "self_thread_sequence"
-            }
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
+            },
+            "order_inferred": null
           },
           {
             "id": "DeYW3XPn7I1",
@@ -363,6 +395,8 @@
             "parent": "DeYW3XNn7JP",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 2,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
@@ -370,7 +404,8 @@
               "parent": "DeYW3XNn7JP",
               "author": "whoscall_tw",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
-              "inferred": "self_thread_sequence"
+              "inferred": "self_thread_sequence",
+              "index": 2
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -388,8 +423,10 @@
                 "DeYW3XPn7I1"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
-              "relationship_inferred": "self_thread_sequence"
-            }
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
+            },
+            "order_inferred": null
           },
           {
             "id": "De_Mf7QmCDV",
@@ -399,9 +436,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793081873,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -410,7 +449,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "李茗弘",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "De_MdNtnzTN",
@@ -420,9 +460,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793081851,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -431,7 +473,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "李茗弘",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd-8W1tjx2j",
@@ -441,9 +484,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790925927,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -452,7 +497,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "imClare｜創作歌手",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd54R_-oMUw",
@@ -462,9 +508,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790756018,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -473,7 +521,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Chingt Lung",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DeBtRisiSnb",
@@ -483,9 +532,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791018682,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -494,7 +545,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "打輸就受著",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           }
         ],
         "canonical_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
@@ -505,7 +557,7 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Whoscall",
-        "captured_at": "2026-10-30T02:33:04.769Z",
+        "captured_at": "2026-10-30T02:55:21.647Z",
         "acquisition_diagnostics": {
           "counts": {
             "policy_non_get_blocked": 1,
@@ -538,21 +590,21 @@
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
             },
             {
@@ -566,21 +618,21 @@
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
             }
           ],
@@ -592,11 +644,11 @@
         }
       },
       "status": "ok",
-      "elapsed_ms": 2899
+      "elapsed_ms": 2432
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:33:04.789Z",
+      "at": "2026-10-30T02:55:21.665Z",
       "output": {
         "classifications": [
           {
@@ -665,8 +717,22 @@
       }
     },
     {
+      "type": "thread_expansion",
+      "at": "2026-10-30T02:55:22.560Z",
+      "input": {
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
+      },
+      "output": {
+        "rounds": 1,
+        "clicks": 0,
+        "scrolls": 1,
+        "stopped": "no_growth"
+      },
+      "status": "observed"
+    },
+    {
       "type": "evidence_merge",
-      "at": "2026-10-30T02:33:05.167Z",
+      "at": "2026-10-30T02:55:22.619Z",
       "input": {
         "canonical_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc"
       },
@@ -691,13 +757,13 @@
           "DeBtRisiSnb"
         ],
         "conflicts": [],
-        "observation_at": "2026-10-30T02:33:05.140Z"
+        "observation_at": "2026-10-30T02:55:22.601Z"
       },
       "status": "merged"
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:33:05.167Z",
+      "at": "2026-10-30T02:55:22.620Z",
       "call_id": "tool-2",
       "name": "expand_thread",
       "input": {
@@ -720,6 +786,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -732,11 +800,13 @@
             "text_completeness_evidence": false,
             "display_name": "Whoscall",
             "text_source": "permalink_time_scoped_visible_body",
+            "text_completeness_source": "permalink_time_scoped_visible_body",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3X0Hydc",
                 "author": "whoscall_tw",
@@ -747,10 +817,11 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3X0Hydc",
                 "author": "whoscall_tw",
@@ -761,6 +832,7 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               }
             ]
@@ -773,6 +845,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": null,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.linked_inline_media",
@@ -785,10 +859,11 @@
             "text_completeness_evidence": null,
             "display_name": null,
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYU1mkjjC8",
                 "author": "whoscall_tw",
@@ -799,10 +874,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": null,
                 "display_name": null
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYU1mkjjC8",
                 "author": "whoscall_tw",
@@ -813,6 +889,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": null,
                 "display_name": null
               }
             ]
@@ -825,6 +902,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791779181,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
@@ -837,10 +916,11 @@
             "text_completeness_evidence": null,
             "display_name": "Betty Lin",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYXz4jATAV",
                 "author": "betty_lin0301",
@@ -851,10 +931,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791779181,
                 "display_name": "Betty Lin"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYXz4jATAV",
                 "author": "betty_lin0301",
@@ -865,6 +946,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791779181,
                 "display_name": "Betty Lin"
               }
             ]
@@ -877,6 +959,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791780049,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
@@ -889,10 +973,11 @@
             "text_completeness_evidence": null,
             "display_name": "真_呆",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYZdyYEgOU",
                 "author": "jen_dai",
@@ -903,10 +988,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791780049,
                 "display_name": "真_呆"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYZdyYEgOU",
                 "author": "jen_dai",
@@ -917,6 +1003,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791780049,
                 "display_name": "真_呆"
               }
             ]
@@ -929,6 +1016,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791790850,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
@@ -941,10 +1030,11 @@
             "text_completeness_evidence": null,
             "display_name": "yawen",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYuEW8E8MS",
                 "author": "yawen.7334",
@@ -955,10 +1045,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791790850,
                 "display_name": "yawen"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYuEW8E8MS",
                 "author": "yawen.7334",
@@ -969,6 +1060,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791790850,
                 "display_name": "yawen"
               }
             ]
@@ -981,6 +1073,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791798450,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
@@ -993,10 +1087,11 @@
             "text_completeness_evidence": null,
             "display_name": "si jie",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeY8kEwGO4w",
                 "author": "sijie6330",
@@ -1007,10 +1102,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791798450,
                 "display_name": "si jie"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeY8kEwGO4w",
                 "author": "sijie6330",
@@ -1021,6 +1117,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791798450,
                 "display_name": "si jie"
               }
             ]
@@ -1033,6 +1130,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791855038,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[1].node",
@@ -1045,10 +1144,11 @@
             "text_completeness_evidence": null,
             "display_name": "踢Cher  Lala",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Deaofv1kkAB",
                 "author": "laura.su.98",
@@ -1059,10 +1159,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791855038,
                 "display_name": "踢Cher  Lala"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Deaofv1kkAB",
                 "author": "laura.su.98",
@@ -1073,6 +1174,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791855038,
                 "display_name": "踢Cher  Lala"
               }
             ]
@@ -1085,6 +1187,8 @@
             "parent": "DeYW3X0Hydc",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
@@ -1092,7 +1196,8 @@
               "parent": "DeYW3X0Hydc",
               "author": "whoscall_tw",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -1108,12 +1213,14 @@
                 "DeYW3XXHzsY"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
+              "relationship_inferred": null,
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XXHzsY",
                 "author": "whoscall_tw",
@@ -1124,10 +1231,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XXHzsY",
                 "author": "whoscall_tw",
@@ -1138,6 +1246,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               }
             ]
@@ -1150,6 +1259,8 @@
             "parent": "DeYW3XXHzsY",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 1,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
@@ -1157,7 +1268,8 @@
               "parent": "DeYW3XXHzsY",
               "author": "whoscall_tw",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "inferred": "self_thread_sequence"
+              "inferred": "self_thread_sequence",
+              "index": 1
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -1174,12 +1286,14 @@
                 "DeYW3XNn7JP"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "relationship_inferred": "self_thread_sequence"
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XNn7JP",
                 "author": "whoscall_tw",
@@ -1190,10 +1304,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XNn7JP",
                 "author": "whoscall_tw",
@@ -1204,6 +1319,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               }
             ]
@@ -1216,6 +1332,8 @@
             "parent": "DeYW3XNn7JP",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 2,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
@@ -1223,7 +1341,8 @@
               "parent": "DeYW3XNn7JP",
               "author": "whoscall_tw",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
-              "inferred": "self_thread_sequence"
+              "inferred": "self_thread_sequence",
+              "index": 2
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -1241,12 +1360,14 @@
                 "DeYW3XPn7I1"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
-              "relationship_inferred": "self_thread_sequence"
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XPn7I1",
                 "author": "whoscall_tw",
@@ -1257,10 +1378,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XPn7I1",
                 "author": "whoscall_tw",
@@ -1271,6 +1393,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               }
             ]
@@ -1283,9 +1406,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793081873,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -1295,10 +1420,11 @@
             "text_completeness_evidence": null,
             "display_name": "李茗弘",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "De_Mf7QmCDV",
                 "author": "liwr1",
@@ -1309,10 +1435,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793081873,
                 "display_name": "李茗弘"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "De_Mf7QmCDV",
                 "author": "liwr1",
@@ -1323,6 +1450,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793081873,
                 "display_name": "李茗弘"
               }
             ]
@@ -1335,9 +1463,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793081851,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -1347,10 +1477,11 @@
             "text_completeness_evidence": null,
             "display_name": "李茗弘",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "De_MdNtnzTN",
                 "author": "liwrtw",
@@ -1361,10 +1492,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793081851,
                 "display_name": "李茗弘"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "De_MdNtnzTN",
                 "author": "liwrtw",
@@ -1375,6 +1507,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793081851,
                 "display_name": "李茗弘"
               }
             ]
@@ -1387,9 +1520,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790925927,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -1399,10 +1534,11 @@
             "text_completeness_evidence": null,
             "display_name": "imClare｜創作歌手",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Dd-8W1tjx2j",
                 "author": "imclare_singer",
@@ -1413,10 +1549,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790925927,
                 "display_name": "imClare｜創作歌手"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Dd-8W1tjx2j",
                 "author": "imclare_singer",
@@ -1427,6 +1564,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790925927,
                 "display_name": "imClare｜創作歌手"
               }
             ]
@@ -1439,9 +1577,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790756018,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -1451,10 +1591,11 @@
             "text_completeness_evidence": null,
             "display_name": "Chingt Lung",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Dd54R_-oMUw",
                 "author": "lung_ching_tung",
@@ -1465,10 +1606,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790756018,
                 "display_name": "Chingt Lung"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Dd54R_-oMUw",
                 "author": "lung_ching_tung",
@@ -1479,6 +1621,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790756018,
                 "display_name": "Chingt Lung"
               }
             ]
@@ -1491,9 +1634,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791018682,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -1503,10 +1648,11 @@
             "text_completeness_evidence": null,
             "display_name": "打輸就受著",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeBtRisiSnb",
                 "author": "13135hate0",
@@ -1517,10 +1663,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791018682,
                 "display_name": "打輸就受著"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeBtRisiSnb",
                 "author": "13135hate0",
@@ -1531,6 +1678,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791018682,
                 "display_name": "打輸就受著"
               }
             ]
@@ -1544,14 +1692,12 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Whoscall",
-        "captured_at": "2026-10-30T02:33:05.140Z",
+        "captured_at": "2026-10-30T02:55:22.601Z",
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 3,
-            "request_failed": 8,
-            "policy_resource_budget_or_type": 4,
-            "unsupported_url": 1,
-            "page_script_error": 1
+            "policy_non_get_blocked": 1,
+            "request_failed": 5,
+            "policy_resource_budget_or_type": 4
           },
           "requests": [
             {
@@ -1579,21 +1725,21 @@
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
             },
             {
@@ -1607,67 +1753,22 @@
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/ajax/bulk-route-definitions/"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/api/graphql"
-            },
-            {
-              "reason_code": "unsupported_url",
-              "method": "GET",
-              "resource_type": "fetch",
-              "host": "www.instagram.com",
-              "path": "/accounts/xusername/"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/ajax/bulk-route-definitions/"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/api/graphql"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "fetch",
-              "host": "www.instagram.com",
-              "path": "/accounts/xusername/"
-            },
-            {
-              "reason_code": "page_script_error"
             }
           ],
           "details_omitted": 0,
@@ -1679,11 +1780,11 @@
         "merge_conflicts": []
       },
       "status": "ok",
-      "elapsed_ms": 377
+      "elapsed_ms": 954
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:33:05.170Z",
+      "at": "2026-10-30T02:55:22.622Z",
       "output": {
         "classifications": [
           {
@@ -1753,7 +1854,7 @@
     },
     {
       "type": "navigation",
-      "at": "2026-10-30T02:33:07.029Z",
+      "at": "2026-10-30T02:55:24.377Z",
       "input": {
         "url": "https://www.threads.com/@whoscall_tw"
       },
@@ -1777,11 +1878,9 @@
         ],
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 9,
-            "request_failed": 78,
-            "policy_resource_budget_or_type": 59,
-            "unsupported_url": 1,
-            "page_script_error": 1
+            "policy_non_get_blocked": 4,
+            "request_failed": 18,
+            "policy_resource_budget_or_type": 6
           },
           "requests": [
             {
@@ -1809,21 +1908,21 @@
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
             },
             {
@@ -1837,67 +1936,22 @@
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/ajax/bulk-route-definitions/"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/api/graphql"
-            },
-            {
-              "reason_code": "unsupported_url",
-              "method": "GET",
-              "resource_type": "fetch",
-              "host": "www.instagram.com",
-              "path": "/accounts/xusername/"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/ajax/bulk-route-definitions/"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/api/graphql"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "fetch",
-              "host": "www.instagram.com",
-              "path": "/accounts/xusername/"
-            },
-            {
-              "reason_code": "page_script_error"
             },
             {
               "reason_code": "policy_non_get_blocked",
@@ -1915,6 +1969,20 @@
             },
             {
               "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4/yZ/r/vo10gEDOtyV.js"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4iG5x4/ye/l/en_US-j/ZPpBpi9qofS.js"
+            },
+            {
+              "reason_code": "request_failed",
               "method": "POST",
               "resource_type": "xhr",
               "host": "www.threads.com",
@@ -1928,140 +1996,91 @@
               "path": "/ajax/bz"
             },
             {
-              "reason_code": "policy_resource_budget_or_type",
+              "reason_code": "request_failed",
               "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4io3Q4/yK/l/en_US-j/zsFpqPvz1MlVgvXySSvNe1bboFG1MOP2ZT2_gQmhgl71EehTyQYuxW6hMAeQNh6bNFPauf-N2HwiF.js"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4iOMb4/yg/l/en_US-j/AAxUp0nDZmw.js"
             },
             {
-              "reason_code": "policy_resource_budget_or_type",
+              "reason_code": "request_failed",
               "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
-              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4/yT/r/C3dL3pFnJjb.js"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4ivPl4/y8/l/en_US-j/23DS-lU27Ua.js"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4iF2W4/y0/l/en_US-j/FTHeGqmSBwH.js"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "script",
+              "host": "static.cdninstagram.com",
+              "path": "/rsrc.php/v4i1kC4/yR/l/en_US-j/gu3fA73-2z5.js"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
               "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
-              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
-              "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
               "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
-              "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
               "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/2223573648706835691"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/1856983738109612075"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/537768158_17904271308235291_8620495010470108992_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/2223573648706835691"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/1856983738109612075"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/537768158_17904271308235291_8620495010470108992_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/814971402_17956205277219432_2554582098911600283_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/730358774_18160270852422886_1767541543954707388_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/814971402_17956205277219432_2554582098911600283_n.jpg"
             }
           ],
-          "details_omitted": 108,
+          "details_omitted": 0,
           "observation": "observable_page_ready"
         }
       },
@@ -2070,7 +2089,7 @@
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:33:07.037Z",
+      "at": "2026-10-30T02:55:24.385Z",
       "call_id": "tool-3",
       "name": "read_profile",
       "input": {
@@ -2093,6 +2112,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -2105,11 +2126,13 @@
             "text_completeness_evidence": false,
             "display_name": "Whoscall",
             "text_source": "permalink_time_scoped_visible_body",
+            "text_completeness_source": "permalink_time_scoped_visible_body",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3X0Hydc",
                 "author": "whoscall_tw",
@@ -2120,10 +2143,11 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3X0Hydc",
                 "author": "whoscall_tw",
@@ -2134,6 +2158,7 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               }
             ]
@@ -2146,6 +2171,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": null,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.linked_inline_media",
@@ -2158,10 +2185,11 @@
             "text_completeness_evidence": null,
             "display_name": null,
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYU1mkjjC8",
                 "author": "whoscall_tw",
@@ -2172,10 +2200,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": null,
                 "display_name": null
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYU1mkjjC8",
                 "author": "whoscall_tw",
@@ -2186,6 +2215,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": null,
                 "display_name": null
               }
             ]
@@ -2198,6 +2228,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791779181,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
@@ -2210,10 +2242,11 @@
             "text_completeness_evidence": null,
             "display_name": "Betty Lin",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYXz4jATAV",
                 "author": "betty_lin0301",
@@ -2224,10 +2257,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791779181,
                 "display_name": "Betty Lin"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYXz4jATAV",
                 "author": "betty_lin0301",
@@ -2238,6 +2272,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791779181,
                 "display_name": "Betty Lin"
               }
             ]
@@ -2250,6 +2285,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791780049,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
@@ -2262,10 +2299,11 @@
             "text_completeness_evidence": null,
             "display_name": "真_呆",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYZdyYEgOU",
                 "author": "jen_dai",
@@ -2276,10 +2314,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791780049,
                 "display_name": "真_呆"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYZdyYEgOU",
                 "author": "jen_dai",
@@ -2290,6 +2329,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791780049,
                 "display_name": "真_呆"
               }
             ]
@@ -2302,6 +2342,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791790850,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
@@ -2314,10 +2356,11 @@
             "text_completeness_evidence": null,
             "display_name": "yawen",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYuEW8E8MS",
                 "author": "yawen.7334",
@@ -2328,10 +2371,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791790850,
                 "display_name": "yawen"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYuEW8E8MS",
                 "author": "yawen.7334",
@@ -2342,6 +2386,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791790850,
                 "display_name": "yawen"
               }
             ]
@@ -2354,6 +2399,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791798450,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
@@ -2366,10 +2413,11 @@
             "text_completeness_evidence": null,
             "display_name": "si jie",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeY8kEwGO4w",
                 "author": "sijie6330",
@@ -2380,10 +2428,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791798450,
                 "display_name": "si jie"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeY8kEwGO4w",
                 "author": "sijie6330",
@@ -2394,6 +2443,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791798450,
                 "display_name": "si jie"
               }
             ]
@@ -2406,6 +2456,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791855038,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[1].node",
@@ -2418,10 +2470,11 @@
             "text_completeness_evidence": null,
             "display_name": "踢Cher  Lala",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Deaofv1kkAB",
                 "author": "laura.su.98",
@@ -2432,10 +2485,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791855038,
                 "display_name": "踢Cher  Lala"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Deaofv1kkAB",
                 "author": "laura.su.98",
@@ -2446,6 +2500,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791855038,
                 "display_name": "踢Cher  Lala"
               }
             ]
@@ -2458,6 +2513,8 @@
             "parent": "DeYW3X0Hydc",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
@@ -2465,7 +2522,8 @@
               "parent": "DeYW3X0Hydc",
               "author": "whoscall_tw",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -2481,12 +2539,14 @@
                 "DeYW3XXHzsY"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
+              "relationship_inferred": null,
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XXHzsY",
                 "author": "whoscall_tw",
@@ -2497,10 +2557,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XXHzsY",
                 "author": "whoscall_tw",
@@ -2511,6 +2572,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               }
             ]
@@ -2523,6 +2585,8 @@
             "parent": "DeYW3XXHzsY",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 1,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
@@ -2530,7 +2594,8 @@
               "parent": "DeYW3XXHzsY",
               "author": "whoscall_tw",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "inferred": "self_thread_sequence"
+              "inferred": "self_thread_sequence",
+              "index": 1
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -2547,12 +2612,14 @@
                 "DeYW3XNn7JP"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "relationship_inferred": "self_thread_sequence"
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XNn7JP",
                 "author": "whoscall_tw",
@@ -2563,10 +2630,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XNn7JP",
                 "author": "whoscall_tw",
@@ -2577,6 +2645,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               }
             ]
@@ -2589,6 +2658,8 @@
             "parent": "DeYW3XNn7JP",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 2,
+            "taken_at": 1791778685,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
@@ -2596,7 +2667,8 @@
               "parent": "DeYW3XNn7JP",
               "author": "whoscall_tw",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
-              "inferred": "self_thread_sequence"
+              "inferred": "self_thread_sequence",
+              "index": 2
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -2614,12 +2686,14 @@
                 "DeYW3XPn7I1"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
-              "relationship_inferred": "self_thread_sequence"
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XPn7I1",
                 "author": "whoscall_tw",
@@ -2630,10 +2704,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeYW3XPn7I1",
                 "author": "whoscall_tw",
@@ -2644,6 +2719,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[2].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1791778685,
                 "display_name": "Whoscall"
               }
             ]
@@ -2656,9 +2732,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793081873,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -2668,10 +2746,11 @@
             "text_completeness_evidence": null,
             "display_name": "李茗弘",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "De_Mf7QmCDV",
                 "author": "liwr1",
@@ -2682,10 +2761,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793081873,
                 "display_name": "李茗弘"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "De_Mf7QmCDV",
                 "author": "liwr1",
@@ -2696,6 +2776,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793081873,
                 "display_name": "李茗弘"
               }
             ]
@@ -2708,9 +2789,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793081851,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -2720,10 +2803,11 @@
             "text_completeness_evidence": null,
             "display_name": "李茗弘",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "De_MdNtnzTN",
                 "author": "liwrtw",
@@ -2734,10 +2818,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793081851,
                 "display_name": "李茗弘"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "De_MdNtnzTN",
                 "author": "liwrtw",
@@ -2748,6 +2833,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793081851,
                 "display_name": "李茗弘"
               }
             ]
@@ -2760,9 +2846,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790925927,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -2772,10 +2860,11 @@
             "text_completeness_evidence": null,
             "display_name": "imClare｜創作歌手",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Dd-8W1tjx2j",
                 "author": "imclare_singer",
@@ -2786,10 +2875,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790925927,
                 "display_name": "imClare｜創作歌手"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Dd-8W1tjx2j",
                 "author": "imclare_singer",
@@ -2800,6 +2890,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790925927,
                 "display_name": "imClare｜創作歌手"
               }
             ]
@@ -2812,9 +2903,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790756018,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -2824,10 +2917,11 @@
             "text_completeness_evidence": null,
             "display_name": "Chingt Lung",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Dd54R_-oMUw",
                 "author": "lung_ching_tung",
@@ -2838,10 +2932,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790756018,
                 "display_name": "Chingt Lung"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "Dd54R_-oMUw",
                 "author": "lung_ching_tung",
@@ -2852,6 +2947,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790756018,
                 "display_name": "Chingt Lung"
               }
             ]
@@ -2864,9 +2960,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791018682,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -2876,10 +2974,11 @@
             "text_completeness_evidence": null,
             "display_name": "打輸就受著",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:04.769Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:21.647Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:04.769Z",
+                "captured_at": "2026-10-30T02:55:21.647Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeBtRisiSnb",
                 "author": "13135hate0",
@@ -2890,10 +2989,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791018682,
                 "display_name": "打輸就受著"
               },
               {
-                "captured_at": "2026-10-30T02:33:05.140Z",
+                "captured_at": "2026-10-30T02:55:22.601Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DeYW3X0Hydc",
                 "id": "DeBtRisiSnb",
                 "author": "13135hate0",
@@ -2904,6 +3004,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791018682,
                 "display_name": "打輸就受著"
               }
             ]
@@ -2917,14 +3018,12 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Whoscall",
-        "captured_at": "2026-10-30T02:33:05.140Z",
+        "captured_at": "2026-10-30T02:55:22.601Z",
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 3,
-            "request_failed": 8,
-            "policy_resource_budget_or_type": 4,
-            "unsupported_url": 1,
-            "page_script_error": 1
+            "policy_non_get_blocked": 1,
+            "request_failed": 5,
+            "policy_resource_budget_or_type": 4
           },
           "requests": [
             {
@@ -2952,21 +3051,21 @@
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
             },
             {
@@ -2980,67 +3079,22 @@
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844138144_1108461285061592_3228040630111326142_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
               "path": "/v/t39.30808-6/844521762_1108461245061596_2612883595715357518_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "host": "instagram.ftpe7-4.fna.fbcdn.net",
               "path": "/v/t39.30808-6/843573470_1108461215061599_2609037590268919934_n.jpg"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/ajax/bulk-route-definitions/"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/api/graphql"
-            },
-            {
-              "reason_code": "unsupported_url",
-              "method": "GET",
-              "resource_type": "fetch",
-              "host": "www.instagram.com",
-              "path": "/accounts/xusername/"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/ajax/bulk-route-definitions/"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/api/graphql"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "fetch",
-              "host": "www.instagram.com",
-              "path": "/accounts/xusername/"
-            },
-            {
-              "reason_code": "page_script_error"
             }
           ],
           "details_omitted": 0,
@@ -3050,14 +3104,15 @@
           "ready_state": "interactive"
         },
         "merge_conflicts": [],
-        "follower_count": 15100
+        "follower_count": 15100,
+        "profile_captured_at": "2026-10-30T02:55:24.385Z"
       },
       "status": "ok",
-      "elapsed_ms": 1867
+      "elapsed_ms": 1763
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:33:07.040Z",
+      "at": "2026-10-30T02:55:24.388Z",
       "output": {
         "classifications": [
           {
@@ -3127,12 +3182,12 @@
     },
     {
       "type": "browser_closed",
-      "at": "2026-10-30T02:33:07.232Z",
+      "at": "2026-10-30T02:55:24.608Z",
       "status": "ok"
     },
     {
       "type": "run_end",
-      "at": "2026-10-30T02:33:07.232Z",
+      "at": "2026-10-30T02:55:24.608Z",
       "status": "partial",
       "usage": {
         "llm_calls": 0,

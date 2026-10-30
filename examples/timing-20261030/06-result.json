@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "run_id": "93dd3922-20f6-48c5-a639-ce567199efac",
+  "run_id": "48740fd5-77af-4694-b9ca-663dafbf838c",
   "status": "partial",
-  "started_at": "2026-10-30T02:33:31.137Z",
-  "finished_at": "2026-10-30T02:33:36.956Z",
+  "started_at": "2026-10-30T02:55:45.870Z",
+  "finished_at": "2026-10-30T02:55:52.500Z",
   "requested_fields": [
     "display_name",
     "follower_count",
@@ -19,7 +19,8 @@
     }
   ],
   "final_url": "https://www.threads.com/@zuck/post/DeZgeQhm6RW",
-  "captured_at": "2026-10-30T02:33:36.744Z",
+  "captured_at": "2026-10-30T02:55:49.753Z",
+  "profile_captured_at": "2026-10-30T02:55:52.283Z",
   "usage": {
     "llm_calls": 0,
     "calls_with_usage": 0,
@@ -41,8 +42,8 @@
     "follower_count": {
       "status": "ok",
       "value": {
-        "display": "5750956",
-        "exact": 5750956,
+        "display": "5750959",
+        "exact": 5750959,
         "approximate": null
       }
     },

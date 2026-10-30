@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "run_id": "0b22b5ee-cc6f-41ea-b330-be723f9dd14f",
+  "run_id": "d96784f3-81bc-407a-9bba-7c4da9620199",
   "status": "partial",
-  "started_at": "2026-10-30T02:33:21.405Z",
-  "finished_at": "2026-10-30T02:33:27.675Z",
+  "started_at": "2026-10-30T02:55:36.481Z",
+  "finished_at": "2026-10-30T02:55:42.463Z",
   "requested_fields": [
     "display_name",
     "follower_count",
@@ -19,7 +19,8 @@
     }
   ],
   "final_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
-  "captured_at": "2026-10-30T02:33:27.452Z",
+  "captured_at": "2026-10-30T02:55:40.555Z",
+  "profile_captured_at": "2026-10-30T02:55:42.257Z",
   "usage": {
     "llm_calls": 0,
     "calls_with_usage": 0,
@@ -41,8 +42,8 @@
     "follower_count": {
       "status": "ok",
       "value": {
-        "display": "5750956",
-        "exact": 5750956,
+        "display": "5750959",
+        "exact": 5750959,
         "approximate": null
       }
     },
@@ -61,6 +62,7 @@
           "parent_post_id": "Dd1MqeVG3vT",
           "text_complete": false,
           "relationship_inferred": null,
+          "order_inferred": null,
           "order_evidence": {
             "kind": "explicit_parent_chain",
             "post_ids": [
@@ -68,7 +70,8 @@
               "Dd1MriSm3-u"
             ],
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-            "relationship_inferred": null
+            "relationship_inferred": null,
+            "sibling_order_basis": null
           }
         },
         {
@@ -79,6 +82,7 @@
           "parent_post_id": "Dd1MriSm3-u",
           "text_complete": false,
           "relationship_inferred": "self_thread_sequence",
+          "order_inferred": null,
           "order_evidence": {
             "kind": "explicit_parent_chain",
             "post_ids": [
@@ -87,12 +91,13 @@
               "Dd1MqeyG15H"
             ],
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-            "relationship_inferred": "self_thread_sequence"
+            "relationship_inferred": "self_thread_sequence",
+            "sibling_order_basis": null
           }
         }
       ],
       "reason_code": "thread_incomplete",
-      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed."
+      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, timestamp-ordered forks, other reply context or unloaded replies remain unconfirmed."
     }
   },
   "evidence_mode": "live_anonymous",

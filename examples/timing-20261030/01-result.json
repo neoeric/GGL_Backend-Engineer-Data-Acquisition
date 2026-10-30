@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "run_id": "1c10d6c6-e477-455d-b7c0-e789c0cd8554",
+  "run_id": "379b7644-195f-4ce7-9b59-4a3705a7852f",
   "status": "partial",
-  "started_at": "2026-10-30T02:32:35.793Z",
-  "finished_at": "2026-10-30T02:32:45.210Z",
+  "started_at": "2026-10-30T02:54:59.461Z",
+  "finished_at": "2026-10-30T02:55:06.996Z",
   "requested_fields": [
     "display_name",
     "follower_count",
@@ -19,7 +19,8 @@
     }
   ],
   "final_url": "https://www.threads.com/@whoscall_tw/post/Dd0_RGwH4K7",
-  "captured_at": "2026-10-30T02:32:44.998Z",
+  "captured_at": "2026-10-30T02:55:04.318Z",
+  "profile_captured_at": "2026-10-30T02:55:06.795Z",
   "usage": {
     "llm_calls": 0,
     "calls_with_usage": 0,
@@ -31,7 +32,12 @@
     "usage_complete": true,
     "reason": null
   },
-  "issues": [],
+  "issues": [
+    {
+      "reason_code": "source_evidence_conflict",
+      "reason": "Conflicting observations were retained; affected posts and descendants are ambiguous."
+    }
+  ],
   "trace_file": "examples/timing-20261030/01-trace.json",
   "data": {
     "display_name": {
@@ -62,19 +68,21 @@
           "parent_post_id": "Dd0_RGwH4K7",
           "text_complete": false,
           "relationship_inferred": null,
+          "order_inferred": null,
           "order_evidence": {
             "kind": "explicit_parent_chain",
             "post_ids": [
               "Dd0_RGwH4K7",
               "Dd0_RHRH6h9"
             ],
-            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-            "relationship_inferred": null
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null,
+            "sibling_order_basis": null
           }
         }
       ],
       "reason_code": "thread_incomplete",
-      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed."
+      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, timestamp-ordered forks, other reply context or unloaded replies remain unconfirmed."
     }
   },
   "evidence_mode": "live_anonymous",

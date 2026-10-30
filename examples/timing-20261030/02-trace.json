@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "run_id": "42029fbb-4462-4bf6-81e0-cb40c41ee322",
+  "run_id": "d6e76cf5-3ebb-4fa8-b0d5-341f0a96604a",
   "events": [
     {
       "type": "run_start",
-      "at": "2026-10-30T02:32:48.662Z",
+      "at": "2026-10-30T02:55:10.412Z",
       "input": {
         "message": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx"
       },
@@ -18,7 +18,7 @@
     },
     {
       "type": "navigation",
-      "at": "2026-10-30T02:32:52.557Z",
+      "at": "2026-10-30T02:55:12.951Z",
       "input": {
         "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx"
       },
@@ -81,7 +81,7 @@
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:32:52.577Z",
+      "at": "2026-10-30T02:55:12.968Z",
       "call_id": "tool-1",
       "name": "read_post",
       "input": {
@@ -104,6 +104,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790825455,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -116,7 +118,9 @@
             "text_completeness_evidence": false,
             "display_name": "Whoscall",
             "text_source": "permalink_time_scoped_visible_body",
-            "order_evidence": null
+            "text_completeness_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd78uRIn9Iu",
@@ -126,6 +130,8 @@
             "parent": "Dd78uPeHwkx",
             "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1790825455,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
@@ -133,7 +139,8 @@
               "parent": "Dd78uPeHwkx",
               "author": "whoscall_tw",
               "source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -149,8 +156,10 @@
                 "Dd78uRIn9Iu"
               ],
               "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
-            }
+              "relationship_inferred": null,
+              "sibling_order_basis": null
+            },
+            "order_inferred": null
           },
           {
             "id": "Dd78uPkn8F1",
@@ -160,6 +169,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790825455,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
@@ -171,7 +182,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Whoscall",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd77E5ckpHI",
@@ -181,6 +193,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": null,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node.text_post_app_info.linked_inline_media",
@@ -192,19 +206,22 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": null,
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
-            "id": "DfFJW5ZE3mK",
-            "author": "z.y.c_1026",
-            "text": "期待江彥廷😚終於等到了 \n岳軒 哭的樣子真的很好看🫣",
-            "url": "https://www.threads.com/@z.y.c_1026/post/DfFJW5ZE3mK",
+            "id": "DfEpDCgk-NY",
+            "author": "taiwanmemess",
+            "text": "蔣萬安現在的戰略非常好懂，他在跟沈伯洋拼支持者投票率，民調落後這一點他很清楚，而剩一個月不到，除非有大事件，例如辯論得分（顯然很難），所以他們最近才會：\n\n1.夫人牌提早進場，一同上節目，代夫出征，最後感人合體。\n2.沈伯洋買手機也要抹，把沈抹成不會節儉、玩遊戲的年輕人。\n3.光速報案，募款網站詐騙、偏藍側翼攻擊沈的圖他們秒報，不利自己的都是反串，攻擊自己的會偷渡影射。\n4.姿態放低、颱風四年任期第一次睡在指揮中心、戴眼鏡，生病我祝他早日康復。\n\n這些策略有個大重點，台北市的長輩們會愛。\n\n蔣萬安現在就是鞏固藍營基本盤，要用己方的高投票率跟沈伯洋對決，他在賭你各位支持沈伯洋的都不會出來投票，民調落後但投票率高，贏一千票也是贏，因此打出夫人牌、同情疼惜牌，甚至可能會有受害形象牌，這劇本繼續下去，選前之夜，跟宋楚瑜一樣下跪都有可能。\n\n這都是國民黨選舉的老套路，這做法也會搶走版面，淡化沈伯洋的正面政策宣傳，非常有效，如果你也厭倦這種形式、這種我們從小看到大的爛戲，那今年是時候用選票告訴國民黨，未來別想再用這套拐我們的選票。\n\n投票投票投票，這才是真的，請大家務必提醒大家，一起加油。",
+            "url": "https://www.threads.com/@taiwanmemess/post/DfEpDCgk-NY",
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793264613,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -212,20 +229,23 @@
             "order": null,
             "text_complete": false,
             "text_completeness_evidence": null,
-            "display_name": "與其",
-            "order_evidence": null
+            "display_name": "台灣迷因taiwanmeme",
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
-            "id": "DfFbAzek4h8",
-            "author": "oneonelin_",
-            "text": "溫馨提醒⏰高鐵已經進入系統忙碌狀態\n搶到座位就可以去休息了\n明天再付款就好喔這不是拓元搶票系統",
-            "url": "https://www.threads.com/@oneonelin_/post/DfFbAzek4h8",
+            "id": "DfFKXeok0II",
+            "author": "yuwei__0408",
+            "text": "蘇品瑄沒有陪我鬧 我根本不用玩\n我要去後面玩ㄌ",
+            "url": "https://www.threads.com/@yuwei__0408/post/DfFKXeok0II",
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793282082,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -233,29 +253,9 @@
             "order": null,
             "text_complete": false,
             "text_completeness_evidence": null,
-            "display_name": "萬萬靈",
-            "order_evidence": null
-          },
-          {
-            "id": "DfFWidJnxc3",
-            "author": "panhan0510",
-            "text": "煩死了～一點都不像好嗎！\n白癡🙄",
-            "url": "https://www.threads.com/@panhan0510/post/DfFWidJnxc3",
-            "parent": null,
-            "relationship_source": null,
-            "relationship_inferred": null,
-            "evidence_conflict": false,
-            "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
-            "self_thread_context": null,
-            "is_reply_observed": false,
-            "reply_to_author_observed": null,
-            "reader_branch": false,
-            "order": null,
-            "text_complete": false,
-            "text_completeness_evidence": null,
-            "display_name": "潘涵",
-            "order_evidence": null
+            "display_name": "Emily 魚",
+            "order_evidence": null,
+            "order_inferred": null
           }
         ],
         "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
@@ -266,7 +266,7 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Whoscall",
-        "captured_at": "2026-10-30T02:32:52.557Z",
+        "captured_at": "2026-10-30T02:55:12.951Z",
         "acquisition_diagnostics": {
           "counts": {
             "policy_non_get_blocked": 1,
@@ -311,11 +311,11 @@
         }
       },
       "status": "ok",
-      "elapsed_ms": 3915
+      "elapsed_ms": 2555
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:32:52.578Z",
+      "at": "2026-10-30T02:55:12.969Z",
       "output": {
         "classifications": [
           {
@@ -331,15 +331,11 @@
             "classification": "recommended_post"
           },
           {
-            "id": "DfFJW5ZE3mK",
+            "id": "DfEpDCgk-NY",
             "classification": "recommended_post"
           },
           {
-            "id": "DfFbAzek4h8",
-            "classification": "recommended_post"
-          },
-          {
-            "id": "DfFWidJnxc3",
+            "id": "DfFKXeok0II",
             "classification": "recommended_post"
           }
         ],
@@ -352,8 +348,22 @@
       }
     },
     {
+      "type": "thread_expansion",
+      "at": "2026-10-30T02:55:13.923Z",
+      "input": {
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx"
+      },
+      "output": {
+        "rounds": 1,
+        "clicks": 0,
+        "scrolls": 1,
+        "stopped": "no_growth"
+      },
+      "status": "observed"
+    },
+    {
       "type": "evidence_merge",
-      "at": "2026-10-30T02:32:52.696Z",
+      "at": "2026-10-30T02:55:13.981Z",
       "input": {
         "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx"
       },
@@ -365,18 +375,17 @@
           "Dd78uRIn9Iu",
           "Dd78uPkn8F1",
           "Dd77E5ckpHI",
-          "DfFJW5ZE3mK",
-          "DfFbAzek4h8",
-          "DfFWidJnxc3"
+          "DfEpDCgk-NY",
+          "DfFKXeok0II"
         ],
         "conflicts": [],
-        "observation_at": "2026-10-30T02:32:52.677Z"
+        "observation_at": "2026-10-30T02:55:13.962Z"
       },
       "status": "merged"
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:32:52.696Z",
+      "at": "2026-10-30T02:55:13.981Z",
       "call_id": "tool-2",
       "name": "expand_thread",
       "input": {
@@ -399,6 +408,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790825455,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -411,11 +422,13 @@
             "text_completeness_evidence": false,
             "display_name": "Whoscall",
             "text_source": "permalink_time_scoped_visible_body",
+            "text_completeness_source": "permalink_time_scoped_visible_body",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:32:52.557Z",
+                "captured_at": "2026-10-30T02:55:12.951Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
                 "id": "Dd78uPeHwkx",
                 "author": "whoscall_tw",
@@ -426,10 +439,11 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790825455,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:32:52.677Z",
+                "captured_at": "2026-10-30T02:55:13.962Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
                 "id": "Dd78uPeHwkx",
                 "author": "whoscall_tw",
@@ -440,6 +454,7 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790825455,
                 "display_name": "Whoscall"
               }
             ]
@@ -452,6 +467,8 @@
             "parent": "Dd78uPeHwkx",
             "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1790825455,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
@@ -459,7 +476,8 @@
               "parent": "Dd78uPeHwkx",
               "author": "whoscall_tw",
               "source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -475,12 +493,14 @@
                 "Dd78uRIn9Iu"
               ],
               "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
+              "relationship_inferred": null,
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:32:52.557Z",
+                "captured_at": "2026-10-30T02:55:12.951Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
                 "id": "Dd78uRIn9Iu",
                 "author": "whoscall_tw",
@@ -491,10 +511,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1790825455,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:32:52.677Z",
+                "captured_at": "2026-10-30T02:55:13.962Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
                 "id": "Dd78uRIn9Iu",
                 "author": "whoscall_tw",
@@ -505,6 +526,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1790825455,
                 "display_name": "Whoscall"
               }
             ]
@@ -517,6 +539,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790825455,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
@@ -529,10 +553,11 @@
             "text_completeness_evidence": null,
             "display_name": "Whoscall",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:32:52.557Z",
+                "captured_at": "2026-10-30T02:55:12.951Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
                 "id": "Dd78uPkn8F1",
                 "author": "whoscall_tw",
@@ -543,10 +568,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790825455,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:32:52.677Z",
+                "captured_at": "2026-10-30T02:55:13.962Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
                 "id": "Dd78uPkn8F1",
                 "author": "whoscall_tw",
@@ -557,6 +583,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790825455,
                 "display_name": "Whoscall"
               }
             ]
@@ -569,6 +596,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": null,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node.text_post_app_info.linked_inline_media",
@@ -581,10 +610,11 @@
             "text_completeness_evidence": null,
             "display_name": null,
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:32:52.557Z",
+                "captured_at": "2026-10-30T02:55:12.951Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
                 "id": "Dd77E5ckpHI",
                 "author": "whoscall_tw",
@@ -595,10 +625,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": null,
                 "display_name": null
               },
               {
-                "captured_at": "2026-10-30T02:32:52.677Z",
+                "captured_at": "2026-10-30T02:55:13.962Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
                 "id": "Dd77E5ckpHI",
                 "author": "whoscall_tw",
@@ -609,21 +640,24 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": null,
                 "display_name": null
               }
             ]
           },
           {
-            "id": "DfFJW5ZE3mK",
-            "author": "z.y.c_1026",
-            "text": "期待江彥廷😚終於等到了 \n岳軒 哭的樣子真的很好看🫣",
-            "url": "https://www.threads.com/@z.y.c_1026/post/DfFJW5ZE3mK",
+            "id": "DfEpDCgk-NY",
+            "author": "taiwanmemess",
+            "text": "蔣萬安現在的戰略非常好懂，他在跟沈伯洋拼支持者投票率，民調落後這一點他很清楚，而剩一個月不到，除非有大事件，例如辯論得分（顯然很難），所以他們最近才會：\n\n1.夫人牌提早進場，一同上節目，代夫出征，最後感人合體。\n2.沈伯洋買手機也要抹，把沈抹成不會節儉、玩遊戲的年輕人。\n3.光速報案，募款網站詐騙、偏藍側翼攻擊沈的圖他們秒報，不利自己的都是反串，攻擊自己的會偷渡影射。\n4.姿態放低、颱風四年任期第一次睡在指揮中心、戴眼鏡，生病我祝他早日康復。\n\n這些策略有個大重點，台北市的長輩們會愛。\n\n蔣萬安現在就是鞏固藍營基本盤，要用己方的高投票率跟沈伯洋對決，他在賭你各位支持沈伯洋的都不會出來投票，民調落後但投票率高，贏一千票也是贏，因此打出夫人牌、同情疼惜牌，甚至可能會有受害形象牌，這劇本繼續下去，選前之夜，跟宋楚瑜一樣下跪都有可能。\n\n這都是國民黨選舉的老套路，這做法也會搶走版面，淡化沈伯洋的正面政策宣傳，非常有效，如果你也厭倦這種形式、這種我們從小看到大的爛戲，那今年是時候用選票告訴國民黨，未來別想再用這套拐我們的選票。\n\n投票投票投票，這才是真的，請大家務必提醒大家，一起加油。",
+            "url": "https://www.threads.com/@taiwanmemess/post/DfEpDCgk-NY",
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793264613,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -631,51 +665,56 @@
             "order": null,
             "text_complete": false,
             "text_completeness_evidence": null,
-            "display_name": "與其",
+            "display_name": "台灣迷因taiwanmeme",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:32:52.557Z",
+                "captured_at": "2026-10-30T02:55:12.951Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFJW5ZE3mK",
-                "author": "z.y.c_1026",
-                "text": "期待江彥廷😚終於等到了 \n岳軒 哭的樣子真的很好看🫣",
+                "id": "DfEpDCgk-NY",
+                "author": "taiwanmemess",
+                "text": "蔣萬安現在的戰略非常好懂，他在跟沈伯洋拼支持者投票率，民調落後這一點他很清楚，而剩一個月不到，除非有大事件，例如辯論得分（顯然很難），所以他們最近才會：\n\n1.夫人牌提早進場，一同上節目，代夫出征，最後感人合體。\n2.沈伯洋買手機也要抹，把沈抹成不會節儉、玩遊戲的年輕人。\n3.光速報案，募款網站詐騙、偏藍側翼攻擊沈的圖他們秒報，不利自己的都是反串，攻擊自己的會偷渡影射。\n4.姿態放低、颱風四年任期第一次睡在指揮中心、戴眼鏡，生病我祝他早日康復。\n\n這些策略有個大重點，台北市的長輩們會愛。\n\n蔣萬安現在就是鞏固藍營基本盤，要用己方的高投票率跟沈伯洋對決，他在賭你各位支持沈伯洋的都不會出來投票，民調落後但投票率高，贏一千票也是贏，因此打出夫人牌、同情疼惜牌，甚至可能會有受害形象牌，這劇本繼續下去，選前之夜，跟宋楚瑜一樣下跪都有可能。\n\n這都是國民黨選舉的老套路，這做法也會搶走版面，淡化沈伯洋的正面政策宣傳，非常有效，如果你也厭倦這種形式、這種我們從小看到大的爛戲，那今年是時候用選票告訴國民黨，未來別想再用這套拐我們的選票。\n\n投票投票投票，這才是真的，請大家務必提醒大家，一起加油。",
                 "parent": null,
-                "url": "https://www.threads.com/@z.y.c_1026/post/DfFJW5ZE3mK",
+                "url": "https://www.threads.com/@taiwanmemess/post/DfEpDCgk-NY",
                 "text_complete": false,
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
-                "display_name": "與其"
+                "taken_at": 1793264613,
+                "display_name": "台灣迷因taiwanmeme"
               },
               {
-                "captured_at": "2026-10-30T02:32:52.677Z",
+                "captured_at": "2026-10-30T02:55:13.962Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFJW5ZE3mK",
-                "author": "z.y.c_1026",
-                "text": "期待江彥廷😚終於等到了 \n岳軒 哭的樣子真的很好看🫣",
+                "id": "DfEpDCgk-NY",
+                "author": "taiwanmemess",
+                "text": "蔣萬安現在的戰略非常好懂，他在跟沈伯洋拼支持者投票率，民調落後這一點他很清楚，而剩一個月不到，除非有大事件，例如辯論得分（顯然很難），所以他們最近才會：\n\n1.夫人牌提早進場，一同上節目，代夫出征，最後感人合體。\n2.沈伯洋買手機也要抹，把沈抹成不會節儉、玩遊戲的年輕人。\n3.光速報案，募款網站詐騙、偏藍側翼攻擊沈的圖他們秒報，不利自己的都是反串，攻擊自己的會偷渡影射。\n4.姿態放低、颱風四年任期第一次睡在指揮中心、戴眼鏡，生病我祝他早日康復。\n\n這些策略有個大重點，台北市的長輩們會愛。\n\n蔣萬安現在就是鞏固藍營基本盤，要用己方的高投票率跟沈伯洋對決，他在賭你各位支持沈伯洋的都不會出來投票，民調落後但投票率高，贏一千票也是贏，因此打出夫人牌、同情疼惜牌，甚至可能會有受害形象牌，這劇本繼續下去，選前之夜，跟宋楚瑜一樣下跪都有可能。\n\n這都是國民黨選舉的老套路，這做法也會搶走版面，淡化沈伯洋的正面政策宣傳，非常有效，如果你也厭倦這種形式、這種我們從小看到大的爛戲，那今年是時候用選票告訴國民黨，未來別想再用這套拐我們的選票。\n\n投票投票投票，這才是真的，請大家務必提醒大家，一起加油。",
                 "parent": null,
-                "url": "https://www.threads.com/@z.y.c_1026/post/DfFJW5ZE3mK",
+                "url": "https://www.threads.com/@taiwanmemess/post/DfEpDCgk-NY",
                 "text_complete": false,
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
-                "display_name": "與其"
+                "taken_at": 1793264613,
+                "display_name": "台灣迷因taiwanmeme"
               }
             ]
           },
           {
-            "id": "DfFbAzek4h8",
-            "author": "oneonelin_",
-            "text": "溫馨提醒⏰高鐵已經進入系統忙碌狀態\n搶到座位就可以去休息了\n明天再付款就好喔這不是拓元搶票系統",
-            "url": "https://www.threads.com/@oneonelin_/post/DfFbAzek4h8",
+            "id": "DfFKXeok0II",
+            "author": "yuwei__0408",
+            "text": "蘇品瑄沒有陪我鬧 我根本不用玩\n我要去後面玩ㄌ",
+            "url": "https://www.threads.com/@yuwei__0408/post/DfFKXeok0II",
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793282082,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -683,89 +722,40 @@
             "order": null,
             "text_complete": false,
             "text_completeness_evidence": null,
-            "display_name": "萬萬靈",
+            "display_name": "Emily 魚",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:32:52.557Z",
+                "captured_at": "2026-10-30T02:55:12.951Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFbAzek4h8",
-                "author": "oneonelin_",
-                "text": "溫馨提醒⏰高鐵已經進入系統忙碌狀態\n搶到座位就可以去休息了\n明天再付款就好喔這不是拓元搶票系統",
+                "id": "DfFKXeok0II",
+                "author": "yuwei__0408",
+                "text": "蘇品瑄沒有陪我鬧 我根本不用玩\n我要去後面玩ㄌ",
                 "parent": null,
-                "url": "https://www.threads.com/@oneonelin_/post/DfFbAzek4h8",
+                "url": "https://www.threads.com/@yuwei__0408/post/DfFKXeok0II",
                 "text_complete": false,
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
-                "display_name": "萬萬靈"
+                "taken_at": 1793282082,
+                "display_name": "Emily 魚"
               },
               {
-                "captured_at": "2026-10-30T02:32:52.677Z",
+                "captured_at": "2026-10-30T02:55:13.962Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFbAzek4h8",
-                "author": "oneonelin_",
-                "text": "溫馨提醒⏰高鐵已經進入系統忙碌狀態\n搶到座位就可以去休息了\n明天再付款就好喔這不是拓元搶票系統",
+                "id": "DfFKXeok0II",
+                "author": "yuwei__0408",
+                "text": "蘇品瑄沒有陪我鬧 我根本不用玩\n我要去後面玩ㄌ",
                 "parent": null,
-                "url": "https://www.threads.com/@oneonelin_/post/DfFbAzek4h8",
+                "url": "https://www.threads.com/@yuwei__0408/post/DfFKXeok0II",
                 "text_complete": false,
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
-                "display_name": "萬萬靈"
-              }
-            ]
-          },
-          {
-            "id": "DfFWidJnxc3",
-            "author": "panhan0510",
-            "text": "煩死了～一點都不像好嗎！\n白癡🙄",
-            "url": "https://www.threads.com/@panhan0510/post/DfFWidJnxc3",
-            "parent": null,
-            "relationship_source": null,
-            "relationship_inferred": null,
-            "evidence_conflict": false,
-            "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
-            "self_thread_context": null,
-            "is_reply_observed": false,
-            "reply_to_author_observed": null,
-            "reader_branch": false,
-            "order": null,
-            "text_complete": false,
-            "text_completeness_evidence": null,
-            "display_name": "潘涵",
-            "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
-            "observations": [
-              {
-                "captured_at": "2026-10-30T02:32:52.557Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFWidJnxc3",
-                "author": "panhan0510",
-                "text": "煩死了～一點都不像好嗎！\n白癡🙄",
-                "parent": null,
-                "url": "https://www.threads.com/@panhan0510/post/DfFWidJnxc3",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "潘涵"
-              },
-              {
-                "captured_at": "2026-10-30T02:32:52.677Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFWidJnxc3",
-                "author": "panhan0510",
-                "text": "煩死了～一點都不像好嗎！\n白癡🙄",
-                "parent": null,
-                "url": "https://www.threads.com/@panhan0510/post/DfFWidJnxc3",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "潘涵"
+                "taken_at": 1793282082,
+                "display_name": "Emily 魚"
               }
             ]
           }
@@ -778,121 +768,12 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Whoscall",
-        "captured_at": "2026-10-30T02:32:52.677Z",
+        "captured_at": "2026-10-30T02:55:13.962Z",
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 1,
-            "request_failed": 2,
-            "policy_resource_budget_or_type": 1
-          },
-          "requests": [
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "ping",
-              "host": "www.threads.com",
-              "path": "/ajax/qm/"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "ping",
-              "host": "www.threads.com",
-              "path": "/ajax/qm/"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
-            }
-          ],
-          "details_omitted": 0,
-          "observation": "observable_page_ready",
-          "visible_text_length": 568,
-          "json_script_count": 51,
-          "ready_state": "interactive"
-        },
-        "merge_conflicts": []
-      },
-      "status": "ok",
-      "elapsed_ms": 118
-    },
-    {
-      "type": "validation",
-      "at": "2026-10-30T02:32:52.697Z",
-      "output": {
-        "classifications": [
-          {
-            "id": "Dd78uRIn9Iu",
-            "classification": "continuation"
-          },
-          {
-            "id": "Dd78uPkn8F1",
-            "classification": "ambiguous_ancestry"
-          },
-          {
-            "id": "Dd77E5ckpHI",
-            "classification": "recommended_post"
-          },
-          {
-            "id": "DfFJW5ZE3mK",
-            "classification": "recommended_post"
-          },
-          {
-            "id": "DfFbAzek4h8",
-            "classification": "recommended_post"
-          },
-          {
-            "id": "DfFWidJnxc3",
-            "classification": "recommended_post"
-          }
-        ],
-        "field_statuses": {
-          "display_name": "ok",
-          "follower_count": "unavailable",
-          "post_text": "ok",
-          "continuations": "partial"
-        }
-      }
-    },
-    {
-      "type": "navigation",
-      "at": "2026-10-30T02:32:58.249Z",
-      "input": {
-        "url": "https://www.threads.com/@whoscall_tw"
-      },
-      "output": {
-        "redirect_chain": [
-          {
-            "url": "https://www.threads.com/@whoscall_tw",
-            "kind": "initial"
-          }
-        ],
-        "final_url": "https://www.threads.com/@whoscall_tw",
-        "http_statuses": [
-          {
-            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-            "status": 200
-          },
-          {
-            "url": "https://www.threads.com/@whoscall_tw",
-            "status": 200
-          }
-        ],
-        "acquisition_diagnostics": {
-          "counts": {
-            "policy_non_get_blocked": 7,
-            "request_failed": 18,
-            "policy_resource_budget_or_type": 8,
+            "policy_non_get_blocked": 6,
+            "request_failed": 35,
+            "policy_resource_budget_or_type": 28,
             "unsupported_url": 1,
             "page_script_error": 1
           },
@@ -940,6 +821,132 @@
               "path": "/ajax/bulk-route-definitions/"
             },
             {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828692752_1097578639483190_4306369506466495989_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828692752_1097578639483190_4306369506466495989_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/357882623_235865859391313_4343460824996670002_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/357882623_235865859391313_4343460824996670002_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
               "reason_code": "policy_non_get_blocked",
               "method": "POST",
               "resource_type": "xhr",
@@ -954,608 +961,176 @@
               "path": "/accounts/xusername/"
             },
             {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/702729745_17961911742116144_1451283866849003605_n.jpg"
+            },
+            {
               "reason_code": "page_script_error"
             },
             {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/api/graphql"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "fetch",
-              "host": "www.instagram.com",
-              "path": "/accounts/xusername/"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/ajax/bulk-route-definitions/"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/ajax/bulk-route-definitions/"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/api/graphql"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "xhr",
-              "host": "www.threads.com",
-              "path": "/api/graphql"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "ping",
-              "host": "www.threads.com",
-              "path": "/ajax/bz"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4i_3O4/y0/l/en_US-j/MPp4EzC5xuR.js"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4iCWI4/yU/l/en_US-j/x9GSHUyoqq9DPGJSL3TB2iznbfFQkd22wkxw7Va-g9f3oKpukyPo4Ehg6tOV0kDtw-S59ZZX1ecb1KJeCrwBzYgrqiQ_dB73XW3CMUTg2BZ_QUtRtJZaRPv-eeezCV_KWgzsk1FJQoc8itQMk-zvG8D5ZGPjzEop3J996eLEhOaO_rIFBPI1gK7PKaUsfWtwly-yCx_rEOAKE3-Ox3Dgcz2JVeG3.js"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "ping",
-              "host": "www.threads.com",
-              "path": "/ajax/bz"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
-              "resource_type": "ping",
-              "host": "www.threads.com",
-              "path": "/ajax/qm/"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "ping",
-              "host": "www.threads.com",
-              "path": "/ajax/qm/"
-            },
-            {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "host": "scontent.cdninstagram.com",
               "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/2223573648706835691"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
               "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
             },
             {
-              "reason_code": "request_failed",
+              "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/2223573648706835691"
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828692752_1097578639483190_4306369506466495989_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/357882623_235865859391313_4343460824996670002_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
               "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/1856983738109612075"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/1856983738109612075"
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/2223573648706835691"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/1856983738109612075"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/2223573648706835691"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "external.ftpe7-2.fna.fbcdn.net",
-              "path": "/emg1/v/t13/1856983738109612075"
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
             }
           ],
           "details_omitted": 0,
-          "observation": "observable_page_ready"
-        }
+          "observation": "observable_page_ready",
+          "visible_text_length": 568,
+          "json_script_count": 51,
+          "ready_state": "interactive"
+        },
+        "merge_conflicts": []
       },
-      "status": "observed",
-      "reason_code": null
+      "status": "ok",
+      "elapsed_ms": 1012
     },
     {
-      "type": "tool_call",
-      "at": "2026-10-30T02:32:58.256Z",
-      "call_id": "tool-3",
-      "name": "read_profile",
-      "input": {
-        "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx"
-      },
+      "type": "validation",
+      "at": "2026-10-30T02:55:13.984Z",
       "output": {
-        "final_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-        "redirect_chain": [
-          {
-            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-            "kind": "initial"
-          }
-        ],
-        "posts": [
-          {
-            "id": "Dd78uPeHwkx",
-            "author": "whoscall_tw",
-            "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 天，就能免費領取好禮五選一 🎁\n再多簽 1 天、累積滿 11 天，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n.\n🎁 簽滿 10 天：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n📱 簽滿 11 天：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！",
-            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-            "parent": null,
-            "relationship_source": null,
-            "relationship_inferred": null,
-            "evidence_conflict": false,
-            "recommended": false,
-            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
-            "self_thread_context": null,
-            "is_reply_observed": true,
-            "reply_to_author_observed": "whoscall_tw",
-            "reader_branch": false,
-            "order": null,
-            "text_complete": true,
-            "text_completeness_evidence": false,
-            "display_name": "Whoscall",
-            "text_source": "permalink_time_scoped_visible_body",
-            "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
-            "observations": [
-              {
-                "captured_at": "2026-10-30T02:32:52.557Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "Dd78uPeHwkx",
-                "author": "whoscall_tw",
-                "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 天，就能免費領取好禮五選一 🎁\n再多簽 1 天、累積滿 11 天，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n.\n🎁 簽滿 10 天：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n📱 簽滿 11 天：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！",
-                "parent": null,
-                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "text_complete": true,
-                "text_completeness_evidence": false,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "Whoscall"
-              },
-              {
-                "captured_at": "2026-10-30T02:32:52.677Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "Dd78uPeHwkx",
-                "author": "whoscall_tw",
-                "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 天，就能免費領取好禮五選一 🎁\n再多簽 1 天、累積滿 11 天，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n.\n🎁 簽滿 10 天：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n📱 簽滿 11 天：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！",
-                "parent": null,
-                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "text_complete": true,
-                "text_completeness_evidence": false,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "Whoscall"
-              }
-            ]
-          },
+        "classifications": [
           {
             "id": "Dd78uRIn9Iu",
-            "author": "whoscall_tw",
-            "text": "・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n點此立即參與簽到：https://whoscalltw.pse.is/9nbeeu\n點擊看活動規則：https://whoscalltw.pse.is/9p2dw4\n活動獎項公告頁面：https://whoscall.feversocial.com/p/80",
-            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uRIn9Iu",
-            "parent": "Dd78uPeHwkx",
-            "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-            "relationship_inferred": null,
-            "evidence_conflict": false,
-            "recommended": false,
-            "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-            "self_thread_context": {
-              "parent": "Dd78uPeHwkx",
-              "author": "whoscall_tw",
-              "source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
-            },
-            "is_reply_observed": true,
-            "reply_to_author_observed": "whoscall_tw",
-            "reader_branch": false,
-            "order": 1,
-            "text_complete": false,
-            "text_completeness_evidence": null,
-            "display_name": "Whoscall",
-            "order_evidence": {
-              "kind": "explicit_parent_chain",
-              "post_ids": [
-                "Dd78uPeHwkx",
-                "Dd78uRIn9Iu"
-              ],
-              "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
-            },
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
-            "observations": [
-              {
-                "captured_at": "2026-10-30T02:32:52.557Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "Dd78uRIn9Iu",
-                "author": "whoscall_tw",
-                "text": "・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n點此立即參與簽到：https://whoscalltw.pse.is/9nbeeu\n點擊看活動規則：https://whoscalltw.pse.is/9p2dw4\n活動獎項公告頁面：https://whoscall.feversocial.com/p/80",
-                "parent": "Dd78uPeHwkx",
-                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uRIn9Iu",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-                "relationship_inferred": null,
-                "display_name": "Whoscall"
-              },
-              {
-                "captured_at": "2026-10-30T02:32:52.677Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "Dd78uRIn9Iu",
-                "author": "whoscall_tw",
-                "text": "・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n點此立即參與簽到：https://whoscalltw.pse.is/9nbeeu\n點擊看活動規則：https://whoscalltw.pse.is/9p2dw4\n活動獎項公告頁面：https://whoscall.feversocial.com/p/80",
-                "parent": "Dd78uPeHwkx",
-                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uRIn9Iu",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-                "relationship_inferred": null,
-                "display_name": "Whoscall"
-              }
-            ]
+            "classification": "continuation"
           },
           {
             "id": "Dd78uPkn8F1",
-            "author": "whoscall_tw",
-            "text": "我一個閃身步，就開始抽 iPhone 18 Pro",
-            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPkn8F1",
-            "parent": null,
-            "relationship_source": null,
-            "relationship_inferred": null,
-            "evidence_conflict": false,
-            "recommended": false,
-            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
-            "self_thread_context": null,
-            "is_reply_observed": false,
-            "reply_to_author_observed": null,
-            "reader_branch": false,
-            "order": null,
-            "text_complete": false,
-            "text_completeness_evidence": null,
-            "display_name": "Whoscall",
-            "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
-            "observations": [
-              {
-                "captured_at": "2026-10-30T02:32:52.557Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "Dd78uPkn8F1",
-                "author": "whoscall_tw",
-                "text": "我一個閃身步，就開始抽 iPhone 18 Pro",
-                "parent": null,
-                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPkn8F1",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "Whoscall"
-              },
-              {
-                "captured_at": "2026-10-30T02:32:52.677Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "Dd78uPkn8F1",
-                "author": "whoscall_tw",
-                "text": "我一個閃身步，就開始抽 iPhone 18 Pro",
-                "parent": null,
-                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPkn8F1",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "Whoscall"
-              }
-            ]
+            "classification": "ambiguous_ancestry"
           },
           {
             "id": "Dd77E5ckpHI",
-            "author": "whoscall_tw",
-            "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 次，就能免費領取好禮五選一 🎁\n再多簽 1 次、累積滿 11 次，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n👉 往右滑，看完整簽到攻略\n.\n🎁 簽滿 10 次：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n.\n📱 簽滿 11 次：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！\n.\n💚 每天簽到都能累積 Whoscall Points\n・每天簽到 +30 點\n・第 14 次再加碼 150 點\n・第 28 次再加碼 250 點\n.\n▶︎ 活動提醒\n・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n.\n💬 @ 一個好友，我們就私訊參加連結給你！\n.\n#Whoscall #簽到禮自由選 #Whoscall任務牆 #Whoscall簽到任務 #iPhone18Pro",
-            "url": "https://www.threads.com/@whoscall_tw/post/Dd77E5ckpHI",
-            "parent": null,
-            "relationship_source": null,
-            "relationship_inferred": null,
-            "evidence_conflict": false,
-            "recommended": true,
-            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node.text_post_app_info.linked_inline_media",
-            "self_thread_context": null,
-            "is_reply_observed": null,
-            "reply_to_author_observed": null,
-            "reader_branch": false,
-            "order": null,
-            "text_complete": false,
-            "text_completeness_evidence": null,
-            "display_name": null,
-            "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
-            "observations": [
-              {
-                "captured_at": "2026-10-30T02:32:52.557Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "Dd77E5ckpHI",
-                "author": "whoscall_tw",
-                "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 次，就能免費領取好禮五選一 🎁\n再多簽 1 次、累積滿 11 次，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n👉 往右滑，看完整簽到攻略\n.\n🎁 簽滿 10 次：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n.\n📱 簽滿 11 次：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！\n.\n💚 每天簽到都能累積 Whoscall Points\n・每天簽到 +30 點\n・第 14 次再加碼 150 點\n・第 28 次再加碼 250 點\n.\n▶︎ 活動提醒\n・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n.\n💬 @ 一個好友，我們就私訊參加連結給你！\n.\n#Whoscall #簽到禮自由選 #Whoscall任務牆 #Whoscall簽到任務 #iPhone18Pro",
-                "parent": null,
-                "url": "https://www.threads.com/@whoscall_tw/post/Dd77E5ckpHI",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": null
-              },
-              {
-                "captured_at": "2026-10-30T02:32:52.677Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "Dd77E5ckpHI",
-                "author": "whoscall_tw",
-                "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 次，就能免費領取好禮五選一 🎁\n再多簽 1 次、累積滿 11 次，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n👉 往右滑，看完整簽到攻略\n.\n🎁 簽滿 10 次：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n.\n📱 簽滿 11 次：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！\n.\n💚 每天簽到都能累積 Whoscall Points\n・每天簽到 +30 點\n・第 14 次再加碼 150 點\n・第 28 次再加碼 250 點\n.\n▶︎ 活動提醒\n・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n.\n💬 @ 一個好友，我們就私訊參加連結給你！\n.\n#Whoscall #簽到禮自由選 #Whoscall任務牆 #Whoscall簽到任務 #iPhone18Pro",
-                "parent": null,
-                "url": "https://www.threads.com/@whoscall_tw/post/Dd77E5ckpHI",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": null
-              }
-            ]
+            "classification": "recommended_post"
           },
           {
-            "id": "DfFJW5ZE3mK",
-            "author": "z.y.c_1026",
-            "text": "期待江彥廷😚終於等到了 \n岳軒 哭的樣子真的很好看🫣",
-            "url": "https://www.threads.com/@z.y.c_1026/post/DfFJW5ZE3mK",
-            "parent": null,
-            "relationship_source": null,
-            "relationship_inferred": null,
-            "evidence_conflict": false,
-            "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
-            "self_thread_context": null,
-            "is_reply_observed": false,
-            "reply_to_author_observed": null,
-            "reader_branch": false,
-            "order": null,
-            "text_complete": false,
-            "text_completeness_evidence": null,
-            "display_name": "與其",
-            "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
-            "observations": [
-              {
-                "captured_at": "2026-10-30T02:32:52.557Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFJW5ZE3mK",
-                "author": "z.y.c_1026",
-                "text": "期待江彥廷😚終於等到了 \n岳軒 哭的樣子真的很好看🫣",
-                "parent": null,
-                "url": "https://www.threads.com/@z.y.c_1026/post/DfFJW5ZE3mK",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "與其"
-              },
-              {
-                "captured_at": "2026-10-30T02:32:52.677Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFJW5ZE3mK",
-                "author": "z.y.c_1026",
-                "text": "期待江彥廷😚終於等到了 \n岳軒 哭的樣子真的很好看🫣",
-                "parent": null,
-                "url": "https://www.threads.com/@z.y.c_1026/post/DfFJW5ZE3mK",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "與其"
-              }
-            ]
+            "id": "DfEpDCgk-NY",
+            "classification": "recommended_post"
           },
           {
-            "id": "DfFbAzek4h8",
-            "author": "oneonelin_",
-            "text": "溫馨提醒⏰高鐵已經進入系統忙碌狀態\n搶到座位就可以去休息了\n明天再付款就好喔這不是拓元搶票系統",
-            "url": "https://www.threads.com/@oneonelin_/post/DfFbAzek4h8",
-            "parent": null,
-            "relationship_source": null,
-            "relationship_inferred": null,
-            "evidence_conflict": false,
-            "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
-            "self_thread_context": null,
-            "is_reply_observed": false,
-            "reply_to_author_observed": null,
-            "reader_branch": false,
-            "order": null,
-            "text_complete": false,
-            "text_completeness_evidence": null,
-            "display_name": "萬萬靈",
-            "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
-            "observations": [
-              {
-                "captured_at": "2026-10-30T02:32:52.557Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFbAzek4h8",
-                "author": "oneonelin_",
-                "text": "溫馨提醒⏰高鐵已經進入系統忙碌狀態\n搶到座位就可以去休息了\n明天再付款就好喔這不是拓元搶票系統",
-                "parent": null,
-                "url": "https://www.threads.com/@oneonelin_/post/DfFbAzek4h8",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "萬萬靈"
-              },
-              {
-                "captured_at": "2026-10-30T02:32:52.677Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFbAzek4h8",
-                "author": "oneonelin_",
-                "text": "溫馨提醒⏰高鐵已經進入系統忙碌狀態\n搶到座位就可以去休息了\n明天再付款就好喔這不是拓元搶票系統",
-                "parent": null,
-                "url": "https://www.threads.com/@oneonelin_/post/DfFbAzek4h8",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "萬萬靈"
-              }
-            ]
-          },
-          {
-            "id": "DfFWidJnxc3",
-            "author": "panhan0510",
-            "text": "煩死了～一點都不像好嗎！\n白癡🙄",
-            "url": "https://www.threads.com/@panhan0510/post/DfFWidJnxc3",
-            "parent": null,
-            "relationship_source": null,
-            "relationship_inferred": null,
-            "evidence_conflict": false,
-            "recommended": true,
-            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
-            "self_thread_context": null,
-            "is_reply_observed": false,
-            "reply_to_author_observed": null,
-            "reader_branch": false,
-            "order": null,
-            "text_complete": false,
-            "text_completeness_evidence": null,
-            "display_name": "潘涵",
-            "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:32:52.557Z",
-            "observations": [
-              {
-                "captured_at": "2026-10-30T02:32:52.557Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFWidJnxc3",
-                "author": "panhan0510",
-                "text": "煩死了～一點都不像好嗎！\n白癡🙄",
-                "parent": null,
-                "url": "https://www.threads.com/@panhan0510/post/DfFWidJnxc3",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "潘涵"
-              },
-              {
-                "captured_at": "2026-10-30T02:32:52.677Z",
-                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-                "id": "DfFWidJnxc3",
-                "author": "panhan0510",
-                "text": "煩死了～一點都不像好嗎！\n白癡🙄",
-                "parent": null,
-                "url": "https://www.threads.com/@panhan0510/post/DfFWidJnxc3",
-                "text_complete": false,
-                "text_completeness_evidence": null,
-                "relationship_source": null,
-                "relationship_inferred": null,
-                "display_name": "潘涵"
-              }
-            ]
+            "id": "DfFKXeok0II",
+            "classification": "recommended_post"
           }
         ],
-        "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-        "boundary_evidence": null,
-        "adapter": "public-json-conservative-v1",
-        "target_id": "Dd78uPeHwkx",
-        "author": "whoscall_tw",
-        "thread_observed": true,
-        "has_more": false,
-        "display_name": "Whoscall",
-        "captured_at": "2026-10-30T02:32:52.677Z",
+        "field_statuses": {
+          "display_name": "ok",
+          "follower_count": "unavailable",
+          "post_text": "ok",
+          "continuations": "partial"
+        }
+      }
+    },
+    {
+      "type": "navigation",
+      "at": "2026-10-30T02:55:15.626Z",
+      "input": {
+        "url": "https://www.threads.com/@whoscall_tw"
+      },
+      "output": {
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw",
+            "kind": "initial"
+          }
+        ],
+        "final_url": "https://www.threads.com/@whoscall_tw",
+        "http_statuses": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+            "status": 200
+          },
+          {
+            "url": "https://www.threads.com/@whoscall_tw",
+            "status": 200
+          }
+        ],
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 1,
-            "request_failed": 2,
-            "policy_resource_budget_or_type": 1
+            "policy_non_get_blocked": 8,
+            "request_failed": 55,
+            "policy_resource_budget_or_type": 46,
+            "unsupported_url": 1,
+            "page_script_error": 1
           },
           "requests": [
             {
@@ -1585,6 +1160,933 @@
               "resource_type": "image",
               "host": "scontent.cdninstagram.com",
               "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828692752_1097578639483190_4306369506466495989_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828692752_1097578639483190_4306369506466495989_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/357882623_235865859391313_4343460824996670002_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/357882623_235865859391313_4343460824996670002_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/702729745_17961911742116144_1451283866849003605_n.jpg"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828692752_1097578639483190_4306369506466495989_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/357882623_235865859391313_4343460824996670002_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            }
+          ],
+          "details_omitted": 71,
+          "observation": "observable_page_ready"
+        }
+      },
+      "status": "observed",
+      "reason_code": null
+    },
+    {
+      "type": "tool_call",
+      "at": "2026-10-30T02:55:15.636Z",
+      "call_id": "tool-3",
+      "name": "read_profile",
+      "input": {
+        "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx"
+      },
+      "output": {
+        "final_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+        "redirect_chain": [
+          {
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+            "kind": "initial"
+          }
+        ],
+        "posts": [
+          {
+            "id": "Dd78uPeHwkx",
+            "author": "whoscall_tw",
+            "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 天，就能免費領取好禮五選一 🎁\n再多簽 1 天、累積滿 11 天，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n.\n🎁 簽滿 10 天：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n📱 簽滿 11 天：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790825455,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
+            "self_thread_context": null,
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
+            "display_name": "Whoscall",
+            "text_source": "permalink_time_scoped_visible_body",
+            "text_completeness_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:55:12.951Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "Dd78uPeHwkx",
+                "author": "whoscall_tw",
+                "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 天，就能免費領取好禮五選一 🎁\n再多簽 1 天、累積滿 11 天，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n.\n🎁 簽滿 10 天：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n📱 簽滿 11 天：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": 1790825455,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:55:13.962Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "Dd78uPeHwkx",
+                "author": "whoscall_tw",
+                "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 天，就能免費領取好禮五選一 🎁\n再多簽 1 天、累積滿 11 天，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n.\n🎁 簽滿 10 天：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n📱 簽滿 11 天：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "text_complete": true,
+                "text_completeness_evidence": false,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": 1790825455,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "Dd78uRIn9Iu",
+            "author": "whoscall_tw",
+            "text": "・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n點此立即參與簽到：https://whoscalltw.pse.is/9nbeeu\n點擊看活動規則：https://whoscalltw.pse.is/9p2dw4\n活動獎項公告頁面：https://whoscall.feversocial.com/p/80",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uRIn9Iu",
+            "parent": "Dd78uPeHwkx",
+            "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1790825455,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "self_thread_context": {
+              "parent": "Dd78uPeHwkx",
+              "author": "whoscall_tw",
+              "source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null,
+              "index": 0
+            },
+            "is_reply_observed": true,
+            "reply_to_author_observed": "whoscall_tw",
+            "reader_branch": false,
+            "order": 1,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": {
+              "kind": "explicit_parent_chain",
+              "post_ids": [
+                "Dd78uPeHwkx",
+                "Dd78uRIn9Iu"
+              ],
+              "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null,
+              "sibling_order_basis": null
+            },
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:55:12.951Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "Dd78uRIn9Iu",
+                "author": "whoscall_tw",
+                "text": "・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n點此立即參與簽到：https://whoscalltw.pse.is/9nbeeu\n點擊看活動規則：https://whoscalltw.pse.is/9p2dw4\n活動獎項公告頁面：https://whoscall.feversocial.com/p/80",
+                "parent": "Dd78uPeHwkx",
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uRIn9Iu",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "taken_at": 1790825455,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:55:13.962Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "Dd78uRIn9Iu",
+                "author": "whoscall_tw",
+                "text": "・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n點此立即參與簽到：https://whoscalltw.pse.is/9nbeeu\n點擊看活動規則：https://whoscalltw.pse.is/9p2dw4\n活動獎項公告頁面：https://whoscall.feversocial.com/p/80",
+                "parent": "Dd78uPeHwkx",
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uRIn9Iu",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_inferred": null,
+                "taken_at": 1790825455,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "Dd78uPkn8F1",
+            "author": "whoscall_tw",
+            "text": "我一個閃身步，就開始抽 iPhone 18 Pro",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPkn8F1",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790825455,
+            "evidence_conflict": false,
+            "recommended": false,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Whoscall",
+            "order_evidence": null,
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:55:12.951Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "Dd78uPkn8F1",
+                "author": "whoscall_tw",
+                "text": "我一個閃身步，就開始抽 iPhone 18 Pro",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPkn8F1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": 1790825455,
+                "display_name": "Whoscall"
+              },
+              {
+                "captured_at": "2026-10-30T02:55:13.962Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "Dd78uPkn8F1",
+                "author": "whoscall_tw",
+                "text": "我一個閃身步，就開始抽 iPhone 18 Pro",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd78uPkn8F1",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": 1790825455,
+                "display_name": "Whoscall"
+              }
+            ]
+          },
+          {
+            "id": "Dd77E5ckpHI",
+            "author": "whoscall_tw",
+            "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 次，就能免費領取好禮五選一 🎁\n再多簽 1 次、累積滿 11 次，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n👉 往右滑，看完整簽到攻略\n.\n🎁 簽滿 10 次：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n.\n📱 簽滿 11 次：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！\n.\n💚 每天簽到都能累積 Whoscall Points\n・每天簽到 +30 點\n・第 14 次再加碼 150 點\n・第 28 次再加碼 250 點\n.\n▶︎ 活動提醒\n・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n.\n💬 @ 一個好友，我們就私訊參加連結給你！\n.\n#Whoscall #簽到禮自由選 #Whoscall任務牆 #Whoscall簽到任務 #iPhone18Pro",
+            "url": "https://www.threads.com/@whoscall_tw/post/Dd77E5ckpHI",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": null,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node.text_post_app_info.linked_inline_media",
+            "self_thread_context": null,
+            "is_reply_observed": null,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": null,
+            "order_evidence": null,
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:55:12.951Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "Dd77E5ckpHI",
+                "author": "whoscall_tw",
+                "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 次，就能免費領取好禮五選一 🎁\n再多簽 1 次、累積滿 11 次，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n👉 往右滑，看完整簽到攻略\n.\n🎁 簽滿 10 次：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n.\n📱 簽滿 11 次：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！\n.\n💚 每天簽到都能累積 Whoscall Points\n・每天簽到 +30 點\n・第 14 次再加碼 150 點\n・第 28 次再加碼 250 點\n.\n▶︎ 活動提醒\n・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n.\n💬 @ 一個好友，我們就私訊參加連結給你！\n.\n#Whoscall #簽到禮自由選 #Whoscall任務牆 #Whoscall簽到任務 #iPhone18Pro",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd77E5ckpHI",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": null,
+                "display_name": null
+              },
+              {
+                "captured_at": "2026-10-30T02:55:13.962Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "Dd77E5ckpHI",
+                "author": "whoscall_tw",
+                "text": "📣 Whoscall 10 月「簽到禮自由選」開跑！\n10/1 起每天打開 Whoscall 簽到，累積簽滿 10 次，就能免費領取好禮五選一 🎁\n再多簽 1 次、累積滿 11 次，還能抽 iPhone 18 Pro 📱\n不需要連續簽到，但先簽先搶好禮！\n👉 往右滑，看完整簽到攻略\n.\n🎁 簽滿 10 次：免費好禮五選一（數量有限，實際以 app 內數量為主）\n・LINE POINTS 20 點\n・摩斯漢堡冰紅茶（L）1 杯\n・肯德基原味蛋撻 1 個\n・全家 Fami 霜淇淋 1 支\n・麥當勞中薯 1 份\n（每個帳號限領 1 次，領取後不能更換）\n.\n📱 簽滿 11 次：iPhone 18 Pro 抽獎券\n領取抽獎券後填寫 Email 與手機號碼，就完成抽獎登記！\n.\n💚 每天簽到都能累積 Whoscall Points\n・每天簽到 +30 點\n・第 14 次再加碼 150 點\n・第 28 次再加碼 250 點\n.\n▶︎ 活動提醒\n・活動時間：2026/10/1 00:00～10/31 23:59\n・好禮兌換券與 iPhone 抽獎券都需在 10/31 23:59 前，到「10 月簽到任務」頁面手動領取，逾期視同放棄\n・iPhone 18 Pro 將於 2026/11/6 23:59 前抽出，並於活動頁面公布中獎名單、以 Email 通知中獎人\n・主辦方保有修改活動內容之權利，詳細活動辦法請見活動頁面\n.\n💬 @ 一個好友，我們就私訊參加連結給你！\n.\n#Whoscall #簽到禮自由選 #Whoscall任務牆 #Whoscall簽到任務 #iPhone18Pro",
+                "parent": null,
+                "url": "https://www.threads.com/@whoscall_tw/post/Dd77E5ckpHI",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": null,
+                "display_name": null
+              }
+            ]
+          },
+          {
+            "id": "DfEpDCgk-NY",
+            "author": "taiwanmemess",
+            "text": "蔣萬安現在的戰略非常好懂，他在跟沈伯洋拼支持者投票率，民調落後這一點他很清楚，而剩一個月不到，除非有大事件，例如辯論得分（顯然很難），所以他們最近才會：\n\n1.夫人牌提早進場，一同上節目，代夫出征，最後感人合體。\n2.沈伯洋買手機也要抹，把沈抹成不會節儉、玩遊戲的年輕人。\n3.光速報案，募款網站詐騙、偏藍側翼攻擊沈的圖他們秒報，不利自己的都是反串，攻擊自己的會偷渡影射。\n4.姿態放低、颱風四年任期第一次睡在指揮中心、戴眼鏡，生病我祝他早日康復。\n\n這些策略有個大重點，台北市的長輩們會愛。\n\n蔣萬安現在就是鞏固藍營基本盤，要用己方的高投票率跟沈伯洋對決，他在賭你各位支持沈伯洋的都不會出來投票，民調落後但投票率高，贏一千票也是贏，因此打出夫人牌、同情疼惜牌，甚至可能會有受害形象牌，這劇本繼續下去，選前之夜，跟宋楚瑜一樣下跪都有可能。\n\n這都是國民黨選舉的老套路，這做法也會搶走版面，淡化沈伯洋的正面政策宣傳，非常有效，如果你也厭倦這種形式、這種我們從小看到大的爛戲，那今年是時候用選票告訴國民黨，未來別想再用這套拐我們的選票。\n\n投票投票投票，這才是真的，請大家務必提醒大家，一起加油。",
+            "url": "https://www.threads.com/@taiwanmemess/post/DfEpDCgk-NY",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793264613,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "台灣迷因taiwanmeme",
+            "order_evidence": null,
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:55:12.951Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "DfEpDCgk-NY",
+                "author": "taiwanmemess",
+                "text": "蔣萬安現在的戰略非常好懂，他在跟沈伯洋拼支持者投票率，民調落後這一點他很清楚，而剩一個月不到，除非有大事件，例如辯論得分（顯然很難），所以他們最近才會：\n\n1.夫人牌提早進場，一同上節目，代夫出征，最後感人合體。\n2.沈伯洋買手機也要抹，把沈抹成不會節儉、玩遊戲的年輕人。\n3.光速報案，募款網站詐騙、偏藍側翼攻擊沈的圖他們秒報，不利自己的都是反串，攻擊自己的會偷渡影射。\n4.姿態放低、颱風四年任期第一次睡在指揮中心、戴眼鏡，生病我祝他早日康復。\n\n這些策略有個大重點，台北市的長輩們會愛。\n\n蔣萬安現在就是鞏固藍營基本盤，要用己方的高投票率跟沈伯洋對決，他在賭你各位支持沈伯洋的都不會出來投票，民調落後但投票率高，贏一千票也是贏，因此打出夫人牌、同情疼惜牌，甚至可能會有受害形象牌，這劇本繼續下去，選前之夜，跟宋楚瑜一樣下跪都有可能。\n\n這都是國民黨選舉的老套路，這做法也會搶走版面，淡化沈伯洋的正面政策宣傳，非常有效，如果你也厭倦這種形式、這種我們從小看到大的爛戲，那今年是時候用選票告訴國民黨，未來別想再用這套拐我們的選票。\n\n投票投票投票，這才是真的，請大家務必提醒大家，一起加油。",
+                "parent": null,
+                "url": "https://www.threads.com/@taiwanmemess/post/DfEpDCgk-NY",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": 1793264613,
+                "display_name": "台灣迷因taiwanmeme"
+              },
+              {
+                "captured_at": "2026-10-30T02:55:13.962Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "DfEpDCgk-NY",
+                "author": "taiwanmemess",
+                "text": "蔣萬安現在的戰略非常好懂，他在跟沈伯洋拼支持者投票率，民調落後這一點他很清楚，而剩一個月不到，除非有大事件，例如辯論得分（顯然很難），所以他們最近才會：\n\n1.夫人牌提早進場，一同上節目，代夫出征，最後感人合體。\n2.沈伯洋買手機也要抹，把沈抹成不會節儉、玩遊戲的年輕人。\n3.光速報案，募款網站詐騙、偏藍側翼攻擊沈的圖他們秒報，不利自己的都是反串，攻擊自己的會偷渡影射。\n4.姿態放低、颱風四年任期第一次睡在指揮中心、戴眼鏡，生病我祝他早日康復。\n\n這些策略有個大重點，台北市的長輩們會愛。\n\n蔣萬安現在就是鞏固藍營基本盤，要用己方的高投票率跟沈伯洋對決，他在賭你各位支持沈伯洋的都不會出來投票，民調落後但投票率高，贏一千票也是贏，因此打出夫人牌、同情疼惜牌，甚至可能會有受害形象牌，這劇本繼續下去，選前之夜，跟宋楚瑜一樣下跪都有可能。\n\n這都是國民黨選舉的老套路，這做法也會搶走版面，淡化沈伯洋的正面政策宣傳，非常有效，如果你也厭倦這種形式、這種我們從小看到大的爛戲，那今年是時候用選票告訴國民黨，未來別想再用這套拐我們的選票。\n\n投票投票投票，這才是真的，請大家務必提醒大家，一起加油。",
+                "parent": null,
+                "url": "https://www.threads.com/@taiwanmemess/post/DfEpDCgk-NY",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": 1793264613,
+                "display_name": "台灣迷因taiwanmeme"
+              }
+            ]
+          },
+          {
+            "id": "DfFKXeok0II",
+            "author": "yuwei__0408",
+            "text": "蘇品瑄沒有陪我鬧 我根本不用玩\n我要去後面玩ㄌ",
+            "url": "https://www.threads.com/@yuwei__0408/post/DfFKXeok0II",
+            "parent": null,
+            "relationship_source": null,
+            "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793282082,
+            "evidence_conflict": false,
+            "recommended": true,
+            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "self_thread_context": null,
+            "is_reply_observed": false,
+            "reply_to_author_observed": null,
+            "reader_branch": false,
+            "order": null,
+            "text_complete": false,
+            "text_completeness_evidence": null,
+            "display_name": "Emily 魚",
+            "order_evidence": null,
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:12.951Z",
+            "observations": [
+              {
+                "captured_at": "2026-10-30T02:55:12.951Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "DfFKXeok0II",
+                "author": "yuwei__0408",
+                "text": "蘇品瑄沒有陪我鬧 我根本不用玩\n我要去後面玩ㄌ",
+                "parent": null,
+                "url": "https://www.threads.com/@yuwei__0408/post/DfFKXeok0II",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": 1793282082,
+                "display_name": "Emily 魚"
+              },
+              {
+                "captured_at": "2026-10-30T02:55:13.962Z",
+                "source_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+                "id": "DfFKXeok0II",
+                "author": "yuwei__0408",
+                "text": "蘇品瑄沒有陪我鬧 我根本不用玩\n我要去後面玩ㄌ",
+                "parent": null,
+                "url": "https://www.threads.com/@yuwei__0408/post/DfFKXeok0II",
+                "text_complete": false,
+                "text_completeness_evidence": null,
+                "relationship_source": null,
+                "relationship_inferred": null,
+                "taken_at": 1793282082,
+                "display_name": "Emily 魚"
+              }
+            ]
+          }
+        ],
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
+        "boundary_evidence": null,
+        "adapter": "public-json-conservative-v1",
+        "target_id": "Dd78uPeHwkx",
+        "author": "whoscall_tw",
+        "thread_observed": true,
+        "has_more": false,
+        "display_name": "Whoscall",
+        "captured_at": "2026-10-30T02:55:13.962Z",
+        "acquisition_diagnostics": {
+          "counts": {
+            "policy_non_get_blocked": 6,
+            "request_failed": 35,
+            "policy_resource_budget_or_type": 28,
+            "unsupported_url": 1,
+            "page_script_error": 1
+          },
+          "requests": [
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/qm/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828692752_1097578639483190_4306369506466495989_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828692752_1097578639483190_4306369506466495989_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/357882623_235865859391313_4343460824996670002_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/357882623_235865859391313_4343460824996670002_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/702729745_17961911742116144_1451283866849003605_n.jpg"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828692752_1097578639483190_4306369506466495989_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/357882623_235865859391313_4343460824996670002_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830997118_1097578606149860_3125721640226730067_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828896520_1097578612816526_5355402960383259593_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/830161432_1097578649483189_3796515333190901057_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t39.30808-6/828678574_1097578609483193_6854729277555025735_n.jpg"
             }
           ],
           "details_omitted": 0,
@@ -1594,14 +2096,15 @@
           "ready_state": "interactive"
         },
         "merge_conflicts": [],
-        "follower_count": 15100
+        "follower_count": 15100,
+        "profile_captured_at": "2026-10-30T02:55:15.636Z"
       },
       "status": "ok",
-      "elapsed_ms": 5559
+      "elapsed_ms": 1652
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:32:58.258Z",
+      "at": "2026-10-30T02:55:15.638Z",
       "output": {
         "classifications": [
           {
@@ -1617,15 +2120,11 @@
             "classification": "recommended_post"
           },
           {
-            "id": "DfFJW5ZE3mK",
+            "id": "DfEpDCgk-NY",
             "classification": "recommended_post"
           },
           {
-            "id": "DfFbAzek4h8",
-            "classification": "recommended_post"
-          },
-          {
-            "id": "DfFWidJnxc3",
+            "id": "DfFKXeok0II",
             "classification": "recommended_post"
           }
         ],
@@ -1639,12 +2138,12 @@
     },
     {
       "type": "browser_closed",
-      "at": "2026-10-30T02:32:58.472Z",
+      "at": "2026-10-30T02:55:15.818Z",
       "status": "ok"
     },
     {
       "type": "run_end",
-      "at": "2026-10-30T02:32:58.473Z",
+      "at": "2026-10-30T02:55:15.819Z",
       "status": "partial",
       "usage": {
         "llm_calls": 0,

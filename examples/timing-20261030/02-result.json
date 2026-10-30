@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "run_id": "42029fbb-4462-4bf6-81e0-cb40c41ee322",
+  "run_id": "d6e76cf5-3ebb-4fa8-b0d5-341f0a96604a",
   "status": "partial",
-  "started_at": "2026-10-30T02:32:48.661Z",
-  "finished_at": "2026-10-30T02:32:58.472Z",
+  "started_at": "2026-10-30T02:55:10.412Z",
+  "finished_at": "2026-10-30T02:55:15.818Z",
   "requested_fields": [
     "display_name",
     "follower_count",
@@ -19,7 +19,8 @@
     }
   ],
   "final_url": "https://www.threads.com/@whoscall_tw/post/Dd78uPeHwkx",
-  "captured_at": "2026-10-30T02:32:58.256Z",
+  "captured_at": "2026-10-30T02:55:13.962Z",
+  "profile_captured_at": "2026-10-30T02:55:15.636Z",
   "usage": {
     "llm_calls": 0,
     "calls_with_usage": 0,
@@ -61,6 +62,7 @@
           "parent_post_id": "Dd78uPeHwkx",
           "text_complete": false,
           "relationship_inferred": null,
+          "order_inferred": null,
           "order_evidence": {
             "kind": "explicit_parent_chain",
             "post_ids": [
@@ -68,12 +70,13 @@
               "Dd78uRIn9Iu"
             ],
             "relationship_source": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-            "relationship_inferred": null
+            "relationship_inferred": null,
+            "sibling_order_basis": null
           }
         }
       ],
       "reason_code": "thread_incomplete",
-      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, other reply context or unloaded replies remain unconfirmed."
+      "reason": "Author continuations retained; text completeness, sequence-inferred parent links, timestamp-ordered forks, other reply context or unloaded replies remain unconfirmed."
     }
   },
   "evidence_mode": "live_anonymous",

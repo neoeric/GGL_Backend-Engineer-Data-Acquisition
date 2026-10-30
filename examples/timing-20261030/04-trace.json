@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "run_id": "0aed85c5-2681-41e2-bf7b-2f0b6ab07459",
+  "run_id": "140b92ee-f1ef-4c9e-a310-4b60975a601a",
   "events": [
     {
       "type": "run_start",
-      "at": "2026-10-30T02:33:10.641Z",
+      "at": "2026-10-30T02:55:28.022Z",
       "input": {
         "message": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np"
       },
@@ -18,7 +18,7 @@
     },
     {
       "type": "navigation",
-      "at": "2026-10-30T02:33:13.359Z",
+      "at": "2026-10-30T02:55:30.197Z",
       "input": {
         "url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np"
       },
@@ -81,7 +81,7 @@
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:33:13.376Z",
+      "at": "2026-10-30T02:55:30.214Z",
       "call_id": "tool-1",
       "name": "read_post",
       "input": {
@@ -104,6 +104,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793116697,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -115,7 +117,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Whoscall",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DfAO8A9j40p",
@@ -123,16 +126,19 @@
             "text": "明明沒刷卡，卻收到 Email 說你剛刷了一筆高額海外消費？\n\n先別點信裡的連結，自己打開銀行官方 App 查交易紀錄。也可以把可疑 Email 截圖，交給 Whoscall 完全免費的功能「一鍵查」，查詢有沒有詐騙風險（不論是 Email、簡訊、廣告傳單、社群貼文或對話紀錄，只要是有文字的圖片，都可以拍照或截圖上傳，3 秒鐘之內幫你判定是否有詐騙風險）\n\n使用傳送門 👉🏻 https://lihi1.me/M6mRd\n\n因為你可能根本沒被盜刷，對方就是想讓你嚇到，點進假的「取消交易」頁面，自己填上卡號、有效期限、CVV，甚至簡訊驗證碼。",
             "url": "https://www.threads.com/@whoscall_tw/post/DfAO8A9j40p",
             "parent": "DfAO62PD9np",
-            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1793116706,
             "evidence_conflict": false,
             "recommended": false,
-            "source_path": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "self_thread_context": {
               "parent": "DfAO62PD9np",
               "author": "whoscall_tw",
-              "source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -147,9 +153,11 @@
                 "DfAO62PD9np",
                 "DfAO8A9j40p"
               ],
-              "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
-            }
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null,
+              "sibling_order_basis": null
+            },
+            "order_inferred": null
           },
           {
             "id": "DfAO9Aij2QV",
@@ -157,16 +165,19 @@
             "text": "App 裡真的有那筆不明交易，怎麼辦？\n\n① 立即透過銀行官方 App 或卡片背面的客服電話，聯絡銀行掛失停卡，防止繼續被冒用。\n\n② 向銀行通報非本人交易，申請爭議款處理，保留交易通知、可疑 Email 等資料，配合調查。\n\n停卡不會自動取消已完成的交易，爭議款能否免付或退回，也要依調查結果判定。\n\n寶們，收到刷卡通知先查證，別急著照信裡的指示「取消交易」。",
             "url": "https://www.threads.com/@whoscall_tw/post/DfAO9Aij2QV",
             "parent": "DfAO8A9j40p",
-            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 1,
+            "taken_at": 1793116715,
             "evidence_conflict": false,
             "recommended": false,
-            "source_path": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "self_thread_context": {
               "parent": "DfAO8A9j40p",
               "author": "whoscall_tw",
-              "source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "inferred": "self_thread_sequence"
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "inferred": "self_thread_sequence",
+              "index": 1
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -182,9 +193,11 @@
                 "DfAO8A9j40p",
                 "DfAO9Aij2QV"
               ],
-              "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "relationship_inferred": "self_thread_sequence"
-            }
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
+            },
+            "order_inferred": null
           },
           {
             "id": "Dd5UIRjjzW_",
@@ -194,9 +207,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790737064,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -205,7 +220,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "楊雅婷",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dezkrf5j4A8",
@@ -215,9 +231,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1792691898,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -226,7 +244,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "楊雅婷",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DeWIjE2FIX0",
@@ -236,9 +255,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791704070,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -247,7 +268,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DeJLvZKE7Mr",
@@ -257,9 +279,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791269536,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -268,7 +292,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "銀行信貸 Naya Lin",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "DejjSqOiUCH",
@@ -278,9 +303,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1792154299,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -289,7 +316,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "YC Chen",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           }
         ],
         "canonical_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
@@ -300,7 +328,7 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Whoscall",
-        "captured_at": "2026-10-30T02:33:13.359Z",
+        "captured_at": "2026-10-30T02:55:30.197Z",
         "acquisition_diagnostics": {
           "counts": {
             "policy_non_get_blocked": 1,
@@ -345,11 +373,11 @@
         }
       },
       "status": "ok",
-      "elapsed_ms": 2734
+      "elapsed_ms": 2192
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:33:13.376Z",
+      "at": "2026-10-30T02:55:30.215Z",
       "output": {
         "classifications": [
           {
@@ -390,8 +418,22 @@
       }
     },
     {
+      "type": "thread_expansion",
+      "at": "2026-10-30T02:55:31.104Z",
+      "input": {
+        "canonical_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np"
+      },
+      "output": {
+        "rounds": 1,
+        "clicks": 0,
+        "scrolls": 1,
+        "stopped": "no_growth"
+      },
+      "status": "observed"
+    },
+    {
       "type": "evidence_merge",
-      "at": "2026-10-30T02:33:13.488Z",
+      "at": "2026-10-30T02:55:31.167Z",
       "input": {
         "canonical_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np"
       },
@@ -408,14 +450,51 @@
           "DeJLvZKE7Mr",
           "DejjSqOiUCH"
         ],
-        "conflicts": [],
-        "observation_at": "2026-10-30T02:33:13.470Z"
+        "conflicts": [
+          {
+            "post_id": "DejjSqOiUCH",
+            "fields": [
+              "text"
+            ],
+            "previous_observation": {
+              "captured_at": "2026-10-30T02:55:30.197Z",
+              "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+              "id": "DejjSqOiUCH",
+              "author": "yc_chen1994",
+              "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸\n\n但同間店用其他張信用卡都不用欸\n到底出惹什麼問題\n有沒有信用卡專家分析分析",
+              "parent": null,
+              "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+              "text_complete": false,
+              "text_completeness_evidence": null,
+              "relationship_source": null,
+              "relationship_inferred": null,
+              "taken_at": 1792154299,
+              "display_name": "YC Chen"
+            },
+            "incoming_observation": {
+              "captured_at": "2026-10-30T02:55:31.149Z",
+              "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+              "id": "DejjSqOiUCH",
+              "author": "yc_chen1994",
+              "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸",
+              "parent": null,
+              "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+              "text_complete": true,
+              "text_completeness_evidence": false,
+              "relationship_source": null,
+              "relationship_inferred": null,
+              "taken_at": 1792154299,
+              "display_name": "YC Chen"
+            }
+          }
+        ],
+        "observation_at": "2026-10-30T02:55:31.149Z"
       },
       "status": "merged"
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:33:13.488Z",
+      "at": "2026-10-30T02:55:31.168Z",
       "call_id": "tool-2",
       "name": "expand_thread",
       "input": {
@@ -438,6 +517,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793116697,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -450,10 +531,11 @@
             "text_completeness_evidence": null,
             "display_name": "Whoscall",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO62PD9np",
                 "author": "whoscall_tw",
@@ -464,10 +546,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793116697,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO62PD9np",
                 "author": "whoscall_tw",
@@ -478,6 +561,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793116697,
                 "display_name": "Whoscall"
               }
             ]
@@ -488,16 +572,19 @@
             "text": "明明沒刷卡，卻收到 Email 說你剛刷了一筆高額海外消費？\n\n先別點信裡的連結，自己打開銀行官方 App 查交易紀錄。也可以把可疑 Email 截圖，交給 Whoscall 完全免費的功能「一鍵查」，查詢有沒有詐騙風險（不論是 Email、簡訊、廣告傳單、社群貼文或對話紀錄，只要是有文字的圖片，都可以拍照或截圖上傳，3 秒鐘之內幫你判定是否有詐騙風險）\n\n使用傳送門 👉🏻 https://lihi1.me/M6mRd\n\n因為你可能根本沒被盜刷，對方就是想讓你嚇到，點進假的「取消交易」頁面，自己填上卡號、有效期限、CVV，甚至簡訊驗證碼。",
             "url": "https://www.threads.com/@whoscall_tw/post/DfAO8A9j40p",
             "parent": "DfAO62PD9np",
-            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1793116706,
             "evidence_conflict": false,
             "recommended": false,
-            "source_path": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "self_thread_context": {
               "parent": "DfAO62PD9np",
               "author": "whoscall_tw",
-              "source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -512,13 +599,15 @@
                 "DfAO62PD9np",
                 "DfAO8A9j40p"
               ],
-              "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null,
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO8A9j40p",
                 "author": "whoscall_tw",
@@ -527,12 +616,13 @@
                 "url": "https://www.threads.com/@whoscall_tw/post/DfAO8A9j40p",
                 "text_complete": false,
                 "text_completeness_evidence": null,
-                "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1793116706,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO8A9j40p",
                 "author": "whoscall_tw",
@@ -541,8 +631,9 @@
                 "url": "https://www.threads.com/@whoscall_tw/post/DfAO8A9j40p",
                 "text_complete": false,
                 "text_completeness_evidence": null,
-                "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1793116706,
                 "display_name": "Whoscall"
               }
             ]
@@ -553,16 +644,19 @@
             "text": "App 裡真的有那筆不明交易，怎麼辦？\n\n① 立即透過銀行官方 App 或卡片背面的客服電話，聯絡銀行掛失停卡，防止繼續被冒用。\n\n② 向銀行通報非本人交易，申請爭議款處理，保留交易通知、可疑 Email 等資料，配合調查。\n\n停卡不會自動取消已完成的交易，爭議款能否免付或退回，也要依調查結果判定。\n\n寶們，收到刷卡通知先查證，別急著照信裡的指示「取消交易」。",
             "url": "https://www.threads.com/@whoscall_tw/post/DfAO9Aij2QV",
             "parent": "DfAO8A9j40p",
-            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 1,
+            "taken_at": 1793116715,
             "evidence_conflict": false,
             "recommended": false,
-            "source_path": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "self_thread_context": {
               "parent": "DfAO8A9j40p",
               "author": "whoscall_tw",
-              "source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "inferred": "self_thread_sequence"
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "inferred": "self_thread_sequence",
+              "index": 1
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -578,13 +672,15 @@
                 "DfAO8A9j40p",
                 "DfAO9Aij2QV"
               ],
-              "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "relationship_inferred": "self_thread_sequence"
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO9Aij2QV",
                 "author": "whoscall_tw",
@@ -593,12 +689,13 @@
                 "url": "https://www.threads.com/@whoscall_tw/post/DfAO9Aij2QV",
                 "text_complete": false,
                 "text_completeness_evidence": null,
-                "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1793116715,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO9Aij2QV",
                 "author": "whoscall_tw",
@@ -607,8 +704,9 @@
                 "url": "https://www.threads.com/@whoscall_tw/post/DfAO9Aij2QV",
                 "text_complete": false,
                 "text_completeness_evidence": null,
-                "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1793116715,
                 "display_name": "Whoscall"
               }
             ]
@@ -621,9 +719,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790737064,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -633,10 +733,11 @@
             "text_completeness_evidence": null,
             "display_name": "楊雅婷",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "Dd5UIRjjzW_",
                 "author": "ccc222534238",
@@ -647,10 +748,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790737064,
                 "display_name": "楊雅婷"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "Dd5UIRjjzW_",
                 "author": "ccc222534238",
@@ -661,6 +763,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790737064,
                 "display_name": "楊雅婷"
               }
             ]
@@ -673,22 +776,25 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1792691898,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
             "reader_branch": false,
             "order": null,
-            "text_complete": false,
-            "text_completeness_evidence": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
             "display_name": "楊雅婷",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "Dezkrf5j4A8",
                 "author": "ccc222534238",
@@ -699,20 +805,22 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1792691898,
                 "display_name": "楊雅婷"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "Dezkrf5j4A8",
                 "author": "ccc222534238",
                 "text": "有額度信用卡套現只是把額度換成現金不夠也是要在貼現額度刷爆這張有額度信用卡不能用了或者是刷到額度限度如二十萬刷到二十萬也是刷爆 有額度信用卡刷到額度限額也是刷爆不能用了",
                 "parent": null,
                 "url": "https://www.threads.com/@ccc222534238/post/Dezkrf5j4A8",
-                "text_complete": false,
-                "text_completeness_evidence": null,
+                "text_complete": true,
+                "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1792691898,
                 "display_name": "楊雅婷"
               }
             ]
@@ -725,9 +833,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791704070,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -737,10 +847,11 @@
             "text_completeness_evidence": null,
             "display_name": "",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DeWIjE2FIX0",
                 "author": "chizzeesy_",
@@ -751,10 +862,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791704070,
                 "display_name": ""
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DeWIjE2FIX0",
                 "author": "chizzeesy_",
@@ -765,6 +877,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791704070,
                 "display_name": ""
               }
             ]
@@ -777,9 +890,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791269536,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -789,10 +904,11 @@
             "text_completeness_evidence": null,
             "display_name": "銀行信貸 Naya Lin",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DeJLvZKE7Mr",
                 "author": "love163423163423",
@@ -803,10 +919,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791269536,
                 "display_name": "銀行信貸 Naya Lin"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DeJLvZKE7Mr",
                 "author": "love163423163423",
@@ -817,6 +934,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791269536,
                 "display_name": "銀行信貸 Naya Lin"
               }
             ]
@@ -829,9 +947,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
-            "evidence_conflict": false,
+            "self_thread_index": null,
+            "taken_at": 1792154299,
+            "evidence_conflict": true,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -841,10 +961,11 @@
             "text_completeness_evidence": null,
             "display_name": "YC Chen",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DejjSqOiUCH",
                 "author": "yc_chen1994",
@@ -855,21 +976,61 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1792154299,
                 "display_name": "YC Chen"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DejjSqOiUCH",
                 "author": "yc_chen1994",
-                "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸\n\n但同間店用其他張信用卡都不用欸\n到底出惹什麼問題\n有沒有信用卡專家分析分析",
+                "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸",
                 "parent": null,
                 "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
-                "text_complete": false,
-                "text_completeness_evidence": null,
+                "text_complete": true,
+                "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1792154299,
                 "display_name": "YC Chen"
+              }
+            ],
+            "conflicts": [
+              {
+                "post_id": "DejjSqOiUCH",
+                "fields": [
+                  "text"
+                ],
+                "previous_observation": {
+                  "captured_at": "2026-10-30T02:55:30.197Z",
+                  "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+                  "id": "DejjSqOiUCH",
+                  "author": "yc_chen1994",
+                  "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸\n\n但同間店用其他張信用卡都不用欸\n到底出惹什麼問題\n有沒有信用卡專家分析分析",
+                  "parent": null,
+                  "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+                  "text_complete": false,
+                  "text_completeness_evidence": null,
+                  "relationship_source": null,
+                  "relationship_inferred": null,
+                  "taken_at": 1792154299,
+                  "display_name": "YC Chen"
+                },
+                "incoming_observation": {
+                  "captured_at": "2026-10-30T02:55:31.149Z",
+                  "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+                  "id": "DejjSqOiUCH",
+                  "author": "yc_chen1994",
+                  "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸",
+                  "parent": null,
+                  "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+                  "text_complete": true,
+                  "text_completeness_evidence": false,
+                  "relationship_source": null,
+                  "relationship_inferred": null,
+                  "taken_at": 1792154299,
+                  "display_name": "YC Chen"
+                }
               }
             ]
           }
@@ -882,12 +1043,14 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Whoscall",
-        "captured_at": "2026-10-30T02:33:13.470Z",
+        "captured_at": "2026-10-30T02:55:31.149Z",
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 1,
-            "request_failed": 2,
-            "policy_resource_budget_or_type": 1
+            "policy_non_get_blocked": 7,
+            "request_failed": 25,
+            "policy_resource_budget_or_type": 17,
+            "unsupported_url": 1,
+            "page_script_error": 1
           },
           "requests": [
             {
@@ -917,6 +1080,254 @@
               "resource_type": "image",
               "host": "scontent.cdninstagram.com",
               "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/540395915_17843303868567276_9210180685275427018_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/540395915_17843303868567276_9210180685275427018_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775245311_18086742623308257_3986467475281122585_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775087546_18092706485122080_2148339614362952968_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775245311_18086742623308257_3986467475281122585_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.fsyd12-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/573323465_1219825463302212_7278921664109726296_n.png"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775087546_18092706485122080_2148339614362952968_n.jpg"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.fsyd12-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/573323465_1219825463302212_7278921664109726296_n.png"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/540395915_17843303868567276_9210180685275427018_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775245311_18086742623308257_3986467475281122585_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775087546_18092706485122080_2148339614362952968_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
             }
           ],
           "details_omitted": 0,
@@ -925,14 +1336,51 @@
           "json_script_count": 51,
           "ready_state": "interactive"
         },
-        "merge_conflicts": []
+        "merge_conflicts": [
+          {
+            "post_id": "DejjSqOiUCH",
+            "fields": [
+              "text"
+            ],
+            "previous_observation": {
+              "captured_at": "2026-10-30T02:55:30.197Z",
+              "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+              "id": "DejjSqOiUCH",
+              "author": "yc_chen1994",
+              "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸\n\n但同間店用其他張信用卡都不用欸\n到底出惹什麼問題\n有沒有信用卡專家分析分析",
+              "parent": null,
+              "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+              "text_complete": false,
+              "text_completeness_evidence": null,
+              "relationship_source": null,
+              "relationship_inferred": null,
+              "taken_at": 1792154299,
+              "display_name": "YC Chen"
+            },
+            "incoming_observation": {
+              "captured_at": "2026-10-30T02:55:31.149Z",
+              "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+              "id": "DejjSqOiUCH",
+              "author": "yc_chen1994",
+              "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸",
+              "parent": null,
+              "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+              "text_complete": true,
+              "text_completeness_evidence": false,
+              "relationship_source": null,
+              "relationship_inferred": null,
+              "taken_at": 1792154299,
+              "display_name": "YC Chen"
+            }
+          }
+        ]
       },
       "status": "ok",
-      "elapsed_ms": 112
+      "elapsed_ms": 952
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:33:13.490Z",
+      "at": "2026-10-30T02:55:31.171Z",
       "output": {
         "classifications": [
           {
@@ -961,7 +1409,7 @@
           },
           {
             "id": "DejjSqOiUCH",
-            "classification": "recommended_post"
+            "classification": "ambiguous_evidence_conflict"
           }
         ],
         "field_statuses": {
@@ -974,7 +1422,7 @@
     },
     {
       "type": "navigation",
-      "at": "2026-10-30T02:33:17.823Z",
+      "at": "2026-10-30T02:55:32.894Z",
       "input": {
         "url": "https://www.threads.com/@whoscall_tw"
       },
@@ -998,9 +1446,11 @@
         ],
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 2,
-            "request_failed": 14,
-            "policy_resource_budget_or_type": 3
+            "policy_non_get_blocked": 9,
+            "request_failed": 38,
+            "policy_resource_budget_or_type": 28,
+            "unsupported_url": 1,
+            "page_script_error": 1
           },
           "requests": [
             {
@@ -1032,112 +1482,255 @@
               "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
             },
             {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
               "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4imga4/yF/l/en_US-j/DrrdVCobZMAAuYPqwujPuMlBK6n6_KCaAVmmdQWWdoo1R4ZpVTuqpgg8Mpazhpt70hiogcroFFjwJTq6zEDXWbdM_DQMaZb8pinl8avXV5A3mUoCgAfznH4e9.js"
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4iUTs4/yp/l/en_US-j/kwaaIAYb12s.js"
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4/yr/r/LW_wwypmBWg.js"
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4/yT/r/zulPgWlexFH.js"
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4iCWI4/yU/l/en_US-j/x9GSHUyoqq9DPGJSL3TB2iznbfFQkd22wkxw7Va-g9f3oKpukyPo4Ehg6tOV0kDtw-S59ZZX1ecb1KJeCrwBzYgrqiQ_dB73XW3CMUTg2BZ_QUtRtJZaRPv-eeezCV_KWgzsk1FJQoc8itQMk-zvG8D5ZGPjzEop3J996eLEhOaO_rIFBPI1gK7PKaUsfWtwly-yCx_rEOAKE3-Ox3Dgcz2JVeG3.js"
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/540395915_17843303868567276_9210180685275427018_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4iKqD4/yE/l/en_US-j/W10CzmBkUaN.js"
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/540395915_17843303868567276_9210180685275427018_n.jpg"
             },
             {
-              "reason_code": "request_failed",
+              "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4ikb04/yQ/l/en_US-j/sceIC6_kGTA.js"
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775245311_18086742623308257_3986467475281122585_n.jpg"
             },
             {
-              "reason_code": "request_failed",
+              "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4i_3O4/y0/l/en_US-j/MPp4EzC5xuR.js"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "script",
-              "host": "static.cdninstagram.com",
-              "path": "/rsrc.php/v4ivnX4/yM/l/en_US-j/BVe2_YS9VFS.js"
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775087546_18092706485122080_2148339614362952968_n.jpg"
             },
             {
               "reason_code": "policy_non_get_blocked",
               "method": "POST",
-              "resource_type": "ping",
+              "resource_type": "xhr",
               "host": "www.threads.com",
-              "path": "/ajax/qm/"
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775245311_18086742623308257_3986467475281122585_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.fsyd12-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/573323465_1219825463302212_7278921664109726296_n.png"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775087546_18092706485122080_2148339614362952968_n.jpg"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.fsyd12-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/573323465_1219825463302212_7278921664109726296_n.png"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "POST",
-              "resource_type": "ping",
+              "resource_type": "xhr",
               "host": "www.threads.com",
-              "path": "/ajax/qm/"
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
               "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+              "path": "/v/t51.82787-19/540395915_17843303868567276_9210180685275427018_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775245311_18086742623308257_3986467475281122585_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
             },
             {
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
               "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775087546_18092706485122080_2148339614362952968_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
               "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
             }
           ],
-          "details_omitted": 0,
+          "details_omitted": 37,
           "observation": "observable_page_ready"
         }
       },
@@ -1146,7 +1739,7 @@
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:33:17.831Z",
+      "at": "2026-10-30T02:55:32.906Z",
       "call_id": "tool-3",
       "name": "read_profile",
       "input": {
@@ -1169,6 +1762,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1793116697,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -1181,10 +1776,11 @@
             "text_completeness_evidence": null,
             "display_name": "Whoscall",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO62PD9np",
                 "author": "whoscall_tw",
@@ -1195,10 +1791,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793116697,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO62PD9np",
                 "author": "whoscall_tw",
@@ -1209,6 +1806,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1793116697,
                 "display_name": "Whoscall"
               }
             ]
@@ -1219,16 +1817,19 @@
             "text": "明明沒刷卡，卻收到 Email 說你剛刷了一筆高額海外消費？\n\n先別點信裡的連結，自己打開銀行官方 App 查交易紀錄。也可以把可疑 Email 截圖，交給 Whoscall 完全免費的功能「一鍵查」，查詢有沒有詐騙風險（不論是 Email、簡訊、廣告傳單、社群貼文或對話紀錄，只要是有文字的圖片，都可以拍照或截圖上傳，3 秒鐘之內幫你判定是否有詐騙風險）\n\n使用傳送門 👉🏻 https://lihi1.me/M6mRd\n\n因為你可能根本沒被盜刷，對方就是想讓你嚇到，點進假的「取消交易」頁面，自己填上卡號、有效期限、CVV，甚至簡訊驗證碼。",
             "url": "https://www.threads.com/@whoscall_tw/post/DfAO8A9j40p",
             "parent": "DfAO62PD9np",
-            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1793116706,
             "evidence_conflict": false,
             "recommended": false,
-            "source_path": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "self_thread_context": {
               "parent": "DfAO62PD9np",
               "author": "whoscall_tw",
-              "source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -1243,13 +1844,15 @@
                 "DfAO62PD9np",
                 "DfAO8A9j40p"
               ],
-              "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+              "relationship_inferred": null,
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO8A9j40p",
                 "author": "whoscall_tw",
@@ -1258,12 +1861,13 @@
                 "url": "https://www.threads.com/@whoscall_tw/post/DfAO8A9j40p",
                 "text_complete": false,
                 "text_completeness_evidence": null,
-                "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1793116706,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO8A9j40p",
                 "author": "whoscall_tw",
@@ -1272,8 +1876,9 @@
                 "url": "https://www.threads.com/@whoscall_tw/post/DfAO8A9j40p",
                 "text_complete": false,
                 "text_completeness_evidence": null,
-                "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1793116706,
                 "display_name": "Whoscall"
               }
             ]
@@ -1284,16 +1889,19 @@
             "text": "App 裡真的有那筆不明交易，怎麼辦？\n\n① 立即透過銀行官方 App 或卡片背面的客服電話，聯絡銀行掛失停卡，防止繼續被冒用。\n\n② 向銀行通報非本人交易，申請爭議款處理，保留交易通知、可疑 Email 等資料，配合調查。\n\n停卡不會自動取消已完成的交易，爭議款能否免付或退回，也要依調查結果判定。\n\n寶們，收到刷卡通知先查證，別急著照信裡的指示「取消交易」。",
             "url": "https://www.threads.com/@whoscall_tw/post/DfAO9Aij2QV",
             "parent": "DfAO8A9j40p",
-            "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 1,
+            "taken_at": 1793116715,
             "evidence_conflict": false,
             "recommended": false,
-            "source_path": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+            "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "self_thread_context": {
               "parent": "DfAO8A9j40p",
               "author": "whoscall_tw",
-              "source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "inferred": "self_thread_sequence"
+              "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "inferred": "self_thread_sequence",
+              "index": 1
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "whoscall_tw",
@@ -1309,13 +1917,15 @@
                 "DfAO8A9j40p",
                 "DfAO9Aij2QV"
               ],
-              "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "relationship_inferred": "self_thread_sequence"
+              "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO9Aij2QV",
                 "author": "whoscall_tw",
@@ -1324,12 +1934,13 @@
                 "url": "https://www.threads.com/@whoscall_tw/post/DfAO9Aij2QV",
                 "text_complete": false,
                 "text_completeness_evidence": null,
-                "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1793116715,
                 "display_name": "Whoscall"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DfAO9Aij2QV",
                 "author": "whoscall_tw",
@@ -1338,8 +1949,9 @@
                 "url": "https://www.threads.com/@whoscall_tw/post/DfAO9Aij2QV",
                 "text_complete": false,
                 "text_completeness_evidence": null,
-                "relationship_source": "scripts[41].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
+                "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1793116715,
                 "display_name": "Whoscall"
               }
             ]
@@ -1352,9 +1964,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790737064,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -1364,10 +1978,11 @@
             "text_completeness_evidence": null,
             "display_name": "楊雅婷",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "Dd5UIRjjzW_",
                 "author": "ccc222534238",
@@ -1378,10 +1993,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790737064,
                 "display_name": "楊雅婷"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "Dd5UIRjjzW_",
                 "author": "ccc222534238",
@@ -1392,6 +2008,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790737064,
                 "display_name": "楊雅婷"
               }
             ]
@@ -1404,22 +2021,25 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1792691898,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
             "reader_branch": false,
             "order": null,
-            "text_complete": false,
-            "text_completeness_evidence": null,
+            "text_complete": true,
+            "text_completeness_evidence": false,
             "display_name": "楊雅婷",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "Dezkrf5j4A8",
                 "author": "ccc222534238",
@@ -1430,20 +2050,22 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1792691898,
                 "display_name": "楊雅婷"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "Dezkrf5j4A8",
                 "author": "ccc222534238",
                 "text": "有額度信用卡套現只是把額度換成現金不夠也是要在貼現額度刷爆這張有額度信用卡不能用了或者是刷到額度限度如二十萬刷到二十萬也是刷爆 有額度信用卡刷到額度限額也是刷爆不能用了",
                 "parent": null,
                 "url": "https://www.threads.com/@ccc222534238/post/Dezkrf5j4A8",
-                "text_complete": false,
-                "text_completeness_evidence": null,
+                "text_complete": true,
+                "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1792691898,
                 "display_name": "楊雅婷"
               }
             ]
@@ -1456,9 +2078,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791704070,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -1468,10 +2092,11 @@
             "text_completeness_evidence": null,
             "display_name": "",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DeWIjE2FIX0",
                 "author": "chizzeesy_",
@@ -1482,10 +2107,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791704070,
                 "display_name": ""
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DeWIjE2FIX0",
                 "author": "chizzeesy_",
@@ -1496,6 +2122,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791704070,
                 "display_name": ""
               }
             ]
@@ -1508,9 +2135,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1791269536,
             "evidence_conflict": false,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -1520,10 +2149,11 @@
             "text_completeness_evidence": null,
             "display_name": "銀行信貸 Naya Lin",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DeJLvZKE7Mr",
                 "author": "love163423163423",
@@ -1534,10 +2164,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791269536,
                 "display_name": "銀行信貸 Naya Lin"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DeJLvZKE7Mr",
                 "author": "love163423163423",
@@ -1548,6 +2179,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1791269536,
                 "display_name": "銀行信貸 Naya Lin"
               }
             ]
@@ -1560,9 +2192,11 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
-            "evidence_conflict": false,
+            "self_thread_index": null,
+            "taken_at": 1792154299,
+            "evidence_conflict": true,
             "recommended": true,
-            "source_path": "scripts[44].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
+            "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
             "self_thread_context": null,
             "is_reply_observed": false,
             "reply_to_author_observed": null,
@@ -1572,10 +2206,11 @@
             "text_completeness_evidence": null,
             "display_name": "YC Chen",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:13.359Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:30.197Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:13.359Z",
+                "captured_at": "2026-10-30T02:55:30.197Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DejjSqOiUCH",
                 "author": "yc_chen1994",
@@ -1586,21 +2221,61 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1792154299,
                 "display_name": "YC Chen"
               },
               {
-                "captured_at": "2026-10-30T02:33:13.470Z",
+                "captured_at": "2026-10-30T02:55:31.149Z",
                 "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
                 "id": "DejjSqOiUCH",
                 "author": "yc_chen1994",
-                "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸\n\n但同間店用其他張信用卡都不用欸\n到底出惹什麼問題\n有沒有信用卡專家分析分析",
+                "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸",
                 "parent": null,
                 "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
-                "text_complete": false,
-                "text_completeness_evidence": null,
+                "text_complete": true,
+                "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1792154299,
                 "display_name": "YC Chen"
+              }
+            ],
+            "conflicts": [
+              {
+                "post_id": "DejjSqOiUCH",
+                "fields": [
+                  "text"
+                ],
+                "previous_observation": {
+                  "captured_at": "2026-10-30T02:55:30.197Z",
+                  "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+                  "id": "DejjSqOiUCH",
+                  "author": "yc_chen1994",
+                  "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸\n\n但同間店用其他張信用卡都不用欸\n到底出惹什麼問題\n有沒有信用卡專家分析分析",
+                  "parent": null,
+                  "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+                  "text_complete": false,
+                  "text_completeness_evidence": null,
+                  "relationship_source": null,
+                  "relationship_inferred": null,
+                  "taken_at": 1792154299,
+                  "display_name": "YC Chen"
+                },
+                "incoming_observation": {
+                  "captured_at": "2026-10-30T02:55:31.149Z",
+                  "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+                  "id": "DejjSqOiUCH",
+                  "author": "yc_chen1994",
+                  "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸",
+                  "parent": null,
+                  "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+                  "text_complete": true,
+                  "text_completeness_evidence": false,
+                  "relationship_source": null,
+                  "relationship_inferred": null,
+                  "taken_at": 1792154299,
+                  "display_name": "YC Chen"
+                }
               }
             ]
           }
@@ -1613,12 +2288,14 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Whoscall",
-        "captured_at": "2026-10-30T02:33:13.470Z",
+        "captured_at": "2026-10-30T02:55:31.149Z",
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 1,
-            "request_failed": 2,
-            "policy_resource_budget_or_type": 1
+            "policy_non_get_blocked": 7,
+            "request_failed": 25,
+            "policy_resource_budget_or_type": 17,
+            "unsupported_url": 1,
+            "page_script_error": 1
           },
           "requests": [
             {
@@ -1648,6 +2325,254 @@
               "resource_type": "image",
               "host": "scontent.cdninstagram.com",
               "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/540395915_17843303868567276_9210180685275427018_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/540395915_17843303868567276_9210180685275427018_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775245311_18086742623308257_3986467475281122585_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775087546_18092706485122080_2148339614362952968_n.jpg"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775245311_18086742623308257_3986467475281122585_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.fsyd12-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/573323465_1219825463302212_7278921664109726296_n.png"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775087546_18092706485122080_2148339614362952968_n.jpg"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.fsyd12-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/573323465_1219825463302212_7278921664109726296_n.png"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/540395915_17843303868567276_9210180685275427018_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775245311_18086742623308257_3986467475281122585_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/775087546_18092706485122080_2148339614362952968_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/543816422_17923013190112738_6003649189154395638_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-3.fna.fbcdn.net",
+              "path": "/emg1/v/t13/2223573648706835691"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "external.ftpe7-4.fna.fbcdn.net",
+              "path": "/emg1/v/t13/1856983738109612075"
             }
           ],
           "details_omitted": 0,
@@ -1656,15 +2581,53 @@
           "json_script_count": 51,
           "ready_state": "interactive"
         },
-        "merge_conflicts": [],
-        "follower_count": 15100
+        "merge_conflicts": [
+          {
+            "post_id": "DejjSqOiUCH",
+            "fields": [
+              "text"
+            ],
+            "previous_observation": {
+              "captured_at": "2026-10-30T02:55:30.197Z",
+              "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+              "id": "DejjSqOiUCH",
+              "author": "yc_chen1994",
+              "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸\n\n但同間店用其他張信用卡都不用欸\n到底出惹什麼問題\n有沒有信用卡專家分析分析",
+              "parent": null,
+              "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+              "text_complete": false,
+              "text_completeness_evidence": null,
+              "relationship_source": null,
+              "relationship_inferred": null,
+              "taken_at": 1792154299,
+              "display_name": "YC Chen"
+            },
+            "incoming_observation": {
+              "captured_at": "2026-10-30T02:55:31.149Z",
+              "source_url": "https://www.threads.com/@whoscall_tw/post/DfAO62PD9np",
+              "id": "DejjSqOiUCH",
+              "author": "yc_chen1994",
+              "text": "為什麼聯邦信用卡刷一千多塊而已就要簽單啊\n也很常刷不過欸",
+              "parent": null,
+              "url": "https://www.threads.com/@yc_chen1994/post/DejjSqOiUCH",
+              "text_complete": true,
+              "text_completeness_evidence": false,
+              "relationship_source": null,
+              "relationship_inferred": null,
+              "taken_at": 1792154299,
+              "display_name": "YC Chen"
+            }
+          }
+        ],
+        "follower_count": 15100,
+        "profile_captured_at": "2026-10-30T02:55:32.906Z"
       },
       "status": "ok",
-      "elapsed_ms": 4341
+      "elapsed_ms": 1735
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:33:17.832Z",
+      "at": "2026-10-30T02:55:32.908Z",
       "output": {
         "classifications": [
           {
@@ -1693,7 +2656,7 @@
           },
           {
             "id": "DejjSqOiUCH",
-            "classification": "recommended_post"
+            "classification": "ambiguous_evidence_conflict"
           }
         ],
         "field_statuses": {
@@ -1706,12 +2669,12 @@
     },
     {
       "type": "browser_closed",
-      "at": "2026-10-30T02:33:17.998Z",
+      "at": "2026-10-30T02:55:33.075Z",
       "status": "ok"
     },
     {
       "type": "run_end",
-      "at": "2026-10-30T02:33:17.998Z",
+      "at": "2026-10-30T02:55:33.076Z",
       "status": "partial",
       "usage": {
         "llm_calls": 0,
@@ -1725,7 +2688,12 @@
         "reason": null
       },
       "tool_calls": 3,
-      "issues": []
+      "issues": [
+        {
+          "reason_code": "source_evidence_conflict",
+          "reason": "Conflicting observations were retained; affected posts and descendants are ambiguous."
+        }
+      ]
     }
   ],
   "status": "partial",

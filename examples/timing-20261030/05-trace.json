@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "run_id": "0b22b5ee-cc6f-41ea-b330-be723f9dd14f",
+  "run_id": "d96784f3-81bc-407a-9bba-7c4da9620199",
   "events": [
     {
       "type": "run_start",
-      "at": "2026-10-30T02:33:21.405Z",
+      "at": "2026-10-30T02:55:36.481Z",
       "input": {
         "message": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
       },
@@ -18,7 +18,7 @@
     },
     {
       "type": "navigation",
-      "at": "2026-10-30T02:33:24.352Z",
+      "at": "2026-10-30T02:55:39.416Z",
       "input": {
         "url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
       },
@@ -81,7 +81,7 @@
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:33:24.374Z",
+      "at": "2026-10-30T02:55:39.435Z",
       "call_id": "tool-1",
       "name": "read_post",
       "input": {
@@ -104,6 +104,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -116,7 +118,9 @@
             "text_completeness_evidence": false,
             "display_name": "Mark Zuckerberg",
             "text_source": "permalink_time_scoped_visible_body",
-            "order_evidence": null
+            "text_completeness_source": "permalink_time_scoped_visible_body",
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1MqfcG0aH",
@@ -126,6 +130,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
@@ -137,7 +143,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Mark Zuckerberg",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1Mqfum3QF",
@@ -147,6 +154,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[1].node",
@@ -158,7 +167,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Mark Zuckerberg",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1P1cgGtXz",
@@ -168,6 +178,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790600594,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
@@ -179,7 +191,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Akshat sundly",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1Vq6yD9KZ",
@@ -189,6 +202,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790603654,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
@@ -200,7 +215,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "tatsu3",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1niiomqcH",
@@ -210,6 +226,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790613023,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
@@ -221,7 +239,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Nicolay Dai",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1qBxXoG2E",
@@ -231,6 +250,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790614327,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
@@ -242,7 +263,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Hadi",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1rSu5lVu9",
@@ -252,6 +274,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790614990,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[4].node.posts.edges[0].node",
@@ -263,7 +287,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Katie",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1rc8zFZxp",
@@ -273,6 +298,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790615074,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[5].node.posts.edges[0].node",
@@ -284,7 +311,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Katie",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1MriSm3-u",
@@ -294,6 +322,8 @@
             "parent": "Dd1MqeVG3vT",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1790598940,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
@@ -301,7 +331,8 @@
               "parent": "Dd1MqeVG3vT",
               "author": "zuck",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "zuck",
@@ -317,8 +348,10 @@
                 "Dd1MriSm3-u"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
-            }
+              "relationship_inferred": null,
+              "sibling_order_basis": null
+            },
+            "order_inferred": null
           },
           {
             "id": "Dd1MqeyG15H",
@@ -328,6 +361,8 @@
             "parent": "Dd1MriSm3-u",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 1,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
@@ -335,7 +370,8 @@
               "parent": "Dd1MriSm3-u",
               "author": "zuck",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "inferred": "self_thread_sequence"
+              "inferred": "self_thread_sequence",
+              "index": 1
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "zuck",
@@ -352,8 +388,10 @@
                 "Dd1MqeyG15H"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "relationship_inferred": "self_thread_sequence"
-            }
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
+            },
+            "order_inferred": null
           },
           {
             "id": "Dd1h6VtkTZn",
@@ -363,6 +401,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790610072,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
@@ -374,7 +414,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "brian michaels",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd3QbQpkVyN",
@@ -384,6 +425,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790668013,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
@@ -395,7 +438,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "zZzZherwinZzZz",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1XsmOEaK_",
@@ -405,6 +449,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790604716,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
@@ -416,7 +462,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "ACW",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1sQ6uFtdv",
@@ -426,6 +473,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790615500,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
@@ -437,7 +486,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "D’ J O U R N E  A R T H U R",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           },
           {
             "id": "Dd1UQfGDuL1",
@@ -447,6 +497,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790602913,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
@@ -458,7 +510,8 @@
             "text_complete": false,
             "text_completeness_evidence": null,
             "display_name": "Zizo Zizo Shaban",
-            "order_evidence": null
+            "order_evidence": null,
+            "order_inferred": null
           }
         ],
         "canonical_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
@@ -469,7 +522,7 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Mark Zuckerberg",
-        "captured_at": "2026-10-30T02:33:24.353Z",
+        "captured_at": "2026-10-30T02:55:39.416Z",
         "acquisition_diagnostics": {
           "counts": {
             "policy_non_get_blocked": 1,
@@ -514,11 +567,11 @@
         }
       },
       "status": "ok",
-      "elapsed_ms": 2968
+      "elapsed_ms": 2953
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:33:24.376Z",
+      "at": "2026-10-30T02:55:39.436Z",
       "output": {
         "classifications": [
           {
@@ -591,8 +644,22 @@
       }
     },
     {
+      "type": "thread_expansion",
+      "at": "2026-10-30T02:55:40.334Z",
+      "input": {
+        "canonical_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
+      },
+      "output": {
+        "rounds": 1,
+        "clicks": 0,
+        "scrolls": 1,
+        "stopped": "no_growth"
+      },
+      "status": "observed"
+    },
+    {
       "type": "evidence_merge",
-      "at": "2026-10-30T02:33:24.799Z",
+      "at": "2026-10-30T02:55:40.574Z",
       "input": {
         "canonical_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT"
       },
@@ -618,13 +685,13 @@
           "Dd1UQfGDuL1"
         ],
         "conflicts": [],
-        "observation_at": "2026-10-30T02:33:24.776Z"
+        "observation_at": "2026-10-30T02:55:40.555Z"
       },
       "status": "merged"
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:33:24.800Z",
+      "at": "2026-10-30T02:55:40.574Z",
       "call_id": "tool-2",
       "name": "expand_thread",
       "input": {
@@ -647,6 +714,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -659,11 +728,13 @@
             "text_completeness_evidence": false,
             "display_name": "Mark Zuckerberg",
             "text_source": "permalink_time_scoped_visible_body",
+            "text_completeness_source": "permalink_time_scoped_visible_body",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqeVG3vT",
                 "author": "zuck",
@@ -674,10 +745,11 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqeVG3vT",
                 "author": "zuck",
@@ -688,6 +760,7 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -700,6 +773,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
@@ -712,10 +787,11 @@
             "text_completeness_evidence": null,
             "display_name": "Mark Zuckerberg",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqfcG0aH",
                 "author": "zuck",
@@ -726,10 +802,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqfcG0aH",
                 "author": "zuck",
@@ -740,6 +817,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -752,6 +830,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[1].node",
@@ -764,10 +844,11 @@
             "text_completeness_evidence": null,
             "display_name": "Mark Zuckerberg",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1Mqfum3QF",
                 "author": "zuck",
@@ -778,10 +859,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1Mqfum3QF",
                 "author": "zuck",
@@ -792,6 +874,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -804,6 +887,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790600594,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
@@ -816,10 +901,11 @@
             "text_completeness_evidence": null,
             "display_name": "Akshat sundly",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1P1cgGtXz",
                 "author": "sundlyakshat",
@@ -830,10 +916,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790600594,
                 "display_name": "Akshat sundly"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1P1cgGtXz",
                 "author": "sundlyakshat",
@@ -844,6 +931,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790600594,
                 "display_name": "Akshat sundly"
               }
             ]
@@ -856,6 +944,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790603654,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
@@ -868,10 +958,11 @@
             "text_completeness_evidence": null,
             "display_name": "tatsu3",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1Vq6yD9KZ",
                 "author": "tatsu32983",
@@ -882,10 +973,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790603654,
                 "display_name": "tatsu3"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1Vq6yD9KZ",
                 "author": "tatsu32983",
@@ -896,6 +988,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790603654,
                 "display_name": "tatsu3"
               }
             ]
@@ -908,6 +1001,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790613023,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
@@ -920,10 +1015,11 @@
             "text_completeness_evidence": null,
             "display_name": "Nicolay Dai",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1niiomqcH",
                 "author": "niclaydai",
@@ -934,10 +1030,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790613023,
                 "display_name": "Nicolay Dai"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1niiomqcH",
                 "author": "niclaydai",
@@ -948,6 +1045,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790613023,
                 "display_name": "Nicolay Dai"
               }
             ]
@@ -960,6 +1058,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790614327,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
@@ -972,10 +1072,11 @@
             "text_completeness_evidence": null,
             "display_name": "Hadi",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1qBxXoG2E",
                 "author": "aoibheal.rising",
@@ -986,10 +1087,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790614327,
                 "display_name": "Hadi"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1qBxXoG2E",
                 "author": "aoibheal.rising",
@@ -1000,6 +1102,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790614327,
                 "display_name": "Hadi"
               }
             ]
@@ -1012,6 +1115,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790614990,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[4].node.posts.edges[0].node",
@@ -1024,10 +1129,11 @@
             "text_completeness_evidence": null,
             "display_name": "Katie",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1rSu5lVu9",
                 "author": "katiesoldit",
@@ -1038,10 +1144,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790614990,
                 "display_name": "Katie"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1rSu5lVu9",
                 "author": "katiesoldit",
@@ -1052,6 +1159,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790614990,
                 "display_name": "Katie"
               }
             ]
@@ -1064,6 +1172,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790615074,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[5].node.posts.edges[0].node",
@@ -1076,10 +1186,11 @@
             "text_completeness_evidence": null,
             "display_name": "Katie",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1rc8zFZxp",
                 "author": "katiesoldit",
@@ -1090,10 +1201,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790615074,
                 "display_name": "Katie"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1rc8zFZxp",
                 "author": "katiesoldit",
@@ -1104,6 +1216,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790615074,
                 "display_name": "Katie"
               }
             ]
@@ -1116,6 +1229,8 @@
             "parent": "Dd1MqeVG3vT",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1790598940,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
@@ -1123,7 +1238,8 @@
               "parent": "Dd1MqeVG3vT",
               "author": "zuck",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "zuck",
@@ -1139,12 +1255,14 @@
                 "Dd1MriSm3-u"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
+              "relationship_inferred": null,
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MriSm3-u",
                 "author": "zuck",
@@ -1155,10 +1273,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1790598940,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MriSm3-u",
                 "author": "zuck",
@@ -1169,6 +1288,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1790598940,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -1181,6 +1301,8 @@
             "parent": "Dd1MriSm3-u",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 1,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
@@ -1188,7 +1310,8 @@
               "parent": "Dd1MriSm3-u",
               "author": "zuck",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "inferred": "self_thread_sequence"
+              "inferred": "self_thread_sequence",
+              "index": 1
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "zuck",
@@ -1205,12 +1328,14 @@
                 "Dd1MqeyG15H"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "relationship_inferred": "self_thread_sequence"
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqeyG15H",
                 "author": "zuck",
@@ -1221,10 +1346,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqeyG15H",
                 "author": "zuck",
@@ -1235,6 +1361,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -1247,6 +1374,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790610072,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
@@ -1259,10 +1388,11 @@
             "text_completeness_evidence": null,
             "display_name": "brian michaels",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1h6VtkTZn",
                 "author": "catscratchism",
@@ -1273,10 +1403,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790610072,
                 "display_name": "brian michaels"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1h6VtkTZn",
                 "author": "catscratchism",
@@ -1287,6 +1418,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790610072,
                 "display_name": "brian michaels"
               }
             ]
@@ -1299,6 +1431,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790668013,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
@@ -1311,10 +1445,11 @@
             "text_completeness_evidence": null,
             "display_name": "zZzZherwinZzZz",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd3QbQpkVyN",
                 "author": "abanadz",
@@ -1325,10 +1460,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790668013,
                 "display_name": "zZzZherwinZzZz"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd3QbQpkVyN",
                 "author": "abanadz",
@@ -1339,6 +1475,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790668013,
                 "display_name": "zZzZherwinZzZz"
               }
             ]
@@ -1351,6 +1488,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790604716,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
@@ -1363,10 +1502,11 @@
             "text_completeness_evidence": null,
             "display_name": "ACW",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1XsmOEaK_",
                 "author": "acwardblueridge",
@@ -1377,10 +1517,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790604716,
                 "display_name": "ACW"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1XsmOEaK_",
                 "author": "acwardblueridge",
@@ -1391,6 +1532,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790604716,
                 "display_name": "ACW"
               }
             ]
@@ -1403,6 +1545,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790615500,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
@@ -1415,10 +1559,11 @@
             "text_completeness_evidence": null,
             "display_name": "D’ J O U R N E  A R T H U R",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1sQ6uFtdv",
                 "author": "djournearthur",
@@ -1429,10 +1574,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790615500,
                 "display_name": "D’ J O U R N E  A R T H U R"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1sQ6uFtdv",
                 "author": "djournearthur",
@@ -1443,6 +1589,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790615500,
                 "display_name": "D’ J O U R N E  A R T H U R"
               }
             ]
@@ -1455,6 +1602,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790602913,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
@@ -1467,10 +1616,11 @@
             "text_completeness_evidence": null,
             "display_name": "Zizo Zizo Shaban",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1UQfGDuL1",
                 "author": "zizo6422",
@@ -1481,10 +1631,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790602913,
                 "display_name": "Zizo Zizo Shaban"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1UQfGDuL1",
                 "author": "zizo6422",
@@ -1495,6 +1646,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790602913,
                 "display_name": "Zizo Zizo Shaban"
               }
             ]
@@ -1508,12 +1660,14 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Mark Zuckerberg",
-        "captured_at": "2026-10-30T02:33:24.776Z",
+        "captured_at": "2026-10-30T02:55:40.555Z",
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 2,
-            "request_failed": 3,
-            "policy_resource_budget_or_type": 1
+            "policy_non_get_blocked": 4,
+            "request_failed": 6,
+            "policy_resource_budget_or_type": 1,
+            "unsupported_url": 1,
+            "page_script_error": 1
           },
           "requests": [
             {
@@ -1557,6 +1711,51 @@
               "resource_type": "xhr",
               "host": "www.threads.com",
               "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
             }
           ],
           "details_omitted": 0,
@@ -1568,11 +1767,11 @@
         "merge_conflicts": []
       },
       "status": "ok",
-      "elapsed_ms": 423
+      "elapsed_ms": 1138
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:33:24.803Z",
+      "at": "2026-10-30T02:55:40.577Z",
       "output": {
         "classifications": [
           {
@@ -1646,7 +1845,7 @@
     },
     {
       "type": "navigation",
-      "at": "2026-10-30T02:33:27.440Z",
+      "at": "2026-10-30T02:55:42.249Z",
       "input": {
         "url": "https://www.threads.com/@zuck"
       },
@@ -1671,8 +1870,8 @@
         "acquisition_diagnostics": {
           "counts": {
             "policy_non_get_blocked": 7,
-            "request_failed": 53,
-            "policy_resource_budget_or_type": 45,
+            "request_failed": 49,
+            "policy_resource_budget_or_type": 41,
             "unsupported_url": 1,
             "page_script_error": 1
           },
@@ -1722,205 +1921,9 @@
             {
               "reason_code": "policy_non_get_blocked",
               "method": "POST",
-              "resource_type": "ping",
-              "host": "www.threads.com",
-              "path": "/ajax/bz"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "POST",
-              "resource_type": "ping",
-              "host": "www.threads.com",
-              "path": "/ajax/bz"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/525017228_17849122602528205_3588309531909441924_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/729570187_18126644866606450_6153357872233502881_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/658369952_18069416627308148_1644654452261977176_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/525017228_17849122602528205_3588309531909441924_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/729570187_18126644866606450_6153357872233502881_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/658369952_18069416627308148_1644654452261977176_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.2885-19/358160467_824852295511786_6752593773214867012_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/627054904_17846449140682001_2711033722002729226_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.2885-19/358160467_824852295511786_6752593773214867012_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "scontent.cdninstagram.com",
-              "path": "/v/t51.82787-19/627054904_17846449140682001_2711033722002729226_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/782413376_17985318084106984_7486737651852716815_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/782413376_17985318084106984_7486737651852716815_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.2885-19/358507614_1604850579995772_6036599754710428054_n.jpg"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.2885-19/358507614_1604850579995772_6036599754710428054_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-3.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/729633386_17975647173111219_3143705345287756515_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-1.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
-            },
-            {
-              "reason_code": "policy_resource_budget_or_type",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/745235823_17979303189101707_1803391662481364455_n.jpg"
-            },
-            {
-              "reason_code": "policy_non_get_blocked",
-              "method": "POST",
               "resource_type": "xhr",
               "host": "www.threads.com",
               "path": "/api/graphql"
-            },
-            {
-              "reason_code": "request_failed",
-              "method": "GET",
-              "resource_type": "image",
-              "host": "instagram.ftpe7-3.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/729633386_17975647173111219_3143705345287756515_n.jpg"
             },
             {
               "reason_code": "unsupported_url",
@@ -1930,7 +1933,171 @@
               "path": "/accounts/xusername/"
             },
             {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
               "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "ping",
+              "host": "www.threads.com",
+              "path": "/ajax/bz"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/525017228_17849122602528205_3588309531909441924_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/729570187_18126644866606450_6153357872233502881_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/658369952_18069416627308148_1644654452261977176_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.2885-19/358160467_824852295511786_6752593773214867012_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/525017228_17849122602528205_3588309531909441924_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/729570187_18126644866606450_6153357872233502881_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/627054904_17846449140682001_2711033722002729226_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/658369952_18069416627308148_1644654452261977176_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.2885-19/358160467_824852295511786_6752593773214867012_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "scontent.cdninstagram.com",
+              "path": "/v/t51.82787-19/627054904_17846449140682001_2711033722002729226_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/782413376_17985318084106984_7486737651852716815_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
               "host": "instagram.ftpe7-1.fna.fbcdn.net",
@@ -1940,21 +2107,53 @@
               "reason_code": "policy_resource_budget_or_type",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-2.fna.fbcdn.net",
-              "path": "/v/t51.2885-19/504531250_17850910635480719_4298575790209579874_n.jpg"
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/358507614_1604850579995772_6036599754710428054_n.jpg"
             },
             {
               "reason_code": "request_failed",
               "method": "GET",
               "resource_type": "image",
-              "host": "instagram.ftpe7-4.fna.fbcdn.net",
-              "path": "/v/t51.82787-19/745235823_17979303189101707_1803391662481364455_n.jpg"
+              "host": "instagram.ftpe7-2.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/782413376_17985318084106984_7486737651852716815_n.jpg"
             },
             {
-              "reason_code": "page_script_error"
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.2885-19/358507614_1604850579995772_6036599754710428054_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/729633386_17975647173111219_3143705345287756515_n.jpg"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-3.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/729633386_17975647173111219_3143705345287756515_n.jpg"
+            },
+            {
+              "reason_code": "policy_resource_budget_or_type",
+              "method": "GET",
+              "resource_type": "image",
+              "host": "instagram.ftpe7-1.fna.fbcdn.net",
+              "path": "/v/t51.82787-19/825322135_17989325280103224_1252773933700107438_n.jpg"
             }
           ],
-          "details_omitted": 67,
+          "details_omitted": 59,
           "observation": "observable_page_ready"
         }
       },
@@ -1963,7 +2162,7 @@
     },
     {
       "type": "tool_call",
-      "at": "2026-10-30T02:33:27.452Z",
+      "at": "2026-10-30T02:55:42.257Z",
       "call_id": "tool-3",
       "name": "read_profile",
       "input": {
@@ -1986,6 +2185,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[16].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media",
@@ -1998,11 +2199,13 @@
             "text_completeness_evidence": false,
             "display_name": "Mark Zuckerberg",
             "text_source": "permalink_time_scoped_visible_body",
+            "text_completeness_source": "permalink_time_scoped_visible_body",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqeVG3vT",
                 "author": "zuck",
@@ -2013,10 +2216,11 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqeVG3vT",
                 "author": "zuck",
@@ -2027,6 +2231,7 @@
                 "text_completeness_evidence": false,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -2039,6 +2244,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[0].node",
@@ -2051,10 +2258,11 @@
             "text_completeness_evidence": null,
             "display_name": "Mark Zuckerberg",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqfcG0aH",
                 "author": "zuck",
@@ -2065,10 +2273,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqfcG0aH",
                 "author": "zuck",
@@ -2079,6 +2288,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -2091,6 +2301,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[32].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.containing_thread.posts.edges[1].node",
@@ -2103,10 +2315,11 @@
             "text_completeness_evidence": null,
             "display_name": "Mark Zuckerberg",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1Mqfum3QF",
                 "author": "zuck",
@@ -2117,10 +2330,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1Mqfum3QF",
                 "author": "zuck",
@@ -2131,6 +2345,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -2143,6 +2358,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790600594,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[0].node.posts.edges[0].node",
@@ -2155,10 +2372,11 @@
             "text_completeness_evidence": null,
             "display_name": "Akshat sundly",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1P1cgGtXz",
                 "author": "sundlyakshat",
@@ -2169,10 +2387,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790600594,
                 "display_name": "Akshat sundly"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1P1cgGtXz",
                 "author": "sundlyakshat",
@@ -2183,6 +2402,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790600594,
                 "display_name": "Akshat sundly"
               }
             ]
@@ -2195,6 +2415,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790603654,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[1].node.posts.edges[0].node",
@@ -2207,10 +2429,11 @@
             "text_completeness_evidence": null,
             "display_name": "tatsu3",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1Vq6yD9KZ",
                 "author": "tatsu32983",
@@ -2221,10 +2444,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790603654,
                 "display_name": "tatsu3"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1Vq6yD9KZ",
                 "author": "tatsu32983",
@@ -2235,6 +2459,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790603654,
                 "display_name": "tatsu3"
               }
             ]
@@ -2247,6 +2472,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790613023,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[2].node.posts.edges[0].node",
@@ -2259,10 +2486,11 @@
             "text_completeness_evidence": null,
             "display_name": "Nicolay Dai",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1niiomqcH",
                 "author": "niclaydai",
@@ -2273,10 +2501,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790613023,
                 "display_name": "Nicolay Dai"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1niiomqcH",
                 "author": "niclaydai",
@@ -2287,6 +2516,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790613023,
                 "display_name": "Nicolay Dai"
               }
             ]
@@ -2299,6 +2529,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790614327,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[3].node.posts.edges[0].node",
@@ -2311,10 +2543,11 @@
             "text_completeness_evidence": null,
             "display_name": "Hadi",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1qBxXoG2E",
                 "author": "aoibheal.rising",
@@ -2325,10 +2558,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790614327,
                 "display_name": "Hadi"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1qBxXoG2E",
                 "author": "aoibheal.rising",
@@ -2339,6 +2573,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790614327,
                 "display_name": "Hadi"
               }
             ]
@@ -2351,6 +2586,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790614990,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[4].node.posts.edges[0].node",
@@ -2363,10 +2600,11 @@
             "text_completeness_evidence": null,
             "display_name": "Katie",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1rSu5lVu9",
                 "author": "katiesoldit",
@@ -2377,10 +2615,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790614990,
                 "display_name": "Katie"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1rSu5lVu9",
                 "author": "katiesoldit",
@@ -2391,6 +2630,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790614990,
                 "display_name": "Katie"
               }
             ]
@@ -2403,6 +2643,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790615074,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.direct_replies.edges[5].node.posts.edges[0].node",
@@ -2415,10 +2657,11 @@
             "text_completeness_evidence": null,
             "display_name": "Katie",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1rc8zFZxp",
                 "author": "katiesoldit",
@@ -2429,10 +2672,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790615074,
                 "display_name": "Katie"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1rc8zFZxp",
                 "author": "katiesoldit",
@@ -2443,6 +2687,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790615074,
                 "display_name": "Katie"
               }
             ]
@@ -2455,6 +2700,8 @@
             "parent": "Dd1MqeVG3vT",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
             "relationship_inferred": null,
+            "self_thread_index": 0,
+            "taken_at": 1790598940,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
@@ -2462,7 +2709,8 @@
               "parent": "Dd1MqeVG3vT",
               "author": "zuck",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "inferred": null
+              "inferred": null,
+              "index": 0
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "zuck",
@@ -2478,12 +2726,14 @@
                 "Dd1MriSm3-u"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
-              "relationship_inferred": null
+              "relationship_inferred": null,
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MriSm3-u",
                 "author": "zuck",
@@ -2494,10 +2744,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1790598940,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MriSm3-u",
                 "author": "zuck",
@@ -2508,6 +2759,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[0].node",
                 "relationship_inferred": null,
+                "taken_at": 1790598940,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -2520,6 +2772,8 @@
             "parent": "Dd1MriSm3-u",
             "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
             "relationship_inferred": "self_thread_sequence",
+            "self_thread_index": 1,
+            "taken_at": 1790598932,
             "evidence_conflict": false,
             "recommended": false,
             "source_path": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
@@ -2527,7 +2781,8 @@
               "parent": "Dd1MriSm3-u",
               "author": "zuck",
               "source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "inferred": "self_thread_sequence"
+              "inferred": "self_thread_sequence",
+              "index": 1
             },
             "is_reply_observed": true,
             "reply_to_author_observed": "zuck",
@@ -2544,12 +2799,14 @@
                 "Dd1MqeyG15H"
               ],
               "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
-              "relationship_inferred": "self_thread_sequence"
+              "relationship_inferred": "self_thread_sequence",
+              "sibling_order_basis": null
             },
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqeyG15H",
                 "author": "zuck",
@@ -2560,10 +2817,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1MqeyG15H",
                 "author": "zuck",
@@ -2574,6 +2832,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": "scripts[35].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.media.text_post_app_info.self_thread.posts.edges[1].node",
                 "relationship_inferred": "self_thread_sequence",
+                "taken_at": 1790598932,
                 "display_name": "Mark Zuckerberg"
               }
             ]
@@ -2586,6 +2845,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790610072,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[0].thread_items[0].post",
@@ -2598,10 +2859,11 @@
             "text_completeness_evidence": null,
             "display_name": "brian michaels",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1h6VtkTZn",
                 "author": "catscratchism",
@@ -2612,10 +2874,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790610072,
                 "display_name": "brian michaels"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1h6VtkTZn",
                 "author": "catscratchism",
@@ -2626,6 +2889,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790610072,
                 "display_name": "brian michaels"
               }
             ]
@@ -2638,6 +2902,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790668013,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[1].thread_items[0].post",
@@ -2650,10 +2916,11 @@
             "text_completeness_evidence": null,
             "display_name": "zZzZherwinZzZz",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd3QbQpkVyN",
                 "author": "abanadz",
@@ -2664,10 +2931,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790668013,
                 "display_name": "zZzZherwinZzZz"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd3QbQpkVyN",
                 "author": "abanadz",
@@ -2678,6 +2946,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790668013,
                 "display_name": "zZzZherwinZzZz"
               }
             ]
@@ -2690,6 +2959,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790604716,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[2].thread_items[0].post",
@@ -2702,10 +2973,11 @@
             "text_completeness_evidence": null,
             "display_name": "ACW",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1XsmOEaK_",
                 "author": "acwardblueridge",
@@ -2716,10 +2988,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790604716,
                 "display_name": "ACW"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1XsmOEaK_",
                 "author": "acwardblueridge",
@@ -2730,6 +3003,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790604716,
                 "display_name": "ACW"
               }
             ]
@@ -2742,6 +3016,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790615500,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[3].thread_items[0].post",
@@ -2754,10 +3030,11 @@
             "text_completeness_evidence": null,
             "display_name": "D’ J O U R N E  A R T H U R",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1sQ6uFtdv",
                 "author": "djournearthur",
@@ -2768,10 +3045,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790615500,
                 "display_name": "D’ J O U R N E  A R T H U R"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1sQ6uFtdv",
                 "author": "djournearthur",
@@ -2782,6 +3060,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790615500,
                 "display_name": "D’ J O U R N E  A R T H U R"
               }
             ]
@@ -2794,6 +3073,8 @@
             "parent": null,
             "relationship_source": null,
             "relationship_inferred": null,
+            "self_thread_index": null,
+            "taken_at": 1790602913,
             "evidence_conflict": false,
             "recommended": true,
             "source_path": "scripts[38].require[0][3][0].__bbox.require[0][3][1].__bbox.result.data.relatedPosts.threads[4].thread_items[0].post",
@@ -2806,10 +3087,11 @@
             "text_completeness_evidence": null,
             "display_name": "Zizo Zizo Shaban",
             "order_evidence": null,
-            "first_observed_at": "2026-10-30T02:33:24.353Z",
+            "order_inferred": null,
+            "first_observed_at": "2026-10-30T02:55:39.416Z",
             "observations": [
               {
-                "captured_at": "2026-10-30T02:33:24.353Z",
+                "captured_at": "2026-10-30T02:55:39.416Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1UQfGDuL1",
                 "author": "zizo6422",
@@ -2820,10 +3102,11 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790602913,
                 "display_name": "Zizo Zizo Shaban"
               },
               {
-                "captured_at": "2026-10-30T02:33:24.776Z",
+                "captured_at": "2026-10-30T02:55:40.555Z",
                 "source_url": "https://www.threads.com/@zuck/post/Dd1MqeVG3vT",
                 "id": "Dd1UQfGDuL1",
                 "author": "zizo6422",
@@ -2834,6 +3117,7 @@
                 "text_completeness_evidence": null,
                 "relationship_source": null,
                 "relationship_inferred": null,
+                "taken_at": 1790602913,
                 "display_name": "Zizo Zizo Shaban"
               }
             ]
@@ -2847,12 +3131,14 @@
         "thread_observed": true,
         "has_more": false,
         "display_name": "Mark Zuckerberg",
-        "captured_at": "2026-10-30T02:33:24.776Z",
+        "captured_at": "2026-10-30T02:55:40.555Z",
         "acquisition_diagnostics": {
           "counts": {
-            "policy_non_get_blocked": 2,
-            "request_failed": 3,
-            "policy_resource_budget_or_type": 1
+            "policy_non_get_blocked": 4,
+            "request_failed": 6,
+            "policy_resource_budget_or_type": 1,
+            "unsupported_url": 1,
+            "page_script_error": 1
           },
           "requests": [
             {
@@ -2896,6 +3182,51 @@
               "resource_type": "xhr",
               "host": "www.threads.com",
               "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "unsupported_url",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
+            },
+            {
+              "reason_code": "page_script_error"
+            },
+            {
+              "reason_code": "policy_non_get_blocked",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/api/graphql"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "POST",
+              "resource_type": "xhr",
+              "host": "www.threads.com",
+              "path": "/ajax/bulk-route-definitions/"
+            },
+            {
+              "reason_code": "request_failed",
+              "method": "GET",
+              "resource_type": "fetch",
+              "host": "www.instagram.com",
+              "path": "/accounts/xusername/"
             }
           ],
           "details_omitted": 0,
@@ -2905,14 +3236,15 @@
           "ready_state": "interactive"
         },
         "merge_conflicts": [],
-        "follower_count": 5750956
+        "follower_count": 5750959,
+        "profile_captured_at": "2026-10-30T02:55:42.257Z"
       },
       "status": "ok",
-      "elapsed_ms": 2648
+      "elapsed_ms": 1680
     },
     {
       "type": "validation",
-      "at": "2026-10-30T02:33:27.456Z",
+      "at": "2026-10-30T02:55:42.260Z",
       "output": {
         "classifications": [
           {
@@ -2986,12 +3318,12 @@
     },
     {
       "type": "browser_closed",
-      "at": "2026-10-30T02:33:27.674Z",
+      "at": "2026-10-30T02:55:42.462Z",
       "status": "ok"
     },
     {
       "type": "run_end",
-      "at": "2026-10-30T02:33:27.675Z",
+      "at": "2026-10-30T02:55:42.463Z",
       "status": "partial",
       "usage": {
         "llm_calls": 0,
