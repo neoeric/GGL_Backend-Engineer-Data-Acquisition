@@ -14,5 +14,5 @@ pyee==13.0.1
 Pygments==2.21.0
 pytest==8.4.2
 typing_extensions==4.16.0
-setuptools==65.5.0
+setuptools==80.9.0
 wheel==0.45.1
